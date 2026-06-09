@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guarda-roupa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Guarda-roupa</h1>
+      <p class="subtitle">Looks e peças categorizados</p>
+    </header>
+
+    <section class="filters-section">
+      <div class="filters">
+        <label>
+          Categoria
+          <select id="filter-category">
+            <option value="">Todas</option>
+          </select>
+        </label>
+        <label>
+          Cor
+          <select id="filter-color">
+            <option value="">Todas</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div id="gallery" class="gallery"></div>
+    </section>
+  </div>
+
+  <div class="carousel-overlay hidden" id="carousel-overlay" role="dialog" aria-modal="true">
+    <button type="button" class="carousel-close" id="carousel-close" aria-label="Fechar">×</button>
+    <button type="button" class="carousel-nav carousel-prev" id="carousel-prev" aria-label="Anterior">‹</button>
+    <button type="button" class="carousel-nav carousel-next" id="carousel-next" aria-label="Próximo">›</button>
+    <div class="carousel-content">
+      <div class="carousel-image-wrap">
+        <img id="carousel-image" src="" alt="">
+      </div>
+      <div class="carousel-info" id="carousel-info"></div>
+      <div class="carousel-counter" id="carousel-counter"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
