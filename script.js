@@ -2,7 +2,7 @@
 
 const CATEGORIES = ['Camisa', 'Calça', 'Calçado', 'Jaqueta', 'Blazer', 'Look completo', 'Outro'];
 const COLORS = [
-  'Branco', 'Preto', 'Cinza', 'Azul', 'Azul marinho',
+  'Branco', 'Preto', 'Cinza claro', 'Cinza pedra', 'Azul', 'Azul marinho',
   'Vinho', 'Bordô', 'Bege', 'Cáqui', 'Marrom', 'Caramelo', 'Verde', 'Outro'
 ];
 
@@ -38,13 +38,13 @@ const CATALOG = [
   { id: '93', file: 'gpt/camisa-branca-calca-verde-militar-calcado-marrom.png', name: 'Camisa branca · calça verde militar · calçado marrom', category: 'Look completo', color: 'Branco' },
   { id: '94', file: 'gpt/camisa-branca-calca-verde-oliva-calcado-marrom.png', name: 'Camisa branca · calça verde oliva · calçado marrom', category: 'Look completo', color: 'Branco' },
   { id: '95', file: 'gpt/camisa-branco-calca-vinho-calcado-marrom.png', name: 'Camisa branco · calça vinho · calçado marrom', category: 'Look completo', color: 'Branco' },
-  { id: '96', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-marrom.png', name: 'Camisa cinza · calça azul marinho · calçado marrom', category: 'Look completo', color: 'Cinza' },
-  { id: '97', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-preto.png', name: 'Camisa cinza · calça cinza pedra · calçado preto', category: 'Look completo', color: 'Cinza' },
-  { id: '98', file: 'gpt/camisa-cinza-calca-creme-calcado-marrom.png', name: 'Camisa cinza · calça creme · calçado marrom', category: 'Look completo', color: 'Cinza' },
-  { id: '99', file: 'gpt/camisa-cinza-calca-preta-calcado-preto.png', name: 'Camisa cinza · calça preta · calçado preto', category: 'Look completo', color: 'Cinza' },
-  { id: '100', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-marrom.png', name: 'Camisa cinza · calça verde militar · calçado marrom', category: 'Look completo', color: 'Cinza' },
-  { id: '101', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-marrom.png', name: 'Camisa cinza · calça verde oliva · calçado marrom', category: 'Look completo', color: 'Cinza' },
-  { id: '102', file: 'gpt/camisa-cinza-escuro-calca-vinho-calcado-marrom.png', name: 'Camisa cinza escuro · calça vinho · calçado marrom', category: 'Look completo', color: 'Cinza' },
+  { id: '96', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-marrom.png', name: 'Camisa cinza · calça azul marinho · calçado marrom', category: 'Look completo', color: 'Cinza claro' },
+  { id: '97', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-preto.png', name: 'Camisa cinza · calça cinza pedra · calçado preto', category: 'Look completo', color: 'Cinza claro' },
+  { id: '98', file: 'gpt/camisa-cinza-calca-creme-calcado-marrom.png', name: 'Camisa cinza · calça creme · calçado marrom', category: 'Look completo', color: 'Cinza claro' },
+  { id: '99', file: 'gpt/camisa-cinza-calca-preta-calcado-preto.png', name: 'Camisa cinza · calça preta · calçado preto', category: 'Look completo', color: 'Cinza claro' },
+  { id: '100', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-marrom.png', name: 'Camisa cinza · calça verde militar · calçado marrom', category: 'Look completo', color: 'Cinza claro' },
+  { id: '101', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-marrom.png', name: 'Camisa cinza · calça verde oliva · calçado marrom', category: 'Look completo', color: 'Cinza claro' },
+  { id: '102', file: 'gpt/camisa-cinza-escuro-calca-vinho-calcado-marrom.png', name: 'Camisa cinza escuro · calça vinho · calçado marrom', category: 'Look completo', color: 'Cinza pedra' },
   { id: '103', file: 'gpt/camisa-creme-calca-azul-marinho-calcado-marrom.png', name: 'Camisa creme · calça azul marinho · calçado marrom', category: 'Look completo', color: 'Branco' },
   { id: '104', file: 'gpt/camisa-creme-calca-bege-calcado-preto.png', name: 'Camisa creme · calça bege · calçado preto', category: 'Look completo', color: 'Branco' },
   { id: '105', file: 'gpt/camisa-creme-calca-cinza-claro-calcado-preto.png', name: 'Camisa creme · calça cinza claro · calçado preto', category: 'Look completo', color: 'Branco' },
@@ -178,12 +178,12 @@ const CATALOG = [
   { id: '233', file: 'gpt/camisa-branca-calca-preta-calcado-tenis-branco.png', name: 'Camisa branca · calça preta · tênis branco', category: 'Look completo', color: 'Branco' },
   { id: '234', file: 'gpt/camisa-branca-calca-verde-militar-calcado-tenis-branco.png', name: 'Camisa branca · calça verde militar · tênis branco', category: 'Look completo', color: 'Branco' },
   { id: '235', file: 'gpt/camisa-branca-calca-verde-oliva-calcado-tenis-branco.png', name: 'Camisa branca · calça verde oliva · tênis branco', category: 'Look completo', color: 'Branco' },
-  { id: '236', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-tenis-branco.png', name: 'Camisa cinza · calça azul marinho · tênis branco', category: 'Look completo', color: 'Cinza' },
-  { id: '237', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-tenis-branco.png', name: 'Camisa cinza · calça cinza pedra · tênis branco', category: 'Look completo', color: 'Cinza' },
-  { id: '238', file: 'gpt/camisa-cinza-calca-creme-calcado-tenis-branco.png', name: 'Camisa cinza · calça creme · tênis branco', category: 'Look completo', color: 'Cinza' },
-  { id: '239', file: 'gpt/camisa-cinza-calca-preta-calcado-tenis-branco.png', name: 'Camisa cinza · calça preta · tênis branco', category: 'Look completo', color: 'Cinza' },
-  { id: '240', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-tenis-branco.png', name: 'Camisa cinza · calça verde militar · tênis branco', category: 'Look completo', color: 'Cinza' },
-  { id: '241', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-tenis-branco.png', name: 'Camisa cinza · calça verde oliva · tênis branco', category: 'Look completo', color: 'Cinza' },
+  { id: '236', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-tenis-branco.png', name: 'Camisa cinza · calça azul marinho · tênis branco', category: 'Look completo', color: 'Cinza claro' },
+  { id: '237', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-tenis-branco.png', name: 'Camisa cinza · calça cinza pedra · tênis branco', category: 'Look completo', color: 'Cinza claro' },
+  { id: '238', file: 'gpt/camisa-cinza-calca-creme-calcado-tenis-branco.png', name: 'Camisa cinza · calça creme · tênis branco', category: 'Look completo', color: 'Cinza claro' },
+  { id: '239', file: 'gpt/camisa-cinza-calca-preta-calcado-tenis-branco.png', name: 'Camisa cinza · calça preta · tênis branco', category: 'Look completo', color: 'Cinza claro' },
+  { id: '240', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-tenis-branco.png', name: 'Camisa cinza · calça verde militar · tênis branco', category: 'Look completo', color: 'Cinza claro' },
+  { id: '241', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-tenis-branco.png', name: 'Camisa cinza · calça verde oliva · tênis branco', category: 'Look completo', color: 'Cinza claro' },
   { id: '242', file: 'gpt/camisa-creme-calca-azul-marinho-calcado-tenis-branco.png', name: 'Camisa creme · calça azul marinho · tênis branco', category: 'Look completo', color: 'Branco' },
   { id: '243', file: 'gpt/camisa-creme-calca-bege-calcado-tenis-branco.png', name: 'Camisa creme · calça bege · tênis branco', category: 'Look completo', color: 'Branco' },
   { id: '244', file: 'gpt/camisa-creme-calca-cinza-claro-calcado-tenis-branco.png', name: 'Camisa creme · calça cinza claro · tênis branco', category: 'Look completo', color: 'Branco' },
@@ -315,13 +315,13 @@ const CATALOG = [
   { id: '385', file: 'gpt/camisa-branca-calca-verde-militar-calcado-preto.png', name: 'Camisa branca · calça verde militar · calçado preto', category: 'Look completo', color: 'Branco' },
   { id: '386', file: 'gpt/camisa-branca-calca-verde-oliva-calcado-preto.png', name: 'Camisa branca · calça verde oliva · calçado preto', category: 'Look completo', color: 'Branco' },
   { id: '387', file: 'gpt/camisa-branco-calca-vinho-calcado-preto.png', name: 'Camisa branco · calça vinho · calçado preto', category: 'Look completo', color: 'Branco' },
-  { id: '388', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-preto.png', name: 'Camisa cinza · calça azul marinho · calçado preto', category: 'Look completo', color: 'Cinza' },
-  { id: '389', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-marrom.png', name: 'Camisa cinza · calça cinza pedra · calçado marrom', category: 'Look completo', color: 'Cinza' },
-  { id: '390', file: 'gpt/camisa-cinza-calca-creme-calcado-preto.png', name: 'Camisa cinza · calça creme · calçado preto', category: 'Look completo', color: 'Cinza' },
-  { id: '391', file: 'gpt/camisa-cinza-calca-preta-calcado-marrom.png', name: 'Camisa cinza · calça preta · calçado marrom', category: 'Look completo', color: 'Cinza' },
-  { id: '392', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-preto.png', name: 'Camisa cinza · calça verde militar · calçado preto', category: 'Look completo', color: 'Cinza' },
-  { id: '393', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-preto.png', name: 'Camisa cinza · calça verde oliva · calçado preto', category: 'Look completo', color: 'Cinza' },
-  { id: '394', file: 'gpt/camisa-cinza-escuro-calca-vinho-calcado-preto.png', name: 'Camisa cinza escuro · calça vinho · calçado preto', category: 'Look completo', color: 'Cinza' },
+  { id: '388', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-preto.png', name: 'Camisa cinza · calça azul marinho · calçado preto', category: 'Look completo', color: 'Cinza claro' },
+  { id: '389', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-marrom.png', name: 'Camisa cinza · calça cinza pedra · calçado marrom', category: 'Look completo', color: 'Cinza claro' },
+  { id: '390', file: 'gpt/camisa-cinza-calca-creme-calcado-preto.png', name: 'Camisa cinza · calça creme · calçado preto', category: 'Look completo', color: 'Cinza claro' },
+  { id: '391', file: 'gpt/camisa-cinza-calca-preta-calcado-marrom.png', name: 'Camisa cinza · calça preta · calçado marrom', category: 'Look completo', color: 'Cinza claro' },
+  { id: '392', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-preto.png', name: 'Camisa cinza · calça verde militar · calçado preto', category: 'Look completo', color: 'Cinza claro' },
+  { id: '393', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-preto.png', name: 'Camisa cinza · calça verde oliva · calçado preto', category: 'Look completo', color: 'Cinza claro' },
+  { id: '394', file: 'gpt/camisa-cinza-escuro-calca-vinho-calcado-preto.png', name: 'Camisa cinza escuro · calça vinho · calçado preto', category: 'Look completo', color: 'Cinza pedra' },
   { id: '395', file: 'gpt/camisa-cores-calca-cores-calcado-marrom.png', name: 'Camisa cores · calça cores · calçado marrom', category: 'Outro', color: 'Outro' },
   { id: '396', file: 'gpt/camisa-cores-calca-cores-calcado-preto.png', name: 'Camisa cores · calça cores · calçado preto', category: 'Outro', color: 'Outro' },
   { id: '397', file: 'gpt/camisa-creme-calca-azul-marinho-calcado-preto.png', name: 'Camisa creme · calça azul marinho · calçado preto', category: 'Look completo', color: 'Branco' },
@@ -496,13 +496,13 @@ const CATALOG = [
   { id: '565', file: 'gpt/camisa-branca-calca-verde-militar-calcado-cinza-claro.png', name: 'Camisa branca · calça verde militar · loafer cinza claro', category: 'Look completo', color: 'Branco' },
   { id: '566', file: 'gpt/camisa-branca-calca-verde-oliva-calcado-cinza-claro.png', name: 'Camisa branca · calça verde oliva · loafer cinza claro', category: 'Look completo', color: 'Branco' },
   { id: '567', file: 'gpt/camisa-branco-calca-vinho-calcado-cinza-claro.png', name: 'Camisa branco · calça vinho · loafer cinza claro', category: 'Look completo', color: 'Branco' },
-  { id: '568', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-cinza-claro.png', name: 'Camisa cinza · calça azul marinho · loafer cinza claro', category: 'Look completo', color: 'Cinza' },
-  { id: '569', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-cinza-claro.png', name: 'Camisa cinza · calça cinza pedra · loafer cinza claro', category: 'Look completo', color: 'Cinza' },
-  { id: '570', file: 'gpt/camisa-cinza-calca-creme-calcado-cinza-claro.png', name: 'Camisa cinza · calça creme · loafer cinza claro', category: 'Look completo', color: 'Cinza' },
-  { id: '571', file: 'gpt/camisa-cinza-calca-preta-calcado-cinza-claro.png', name: 'Camisa cinza · calça preta · loafer cinza claro', category: 'Look completo', color: 'Cinza' },
-  { id: '572', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-cinza-claro.png', name: 'Camisa cinza · calça verde militar · loafer cinza claro', category: 'Look completo', color: 'Cinza' },
-  { id: '573', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-cinza-claro.png', name: 'Camisa cinza · calça verde oliva · loafer cinza claro', category: 'Look completo', color: 'Cinza' },
-  { id: '574', file: 'gpt/camisa-cinza-escuro-calca-vinho-calcado-cinza-claro.png', name: 'Camisa cinza escuro · calça vinho · loafer cinza claro', category: 'Look completo', color: 'Cinza' },
+  { id: '568', file: 'gpt/camisa-cinza-calca-azul-marinho-calcado-cinza-claro.png', name: 'Camisa cinza · calça azul marinho · loafer cinza claro', category: 'Look completo', color: 'Cinza claro' },
+  { id: '569', file: 'gpt/camisa-cinza-calca-cinza-pedra-calcado-cinza-claro.png', name: 'Camisa cinza · calça cinza pedra · loafer cinza claro', category: 'Look completo', color: 'Cinza claro' },
+  { id: '570', file: 'gpt/camisa-cinza-calca-creme-calcado-cinza-claro.png', name: 'Camisa cinza · calça creme · loafer cinza claro', category: 'Look completo', color: 'Cinza claro' },
+  { id: '571', file: 'gpt/camisa-cinza-calca-preta-calcado-cinza-claro.png', name: 'Camisa cinza · calça preta · loafer cinza claro', category: 'Look completo', color: 'Cinza claro' },
+  { id: '572', file: 'gpt/camisa-cinza-calca-verde-militar-calcado-cinza-claro.png', name: 'Camisa cinza · calça verde militar · loafer cinza claro', category: 'Look completo', color: 'Cinza claro' },
+  { id: '573', file: 'gpt/camisa-cinza-calca-verde-oliva-calcado-cinza-claro.png', name: 'Camisa cinza · calça verde oliva · loafer cinza claro', category: 'Look completo', color: 'Cinza claro' },
+  { id: '574', file: 'gpt/camisa-cinza-escuro-calca-vinho-calcado-cinza-claro.png', name: 'Camisa cinza escuro · calça vinho · loafer cinza claro', category: 'Look completo', color: 'Cinza pedra' },
   { id: '575', file: 'gpt/camisa-cores-calca-cores-calcado-cinza-claro.png', name: 'Camisa cores · calça cores · loafer cinza claro', category: 'Look completo', color: 'Outro' },
   { id: '576', file: 'gpt/camisa-creme-calca-azul-marinho-calcado-cinza-claro.png', name: 'Camisa creme · calça azul marinho · loafer cinza claro', category: 'Look completo', color: 'Branco' },
   { id: '577', file: 'gpt/camisa-creme-calca-bege-calcado-cinza-claro.png', name: 'Camisa creme · calça bege · loafer cinza claro', category: 'Look completo', color: 'Branco' },
@@ -620,10 +620,9 @@ let filteredList = [];
 const PIECE_COLOR_MAP = {
   branca: 'Branco', branco: 'Branco', 'tenis-branco': 'Branco',
   preta: 'Preto', preto: 'Preto',
-  cinza: 'Cinza',
-  'cinza-escuro': 'Cinza',
-  'cinza-claro': 'Cinza',
-  'cinza-pedra': 'Cinza',
+  'cinza-claro': 'Cinza claro',
+  'cinza-pedra': 'Cinza pedra',
+  'cinza-escuro': 'Cinza pedra',
   'verde-militar': 'Verde',
   azul: 'Azul',
   'azul-claro': 'Azul',
@@ -654,7 +653,11 @@ const CATEGORY_PIECE = {
   'Look completo': 'camisa',
 };
 
-function mapPieceColor(slug) {
+function mapPieceColor(slug, piece) {
+  if (slug === 'cinza') {
+    if (piece === 'camisa') return 'Cinza claro';
+    if (piece === 'calca' || piece === 'calcado') return 'Cinza pedra';
+  }
   return PIECE_COLOR_MAP[slug] || 'Outro';
 }
 
@@ -664,18 +667,18 @@ function parseLookColors(file) {
   if (withOuter) {
     const piece = withOuter[1].toLowerCase();
     return {
-      [piece]: mapPieceColor(withOuter[2]),
-      camisa: mapPieceColor(withOuter[3]),
-      calca: mapPieceColor(withOuter[4]),
-      calcado: mapPieceColor(withOuter[5]),
+      [piece]: mapPieceColor(withOuter[2], piece),
+      camisa: mapPieceColor(withOuter[3], 'camisa'),
+      calca: mapPieceColor(withOuter[4], 'calca'),
+      calcado: mapPieceColor(withOuter[5], 'calcado'),
     };
   }
   const match = basename.match(/^camisa-(.+)-calca-(.+)-calcado-(.+?)(?:-\d+)?\.(?:jpe?g|png)$/i);
   if (!match) return null;
   return {
-    camisa: mapPieceColor(match[1]),
-    calca: mapPieceColor(match[2]),
-    calcado: mapPieceColor(match[3]),
+    camisa: mapPieceColor(match[1], 'camisa'),
+    calca: mapPieceColor(match[2], 'calca'),
+    calcado: mapPieceColor(match[3], 'calcado'),
   };
 }
 

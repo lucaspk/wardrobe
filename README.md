@@ -35,11 +35,12 @@ Marrom ✅
 Bege ✅ 
 Branco/Off-white ✅ 
 Creme  ✅ 
-Cinza ✅ 
+Cinza claro ✅ 
+Cinza pedra ✅ 
 
 
 Cáqui X -> reduzir a creme
-Chumbo X -> reduzir a cinza
+Chumbo X -> reduzir a cinza pedra
 
 Vermelho Ferrugem / Terracota ✅
 Mostarda
@@ -55,7 +56,7 @@ Gerar looks mesmos looks atuais com
 - Preencher faltantes de preto ✅ 
 - Preencher faltantes de marrom ✅ 
 - calcado caramelo
-- calcado cinza ✅
+- calcado cinza claro ✅
 - calcado azul claro
 - calcado marinho X
 

@@ -17,15 +17,14 @@
       { id: 'bege', label: 'Bege', hex: '#D4C4A8' },
       { id: 'branco', label: 'Branco', hex: '#F2F0EC' },
       { id: 'creme', label: 'Creme', hex: '#EDE6D6' },
-      { id: 'cinza', label: 'Cinza', hex: '#8A8A88' },
-      { id: 'ferrugem', label: 'Ferrugem', hex: '#B85A38' },
-      { id: 'laranja-queimado', label: 'Laranja queimado', hex: '#C46830' },
+      { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
+      { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
+      { id: 'ferrugem', label: 'Ferrugem / laranja queimado', hex: '#B85A38', altHex: '#C46830' },
     ],
     calca: [
       { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
       { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
       { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
-      { id: 'cinza', label: 'Cinza', hex: '#6E6E6C' },
       { id: 'bege', label: 'Bege', hex: '#C8B898' },
       { id: 'creme', label: 'Creme', hex: '#E8DCC8' },
       { id: 'marrom', label: 'Marrom', hex: '#5C4030' },
@@ -38,7 +37,6 @@
       { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
       { id: 'marrom', label: 'Marrom', hex: '#5C4030' },
       { id: 'branco', label: 'Branco / tênis branco', hex: '#F0EEEA' },
-      { id: 'cinza', label: 'Cinza', hex: '#7A7A78' },
       { id: 'cinza-claro', label: 'Cinza claro', hex: '#A8A8A6' },
       { id: 'bege', label: 'Bege', hex: '#C8B090' },
       { id: 'caramelo', label: 'Caramelo', hex: '#A87848' },
@@ -52,11 +50,17 @@
       'lilas-claro': ['lilas-claro', 'lilas'],
       branco: ['branco', 'branca'],
       'verde-escuro': ['verde-escuro', 'verde'],
+      'cinza-claro': ['cinza-claro', 'cinza'],
+      'cinza-pedra': ['cinza-pedra', 'cinza-escuro'],
+      ferrugem: ['ferrugem', 'laranja-queimado'],
     },
-    calca: { preto: ['preto', 'preta'] },
+    calca: {
+      preto: ['preto', 'preta'],
+      'cinza-pedra': ['cinza-pedra', 'cinza'],
+    },
     calcado: {
       branco: ['branco', 'tenis-branco'],
-      cinza: ['cinza', 'cinza-claro'],
+      'cinza-claro': ['cinza-claro', 'cinza'],
     },
   };
 
@@ -147,7 +151,11 @@
       btn.type = 'button';
       btn.className = 'swatch';
       btn.title = color.label;
-      btn.style.setProperty('--swatch', color.hex);
+      if (color.altHex) {
+        btn.style.background = `linear-gradient(135deg, ${color.hex} 50%, ${color.altHex} 50%)`;
+      } else {
+        btn.style.setProperty('--swatch', color.hex);
+      }
       btn.dataset.piece = piece;
       btn.dataset.id = color.id;
       btn.setAttribute('aria-label', color.label);
