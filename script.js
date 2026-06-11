@@ -825,8 +825,37 @@ function populateFilterOptions() {
   });
 }
 
+function initViewTabs() {
+  const panelGallery = document.getElementById('panel-gallery');
+  const panelCombinator = document.getElementById('panel-combinator');
+  const btnGallery = document.getElementById('view-gallery');
+  const btnCombinator = document.getElementById('view-combinator');
+  if (!panelGallery || !panelCombinator) return;
+
+  function setView(view) {
+    const isGallery = view === 'gallery';
+    panelGallery.classList.toggle('hidden', !isGallery);
+    panelCombinator.classList.toggle('hidden', isGallery);
+    btnGallery.classList.toggle('active', isGallery);
+    btnCombinator.classList.toggle('active', !isGallery);
+    btnGallery.setAttribute('aria-selected', isGallery);
+    btnCombinator.setAttribute('aria-selected', !isGallery);
+    if (carouselIndex >= 0 && !isGallery) closeCarousel();
+    const hash = isGallery ? '' : '#combinar';
+    if (location.hash !== hash) history.replaceState(null, '', hash || location.pathname);
+  }
+
+  btnGallery.addEventListener('click', () => setView('gallery'));
+  btnCombinator.addEventListener('click', () => setView('combinator'));
+  setView(location.hash === '#combinar' ? 'combinator' : 'gallery');
+  window.addEventListener('hashchange', () => {
+    setView(location.hash === '#combinar' ? 'combinator' : 'gallery');
+  });
+}
+
 function init() {
   populateFilterOptions();
+  initViewTabs();
 
   document.getElementById('filter-category').addEventListener('change', () => {
     if (carouselIndex >= 0) closeCarousel();

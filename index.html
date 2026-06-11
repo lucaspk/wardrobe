@@ -10,28 +10,81 @@
   <div class="app">
     <header class="header">
       <h1>Guarda-roupa</h1>
-      <p class="subtitle">Looks e peças categorizados</p>
+      <p class="subtitle">Looks catalogados e combinador por peça</p>
+      <nav class="view-tabs" role="tablist" aria-label="Modo de visualização">
+        <button type="button" class="view-tab active" id="view-gallery" role="tab" aria-selected="true" aria-controls="panel-gallery">Galeria</button>
+        <button type="button" class="view-tab" id="view-combinator" role="tab" aria-selected="false" aria-controls="panel-combinator">Combinador</button>
+      </nav>
     </header>
 
-    <section class="filters-section">
-      <div class="filters">
-        <label>
-          Categoria
-          <select id="filter-category">
-            <option value="">Todas</option>
-          </select>
-        </label>
-        <label>
-          Cor
-          <select id="filter-color">
-            <option value="">Todas</option>
-          </select>
-        </label>
+    <section id="panel-gallery" role="tabpanel">
+      <div class="filters-section">
+        <div class="filters">
+          <label>
+            Categoria
+            <select id="filter-category">
+              <option value="">Todas</option>
+            </select>
+          </label>
+          <label>
+            Cor
+            <select id="filter-color">
+              <option value="">Todas</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="gallery-section">
+        <div id="gallery" class="gallery"></div>
       </div>
     </section>
 
-    <section class="gallery-section">
-      <div id="gallery" class="gallery"></div>
+    <section id="panel-combinator" class="hidden" role="tabpanel">
+      <div class="combo-layout">
+        <div class="combo-preview-frame">
+          <img id="combo-preview-img" alt="Look gerado no GPT" hidden>
+          <div id="combo-placeholder" class="combo-placeholder">
+            <div class="combo-placeholder-figure">
+              <div id="ph-camisa" class="ph-piece ph-camisa"></div>
+              <div id="ph-calca" class="ph-piece ph-calca"></div>
+              <div id="ph-calcado" class="ph-piece ph-calcado"></div>
+            </div>
+            <p class="combo-placeholder-text">Ainda não gerado</p>
+          </div>
+        </div>
+
+        <div class="combo-meta">
+          <p class="combo-label" id="combo-label"></p>
+          <p class="combo-status" id="combo-status"></p>
+        </div>
+
+        <div class="combo-controls">
+          <div class="control-group">
+            <h2>Camisa</h2>
+            <div class="swatches" id="swatches-camisa"></div>
+          </div>
+          <div class="control-group">
+            <h2>Calça</h2>
+            <div class="swatches" id="swatches-calca"></div>
+          </div>
+          <div class="control-group">
+            <h2>Calçado</h2>
+            <div class="swatches" id="swatches-calcado"></div>
+          </div>
+        </div>
+
+        <div class="combo-footer">
+          <div class="combo-filename-row">
+            <code id="combo-filename"></code>
+            <button type="button" id="btn-combo-copy" class="btn btn-small">Copiar nome</button>
+          </div>
+          <div class="combo-actions">
+            <button type="button" id="btn-combo-random" class="btn btn-primary">Aleatório</button>
+            <button type="button" id="btn-combo-reset" class="btn">Reset</button>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 
@@ -49,5 +102,6 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="combinator.js"></script>
 </body>
 </html>
