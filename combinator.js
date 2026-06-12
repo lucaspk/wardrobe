@@ -50,8 +50,10 @@
       'lilas-claro': ['lilas-claro', 'lilas'],
       branco: ['branco', 'branca'],
       'verde-escuro': ['verde-escuro', 'verde'],
-      'cinza-claro': ['cinza-claro', 'cinza'],
+      'cinza-claro': ['cinza-claro'],
       'cinza-pedra': ['cinza-pedra', 'cinza-escuro'],
+      vermelho: ['vermelho', 'vermelha'],
+      preto: ['preto', 'preta'],
       ferrugem: ['ferrugem', 'laranja-queimado'],
     },
     calca: {
