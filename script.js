@@ -1185,6 +1185,15 @@ function escapeAttr(str) {
   return String(str).replace(/"/g, '&quot;').replace(/</g, '&lt;');
 }
 
+function formatLookName(name) {
+  if (!name) return '';
+  return name.split(' · ').map((part) => {
+    const trimmed = part.trim();
+    if (!trimmed) return trimmed;
+    return trimmed.charAt(0).toLocaleUpperCase('pt-BR') + trimmed.slice(1);
+  }).join(' · ');
+}
+
 function imageSrc(item) {
   return item.file;
 }
@@ -1205,10 +1214,10 @@ function renderGallery() {
   gallery.innerHTML = filteredList.map((img, index) => `
     <article class="gallery-card" data-index="${index}">
       <div class="gallery-card-image" data-open="${index}">
-        <img src="${escapeAttr(imageSrc(img))}" alt="${escapeAttr(img.name || 'Imagem')}" loading="lazy">
+        <img src="${escapeAttr(imageSrc(img))}" alt="${escapeAttr(formatLookName(img.name) || 'Imagem')}" loading="lazy">
       </div>
       <div class="gallery-card-body">
-        ${img.name ? `<div class="gallery-card-name">${escapeHtml(img.name)}</div>` : ''}
+        ${img.name ? `<div class="gallery-card-name">${escapeHtml(formatLookName(img.name))}</div>` : ''}
         <div class="gallery-card-meta">
           ${img.category ? escapeHtml(img.category) : 'Sem categoria'}
           ${img.color ? ' · ' + escapeHtml(img.color) : ''}
@@ -1243,10 +1252,10 @@ function updateCarouselView() {
   if (!img) return;
 
   document.getElementById('carousel-image').src = imageSrc(img);
-  document.getElementById('carousel-image').alt = img.name || 'Imagem';
+  document.getElementById('carousel-image').alt = formatLookName(img.name) || 'Imagem';
 
   const parts = [];
-  if (img.name) parts.push(img.name);
+  if (img.name) parts.push(formatLookName(img.name));
   if (img.category) parts.push(img.category);
   if (img.color) parts.push(img.color);
   document.getElementById('carousel-info').textContent = parts.join(' · ') || '';
@@ -1301,6 +1310,8 @@ function initViewTabs() {
     btnCombinator.classList.toggle('active', !isGallery);
     btnGallery.setAttribute('aria-selected', isGallery);
     btnCombinator.setAttribute('aria-selected', !isGallery);
+    document.body.classList.toggle('view-combinator', !isGallery);
+    document.body.classList.toggle('view-gallery', isGallery);
     if (carouselIndex >= 0 && !isGallery) closeCarousel();
     const hash = isGallery ? '' : '#combinar';
     if (location.hash !== hash) history.replaceState(null, '', hash || location.pathname);

@@ -74,8 +74,6 @@
   const previewImg = document.getElementById('combo-preview-img');
   const placeholder = document.getElementById('combo-placeholder');
   const comboEl = document.getElementById('combo-label');
-  const statusEl = document.getElementById('combo-status');
-  const filenameEl = document.getElementById('combo-filename');
 
   function findColor(piece, id) {
     return PALETTE[piece].find((c) => c.id === id);
@@ -130,23 +128,22 @@
 
     const file = resolveFile();
     const exists = gptIndex.has(file);
-    filenameEl.textContent = file;
 
     if (exists) {
       previewImg.src = `gpt/${file}`;
       previewImg.hidden = false;
       placeholder.hidden = true;
-      statusEl.textContent = 'Look já gerado no GPT.';
-      statusEl.className = 'combo-status combo-status-ok';
     } else {
       previewImg.hidden = true;
       placeholder.hidden = false;
-      statusEl.textContent = 'Ainda não gerado — copie o nome do arquivo para gerar no GPT.';
-      statusEl.className = 'combo-status combo-status-missing';
     }
   }
 
   function buildSwatches(piece, container) {
+    const count = PALETTE[piece].length;
+    const countEl = document.getElementById(`count-${piece}`);
+    if (countEl) countEl.textContent = `${count} opç${count === 1 ? 'ão' : 'ões'}`;
+
     container.innerHTML = '';
     PALETTE[piece].forEach((color) => {
       const btn = document.createElement('button');
@@ -183,7 +180,6 @@
   }
 
   async function loadIndex() {
-    statusEl.textContent = 'Carregando índice…';
     const res = await fetch('gpt-index.json');
     if (!res.ok) throw new Error('gpt-index.json ausente');
     gptIndex = new Set(await res.json());
@@ -198,10 +194,7 @@
     buildSwatches('calca', document.getElementById('swatches-calca'));
     buildSwatches('calcado', document.getElementById('swatches-calcado'));
 
-    loadIndex().catch(() => {
-      statusEl.textContent = 'Rode python3 build_index.py para atualizar o índice.';
-      statusEl.className = 'combo-status combo-status-missing';
-    });
+    loadIndex().catch(() => {});
 
     document.getElementById('btn-combo-random')?.addEventListener('click', randomize);
     document.getElementById('btn-combo-reset')?.addEventListener('click', () => {
@@ -214,15 +207,6 @@
       render();
     });
 
-    document.getElementById('btn-combo-copy')?.addEventListener('click', async () => {
-      const file = resolveFile();
-      try {
-        await navigator.clipboard.writeText(file);
-        statusEl.textContent = 'Nome copiado.';
-      } catch {
-        statusEl.textContent = file;
-      }
-    });
   }
 
   document.addEventListener('DOMContentLoaded', init);

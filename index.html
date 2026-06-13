@@ -10,10 +10,25 @@
   <div class="app">
     <header class="header">
       <h1>Guarda-roupa</h1>
-      <p class="subtitle">Looks catalogados e combinador por peça</p>
+      <p class="subtitle">Combinações de cor entre camisa, calça e calçado</p>
+      <p class="header-note">Se a combinação ficou boa, o conceito vale para outras peças e calçados — polo, short, bota, tênis… Não precisa gerar cada variação.</p>
       <nav class="view-tabs" role="tablist" aria-label="Modo de visualização">
-        <button type="button" class="view-tab active" id="view-gallery" role="tab" aria-selected="true" aria-controls="panel-gallery">Galeria</button>
-        <button type="button" class="view-tab" id="view-combinator" role="tab" aria-selected="false" aria-controls="panel-combinator">Combinador</button>
+        <button type="button" class="view-tab" id="view-combinator" role="tab" aria-selected="false" aria-controls="panel-combinator">
+          <svg class="view-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path d="M12 3a2.5 2.5 0 0 1 2.45 2H14a3.5 3.5 0 1 0-4 0H9.55A2.5 2.5 0 0 1 12 3z"/>
+            <path d="M5.5 10.5h13l-5.3 9.5H10.8L5.5 10.5z"/>
+          </svg>
+          <span>Combinador</span>
+        </button>
+        <button type="button" class="view-tab active" id="view-gallery" role="tab" aria-selected="true" aria-controls="panel-gallery">
+          <svg class="view-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+            <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+            <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+            <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+          </svg>
+          <span>Galeria</span>
+        </button>
       </nav>
     </header>
 
@@ -56,32 +71,45 @@
 
         <div class="combo-meta">
           <p class="combo-label" id="combo-label"></p>
-          <p class="combo-status" id="combo-status"></p>
         </div>
 
         <div class="combo-controls">
           <div class="control-group">
-            <h2>Camisa</h2>
+            <div class="control-group-header">
+              <h2>Camisa</h2>
+              <span class="control-group-count" id="count-camisa"></span>
+            </div>
             <div class="swatches" id="swatches-camisa"></div>
           </div>
           <div class="control-group">
-            <h2>Calça</h2>
+            <div class="control-group-header">
+              <h2>Calça</h2>
+              <span class="control-group-count" id="count-calca"></span>
+            </div>
             <div class="swatches" id="swatches-calca"></div>
           </div>
           <div class="control-group">
-            <h2>Calçado</h2>
+            <div class="control-group-header">
+              <h2>Calçado</h2>
+              <span class="control-group-count" id="count-calcado"></span>
+            </div>
             <div class="swatches" id="swatches-calcado"></div>
           </div>
         </div>
 
         <div class="combo-footer">
-          <div class="combo-filename-row">
-            <code id="combo-filename"></code>
-            <button type="button" id="btn-combo-copy" class="btn btn-small">Copiar nome</button>
-          </div>
           <div class="combo-actions">
-            <button type="button" id="btn-combo-random" class="btn btn-primary">Aleatório</button>
-            <button type="button" id="btn-combo-reset" class="btn">Reset</button>
+            <button type="button" id="btn-combo-random" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M16 3h5v5"/>
+                <path d="M4 20l13-13"/>
+                <path d="M21 16v5h-5"/>
+                <path d="M15 15l6 6"/>
+                <path d="M4 4l5 5"/>
+              </svg>
+              Aleatório
+            </button>
+            <button type="button" id="btn-combo-reset" class="btn btn-outline">Reset</button>
           </div>
         </div>
       </div>
