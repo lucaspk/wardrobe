@@ -1,4 +1,7 @@
-"""Gera gpt-index.json com os PNGs de looks em gpt/."""
+"""Gera gpt-index.json com os PNGs de looks em gpt/ (só camisa + calça + calçado).
+
+Jaqueta, blazer e terno ficam fora do índice — aparecem só na galeria, não no combinador.
+"""
 import json
 from pathlib import Path
 

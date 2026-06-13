@@ -179,10 +179,13 @@
     });
   }
 
+  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$/i;
+
   async function loadIndex() {
     const res = await fetch('gpt-index.json');
     if (!res.ok) throw new Error('gpt-index.json ausente');
-    gptIndex = new Set(await res.json());
+    // Só camisa + calça + calçado — jaqueta, blazer e terno ficam só na galeria.
+    gptIndex = new Set((await res.json()).filter((name) => COMBO_FILENAME.test(name)));
     ready = true;
     render();
   }
