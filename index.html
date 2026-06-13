@@ -35,17 +35,29 @@
     <section id="panel-gallery" role="tabpanel">
       <div class="filters-section">
         <div class="filters">
-          <label>
+          <label class="filter-category">
             Categoria
-            <select id="filter-category">
-              <option value="">Todas</option>
-            </select>
+            <div class="filter-dropdown" id="category-filter">
+              <button type="button" class="filter-dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+                <span class="filter-dropdown-spacer" aria-hidden="true"></span>
+                <span class="filter-dropdown-trigger-text" id="category-filter-trigger-text">Todas</span>
+                <span class="filter-dropdown-chevron" aria-hidden="true">▾</span>
+              </button>
+              <ul class="filter-dropdown-menu hidden" role="listbox"></ul>
+              <input type="hidden" id="filter-category" value="">
+            </div>
           </label>
-          <label>
+          <label class="filter-color">
             Cor
-            <select id="filter-color">
-              <option value="">Todas</option>
-            </select>
+            <div class="filter-dropdown" id="color-filter">
+              <button type="button" class="filter-dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+                <span class="filter-dropdown-swatch" id="color-filter-trigger-swatch" hidden aria-hidden="true"></span>
+                <span class="filter-dropdown-trigger-text" id="color-filter-trigger-text">Todas</span>
+                <span class="filter-dropdown-chevron" aria-hidden="true">▾</span>
+              </button>
+              <ul class="filter-dropdown-menu hidden" role="listbox"></ul>
+              <input type="hidden" id="filter-color" value="">
+            </div>
           </label>
         </div>
       </div>

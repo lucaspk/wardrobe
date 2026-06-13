@@ -1,10 +1,26 @@
 /* Guarda-roupa — Galeria estática com filtros */
 
-const CATEGORIES = ['Camisa', 'Calça', 'Calçado', 'Jaqueta', 'Blazer', 'Look completo', 'Outro'];
+const CATEGORIES = ['Camisa', 'Calça', 'Calçado', 'Jaqueta', 'Blazer'];
 const COLORS = [
   'Branco', 'Preto', 'Cinza claro', 'Cinza pedra', 'Azul', 'Azul marinho',
   'Vinho', 'Bordô', 'Bege', 'Cáqui', 'Marrom', 'Caramelo', 'Verde', 'Outro'
 ];
+
+const COLOR_HEX = {
+  Branco: '#F2F0EC',
+  Preto: '#1A1A1A',
+  'Cinza claro': '#B0B0AE',
+  'Cinza pedra': '#8A8880',
+  Azul: '#A8C8E0',
+  'Azul marinho': '#1E3A5F',
+  Vinho: '#6B2D3C',
+  Bordô: '#5C2830',
+  Bege: '#D4C4A8',
+  Cáqui: '#B8A878',
+  Marrom: '#6B4A32',
+  Caramelo: '#A87848',
+  Verde: '#5A6840',
+};
 
 // Coloque as imagens no diretório raiz e categorize aqui.
 // file: nome do arquivo (ex.: "look-01.jpg")
@@ -1149,16 +1165,11 @@ function getActiveFilters() {
 
 function filterImages(images, filters) {
   return images.filter((img) => {
-    if (filters.category === 'Outro') {
-      if (img.category !== 'Outro') return false;
-      return !filters.color || img.color === filters.color;
-    }
-
     const colors = parseLookColors(img.file);
 
     if (filters.category) {
       const piece = CATEGORY_PIECE[filters.category];
-      if (!piece || !colors) return false;
+      if (!piece || !colors || !(piece in colors)) return false;
       if (filters.color && colors[piece] !== filters.color) return false;
       return true;
     }
@@ -1218,10 +1229,6 @@ function renderGallery() {
       </div>
       <div class="gallery-card-body">
         ${img.name ? `<div class="gallery-card-name">${escapeHtml(formatLookName(img.name))}</div>` : ''}
-        <div class="gallery-card-meta">
-          ${img.category ? escapeHtml(img.category) : 'Sem categoria'}
-          ${img.color ? ' · ' + escapeHtml(img.color) : ''}
-        </div>
       </div>
     </article>
   `).join('');
@@ -1283,15 +1290,124 @@ function showPreviousImage() {
 
 // --- Init ---
 
-function populateFilterOptions() {
-  const catSelect = document.getElementById('filter-category');
-  const colorSelect = document.getElementById('filter-color');
-
-  CATEGORIES.forEach((c) => {
-    catSelect.innerHTML += `<option value="${c}">${c}</option>`;
+function closeAllFilterMenus(exceptRoot) {
+  document.querySelectorAll('.filter-dropdown').forEach((root) => {
+    if (exceptRoot && root === exceptRoot) return;
+    const menu = root.querySelector('.filter-dropdown-menu');
+    const trigger = root.querySelector('.filter-dropdown-trigger');
+    menu?.classList.add('hidden');
+    trigger?.setAttribute('aria-expanded', 'false');
   });
-  COLORS.forEach((c) => {
-    colorSelect.innerHTML += `<option value="${c}">${c}</option>`;
+}
+
+function initFilterDropdown({ rootId, hiddenId, triggerTextId, triggerSwatchId, options, getSwatchHex }) {
+  const root = document.getElementById(rootId);
+  const menu = root?.querySelector('.filter-dropdown-menu');
+  const trigger = root?.querySelector('.filter-dropdown-trigger');
+  const hidden = document.getElementById(hiddenId);
+  const triggerSwatch = triggerSwatchId ? document.getElementById(triggerSwatchId) : null;
+  const triggerText = document.getElementById(triggerTextId);
+  if (!root || !menu || !trigger || !hidden || !triggerText) return;
+
+  function setSelection(value, label) {
+    hidden.value = value;
+    triggerText.textContent = label;
+    const hex = getSwatchHex?.(label);
+    if (triggerSwatch) {
+      if (hex) {
+        triggerSwatch.hidden = false;
+        triggerSwatch.style.setProperty('--swatch', hex);
+      } else {
+        triggerSwatch.hidden = true;
+        triggerSwatch.style.removeProperty('--swatch');
+      }
+    }
+    menu.querySelectorAll('.filter-dropdown-option').forEach((el) => {
+      const selected = el.dataset.value === value;
+      el.classList.toggle('selected', selected);
+      el.setAttribute('aria-selected', selected);
+    });
+  }
+
+  function closeMenu() {
+    menu.classList.add('hidden');
+    trigger.setAttribute('aria-expanded', 'false');
+  }
+
+  function openMenu() {
+    closeAllFilterMenus(root);
+    menu.classList.remove('hidden');
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+
+  menu.innerHTML = '';
+  options.forEach((opt) => {
+    const li = document.createElement('li');
+    li.className = 'filter-dropdown-option';
+    li.role = 'option';
+    li.dataset.value = opt.value;
+
+    const hex = getSwatchHex?.(opt.label);
+    if (hex) {
+      const swatch = document.createElement('span');
+      swatch.className = 'filter-dropdown-swatch';
+      swatch.style.setProperty('--swatch', hex);
+      swatch.setAttribute('aria-hidden', 'true');
+      li.appendChild(swatch);
+    } else {
+      const spacer = document.createElement('span');
+      spacer.className = 'filter-dropdown-spacer';
+      spacer.setAttribute('aria-hidden', 'true');
+      li.appendChild(spacer);
+    }
+
+    const text = document.createElement('span');
+    text.className = 'filter-dropdown-option-text';
+    text.textContent = opt.label;
+    li.appendChild(text);
+
+    li.addEventListener('click', () => {
+      setSelection(opt.value, opt.label);
+      closeMenu();
+      if (carouselIndex >= 0) closeCarousel();
+      renderGallery();
+    });
+
+    menu.appendChild(li);
+  });
+
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (menu.classList.contains('hidden')) openMenu();
+    else closeMenu();
+  });
+
+  setSelection('', 'Todas');
+}
+
+function initFilters() {
+  initFilterDropdown({
+    rootId: 'category-filter',
+    hiddenId: 'filter-category',
+    triggerTextId: 'category-filter-trigger-text',
+    options: [{ value: '', label: 'Todas' }, ...CATEGORIES.map((c) => ({ value: c, label: c }))],
+  });
+
+  initFilterDropdown({
+    rootId: 'color-filter',
+    hiddenId: 'filter-color',
+    triggerTextId: 'color-filter-trigger-text',
+    triggerSwatchId: 'color-filter-trigger-swatch',
+    options: [{ value: '', label: 'Todas' }, ...COLORS.map((c) => ({ value: c, label: c }))],
+    getSwatchHex: (label) => COLOR_HEX[label] || null,
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.filter-dropdown')) closeAllFilterMenus();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAllFilterMenus();
   });
 }
 
@@ -1326,18 +1442,8 @@ function initViewTabs() {
 }
 
 function init() {
-  populateFilterOptions();
+  initFilters();
   initViewTabs();
-
-  document.getElementById('filter-category').addEventListener('change', () => {
-    if (carouselIndex >= 0) closeCarousel();
-    renderGallery();
-  });
-
-  document.getElementById('filter-color').addEventListener('change', () => {
-    if (carouselIndex >= 0) closeCarousel();
-    renderGallery();
-  });
 
   document.getElementById('carousel-close').addEventListener('click', closeCarousel);
   document.getElementById('carousel-prev').addEventListener('click', showPreviousImage);
