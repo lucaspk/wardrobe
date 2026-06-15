@@ -19,7 +19,7 @@
       { id: 'creme', label: 'Creme', hex: '#EDE6D6' },
       { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
       { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
-      { id: 'ferrugem', label: 'Ferrugem / laranja queimado', hex: '#B85A38', altHex: '#C46830' },
+      { id: 'ferrugem', label: 'Ferrugem', hex: '#B85A38', altHex: '#C46830' },
     ],
     calca: [
       { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
