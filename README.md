@@ -111,7 +111,7 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 ### Terno (permanece ativo)
 
 - Cores que têm imagens de terno no repositório: azul claro, azul marinho, bege, branco, cáqui, caramelo, cinza claro, cinza pedra, ferrugem, lilás, marrom, preto, verde oliva e vinho.
-- Camisas permitidas: azul claro, rosa claro, branco e lilás claro (`lilas` no nome do arquivo).
+- Camisas permitidas: azul claro, rosa claro, branco, lilás claro (`lilas` no nome do arquivo), preta (`preta`) e verde oliva (`verde-oliva`).
 - Calçados permitidos: bege, caramelo, cinza claro, marrom, preto e tênis branco.
 - Não mostrar seletor de calça em modo terno.
 

@@ -82,3 +82,11 @@ A imagem inicial abaixo foi aprovada e deve ser usada como referência visual pa
 - Salvar o PNG diretamente em `gpt/`
 
 Série concluída: 84 combinações disponíveis, incluindo a amostra aprovada e 83 imagens novas geradas em lotes paralelos, sem duplicatas. Todos os PNGs foram recortados em 776 × 1024 e salvos na raiz de `gpt/`, com WebP correspondente em `gpt/compressed/`, entradas em `script.js` e índice do combinador atualizado. A camisa lilás da amostra e as imagens existentes de cada terno orientaram os tons do conjunto e dos calçados.
+
+## Séries de camisas preta e verde oliva com terno
+
+Séries concluídas no mesmo padrão da série lilás: 84 combinações com camisa preta e 84 com camisa verde oliva, cobrindo as 14 cores de terno e as 6 cores de calçado do combinador. Os 168 looks têm PNG final e WebP em 776 × 1024, cadastro na galeria e resolução validada no combinador.
+
+Conjunto de prompts: manter modelo, pose, fundo cinza, iluminação, terno coordenado e calçados do look lilás correspondente; substituir somente a camisa por preta ou verde oliva. Usar também uma imagem existente da camisa solicitada como referência de cor. Não acrescentar gravata, acessórios, padrões ou marcas.
+
+Usar `preta` e `verde-oliva` nos nomes dos arquivos; os seletores correspondentes são `preto` e `verde-oliva`. Gerar as fontes em `gpt/to_crop/`, recortar o centro para 776 × 1024 e salvar os PNGs finais na raiz de `gpt/`, com WebP em `gpt/compressed/`. Incluir as duas cores entre as camisas permitidas em modo terno.
