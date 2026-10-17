@@ -94,7 +94,7 @@
   const OUTERWEAR_ALLOWED_COLORS = {
     terno: {
       default: {
-        camisa: ['azul-claro', 'rosa-claro', 'branco'],
+        camisa: ['azul-claro', 'rosa-claro', 'branco', 'lilas-claro'],
         calcado: ['bege', 'caramelo', 'cinza-claro', 'marrom', 'preto', 'branco'],
       },
     },

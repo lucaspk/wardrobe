@@ -1,4 +1,4 @@
-"""Convert all outfit PNGs to WebP in gpt/compressed without changing originals."""
+"""Convert root-level outfit PNGs in gpt/ to WebP in gpt/compressed/."""
 import argparse
 from pathlib import Path
 
@@ -11,7 +11,7 @@ except ImportError as error:
 
 
 ROOT = Path(__file__).parent
-SOURCE_DIR = ROOT / "gpt" / "raws"
+SOURCE_DIR = ROOT / "gpt"
 OUTPUT_DIR = ROOT / "gpt" / "compressed"
 
 
@@ -29,7 +29,7 @@ def main() -> None:
 
     sources = sorted(path for path in SOURCE_DIR.glob("*.png") if path.is_file())
     if not sources:
-        print("No PNG outfit images were found in gpt/raws/.")
+        print("No root-level PNG outfit images were found in gpt/.")
         return
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

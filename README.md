@@ -111,7 +111,7 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 ### Terno (permanece ativo)
 
 - Cores que têm imagens de terno no repositório: azul claro, azul marinho, bege, branco, cáqui, caramelo, cinza claro, cinza pedra, ferrugem, lilás, marrom, preto, verde oliva e vinho.
-- Camisas permitidas: azul claro, rosa claro e branco.
+- Camisas permitidas: azul claro, rosa claro, branco e lilás claro (`lilas` no nome do arquivo).
 - Calçados permitidos: bege, caramelo, cinza claro, marrom, preto e tênis branco.
 - Não mostrar seletor de calça em modo terno.
 
@@ -122,6 +122,8 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 
 ## Conversão de looks PNG para WebP
 
-Os PNGs originais ficam em `gpt/raws/`; imagens usadas como referências ficam em `gpt/references/`. Execute `python3 convert_looks_to_webp.py` para converter os PNGs de `gpt/raws/` para WebP em `gpt/compressed/`. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
+Gere novos PNGs diretamente na raiz de `gpt/`. Execute `python3 convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/`. O script não percorre subpastas: `gpt/raws/` guarda os originais e fica fora da conversão; `gpt/references/` também não é processado. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
 
-Os PNGs originais são preservados. Se o WebP de destino já existir, o script o mantém e pula a conversão daquele arquivo. Execute novamente para converter imagens novas adicionadas à pasta. `build_index.py` lê os nomes dos looks em `gpt/raws/` e `gpt/references/`, e `crop.py` grava os novos crops em `gpt/raws/`.
+Os PNGs gerados na raiz são preservados. Se o WebP de destino já existir, o script o mantém e pula a conversão daquele arquivo. `build_index.py` combina os looks PNG da raiz com os WebP já existentes em `gpt/compressed/`; ignora `gpt/raws/` e `gpt/references/`. A galeria usa os nomes dos arquivos como identificadores e carrega as imagens de `gpt/compressed/`, sem depender dos RAWs.
+
+Para o prompt agnóstico e o fluxo de revisão antes de gerar lotes, consulte [PROMPT-GERAR-LOOKS.md](PROMPT-GERAR-LOOKS.md).

@@ -20,7 +20,7 @@ Use a referência para manter a identidade visual do modelo, o estilo fotográfi
 - **Calçado e cor:** por exemplo, sapato marrom; tênis branco.
 - **Camada externa (opcional):** nenhuma, blazer ou modelo de jaqueta, com cor e detalhes desejados.
 - **Ajustes relevantes:** formalidade, caimento ou um detalhe específico. Deixe em branco se não houver.
-- **Nome de arquivo:** use nomes minúsculos, sem acentos, com hífens e na ordem das peças, por exemplo `camisa-azul-claro-calca-bege-calcado-marrom.png`. Para peças externas, anteponha a peça e sua cor; para terno, use `terno-{cor}-camisa-{cor}-calca-{cor}-calcado-{cor}.png`.
+- **Nome de arquivo:** use nomes minúsculos, sem acentos, com hífens e na ordem das peças, por exemplo `camisa-azul-claro-calca-bege-calcado-marrom.png`. Para peças externas, anteponha a peça e sua cor; para terno, use `terno-{cor}-camisa-{cor}-calca-{cor}-calcado-{cor}.png`. Salve o PNG diretamente na raiz de `gpt/`, nunca em `gpt/raws/`, `gpt/references/` ou `gpt/compressed/`.
 
 Gere apenas o look pedido. O objetivo é avaliar uma combinação de cores; não é necessário gerar variações de modelo, tipo de calçado ou tipo de camisa quando a cor já representa a combinação.
 
@@ -42,14 +42,14 @@ The requested garment colors are the priority. Render each color clearly and fai
 
 Pose the model standing naturally, facing the camera with a subtle three-quarter turn; one hand may rest naturally in a pocket and the other hang relaxed. Keep both arms, both legs, and both shoes visible, anatomically correct, and unobstructed. Use a seamless plain light-gray studio background, soft even studio lighting, realistic soft contact shadows, neutral color balance, and a clean understated e-commerce/editorial catalog look.
 
-COMPOSITION AND OUTPUT: Generate a 1536 x 1024 landscape image. Place the complete person precisely in the horizontal center, entirely inside the central 776-pixel-wide vertical strip (x=380 to x=1156). Leave the side areas as plain background. The full head and both shoes must fit inside that central strip with a small margin; do not crop the body. This central strip will be cropped to create the final portrait image. No frame, collage, extra people, props, captions, or watermark.
+COMPOSITION AND OUTPUT: Generate the final portrait image at 776 x 1024 pixels, matching the reference framing. Show the complete person from head to both shoes with a small margin; do not crop the body. Do not add horizontal side margins, frame, collage, extra people, props, captions, or watermark. Save the generated PNG directly in the repository's gpt/ directory using this filename: [FILENAME.png].
 ```
 
 ## Variações por tipo de look
 
 Use o mesmo prompt-base para qualquer roupa. Acrescente somente a instrução específica necessária:
 
-- **Terno:** peça um conjunto completo e coordenado. O paletó e a calça do terno devem ter a mesma cor e tecido; camisa e calçado seguem os campos escolhidos. Não tratar a calça como uma peça independente de outra cor.
+- **Terno:** peça um conjunto completo e coordenado. O paletó e a calça do terno devem ter a mesma cor e tecido; camisa e calçado seguem os campos escolhidos. Não tratar a calça como uma peça independente de outra cor. A camisa lilás é representada pelo slug `lilas` no nome do arquivo e pela cor `lilas-claro` no seletor.
 - **Blazer:** especifique o blazer como camada externa e descreva por baixo a camisa, a parte de baixo e o calçado. Não transforme o blazer em terno: a calça não deve parecer parte de um conjunto, exceto se isso for pedido.
 - **Jaqueta:** especifique o modelo (por exemplo, couro ou bomber), a cor e se deve estar aberta ou fechada. Mantenha visíveis as peças pedidas por baixo.
 - **Sem camada externa:** indique `NONE` e não acrescente paletó, blazer, jaqueta, colete ou outra camada.
@@ -59,10 +59,26 @@ Use o mesmo prompt-base para qualquer roupa. Acrescente somente a instrução es
 
 1. Escolha uma combinação de cores específica e preencha os campos do prompt. Consulte os filtros e decisões atuais no [README](README.md); não invente combinações adicionais.
 2. Anexe uma referência RAW de composição semelhante. Se a peça solicitada for um terno ou uma camada externa, prefira anexar também uma referência desse tipo.
-3. Gere uma imagem em 1536 x 1024 e salve o PNG em `gpt/to_crop/`.
-4. Confira a imagem antes de incorporá-la: combinação e tons corretos, peças visíveis, terno coordenado quando aplicável, modelo inteiro dentro da faixa central, mãos e calçados naturais, sem elementos extras.
-5. Use `python3 crop.py` para cortar os lados de acordo com as imagens existentes. O script move os resultados válidos de `gpt/to_crop/` para `gpt/raws/`. Ele aceita apenas arquivos de 1536 x 1024; verifique qualquer arquivo que seja ignorado por ter outras dimensões.
-6. Converta para WebP com `python3 convert_looks_to_webp.py`. O original RAW permanece em `gpt/raws/` e a imagem de site é criada em `gpt/compressed/`.
-7. Atualize o catálogo da galeria em `script.js` e execute `python3 build_index.py` para incluir o nome do novo look no combinador. Confirme que os caminhos e filtros correspondem à combinação aprovada.
+3. Gere uma imagem final em retrato e salve o PNG diretamente na raiz de `gpt/`. Não grave em `gpt/raws/`; essa pasta guarda os originais arquivados e não participa do pipeline.
+4. Confira a imagem antes de incorporá-la: combinação e tons corretos, peças visíveis, terno coordenado quando aplicável, modelo inteiro, mãos e calçados naturais, sem elementos extras.
+5. Converta os PNGs da raiz para WebP com `python3 convert_looks_to_webp.py`. Os originais ficam na raiz de `gpt/` e os arquivos para o site são criados em `gpt/compressed/`. O conversor não percorre subpastas como `raws/` nem `references/`.
+6. Atualize o catálogo da galeria em `script.js` usando o nome do arquivo como identificador e execute `python3 build_index.py`. O índice reúne PNGs novos na raiz e WebPs já comprimidas; ignora `raws/` e `references/`. Confirme que os caminhos e filtros correspondem à combinação aprovada.
+
+Para uma nova série, gere e valide primeiro uma única imagem de amostra. Só após a aprovação, gere o restante das combinações em lotes paralelos, sem duplicatas, e converta as imagens novas.
 
 Só mantenha combinações aprovadas. Uma combinação de cores validada pode representar outras peças ou tipos de calçado da mesma cor; evite gerar variações redundantes.
+
+## Série de camisas lilás com terno
+
+Série aprovada: camisa lilás com cada uma das 14 cores de terno e cada uma das 6 cores de calçado atualmente disponíveis no combinador. A matriz completa tem 84 combinações. A calça deve combinar com a cor do terno.
+
+A imagem inicial abaixo foi aprovada e deve ser usada como referência visual para toda a série:
+
+- Terno bege
+- Camisa lilás
+- Calça bege, no mesmo tecido do terno
+- Calçado bege
+- Nome de arquivo: `terno-bege-camisa-lilas-calca-bege-calcado-bege.png`
+- Salvar o PNG diretamente em `gpt/`
+
+Série concluída: 84 combinações disponíveis, incluindo a amostra aprovada e 83 imagens novas geradas em lotes paralelos, sem duplicatas. Todos os PNGs foram recortados em 776 × 1024 e salvos na raiz de `gpt/`, com WebP correspondente em `gpt/compressed/`, entradas em `script.js` e índice do combinador atualizado. A camisa lilás da amostra e as imagens existentes de cada terno orientaram os tons do conjunto e dos calçados.
