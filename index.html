@@ -73,6 +73,7 @@
           <img id="combo-preview-img" alt="Look gerado no GPT" hidden>
           <div id="combo-placeholder" class="combo-placeholder">
             <div class="combo-placeholder-figure">
+              <div id="ph-outerwear" class="ph-piece ph-outerwear" hidden></div>
               <div id="ph-camisa" class="ph-piece ph-camisa"></div>
               <div id="ph-calca" class="ph-piece ph-calca"></div>
               <div id="ph-calcado" class="ph-piece ph-calcado"></div>
@@ -88,12 +89,29 @@
         <div class="combo-controls">
           <div class="control-group">
             <div class="control-group-header">
+              <h2>Camada externa</h2>
+              <span class="control-group-count">Escolha uma opção</span>
+            </div>
+            <div class="layer-options" id="layer-options" aria-label="Camada externa">
+              <button type="button" class="layer-option active" data-layer="">Sem camada</button>
+              <button type="button" class="layer-option" data-layer="terno">Terno</button>
+            </div>
+            <div id="outerwear-settings" class="outerwear-settings hidden">
+              <div class="control-group-header outerwear-color-header">
+                <h3 id="outerwear-colors-heading" class="subgroup-heading"></h3>
+                <span class="control-group-count" id="count-outerwear"></span>
+              </div>
+              <div class="swatches" id="swatches-outerwear"></div>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="control-group-header">
               <h2>Camisa</h2>
               <span class="control-group-count" id="count-camisa"></span>
             </div>
             <div class="swatches" id="swatches-camisa"></div>
           </div>
-          <div class="control-group">
+          <div class="control-group" id="calca-control-group">
             <div class="control-group-header">
               <h2>Calça</h2>
               <span class="control-group-count" id="count-calca"></span>

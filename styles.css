@@ -469,6 +469,7 @@ body {
 }
 
 .ph-camisa { height: 52px; border-radius: 8px 8px 2px 2px; }
+.ph-outerwear { height: 12px; border-radius: 8px 8px 2px 2px; }
 .ph-calca { height: 72px; }
 .ph-calcado { height: 18px; border-radius: 2px 2px 6px 6px; }
 
@@ -584,6 +585,44 @@ body {
   white-space: nowrap;
 }
 
+.layer-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.layer-option {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.layer-option.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.outerwear-settings {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.subgroup-heading {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.outerwear-color-header { margin-bottom: 0.85rem; }
+
 .swatches {
   display: flex;
   flex-wrap: wrap;
@@ -611,6 +650,19 @@ body {
   box-shadow:
     0 0 0 3px var(--surface),
     0 0 0 5px var(--text);
+}
+
+.swatch:disabled {
+  cursor: not-allowed;
+  opacity: 0.28;
+}
+
+.swatch[hidden] {
+  display: none;
+}
+
+.swatch:disabled:hover {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 801px) {

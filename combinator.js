@@ -43,6 +43,28 @@
     ],
   };
 
+  const OUTERWEAR = {
+    terno: {
+      label: 'Terno',
+      palette: [
+        { id: 'azul-marinho', label: 'Azul marinho', hex: '#1E3A5F' },
+        { id: 'azul-claro', label: 'Azul claro', hex: '#A8C8E0' },
+        { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
+        { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
+        { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
+        { id: 'bege', label: 'Bege', hex: '#D4C4A8' },
+        { id: 'branco', label: 'Branco', hex: '#F2F0EC' },
+        { id: 'marrom', label: 'Marrom', hex: '#6B4A32' },
+        { id: 'caramelo', label: 'Caramelo', hex: '#A87848' },
+        { id: 'caqui', label: 'Cáqui', hex: '#B0A080' },
+        { id: 'ferrugem', label: 'Ferrugem', hex: '#B85A38' },
+        { id: 'lilas', label: 'Lilás', hex: '#D4C4E8' },
+        { id: 'verde-oliva', label: 'Verde oliva', hex: '#6B7A4A' },
+        { id: 'vinho', label: 'Vinho', hex: '#6B2D3C' },
+      ],
+    },
+  };
+
   const SLUG_VARIANTS = {
     camisa: {
       'amarelo-claro': ['amarelo-claro', 'amarela'],
@@ -64,15 +86,25 @@
       branco: ['branco', 'tenis-branco'],
       'cinza-claro': ['cinza-claro', 'cinza'],
     },
+    terno: {},
   };
 
   const DEFAULTS = { camisa: 'ferrugem', calca: 'verde-oliva', calcado: 'preto' };
-  const state = { ...DEFAULTS };
+  const state = { ...DEFAULTS, outerwear: null, outerwearColor: null };
+  const OUTERWEAR_ALLOWED_COLORS = {
+    terno: {
+      default: {
+        camisa: ['azul-claro', 'rosa-claro', 'branco'],
+        calcado: ['bege', 'caramelo', 'cinza-claro', 'marrom', 'preto', 'branco'],
+      },
+    },
+  };
   let gptIndex = new Set();
   let ready = false;
 
   const previewImg = document.getElementById('combo-preview-img');
   const placeholder = document.getElementById('combo-placeholder');
+  const placeholderText = placeholder?.querySelector('.combo-placeholder-text');
   const comboEl = document.getElementById('combo-label');
 
   function findColor(piece, id) {
@@ -83,7 +115,21 @@
     return SLUG_VARIANTS[piece]?.[id] ?? [id];
   }
 
+  function currentAllowedColors(piece) {
+    if (!state.outerwear) return PALETTE[piece].map(({ id }) => id);
+    if (state.outerwear === 'terno') return OUTERWEAR_ALLOWED_COLORS.terno.default[piece] ?? [];
+    return OUTERWEAR_ALLOWED_COLORS[state.outerwear][state.outerwearColor][piece];
+  }
+
   function candidateFilenames() {
+    if (state.outerwear === 'terno') {
+      const shirtVariants = variants('camisa', state.camisa).join('|');
+      const shoeVariants = variants('calcado', state.calcado).join('|');
+      const suitVariants = variants('terno', state.outerwearColor).join('|');
+      const pattern = new RegExp(`^terno-(?:${suitVariants})-camisa-(?:${shirtVariants})-calca-.+-calcado-(?:${shoeVariants})(?:-\\d+)?\\.png$`, 'i');
+      return [...gptIndex].filter((name) => pattern.test(name));
+    }
+
     const out = [];
     for (const c of variants('camisa', state.camisa)) {
       for (const p of variants('calca', state.calca)) {
@@ -99,18 +145,39 @@
     for (const name of candidateFilenames()) {
       if (gptIndex.has(name)) return name;
     }
-    return candidateFilenames()[0];
+    return null;
   }
 
   function updateLabel() {
-    const parts = ['camisa', 'calca', 'calcado'].map((p) => {
+    const parts = [];
+    if (state.outerwear) {
+      const outerColor = OUTERWEAR[state.outerwear].palette.find((color) => color.id === state.outerwearColor);
+      parts.push(outerColor
+        ? `${OUTERWEAR[state.outerwear].label} ${outerColor.label.toLowerCase()}`
+        : OUTERWEAR[state.outerwear].label);
+    }
+    const pieces = state.outerwear === 'terno' ? ['camisa', 'calcado'] : ['camisa', 'calca', 'calcado'];
+    parts.push(...pieces.map((p) => {
       const names = { camisa: 'Camisa', calca: 'Calça', calcado: 'Calçado' };
+      if (state.outerwear && p !== 'calcado' && !currentAllowedColors(p).includes(state[p])) {
+        return `${names[p]} não selecionada`;
+      }
       return `${names[p]} ${findColor(p, state[p]).label.toLowerCase()}`;
-    });
+    }));
     comboEl.textContent = parts.join(' · ');
   }
 
   function updatePlaceholder() {
+    const outerwearEl = document.getElementById('ph-outerwear');
+    if (outerwearEl) {
+      outerwearEl.hidden = !state.outerwear;
+      if (state.outerwear) {
+        const outerColor = OUTERWEAR[state.outerwear].palette
+          .find((color) => color.id === state.outerwearColor);
+        outerwearEl.style.background = outerColor?.hex ?? '#3d4f5f';
+      }
+    }
+    document.getElementById('ph-calca').hidden = state.outerwear === 'terno';
     [
       ['ph-camisa', 'camisa'],
       ['ph-calca', 'calca'],
@@ -121,29 +188,46 @@
     });
   }
 
+  function updateMainSwatches() {
+    ['camisa', 'calca', 'calcado'].forEach((piece) => {
+      const allowed = new Set(currentAllowedColors(piece));
+      const buttons = [...document.querySelectorAll(`.swatch[data-piece="${piece}"]`)];
+      buttons.forEach((button) => {
+        const enabled = !state.outerwear || allowed.has(button.dataset.id);
+        button.hidden = !enabled;
+        button.classList.toggle('active', button.dataset.id === state[piece]);
+      });
+      const countEl = document.getElementById(`count-${piece}`);
+      const count = buttons.filter((button) => !button.hidden).length;
+      if (countEl) countEl.textContent = `${count} opç${count === 1 ? 'ão' : 'ões'}`;
+    });
+    document.getElementById('calca-control-group')?.classList.toggle('hidden', state.outerwear === 'terno');
+  }
+
   function render() {
-    if (!ready) return;
     updateLabel();
     updatePlaceholder();
+    updateMainSwatches();
+    if (!ready) return;
 
     const file = resolveFile();
-    const exists = gptIndex.has(file);
 
-    if (exists) {
+    if (file) {
       previewImg.src = `gpt/${file}`;
       previewImg.hidden = false;
       placeholder.hidden = true;
     } else {
       previewImg.hidden = true;
       placeholder.hidden = false;
+      if (placeholderText) {
+        placeholderText.textContent = state.outerwear
+          ? 'Look ainda não gerado para esta combinação'
+          : 'Ainda não gerado';
+      }
     }
   }
 
   function buildSwatches(piece, container) {
-    const count = PALETTE[piece].length;
-    const countEl = document.getElementById(`count-${piece}`);
-    if (countEl) countEl.textContent = `${count} opç${count === 1 ? 'ão' : 'ões'}`;
-
     container.innerHTML = '';
     PALETTE[piece].forEach((color) => {
       const btn = document.createElement('button');
@@ -165,6 +249,7 @@
   }
 
   function selectColor(piece, id) {
+    if (state.outerwear && !currentAllowedColors(piece).includes(id)) return;
     state[piece] = id;
     document.querySelectorAll(`.swatch[data-piece="${piece}"]`).forEach((el) => {
       el.classList.toggle('active', el.dataset.id === id);
@@ -172,19 +257,97 @@
     render();
   }
 
-  function randomize() {
-    ['camisa', 'calca', 'calcado'].forEach((piece) => {
-      const pick = PALETTE[piece][Math.floor(Math.random() * PALETTE[piece].length)];
-      selectColor(piece, pick.id);
+  function updateOuterwearControls() {
+    const settings = document.getElementById('outerwear-settings');
+    const swatches = document.getElementById('swatches-outerwear');
+    const heading = document.getElementById('outerwear-colors-heading');
+    const count = document.getElementById('count-outerwear');
+    document.querySelectorAll('.layer-option').forEach((button) => {
+      const layer = button.dataset.layer || null;
+      const active = layer === state.outerwear;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
     });
+
+    settings?.classList.toggle('hidden', !state.outerwear);
+    if (!state.outerwear || !swatches || !heading) return;
+
+    const outer = OUTERWEAR[state.outerwear];
+    settings.classList.toggle('hidden', outer.palette.length === 0);
+    if (outer.palette.length === 0) {
+      swatches.replaceChildren();
+      return;
+    }
+    heading.textContent = outer.label.toUpperCase();
+    if (count) {
+      count.textContent = `${outer.palette.length} opç${outer.palette.length === 1 ? 'ão' : 'ões'}`;
+    }
+    swatches.replaceChildren();
+    outer.palette.forEach((color) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'swatch';
+      btn.title = color.label;
+      btn.setAttribute('aria-label', color.label);
+      btn.setAttribute('aria-pressed', String(color.id === state.outerwearColor));
+      btn.style.setProperty('--swatch', color.hex);
+      if (color.id === state.outerwearColor) btn.classList.add('active');
+      btn.addEventListener('click', () => {
+        state.outerwearColor = color.id;
+        ['camisa', 'calca', 'calcado'].forEach((piece) => {
+          const allowed = currentAllowedColors(piece);
+          if (allowed.length && !allowed.includes(state[piece])) state[piece] = allowed[0];
+        });
+        updateOuterwearControls();
+        render();
+      });
+      swatches.appendChild(btn);
+    });
+
   }
 
-  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$/i;
+  function selectLayer(layer) {
+    if (state.outerwear === layer) {
+      state.outerwear = null;
+      state.outerwearColor = null;
+    } else {
+      state.outerwear = layer;
+      const palette = OUTERWEAR[layer].palette;
+      if (palette.length) {
+        state.outerwearColor ??= palette[0].id;
+        if (!palette.some((color) => color.id === state.outerwearColor)) {
+          state.outerwearColor = palette[0].id;
+        }
+      } else {
+        state.outerwearColor = null;
+      }
+      ['camisa', 'calca', 'calcado'].forEach((piece) => {
+        const allowed = currentAllowedColors(piece);
+        if (allowed.length && !allowed.includes(state[piece])) state[piece] = allowed[0];
+      });
+    }
+    updateOuterwearControls();
+    render();
+  }
+
+  function randomize() {
+    const pieces = state.outerwear === 'terno' ? ['camisa', 'calcado'] : ['camisa', 'calca', 'calcado'];
+    pieces.forEach((piece) => {
+      const options = state.outerwear
+        ? PALETTE[piece].filter((color) => currentAllowedColors(piece).includes(color.id))
+        : PALETTE[piece];
+      if (!options.length) return;
+      const pick = options[Math.floor(Math.random() * options.length)];
+      state[piece] = pick.id;
+    });
+    render();
+  }
+
+  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$|^terno-.+-camisa-.+-calca-.+-calcado-.+\.png$/i;
 
   async function loadIndex() {
     const res = await fetch('gpt-index.json');
     if (!res.ok) throw new Error('gpt-index.json ausente');
-    // Só camisa + calça + calçado — jaqueta, blazer e terno ficam só na galeria.
     gptIndex = new Set((await res.json()).filter((name) => COMBO_FILENAME.test(name)));
     ready = true;
     render();
@@ -196,17 +359,25 @@
     buildSwatches('camisa', document.getElementById('swatches-camisa'));
     buildSwatches('calca', document.getElementById('swatches-calca'));
     buildSwatches('calcado', document.getElementById('swatches-calcado'));
+    updateOuterwearControls();
+    updateMainSwatches();
 
-    loadIndex().catch(() => {});
+    loadIndex().catch((error) => {
+      console.error('Não foi possível carregar as combinações do combinador.', error);
+      if (placeholderText) placeholderText.textContent = 'Não foi possível carregar as combinações';
+      placeholder.hidden = false;
+    });
+
+    document.querySelectorAll('.layer-option').forEach((button) => {
+      button.addEventListener('click', () => selectLayer(button.dataset.layer || null));
+    });
 
     document.getElementById('btn-combo-random')?.addEventListener('click', randomize);
     document.getElementById('btn-combo-reset')?.addEventListener('click', () => {
       Object.assign(state, DEFAULTS);
-      ['camisa', 'calca', 'calcado'].forEach((piece) => {
-        document.querySelectorAll(`.swatch[data-piece="${piece}"]`).forEach((el) => {
-          el.classList.toggle('active', el.dataset.id === state[piece]);
-        });
-      });
+      state.outerwear = null;
+      state.outerwearColor = null;
+      updateOuterwearControls();
       render();
     });
 
