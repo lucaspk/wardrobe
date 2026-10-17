@@ -1,6 +1,8 @@
 # Wardrobe
 Combinação de roupas para escolher
 
+Para gerar e validar novos looks com um prompt reutilizável, consulte [PROMPT-GERAR-LOOKS.md](PROMPT-GERAR-LOOKS.md).
+
 Não precisa gerar todos os tipos de calçados e nem todos os tipos de roupas.
 
 Colocar isso no header do site para eu lembrar
@@ -115,5 +117,11 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 
 ### Imagens conhecidas para blazer/jaqueta
 
-- `gpt/blazer-azul-marinho-camisa-azul-claro-calca-bege-calcado-marrom.png`
-- `gpt/jaqueta-preta-camisa-preta-calca-preta-calcado-preto.png`
+- `gpt/references/blazer-azul-marinho-camisa-azul-claro-calca-bege-calcado-marrom.png`
+- `gpt/references/jaqueta-preta-camisa-preta-calca-preta-calcado-preto.png`
+
+## Conversão de looks PNG para WebP
+
+Os PNGs originais ficam em `gpt/raws/`; imagens usadas como referências ficam em `gpt/references/`. Execute `python3 convert_looks_to_webp.py` para converter os PNGs de `gpt/raws/` para WebP em `gpt/compressed/`. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
+
+Os PNGs originais são preservados. Se o WebP de destino já existir, o script o mantém e pula a conversão daquele arquivo. Execute novamente para converter imagens novas adicionadas à pasta. `build_index.py` lê os nomes dos looks em `gpt/raws/` e `gpt/references/`, e `crop.py` grava os novos crops em `gpt/raws/`.

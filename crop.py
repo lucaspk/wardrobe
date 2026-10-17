@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image
 
 TO_CROP = Path(__file__).parent / "gpt" / "to_crop"
-OUT = Path(__file__).parent / "gpt"
+OUT = Path(__file__).parent / "gpt" / "raws"
 
 TARGET_SIZE = (1536, 1024)
 CROP_LEFT = 380
@@ -31,7 +31,7 @@ def main() -> None:
         src.unlink()
         print(f"{src.name}: {im.size} -> {cropped.size}")
 
-    print(f"Feito: {len(list(OUT.glob('*.png')))} em gpt/")
+    print(f"Feito: {len(list(OUT.glob('*.png')))} em gpt/raws/")
 
 
 if __name__ == "__main__":

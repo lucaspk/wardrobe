@@ -213,7 +213,7 @@
     const file = resolveFile();
 
     if (file) {
-      previewImg.src = `gpt/${file}`;
+      previewImg.src = `gpt/compressed/${file.replace(/\.png$/i, '.webp')}`;
       previewImg.hidden = false;
       placeholder.hidden = true;
     } else {
