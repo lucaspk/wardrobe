@@ -59,10 +59,10 @@ Use o mesmo prompt-base para qualquer roupa. Acrescente somente a instrução es
 
 1. Escolha uma combinação de cores específica e preencha os campos do prompt. Consulte os filtros e decisões atuais no [README](README.md); não invente combinações adicionais.
 2. Anexe uma referência RAW de composição semelhante. Se a peça solicitada for um terno ou uma camada externa, prefira anexar também uma referência desse tipo.
-3. Gere uma imagem final em retrato e salve o PNG diretamente na raiz de `gpt/`. Não grave em `gpt/raws/`; essa pasta guarda os originais arquivados e não participa do pipeline.
+3. Copie a imagem gerada para `gpt/to_crop/`, recorte o centro em 776 × 1024 e salve o PNG final na raiz de `gpt/`. O utilitário de recorte fica em `scripts/crop.py`; execute-o a partir da raiz com `python3 scripts/crop.py`. Remova a fonte temporária após validar o recorte. Não grave em `gpt/raws/`; essa pasta guarda os originais arquivados e não participa do pipeline.
 4. Confira a imagem antes de incorporá-la: combinação e tons corretos, peças visíveis, terno coordenado quando aplicável, modelo inteiro, mãos e calçados naturais, sem elementos extras.
-5. Converta os PNGs da raiz para WebP com `python3 convert_looks_to_webp.py`. Os originais ficam na raiz de `gpt/` e os arquivos para o site são criados em `gpt/compressed/`. O conversor não percorre subpastas como `raws/` nem `references/`.
-6. Atualize o catálogo da galeria em `script.js` usando o nome do arquivo como identificador e execute `python3 build_index.py`. O índice reúne PNGs novos na raiz e WebPs já comprimidas; ignora `raws/` e `references/`. Confirme que os caminhos e filtros correspondem à combinação aprovada.
+5. A partir da raiz do projeto, converta os PNGs da raiz de `gpt/` para WebP com `python3 scripts/convert_looks_to_webp.py`. Os originais ficam na raiz de `gpt/` e os arquivos para o site são criados em `gpt/compressed/`. O conversor não percorre subpastas como `raws/` nem `references/`.
+6. A partir da raiz do projeto, execute `python3 scripts/build_index.py` para incluir os looks no combinador. O arquivo `data/gpt-index.json` reúne PNGs novos na raiz e WebPs já comprimidas; ignora `raws/` e `references/`. O `assets/js/script.js` recebe o look selecionado pelo combinador e permite salvá-lo nos favoritos, sem catálogo estático. Confirme os caminhos, filtros e cores das peças nos dois fluxos.
 
 Para uma nova série, gere e valide primeiro uma única imagem de amostra. Só após a aprovação, gere o restante das combinações em lotes paralelos, sem duplicatas, e converta as imagens novas.
 
@@ -81,7 +81,7 @@ A imagem inicial abaixo foi aprovada e deve ser usada como referência visual pa
 - Nome de arquivo: `terno-bege-camisa-lilas-calca-bege-calcado-bege.png`
 - Salvar o PNG diretamente em `gpt/`
 
-Série concluída: 84 combinações disponíveis, incluindo a amostra aprovada e 83 imagens novas geradas em lotes paralelos, sem duplicatas. Todos os PNGs foram recortados em 776 × 1024 e salvos na raiz de `gpt/`, com WebP correspondente em `gpt/compressed/`, entradas em `script.js` e índice do combinador atualizado. A camisa lilás da amostra e as imagens existentes de cada terno orientaram os tons do conjunto e dos calçados.
+Série concluída: 84 combinações disponíveis, incluindo a amostra aprovada e 83 imagens novas geradas em lotes paralelos, sem duplicatas. Todos os PNGs foram recortados em 776 × 1024 e salvos na raiz de `gpt/`, com WebP correspondente em `gpt/compressed/`, entradas em `assets/js/script.js` e índice do combinador atualizado. A camisa lilás da amostra e as imagens existentes de cada terno orientaram os tons do conjunto e dos calçados.
 
 ## Séries de camisas preta e verde oliva com terno
 
@@ -90,3 +90,11 @@ Séries concluídas no mesmo padrão da série lilás: 84 combinações com cami
 Conjunto de prompts: manter modelo, pose, fundo cinza, iluminação, terno coordenado e calçados do look lilás correspondente; substituir somente a camisa por preta ou verde oliva. Usar também uma imagem existente da camisa solicitada como referência de cor. Não acrescentar gravata, acessórios, padrões ou marcas.
 
 Usar `preta` e `verde-oliva` nos nomes dos arquivos; os seletores correspondentes são `preto` e `verde-oliva`. Gerar as fontes em `gpt/to_crop/`, recortar o centro para 776 × 1024 e salvar os PNGs finais na raiz de `gpt/`, com WebP em `gpt/compressed/`. Incluir as duas cores entre as camisas permitidas em modo terno.
+
+## Séries de camisas amarelo claro e vinho com terno
+
+Pedido autorizado no mesmo padrão da série lilás: 84 combinações com camisa amarelo claro e 84 com camisa vinho, cobrindo os 14 ternos e os 6 calçados. Preservar modelo, pose, fundo, iluminação, terno coordenado e calçados do look lilás correspondente; substituir somente a camisa pela cor solicitada, usando uma imagem existente dessa camisa como referência de tom. Amarelo claro deve ser pastel suave; vinho deve ser bordô, sem virar vermelho vivo.
+
+Séries concluídas em 18/10/2026: 84 looks com camisa amarelo claro e 84 com camisa vinho. A retomada gerou as 90 combinações pendentes em lotes paralelos com o gerador integrado, preservando as 78 anteriores. Todos os 168 looks têm PNG na raiz de `gpt/` e WebP em `gpt/compressed/`, recortados em 776 × 1024. A matriz completa foi validada no combinador, incluindo os caminhos das imagens usadas pelos favoritos e as cores das camisas em `assets/js/script.js`.
+
+Usar `amarela` e `vinho` nos nomes dos arquivos; os seletores são `amarelo-claro` e `vinho`. Manter o fluxo `gpt/to_crop/` → recorte → PNG em `gpt/` → WebP em `gpt/compressed/`, atualizando o índice apenas com imagens concluídas. Remover fontes temporárias, folhas de revisão, scripts auxiliares da sessão e o arquivo de pendências após validar a série completa.

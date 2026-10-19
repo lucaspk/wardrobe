@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guarda-roupa</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <div class="app">
@@ -13,64 +13,48 @@
       <p class="subtitle">Combinações de cor entre camisa, calça e calçado</p>
       <p class="header-note">Se a combinação ficou boa, o conceito vale para outras peças e calçados — polo, short, bota, tênis… Não precisa gerar cada variação.</p>
       <nav class="view-tabs" role="tablist" aria-label="Modo de visualização">
-        <button type="button" class="view-tab" id="view-combinator" role="tab" aria-selected="false" aria-controls="panel-combinator">
+        <button type="button" class="view-tab active" id="view-combinator" role="tab" aria-selected="true" aria-controls="panel-combinator">
           <svg class="view-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
             <path d="M12 3a2.5 2.5 0 0 1 2.45 2H14a3.5 3.5 0 1 0-4 0H9.55A2.5 2.5 0 0 1 12 3z"/>
             <path d="M5.5 10.5h13l-5.3 9.5H10.8L5.5 10.5z"/>
           </svg>
           <span>Combinador</span>
         </button>
-        <button type="button" class="view-tab active" id="view-gallery" role="tab" aria-selected="true" aria-controls="panel-gallery">
+        <button type="button" class="view-tab" id="view-favorites" role="tab" aria-selected="false" aria-controls="panel-favorites">
           <svg class="view-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-            <rect x="3" y="3" width="7" height="7" rx="1.5"/>
-            <rect x="14" y="3" width="7" height="7" rx="1.5"/>
-            <rect x="3" y="14" width="7" height="7" rx="1.5"/>
-            <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8z"/>
           </svg>
-          <span>Galeria</span>
+          <span>Favoritos</span>
+        </button>
+        <button type="button" class="view-tab" id="view-guide" role="tab" aria-selected="false" aria-controls="panel-guide">
+          <svg class="view-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/>
+            <path d="M4 5.5v16M8 7h8M8 11h8"/>
+          </svg>
+          <span>Guia</span>
         </button>
       </nav>
     </header>
 
-    <section id="panel-gallery" role="tabpanel">
-      <div class="filters-section">
-        <div class="filters">
-          <label class="filter-category">
-            Categoria
-            <div class="filter-dropdown" id="category-filter">
-              <button type="button" class="filter-dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
-                <span class="filter-dropdown-spacer" aria-hidden="true"></span>
-                <span class="filter-dropdown-trigger-text" id="category-filter-trigger-text">Todas</span>
-                <span class="filter-dropdown-chevron" aria-hidden="true">▾</span>
-              </button>
-              <ul class="filter-dropdown-menu hidden" role="listbox"></ul>
-              <input type="hidden" id="filter-category" value="">
-            </div>
-          </label>
-          <label class="filter-color">
-            Cor
-            <div class="filter-dropdown" id="color-filter">
-              <button type="button" class="filter-dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
-                <span class="filter-dropdown-swatch" id="color-filter-trigger-swatch" hidden aria-hidden="true"></span>
-                <span class="filter-dropdown-trigger-text" id="color-filter-trigger-text">Todas</span>
-                <span class="filter-dropdown-chevron" aria-hidden="true">▾</span>
-              </button>
-              <ul class="filter-dropdown-menu hidden" role="listbox"></ul>
-              <input type="hidden" id="filter-color" value="">
-            </div>
-          </label>
-        </div>
-      </div>
-
-      <div class="gallery-section">
-        <div id="gallery" class="gallery"></div>
-      </div>
+    <section id="panel-favorites" class="hidden" role="tabpanel" aria-labelledby="view-favorites">
+      <p class="favorites-storage-note">As imagens dos favoritos ficam salvas no localStorage deste navegador e dispositivo. Não são sincronizadas com outros dispositivos; o armazenamento do navegador tem espaço limitado.</p>
+      <p class="favorites-status" id="favorites-status" role="status" aria-live="polite"></p>
+      <div id="favorites-list" class="favorites-grid"></div>
     </section>
 
-    <section id="panel-combinator" class="hidden" role="tabpanel">
+    <section id="panel-combinator" role="tabpanel">
       <div class="combo-layout">
         <div class="combo-preview-frame">
           <img id="combo-preview-img" alt="Look gerado no GPT" hidden>
+          <div class="favorite-actions">
+            <button type="button" class="favorite-toggle" id="btn-toggle-favorite" aria-pressed="false" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8z"/>
+              </svg>
+              <span id="favorite-toggle-label">Favoritar</span>
+            </button>
+            <span class="favorite-action-status" id="favorite-action-status" role="status" aria-live="polite"></span>
+          </div>
           <div id="combo-placeholder" class="combo-placeholder">
             <div class="combo-placeholder-figure">
               <div id="ph-outerwear" class="ph-piece ph-outerwear" hidden></div>
@@ -83,7 +67,7 @@
         </div>
 
         <div class="combo-meta">
-          <p class="combo-label" id="combo-label"></p>
+          <p class="combo-label hidden" id="combo-label"></p>
         </div>
 
         <div class="combo-controls">
@@ -98,7 +82,10 @@
             </div>
             <div id="outerwear-settings" class="outerwear-settings hidden">
               <div class="control-group-header outerwear-color-header">
-                <h3 id="outerwear-colors-heading" class="subgroup-heading"></h3>
+                <div class="control-group-title">
+                  <h3 id="outerwear-colors-heading" class="subgroup-heading"></h3>
+                  <span class="selected-color-label" id="selected-outerwear"></span>
+                </div>
                 <span class="control-group-count" id="count-outerwear"></span>
               </div>
               <div class="swatches" id="swatches-outerwear"></div>
@@ -106,42 +93,84 @@
           </div>
           <div class="control-group">
             <div class="control-group-header">
-              <h2>Camisa</h2>
+              <div class="control-group-title">
+                <h2>Camisa</h2>
+                <span class="selected-color-label" id="selected-camisa"></span>
+              </div>
               <span class="control-group-count" id="count-camisa"></span>
             </div>
             <div class="swatches" id="swatches-camisa"></div>
           </div>
           <div class="control-group" id="calca-control-group">
             <div class="control-group-header">
-              <h2>Calça</h2>
+              <div class="control-group-title">
+                <h2>Calça</h2>
+                <span class="selected-color-label" id="selected-calca"></span>
+              </div>
               <span class="control-group-count" id="count-calca"></span>
             </div>
             <div class="swatches" id="swatches-calca"></div>
           </div>
           <div class="control-group">
             <div class="control-group-header">
-              <h2>Calçado</h2>
+              <div class="control-group-title">
+                <h2>Calçado</h2>
+                <span class="selected-color-label" id="selected-calcado"></span>
+              </div>
               <span class="control-group-count" id="count-calcado"></span>
             </div>
             <div class="swatches" id="swatches-calcado"></div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="combo-footer">
-          <div class="combo-actions">
-            <button type="button" id="btn-combo-random" class="btn btn-primary">
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M16 3h5v5"/>
-                <path d="M4 20l13-13"/>
-                <path d="M21 16v5h-5"/>
-                <path d="M15 15l6 6"/>
-                <path d="M4 4l5 5"/>
-              </svg>
-              Aleatório
-            </button>
-            <button type="button" id="btn-combo-reset" class="btn btn-outline">Reset</button>
+    <section id="panel-guide" class="hidden" role="tabpanel" aria-labelledby="view-guide">
+      <div class="guide-sections">
+        <details class="guide-section">
+          <summary>Guia de tecidos</summary>
+          <div class="guide-content">
+            <p>Observe a textura, o caimento e o contexto de uso. A composição da fibra ajuda, mas o peso, a trama e a construção da peça também influenciam a respirabilidade e o conforto em cada estação.</p>
+            <ul>
+              <li><strong>Algodão:</strong> versátil e respirável; popeline tende a ser mais lisa e leve, enquanto Oxford tem textura mais aparente e um ar casual.</li>
+              <li><strong>Linho:</strong> fresco e naturalmente texturizado. Amassa com facilidade; a mistura com algodão reduz esse efeito.</li>
+              <li><strong>Lã fria:</strong> boa opção para alfaiataria; costuma respirar bem e manter o caimento em ambientes formais.</li>
+              <li><strong>Sarja e chino:</strong> tecidos resistentes e de aparência casual arrumada, comuns em calças para o dia a dia.</li>
+              <li><strong>Malha:</strong> confortável e flexível; polos e camisetas de malha combinam melhor com propostas informais.</li>
+              <li><strong>Fibras sintéticas:</strong> poliéster e poliamida costumam ser resistentes e secar rápido, mas podem reter mais calor e umidade que fibras naturais, dependendo da trama e do acabamento. Em tecidos esportivos, a construção pode ajudar a afastar o suor.</li>
+              <li><strong>Misturas:</strong> algodão com poliéster, por exemplo, pode amassar menos e ser mais resistente, mas o conforto térmico varia conforme a proporção e o tecido.</li>
+              <li><strong>Por estação:</strong> para calor, prefira tecidos leves, trama mais aberta e peças folgadas; no frio, tecidos mais encorpados e camadas ajudam a conservar o calor. A respirabilidade depende da fibra, do peso e da trama — não apenas do nome do tecido.</li>
+            </ul>
           </div>
-        </div>
+        </details>
+
+        <details class="guide-section">
+          <summary>Guia de cores</summary>
+          <div class="guide-content">
+            <p>Use as cores como ponto de partida, não como regra rígida. Considere contraste, intensidade e ocasião ao montar o conjunto.</p>
+            <ul>
+              <li><strong>Neutros como base:</strong> marinho, cinza, bege, branco e marrom facilitam combinações e aceitam pontos de cor.</li>
+              <li><strong>Contraste:</strong> uma peça clara com outra escura cria definição; tons próximos deixam o visual mais discreto.</li>
+              <li><strong>Coordenação:</strong> repita ou aproxime uma cor em outra peça ou acessório sem precisar combinar tudo exatamente.</li>
+              <li><strong>Estampas:</strong> combine uma estampa mais marcante com peças lisas e escolha uma cor presente nela para orientar o restante.</li>
+              <li><strong>Proporção:</strong> comece com uma ou duas cores de destaque e mantenha as demais peças mais neutras.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="guide-section">
+          <summary>Guia de calçados</summary>
+          <div class="guide-content">
+            <p>Escolha o calçado considerando a formalidade da roupa, o ambiente e o estado de conservação do par.</p>
+            <ul>
+              <li><strong>Mais formal:</strong> Oxford e Derby de couro liso funcionam com ternos e alfaiataria. Preto costuma ser mais formal; marrom acrescenta versatilidade.</li>
+              <li><strong>Intermediário:</strong> mocassins e botas de couro podem acompanhar chinos, calças de alfaiataria e combinações sem gravata.</li>
+              <li><strong>Casual:</strong> tênis simples e bem cuidados ficam melhores com peças casuais; modelos minimalistas tendem a integrar-se mais facilmente.</li>
+              <li><strong>Harmonia:</strong> observe se o tom e a textura do calçado conversam com o cinto e com o nível de formalidade do conjunto.</li>
+              <li><strong>Proporção:</strong> calçados mais robustos combinam com tecidos e silhuetas casuais; modelos finos acompanham melhor a alfaiataria.</li>
+            </ul>
+          </div>
+        </details>
       </div>
     </section>
   </div>
@@ -159,7 +188,7 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
-  <script src="combinator.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/combinator.js"></script>
 </body>
 </html>

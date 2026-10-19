@@ -3,6 +3,42 @@ Combinação de roupas para escolher
 
 Para gerar e validar novos looks com um prompt reutilizável, consulte [PROMPT-GERAR-LOOKS.md](PROMPT-GERAR-LOOKS.md).
 
+## Organização dos arquivos
+
+Os documentos Markdown e o `index.html` ficam na raiz. Os demais arquivos são agrupados por função:
+
+```text
+wardrobe/
+├── *.md
+├── index.html
+├── assets/
+│   ├── css/styles.css
+│   └── js/
+│       ├── script.js
+│       └── combinator.js
+├── data/gpt-index.json
+├── docs/images/
+├── scripts/
+│   ├── build_index.py
+│   ├── convert_looks_to_webp.py
+│   └── crop.py
+└── gpt/
+    ├── compressed/
+    ├── raws/
+    ├── references/
+    └── to_crop/
+```
+
+Execute os comandos abaixo a partir da raiz do projeto:
+
+```sh
+python3 scripts/crop.py
+python3 scripts/convert_looks_to_webp.py
+python3 scripts/build_index.py
+```
+
+O recorte usa `gpt/to_crop/` e salva os PNGs finais em `gpt/`; a conversão cria os WebPs em `gpt/compressed/`. O índice gerado em `data/gpt-index.json` alimenta o combinador em `assets/js/combinator.js`; `assets/js/script.js` cuida dos favoritos e guias.
+
 Não precisa gerar todos os tipos de calçados e nem todos os tipos de roupas.
 
 Colocar isso no header do site para eu lembrar
@@ -111,7 +147,7 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 ### Terno (permanece ativo)
 
 - Cores que têm imagens de terno no repositório: azul claro, azul marinho, bege, branco, cáqui, caramelo, cinza claro, cinza pedra, ferrugem, lilás, marrom, preto, verde oliva e vinho.
-- Camisas permitidas: azul claro, rosa claro, branco, lilás claro (`lilas` no nome do arquivo), preta (`preta`) e verde oliva (`verde-oliva`).
+- Camisas permitidas: azul claro, rosa claro, branco, lilás claro (`lilas` no nome do arquivo), preta (`preta`), verde oliva (`verde-oliva`), amarelo claro (`amarela`) e vinho (`vinho`). As séries amarelo claro e vinho estão completas, com 84 combinações cada (14 ternos × 6 calçados).
 - Calçados permitidos: bege, caramelo, cinza claro, marrom, preto e tênis branco.
 - Não mostrar seletor de calça em modo terno.
 
@@ -122,8 +158,32 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 
 ## Conversão de looks PNG para WebP
 
-Gere novos PNGs diretamente na raiz de `gpt/`. Execute `python3 convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/`. O script não percorre subpastas: `gpt/raws/` guarda os originais e fica fora da conversão; `gpt/references/` também não é processado. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
+Gere novos PNGs diretamente na raiz de `gpt/`. Execute `python3 scripts/convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/`. O script não percorre subpastas: `gpt/raws/` guarda os originais e fica fora da conversão; `gpt/references/` também não é processado. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
 
-Os PNGs gerados na raiz são preservados. Se o WebP de destino já existir, o script o mantém e pula a conversão daquele arquivo. `build_index.py` combina os looks PNG da raiz com os WebP já existentes em `gpt/compressed/`; ignora `gpt/raws/` e `gpt/references/`. A galeria usa os nomes dos arquivos como identificadores e carrega as imagens de `gpt/compressed/`, sem depender dos RAWs.
+Os PNGs gerados na raiz são preservados. Se o WebP de destino já existir, o script o mantém e pula a conversão daquele arquivo. `scripts/build_index.py` combina os looks PNG da raiz com os WebP já existentes em `gpt/compressed/`; ignora `gpt/raws/` e `gpt/references/`. O combinador e os favoritos usam os nomes dos arquivos como identificadores e carregam as imagens de `gpt/compressed/`, sem depender dos RAWs.
 
 Para o prompt agnóstico e o fluxo de revisão antes de gerar lotes, consulte [PROMPT-GERAR-LOOKS.md](PROMPT-GERAR-LOOKS.md).
+
+
+## melhorias visuais
+- Testar na versão mobile:
+    - carossel de cores ao invés de wrap line, visando ganhar mais visibilidade sobre a foto, mesmo durante a seleção de cores.
+    - ![alt text](docs/images/image-3.png)
+
+- organizar os arquivos desse projeto. Estão muito bagunçados.
+    - colocar catalog, filters, paleta etc num arquivo separado -> talvez de constantes.
+
+- Mudar texto: Salvar favorito -> Favoritar. Remover favorito -> Desfavoritar.
+
+
+## DONE
+- adicionar aba Guia ao lado de Favoritos, com seções expansíveis de tecidos, cores e calçados
+- substituir Galeria por Favoritos; salvar imagem e nome de cada look no localStorage deste navegador e permitir removê-los da lista
+- preciso dar dois cliques para voltar de ternos para sem camada -> não deveria precisar disso.
+- página inicial deve ser o combinador.
+- remover botão de reset e aleatório
+- abaixo da foto de cada look tem o nome das peças e cores. Antes de cada nome colocar um círculo pequeno com a cor.
+    - ![alt text](image-2.png)
+- Cor selecionada aparece o nome dela em baixo ou no headline da seção. Testar uma por vez ver qual gosto mais.
+    - ![alt text](image.png) <- vencedora
+    - ![alt text](image-1.png)
