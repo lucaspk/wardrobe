@@ -179,11 +179,23 @@
 
   <div class="carousel-overlay hidden" id="carousel-overlay" role="dialog" aria-modal="true" aria-label="Foto ampliada do look">
     <button type="button" class="carousel-close" id="carousel-close" aria-label="Fechar">×</button>
+    <div class="carousel-zoom-controls" role="group" aria-label="Zoom da foto">
+      <button type="button" id="carousel-zoom-out" aria-label="Diminuir zoom" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
+      </button>
+      <output id="carousel-zoom-level" aria-label="Nível de zoom">100%</output>
+      <button type="button" id="carousel-zoom-in" aria-label="Aumentar zoom">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>
+      </button>
+      <button type="button" id="carousel-zoom-reset" aria-label="Restaurar zoom" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9a8 8 0 1 1 0 6M4 4v5h5"/></svg>
+      </button>
+    </div>
     <button type="button" class="carousel-nav carousel-prev" id="carousel-prev" aria-label="Anterior">‹</button>
     <button type="button" class="carousel-nav carousel-next" id="carousel-next" aria-label="Próximo">›</button>
     <div class="carousel-content">
       <div class="carousel-image-wrap">
-        <img id="carousel-image" src="" alt="">
+        <img id="carousel-image" src="" alt="" draggable="false">
       </div>
       <div class="carousel-info" id="carousel-info"></div>
       <div class="carousel-counter" id="carousel-counter"></div>

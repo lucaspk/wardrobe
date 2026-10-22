@@ -24,6 +24,7 @@ const COLOR_HEX = {
 let carouselIndex = -1;
 let carouselItems = [];
 let carouselTrigger = null;
+const carouselZoom = { scale: 1, x: 0, y: 0, pointers: new Map(), gesture: null };
 let favorites = [];
 let currentLook = null;
 let savingFavorite = false;
@@ -247,6 +248,7 @@ function closeCarousel() {
   document.getElementById('carousel-overlay').classList.add('hidden');
   document.body.style.overflow = '';
   carouselIndex = -1;
+  resetCarouselZoom();
   carouselTrigger?.focus();
   carouselTrigger = null;
 }
@@ -257,6 +259,7 @@ function updateCarouselView() {
 
   document.getElementById('carousel-image').src = img.imageDataUrl || imageSrc(img);
   document.getElementById('carousel-image').alt = formatLookName(img.name) || 'Imagem';
+  resetCarouselZoom();
 
   const parts = [];
   if (img.name) parts.push(formatLookName(img.name));
@@ -283,6 +286,112 @@ function showPreviousImage() {
   if (!carouselItems.length) return;
   carouselIndex = (carouselIndex - 1 + carouselItems.length) % carouselItems.length;
   updateCarouselView();
+}
+
+function updateCarouselZoom() {
+  const image = document.getElementById('carousel-image');
+  const viewport = image.parentElement;
+  const maxX = Math.max(0, (image.offsetWidth * carouselZoom.scale - viewport.clientWidth) / 2);
+  const maxY = Math.max(0, (image.offsetHeight * carouselZoom.scale - viewport.clientHeight) / 2);
+  carouselZoom.x = Math.max(-maxX, Math.min(maxX, carouselZoom.x));
+  carouselZoom.y = Math.max(-maxY, Math.min(maxY, carouselZoom.y));
+  image.style.transform = `translate(${carouselZoom.x}px, ${carouselZoom.y}px) scale(${carouselZoom.scale})`;
+  viewport.classList.toggle('is-zoomed', carouselZoom.scale > 1);
+  viewport.classList.toggle('is-dragging', carouselZoom.scale > 1 && carouselZoom.pointers.size > 0);
+  document.getElementById('carousel-zoom-level').textContent = `${Math.round(carouselZoom.scale * 100)}%`;
+  document.getElementById('carousel-zoom-out').disabled = carouselZoom.scale <= 1;
+  document.getElementById('carousel-zoom-in').disabled = carouselZoom.scale >= 4;
+  document.getElementById('carousel-zoom-reset').disabled = carouselZoom.scale === 1;
+}
+
+function resetCarouselZoom() {
+  Object.assign(carouselZoom, { scale: 1, x: 0, y: 0, gesture: null });
+  carouselZoom.pointers.clear();
+  updateCarouselZoom();
+}
+
+function setCarouselZoom(scale, clientX, clientY) {
+  const rect = document.getElementById('carousel-image').parentElement.getBoundingClientRect();
+  const x = clientX == null ? 0 : clientX - rect.left - rect.width / 2;
+  const y = clientY == null ? 0 : clientY - rect.top - rect.height / 2;
+  const next = Math.max(1, Math.min(4, scale));
+  const ratio = next / carouselZoom.scale;
+  carouselZoom.x = x - (x - carouselZoom.x) * ratio;
+  carouselZoom.y = y - (y - carouselZoom.y) * ratio;
+  carouselZoom.scale = next;
+  updateCarouselZoom();
+}
+
+function startCarouselGesture() {
+  const points = [...carouselZoom.pointers.values()];
+  carouselZoom.gesture = null;
+  if (points.length === 1) {
+    carouselZoom.gesture = { ...points[0], panX: carouselZoom.x, panY: carouselZoom.y };
+  } else if (points.length >= 2) {
+    const [a, b] = points;
+    carouselZoom.gesture = {
+      x: (a.x + b.x) / 2, y: (a.y + b.y) / 2,
+      distance: Math.hypot(b.x - a.x, b.y - a.y),
+      scale: carouselZoom.scale, panX: carouselZoom.x, panY: carouselZoom.y,
+    };
+  }
+  updateCarouselZoom();
+}
+
+function initCarouselZoom() {
+  const image = document.getElementById('carousel-image');
+  const viewport = image.parentElement;
+  document.getElementById('carousel-zoom-in').addEventListener('click', () => setCarouselZoom(carouselZoom.scale + 0.5));
+  document.getElementById('carousel-zoom-out').addEventListener('click', () => setCarouselZoom(carouselZoom.scale - 0.5));
+  document.getElementById('carousel-zoom-reset').addEventListener('click', resetCarouselZoom);
+  image.addEventListener('load', updateCarouselZoom);
+  window.addEventListener('resize', () => {
+    if (carouselIndex >= 0) {
+      updateCarouselZoom();
+      startCarouselGesture();
+    }
+  });
+  viewport.addEventListener('dblclick', (event) => {
+    event.preventDefault();
+    setCarouselZoom(carouselZoom.scale > 1 ? 1 : 2, event.clientX, event.clientY);
+  });
+  viewport.addEventListener('wheel', (event) => {
+    if (carouselIndex < 0) return;
+    event.preventDefault();
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? viewport.clientHeight : 1;
+    setCarouselZoom(carouselZoom.scale * Math.exp(-event.deltaY * unit * 0.002), event.clientX, event.clientY);
+  }, { passive: false });
+  viewport.addEventListener('pointerdown', (event) => {
+    if (carouselIndex < 0 || (event.pointerType === 'mouse' && event.button !== 0)) return;
+    viewport.setPointerCapture(event.pointerId);
+    carouselZoom.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    startCarouselGesture();
+  });
+  viewport.addEventListener('pointermove', (event) => {
+    if (!carouselZoom.pointers.has(event.pointerId)) return;
+    carouselZoom.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    const points = [...carouselZoom.pointers.values()];
+    const gesture = carouselZoom.gesture;
+    if (!gesture) return;
+    if (points.length === 1 && carouselZoom.scale > 1) {
+      carouselZoom.x = gesture.panX + points[0].x - gesture.x;
+      carouselZoom.y = gesture.panY + points[0].y - gesture.y;
+    } else if (points.length >= 2 && gesture.distance > 0) {
+      const [a, b] = points;
+      const rect = viewport.getBoundingClientRect();
+      const scale = Math.max(1, Math.min(4, gesture.scale * Math.hypot(b.x - a.x, b.y - a.y) / gesture.distance));
+      const ratio = scale / gesture.scale;
+      carouselZoom.x = (a.x + b.x) / 2 - rect.left - rect.width / 2 - (gesture.x - rect.left - rect.width / 2 - gesture.panX) * ratio;
+      carouselZoom.y = (a.y + b.y) / 2 - rect.top - rect.height / 2 - (gesture.y - rect.top - rect.height / 2 - gesture.panY) * ratio;
+      carouselZoom.scale = scale;
+    }
+    updateCarouselZoom();
+  });
+  const endGesture = (event) => {
+    if (!carouselZoom.pointers.delete(event.pointerId)) return;
+    startCarouselGesture();
+  };
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach((type) => viewport.addEventListener(type, endGesture));
 }
 
 // --- Init ---
@@ -332,6 +441,7 @@ function initViewTabs() {
 
 function init() {
   initViewTabs();
+  initCarouselZoom();
   favorites = loadFavorites();
   renderFavorites();
   updateFavoriteButton();

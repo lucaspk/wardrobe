@@ -315,25 +315,69 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 4rem;
+  padding: 4rem 4rem 3rem;
 }
 
 .carousel-image-wrap {
+  position: relative;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 0;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
 }
 
 .carousel-image-wrap img {
+  display: block;
+  flex-shrink: 0;
   max-width: 100%;
-  max-height: calc(100vh - 140px);
+  max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
+  transform-origin: center;
 }
+
+.carousel-image-wrap.is-zoomed { cursor: grab; }
+.carousel-image-wrap.is-dragging { cursor: grabbing; }
+
+.carousel-zoom-controls {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: #202020;
+  color: #fff;
+}
+
+.carousel-zoom-controls button {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.carousel-zoom-controls button:hover:not(:disabled) { background: #404040; }
+.carousel-zoom-controls button:disabled { opacity: 0.3; cursor: default; }
+.carousel-zoom-controls button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.carousel-zoom-controls svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.carousel-zoom-controls output { min-width: 3.4rem; text-align: center; font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 
 .carousel-info {
   color: #fff;
@@ -737,7 +781,7 @@ body {
 
   .filters label { flex: 1 1 140px; }
   .carousel-content {
-    padding: 3.25rem 1rem 1.25rem;
+    padding: 4rem 1rem 1.25rem;
     justify-content: flex-start;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -745,12 +789,12 @@ body {
 
   .carousel-image-wrap {
     flex: 0 1 auto;
+    height: min(62vh, calc(100vh - 13rem));
     max-height: min(62vh, calc(100vh - 13rem));
-    padding-bottom: 1.25rem;
   }
 
   .carousel-image-wrap img {
-    max-height: min(62vh, calc(100vh - 13rem));
+    max-height: 100%;
   }
 
   .carousel-info {
