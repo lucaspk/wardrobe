@@ -72,7 +72,13 @@
         </div>
 
         <div class="combo-controls">
-          <div class="control-group">
+          <div class="mobile-piece-nav" role="group" aria-label="Peça a editar">
+            <button type="button" data-mobile-piece="outerwear" aria-controls="outerwear-control-group" aria-pressed="false">Camada</button>
+            <button type="button" data-mobile-piece="camisa" aria-controls="camisa-control-group" aria-pressed="true">Camisa</button>
+            <button type="button" data-mobile-piece="calca" aria-controls="calca-control-group" aria-pressed="false">Calça</button>
+            <button type="button" data-mobile-piece="calcado" aria-controls="calcado-control-group" aria-pressed="false">Calçado</button>
+          </div>
+          <div class="control-group" id="outerwear-control-group" data-mobile-panel="outerwear">
             <div class="control-group-header">
               <h2>Camada externa</h2>
               <span class="control-group-count">Escolha uma opção</span>
@@ -92,7 +98,7 @@
               <div class="swatches" id="swatches-outerwear"></div>
             </div>
           </div>
-          <div class="control-group">
+          <div class="control-group is-mobile-active" id="camisa-control-group" data-mobile-panel="camisa">
             <div class="control-group-header">
               <div class="control-group-title">
                 <h2>Camisa</h2>
@@ -102,7 +108,7 @@
             </div>
             <div class="swatches" id="swatches-camisa"></div>
           </div>
-          <div class="control-group" id="calca-control-group">
+          <div class="control-group" id="calca-control-group" data-mobile-panel="calca">
             <div class="control-group-header">
               <div class="control-group-title">
                 <h2>Calça</h2>
@@ -112,7 +118,7 @@
             </div>
             <div class="swatches" id="swatches-calca"></div>
           </div>
-          <div class="control-group">
+          <div class="control-group" id="calcado-control-group" data-mobile-panel="calcado">
             <div class="control-group-header">
               <div class="control-group-title">
                 <h2>Calçado</h2>

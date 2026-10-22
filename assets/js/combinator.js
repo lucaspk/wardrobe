@@ -117,6 +117,8 @@
   };
   let gptIndex = new Set();
   let ready = false;
+  let mobilePiece = 'camisa';
+  let mobileMedia = null;
 
   const previewImg = document.getElementById('combo-preview-img');
   const placeholder = document.getElementById('combo-placeholder');
@@ -232,6 +234,60 @@
       if (countEl) countEl.textContent = `${count} opç${count === 1 ? 'ão' : 'ões'}`;
     });
     document.getElementById('calca-control-group')?.classList.toggle('hidden', state.outerwear === 'terno');
+    updateMobileControls();
+  }
+
+  function updateMobileControls() {
+    if (state.outerwear === 'terno' && mobilePiece === 'calca') mobilePiece = 'camisa';
+    document.querySelectorAll('[data-mobile-piece]').forEach((button) => {
+      button.hidden = button.dataset.mobilePiece === 'calca' && state.outerwear === 'terno';
+      button.setAttribute('aria-pressed', String(button.dataset.mobilePiece === mobilePiece));
+    });
+    document.querySelectorAll('[data-mobile-panel]').forEach((panel) => {
+      panel.classList.toggle('is-mobile-active', panel.dataset.mobilePanel === mobilePiece);
+    });
+  }
+
+  function scrollMobileColors() {
+    if (!mobileMedia?.matches) return;
+    requestAnimationFrame(() => {
+      const strip = document.querySelector('.is-mobile-active .swatches');
+      const selected = strip?.querySelector('.swatch.active');
+      if (!selected || !strip.clientWidth) return;
+      strip.scrollTo({ left: selected.offsetLeft - (strip.clientWidth - selected.offsetWidth) / 2 });
+    });
+  }
+
+  function initMobileControls() {
+    const controls = document.querySelector('.combo-controls');
+    if (!controls) return;
+    mobileMedia = window.matchMedia('(max-width: 800px)');
+    const measureDock = () => {
+      if (!mobileMedia.matches) return;
+      const height = Math.ceil(controls.getBoundingClientRect().height);
+      if (height > 0) {
+        document.documentElement.style.setProperty('--mobile-controls-height', `${height}px`);
+        scrollMobileColors();
+      }
+    };
+    document.querySelectorAll('[data-mobile-piece]').forEach((button) => {
+      button.addEventListener('click', () => {
+        mobilePiece = button.dataset.mobilePiece;
+        updateMobileControls();
+        measureDock();
+        scrollMobileColors();
+      });
+    });
+    if (typeof ResizeObserver !== 'undefined') new ResizeObserver(measureDock).observe(controls);
+    window.addEventListener('resize', measureDock);
+    mobileMedia.addEventListener('change', () => {
+      updateMobileControls();
+      measureDock();
+      scrollMobileColors();
+    });
+    updateMobileControls();
+    measureDock();
+    scrollMobileColors();
   }
 
   function render() {
@@ -337,7 +393,7 @@
       });
       swatches.appendChild(btn);
     });
-
+    scrollMobileColors();
   }
 
   function selectLayer(layer) {
@@ -382,6 +438,7 @@
     buildSwatches('calcado', document.getElementById('swatches-calcado'));
     updateOuterwearControls();
     updateMainSwatches();
+    initMobileControls();
 
     loadIndex().catch((error) => {
       console.error('Não foi possível carregar as combinações do combinador.', error);

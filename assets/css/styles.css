@@ -557,6 +557,8 @@ body {
   background: #eceae6;
 }
 
+#combo-preview-img[hidden] { display: none; }
+
 .combo-placeholder {
   min-height: 100%;
   padding: 2rem 1.5rem 1.5rem;
@@ -615,6 +617,8 @@ body {
   gap: 1.75rem;
   min-width: 0;
 }
+
+.mobile-piece-nav { display: none; }
 
 .control-group {
   min-width: 0;
@@ -828,4 +832,123 @@ body {
   .carousel-next { right: 0.5rem; }
   .favorites-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 0.75rem; }
   .swatch { width: 1.458rem; height: 1.458rem; }
+}
+
+@media (max-width: 800px) {
+  body.view-combinator {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .view-combinator .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    padding: 0.5rem 0.75rem calc(var(--mobile-controls-height, 11rem) + 0.75rem);
+  }
+
+  .view-combinator .header { flex-shrink: 0; margin-bottom: 0.65rem; }
+  .view-combinator .view-tabs { margin-top: 0; }
+  .view-combinator #panel-combinator { flex: 1; min-height: 0; }
+  .view-combinator .combo-layout { display: block; height: 100%; }
+  .view-combinator .combo-preview-frame { height: 100%; }
+  .view-combinator .combo-meta { display: none; }
+
+  .view-combinator .combo-controls {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    gap: 0.7rem;
+    max-height: 50vh;
+    max-height: 50dvh;
+    padding: 0.65rem 0.75rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    border-top: 1px solid var(--border);
+    border-radius: 18px 18px 0 0;
+    background: var(--surface);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .view-combinator .mobile-piece-nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 999px;
+    background: var(--bg);
+  }
+
+  .mobile-piece-nav button {
+    flex: 1;
+    min-width: 0;
+    min-height: 2.5rem;
+    padding: 0.45rem 0.4rem;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 0.76rem;
+    cursor: pointer;
+  }
+
+  .mobile-piece-nav button[aria-pressed="true"] {
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .mobile-piece-nav button[hidden] { display: none; }
+  .mobile-piece-nav button:focus-visible { outline: 2px solid var(--text); outline-offset: -2px; }
+  .view-combinator .combo-controls > .control-group { display: none; }
+  .view-combinator .combo-controls > .is-mobile-active { display: block; }
+  .view-combinator .control-group-header { margin-bottom: 0.45rem; }
+  .view-combinator .outerwear-settings { margin-top: 0.65rem; }
+
+  .view-combinator .swatches {
+    position: relative;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+    padding: 0.55rem 0.4rem 0.65rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 500px) and (orientation: landscape) {
+  .view-combinator .app { padding-bottom: 0.75rem; }
+
+  .view-combinator .combo-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas: "preview controls";
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .view-combinator .combo-controls {
+    position: static;
+    min-height: 0;
+    max-height: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: none;
+  }
+
+  .view-combinator .mobile-piece-nav { flex-wrap: wrap; border-radius: 12px; }
+  .mobile-piece-nav button { flex: 1 0 auto; }
 }
