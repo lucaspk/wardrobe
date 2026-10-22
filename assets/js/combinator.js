@@ -65,6 +65,22 @@
     },
   };
 
+  const COLOR_ORDER = [
+    'branco', 'creme', 'cinza-claro',
+    'bege', 'caqui', 'caramelo', 'marrom', 'ferrugem',
+    'amarelo-claro', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro',
+    'verde-oliva', 'vermelho',
+    'vinho', 'verde-militar', 'verde-escuro', 'cinza-pedra', 'azul-marinho', 'preto',
+  ];
+
+  function orderedColors(colors) {
+    const rank = (color) => {
+      const index = COLOR_ORDER.indexOf(color.id);
+      return index < 0 ? COLOR_ORDER.length : index;
+    };
+    return [...colors].sort((a, b) => rank(a) - rank(b));
+  }
+
   const SLUG_VARIANTS = {
     camisa: {
       'amarelo-claro': ['amarelo-claro', 'amarela'],
@@ -207,6 +223,7 @@
         button.hidden = !enabled;
         const active = button.dataset.id === state[piece];
         button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
       });
       const selectedLabel = document.getElementById(`selected-${piece}`);
       if (selectedLabel) selectedLabel.textContent = findColor(piece, state[piece]).label;
@@ -245,7 +262,7 @@
 
   function buildSwatches(piece, container) {
     container.innerHTML = '';
-    PALETTE[piece].forEach((color) => {
+    orderedColors(PALETTE[piece]).forEach((color) => {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'swatch';
@@ -258,6 +275,7 @@
       btn.dataset.piece = piece;
       btn.dataset.id = color.id;
       btn.setAttribute('aria-label', color.label);
+      btn.setAttribute('aria-pressed', String(color.id === state[piece]));
       if (color.id === state[piece]) btn.classList.add('active');
       btn.addEventListener('click', () => selectColor(piece, color.id));
       container.appendChild(btn);
@@ -291,7 +309,7 @@
       swatches.replaceChildren();
       return;
     }
-    heading.textContent = outer.label.toUpperCase();
+    heading.textContent = outer.label;
     const selectedLabel = document.getElementById('selected-outerwear');
     const selectedColor = outer.palette.find((color) => color.id === state.outerwearColor);
     if (selectedLabel) selectedLabel.textContent = selectedColor?.label ?? '';
@@ -299,7 +317,7 @@
       count.textContent = `${outer.palette.length} opç${outer.palette.length === 1 ? 'ão' : 'ões'}`;
     }
     swatches.replaceChildren();
-    outer.palette.forEach((color) => {
+    orderedColors(outer.palette).forEach((color) => {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'swatch';
