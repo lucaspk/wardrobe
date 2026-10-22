@@ -34,13 +34,6 @@ const FAVORITES_STORAGE_KEY = 'wardrobe-favorites';
 
 // --- Favorites ---
 
-function escapeHtml(str) {
-  if (!str) return '';
-  const d = document.createElement('div');
-  d.textContent = str;
-  return d.innerHTML;
-}
-
 function escapeAttr(str) {
   return String(str).replace(/"/g, '&quot;').replace(/</g, '&lt;');
 }
@@ -76,22 +69,32 @@ function getLookPartColor(part) {
     { names: ['caqui'], hex: COLOR_HEX['Cáqui'] },
     { names: ['marrom'], hex: COLOR_HEX.Marrom },
     { names: ['caramelo'], hex: COLOR_HEX.Caramelo },
-    { names: ['lilas'], hex: COLOR_HEX.Lilás },
-    { names: ['rosa'], hex: COLOR_HEX.Rosa },
+    { names: ['lilas claro', 'lilas'], hex: COLOR_HEX.Lilás },
+    { names: ['rosa claro', 'rosa'], hex: COLOR_HEX.Rosa },
     { names: ['amarelo claro', 'amarelo', 'amarela'], hex: COLOR_HEX.Amarelo },
   ];
   const match = colors.find(({ names }) => names.some((color) => normalized.endsWith(color)));
   return match?.hex || null;
 }
 
-function formatLookParts(name) {
+function formatFavoriteColors(name) {
   if (!name) return '';
-  return name.split(' · ').map((part) => {
-    const color = getLookPartColor(part);
-    const swatch = color
-      ? `<span class="look-part-swatch" style="--part-color: ${color}" aria-hidden="true"></span>`
-      : '';
-    return `<span class="look-part">${swatch}${escapeHtml(formatLookName(part))}</span>`;
+  const parts = name.split(' · ').map((part) => ({
+    label: formatLookName(part.trim()),
+    color: getLookPartColor(part),
+  }));
+  const suit = parts.find(({ label }) => /^terno\s/i.test(label));
+  const colorName = (label) => label.normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLocaleLowerCase('pt-BR')
+    .replace(/^(?:terno|calca)\s+/, '')
+    .replace(/\bbranca\b/g, 'branco')
+    .replace(/\bpreta\b/g, 'preto');
+  return parts.filter(({ label, color }) => {
+    const matchingTrousers = suit && /^cal[çc]a\s/i.test(label) && colorName(label) === colorName(suit.label);
+    return color && !matchingTrousers;
+  }).map(({ label, color }) => {
+    return `<span class="favorite-color" role="img" aria-label="${escapeAttr(label)}" title="${escapeAttr(label)}" style="--part-color: ${color}"></span>`;
   }).join('');
 }
 
@@ -113,12 +116,12 @@ function renderFavorites() {
 
   favoritesList.innerHTML = favorites.map((img, index) => `
     <article class="favorite-card" data-index="${index}">
-      <div class="favorite-card-image" data-open="${index}">
+      <button type="button" class="favorite-card-image" data-open="${index}" aria-label="Ampliar: ${escapeAttr(formatLookName(img.name) || 'Look favorito')}" aria-haspopup="dialog">
         <img src="${escapeAttr(img.imageDataUrl || imageSrc(img))}" alt="${escapeAttr(formatLookName(img.name) || 'Imagem')}" loading="lazy">
-      </div>
+      </button>
       <div class="favorite-card-body">
-        ${img.name ? `<div class="favorite-card-name">${formatLookParts(img.name)}</div>` : ''}
-        <button type="button" class="favorite-remove" data-remove="${index}" aria-label="Desfavoritar">
+        ${img.name ? `<div class="favorite-colors" role="group" aria-label="Cores do look">${formatFavoriteColors(img.name)}</div>` : ''}
+        <button type="button" class="favorite-remove" data-remove="${index}" aria-label="Desfavoritar: ${escapeAttr(formatLookName(img.name) || 'Look favorito')}">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8z"/>
           </svg>
