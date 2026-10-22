@@ -461,7 +461,8 @@ body {
 .combo-meta { grid-area: meta; }
 .combo-controls { grid-area: controls; }
 
-.combo-preview-frame {
+.combo-preview-frame,
+.compare-reference-frame {
   position: relative;
   height: 75vh;
   background: var(--surface);
@@ -484,7 +485,8 @@ body {
 }
 
 .favorite-toggle,
-.preview-expand {
+.preview-expand,
+.preview-compare {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -501,7 +503,8 @@ body {
 }
 
 .favorite-toggle svg,
-.preview-expand svg {
+.preview-expand svg,
+.preview-compare svg {
   width: 0.99rem;
   height: 0.99rem;
   fill: transparent;
@@ -518,7 +521,8 @@ body {
 }
 
 .favorite-toggle:disabled,
-.preview-expand:disabled {
+.preview-expand:disabled,
+.preview-compare:disabled {
   cursor: not-allowed;
   opacity: 0.55;
 }
@@ -548,7 +552,8 @@ body {
   display: none;
 }
 
-#combo-preview-img {
+#combo-preview-img,
+#compare-reference-img {
   display: block;
   width: 100%;
   height: 100%;
@@ -951,4 +956,123 @@ body {
 
   .view-combinator .mobile-piece-nav { flex-wrap: wrap; border-radius: 12px; }
   .mobile-piece-nav button { flex: 1 0 auto; }
+}
+
+/* Comparador */
+.preview-compare {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 1;
+}
+
+.preview-compare:hover:not(:disabled) { background: #fff; border-color: var(--accent); }
+.preview-compare[hidden], .compare-toolbar[hidden] { display: none; }
+.compare-reference-frame { grid-area: reference; }
+.compare-toolbar { grid-area: compare-toolbar; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.compare-title { font-size: 0.9rem; font-weight: 500; }
+.compare-switch { display: none; }
+.compare-exit {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.compare-exit svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.compare-exit:hover { background: var(--bg); }
+.compare-look-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1;
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--text);
+  font-size: 0.72rem;
+}
+.compare-difference { grid-area: difference; color: var(--text-muted); font-size: 0.8rem; line-height: 1.5; }
+.is-comparing .combo-meta { display: none; }
+.is-comparing .combo-controls > .control-group { display: none; }
+.is-comparing .combo-controls > .is-mobile-active { display: block; }
+.is-comparing .mobile-piece-nav { display: flex; gap: 0.2rem; padding: 0.2rem; border-radius: 999px; background: var(--bg); }
+.is-comparing .mobile-piece-nav button {
+  flex: 1;
+  min-width: 0;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.4rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+.is-comparing .mobile-piece-nav button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); }
+.is-comparing .mobile-piece-nav button[hidden] { display: none; }
+.is-comparing .mobile-piece-nav button:focus-visible { outline: 2px solid var(--text); outline-offset: -2px; }
+
+@media (min-width: 801px) {
+  .combo-layout.is-comparing {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "compare-toolbar compare-toolbar" "reference preview" "difference difference" "controls controls";
+    gap: 1rem 1.5rem;
+  }
+  .is-comparing .combo-preview-frame,
+  .is-comparing .compare-reference-frame { position: relative; top: auto; height: min(55vh, 600px); }
+  .is-comparing .combo-controls { gap: 0.7rem; }
+  .is-comparing .control-group-header { margin-bottom: 0.5rem; }
+  .is-comparing .outerwear-settings { margin-top: 0.65rem; }
+}
+
+@media (max-width: 800px) {
+  .view-combinator .combo-layout.is-comparing {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-areas: "compare-toolbar" "preview" "difference";
+    gap: 0.55rem;
+  }
+  .view-combinator .is-comparing .combo-preview-frame,
+  .view-combinator .is-comparing .compare-reference-frame { grid-area: preview; height: 100%; min-height: 0; }
+  .is-comparing[data-comparison-view="a"] > .combo-preview-frame,
+  .is-comparing[data-comparison-view="b"] > .compare-reference-frame { display: none; }
+  .compare-title { display: none; }
+  .compare-switch { display: flex; flex: 1; gap: 0.2rem; padding: 0.2rem; border-radius: 999px; background: var(--surface); }
+  .compare-switch button {
+    flex: 1;
+    padding: 0.4rem 0.5rem;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 0.76rem;
+    cursor: pointer;
+  }
+  .compare-switch button[aria-pressed="true"] { background: var(--text); color: #fff; }
+  .compare-difference {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.76rem;
+    scrollbar-width: thin;
+  }
+  .view-combinator .is-comparing #outerwear-control-group > .control-group-header { display: none; }
+}
+
+@media (max-width: 800px) and (max-height: 500px) and (orientation: landscape) {
+  .view-combinator .combo-layout.is-comparing {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-areas: "compare-toolbar controls" "preview controls" "difference controls";
+  }
+  .is-comparing .mobile-piece-nav button { flex: 1 0 auto; }
 }

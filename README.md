@@ -15,7 +15,8 @@ wardrobe/
 │   ├── css/styles.css
 │   └── js/
 │       ├── script.js
-│       └── combinator.js
+│       ├── combinator.js
+│       └── comparison.js
 ├── data/gpt-index.json
 ├── docs/images/
 ├── scripts/
@@ -38,6 +39,8 @@ python3 scripts/build_index.py
 ```
 
 O recorte usa `gpt/to_crop/` e salva os PNGs finais em `gpt/`; a conversão cria os WebPs em `gpt/compressed/`. O índice gerado em `data/gpt-index.json` alimenta o combinador em `assets/js/combinator.js`; `assets/js/script.js` cuida dos favoritos e guias.
+
+O ícone de duas fotos no combinador inicia a comparação em `assets/js/comparison.js`: o look A fica fixo enquanto as cores alteram o look B. No desktop, as fotos aparecem lado a lado; no celular, use A/B para alternar. Cada look pode ser favoritado ou ampliado. O × encerra a comparação e mantém o look B; a referência fica apenas na memória até recarregar a página.
 
 Não precisa gerar todos os tipos de calçados e nem todos os tipos de roupas.
 

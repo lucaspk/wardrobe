@@ -164,7 +164,18 @@ function loadFavorites() {
   }
 }
 
+function publishFavoriteState() {
+  window.dispatchEvent(new CustomEvent('wardrobe:favorites-changed', {
+    detail: {
+      files: favorites.map((item) => item.file),
+      saving: savingFavorite,
+      error: favoritesStorageError,
+    },
+  }));
+}
+
 function updateFavoriteButton() {
+  publishFavoriteState();
   const button = document.getElementById('btn-toggle-favorite');
   if (!button) return;
   const isFavorite = currentLook !== null && favorites.some((item) => item.file === currentLook.file);
@@ -224,6 +235,7 @@ async function toggleFavorite(item) {
     if (actionStatus) actionStatus.textContent = favoritesStorageError;
     console.error(favoritesStorageError, error);
     renderFavorites();
+    updateFavoriteButton();
     return;
   }
 
@@ -465,6 +477,25 @@ function init() {
     expandButton.disabled = !currentLook;
     updateFavoriteButton();
   });
+
+  const eventLook = (event) => {
+    const item = event.detail;
+    if (!item || typeof item.file !== 'string' || !/^[a-z0-9-]+\.png$/i.test(item.file)
+      || typeof item.name !== 'string') return null;
+    return { file: item.file, name: item.name };
+  };
+
+  window.addEventListener('wardrobe:toggle-favorite', (event) => {
+    const item = eventLook(event);
+    if (item && !savingFavorite) toggleFavorite(item);
+  });
+
+  window.addEventListener('wardrobe:open-look', (event) => {
+    const item = eventLook(event);
+    if (item) openCarousel(0, [item]);
+  });
+
+  window.addEventListener('wardrobe:request-favorites', publishFavoriteState);
 
   window.addEventListener('storage', (event) => {
     if (event.key !== FAVORITES_STORAGE_KEY && event.key !== null) return;

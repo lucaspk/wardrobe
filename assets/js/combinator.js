@@ -298,7 +298,7 @@
 
     const file = resolveFile();
     window.dispatchEvent(new CustomEvent('wardrobe:current-look', {
-      detail: file ? { file, name } : null,
+      detail: { file, name },
     }));
 
     if (file) {
