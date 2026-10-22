@@ -10,8 +10,6 @@
   <div class="app">
     <header class="header">
       <h1>Guarda-roupa</h1>
-      <p class="subtitle">Combinações de cor entre camisa, calça e calçado</p>
-      <p class="header-note">Se a combinação ficou boa, o conceito vale para outras peças e calçados — polo, short, bota, tênis… Não precisa gerar cada variação.</p>
       <nav class="view-tabs" role="tablist" aria-label="Modo de visualização">
         <button type="button" class="view-tab active" id="view-combinator" role="tab" aria-selected="true" aria-controls="panel-combinator">
           <svg class="view-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
@@ -46,12 +44,16 @@
       <div class="combo-layout">
         <div class="combo-preview-frame">
           <img id="combo-preview-img" alt="Look gerado no GPT" hidden>
+          <button type="button" class="preview-expand" id="btn-expand-preview" aria-label="Ampliar foto" aria-haspopup="dialog" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/>
+            </svg>
+          </button>
           <div class="favorite-actions">
-            <button type="button" class="favorite-toggle" id="btn-toggle-favorite" aria-pressed="false" disabled>
+            <button type="button" class="favorite-toggle" id="btn-toggle-favorite" aria-label="Favoritar" aria-pressed="false" disabled>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8z"/>
               </svg>
-              <span id="favorite-toggle-label">Favoritar</span>
             </button>
             <span class="favorite-action-status" id="favorite-action-status" role="status" aria-live="polite"></span>
           </div>
@@ -147,6 +149,7 @@
         <details class="guide-section">
           <summary>Guia de cores</summary>
           <div class="guide-content">
+            <p>Se a combinação ficou boa, o conceito vale para outras peças e calçados — polo, short, bota, tênis… Não precisa gerar cada variação.</p>
             <p>Use as cores como ponto de partida, não como regra rígida. Considere contraste, intensidade e ocasião ao montar o conjunto.</p>
             <ul>
               <li><strong>Neutros como base:</strong> marinho, cinza, bege, branco e marrom facilitam combinações e aceitam pontos de cor.</li>
@@ -175,7 +178,7 @@
     </section>
   </div>
 
-  <div class="carousel-overlay hidden" id="carousel-overlay" role="dialog" aria-modal="true">
+  <div class="carousel-overlay hidden" id="carousel-overlay" role="dialog" aria-modal="true" aria-label="Foto ampliada do look">
     <button type="button" class="carousel-close" id="carousel-close" aria-label="Fechar">×</button>
     <button type="button" class="carousel-nav carousel-prev" id="carousel-prev" aria-label="Anterior">‹</button>
     <button type="button" class="carousel-nav carousel-next" id="carousel-next" aria-label="Próximo">›</button>

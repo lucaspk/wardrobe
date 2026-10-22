@@ -23,6 +23,7 @@ const COLOR_HEX = {
 
 let carouselIndex = -1;
 let carouselItems = [];
+let carouselTrigger = null;
 let favorites = [];
 let currentLook = null;
 let savingFavorite = false;
@@ -105,12 +106,10 @@ function renderFavorites() {
   if (status) status.textContent = favoritesStorageError;
 
   if (!favorites.length) {
-    carouselItems = [];
     favoritesList.innerHTML = '<div class="empty-state"><p>Nenhum look salvo nos favoritos ainda.</p></div>';
     return;
   }
 
-  carouselItems = favorites;
   favoritesList.innerHTML = favorites.map((img, index) => `
     <article class="favorite-card" data-index="${index}">
       <div class="favorite-card-image" data-open="${index}">
@@ -118,7 +117,11 @@ function renderFavorites() {
       </div>
       <div class="favorite-card-body">
         ${img.name ? `<div class="favorite-card-name">${formatLookParts(img.name)}</div>` : ''}
-        <button type="button" class="favorite-remove" data-remove="${index}">Desfavoritar</button>
+        <button type="button" class="favorite-remove" data-remove="${index}" aria-label="Desfavoritar">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8z"/>
+          </svg>
+        </button>
       </div>
     </article>
   `).join('');
@@ -159,17 +162,17 @@ function loadFavorites() {
 
 function updateFavoriteButton() {
   const button = document.getElementById('btn-toggle-favorite');
-  const label = document.getElementById('favorite-toggle-label');
-  if (!button || !label) return;
+  if (!button) return;
   const isFavorite = currentLook !== null && favorites.some((item) => item.file === currentLook.file);
   button.disabled = !currentLook || savingFavorite;
   button.classList.toggle('is-favorite', isFavorite);
   button.setAttribute('aria-pressed', String(isFavorite));
-  label.textContent = savingFavorite
+  const label = savingFavorite
     ? 'Salvando favorito...'
     : isFavorite
       ? 'Desfavoritar'
       : 'Favoritar';
+  button.setAttribute('aria-label', label);
 }
 
 async function createFavoriteImageData(item) {
@@ -229,18 +232,23 @@ async function toggleFavorite(item) {
 
 // --- Carousel ---
 
-function openCarousel(index) {
-  if (!carouselItems.length || index < 0 || index >= carouselItems.length) return;
+function openCarousel(index, items = favorites) {
+  if (!items.length || index < 0 || index >= items.length) return;
+  carouselItems = items.slice();
+  carouselTrigger = document.activeElement;
   carouselIndex = index;
   document.getElementById('carousel-overlay').classList.remove('hidden');
   document.body.style.overflow = 'hidden';
   updateCarouselView();
+  document.getElementById('carousel-close').focus();
 }
 
 function closeCarousel() {
   document.getElementById('carousel-overlay').classList.add('hidden');
   document.body.style.overflow = '';
   carouselIndex = -1;
+  carouselTrigger?.focus();
+  carouselTrigger = null;
 }
 
 function updateCarouselView() {
@@ -332,10 +340,16 @@ function init() {
     if (currentLook) toggleFavorite(currentLook);
   });
 
+  const expandButton = document.getElementById('btn-expand-preview');
+  expandButton.addEventListener('click', () => {
+    if (currentLook) openCarousel(0, [currentLook]);
+  });
+
   window.addEventListener('wardrobe:current-look', (event) => {
     currentLook = event.detail?.file
       ? { file: event.detail.file, name: event.detail.name || '' }
       : null;
+    expandButton.disabled = !currentLook;
     updateFavoriteButton();
   });
 

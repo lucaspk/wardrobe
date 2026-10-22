@@ -43,14 +43,6 @@ body {
   margin-top: 0.25rem;
 }
 
-.header-note {
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  line-height: 1.45;
-  margin-top: 0.5rem;
-  max-width: 42rem;
-}
-
 /* View tabs */
 .view-tabs {
   display: flex;
@@ -199,6 +191,13 @@ body {
 .favorite-remove:hover {
   border-color: var(--danger);
   color: var(--danger);
+}
+
+.favorite-remove svg {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: var(--danger);
 }
 
 .favorites-storage-note {
@@ -425,6 +424,7 @@ body {
 
 .combo-preview-frame {
   position: relative;
+  height: 75vh;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -444,7 +444,8 @@ body {
   max-width: min(22rem, calc(100% - 1.5rem));
 }
 
-.favorite-toggle {
+.favorite-toggle,
+.preview-expand {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -460,7 +461,8 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
-.favorite-toggle svg {
+.favorite-toggle svg,
+.preview-expand svg {
   width: 1.1rem;
   height: 1.1rem;
   fill: transparent;
@@ -476,9 +478,22 @@ body {
   fill: currentColor;
 }
 
-.favorite-toggle:disabled {
+.favorite-toggle:disabled,
+.preview-expand:disabled {
   cursor: not-allowed;
   opacity: 0.55;
+}
+
+.preview-expand {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 1;
+}
+
+.preview-expand:hover:not(:disabled) {
+  background: #fff;
+  border-color: var(--accent);
 }
 
 .favorite-action-status {
@@ -497,19 +512,14 @@ body {
 #combo-preview-img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: min(70vh, 520px);
+  height: 100%;
+  max-height: 100%;
   object-fit: contain;
   background: #eceae6;
 }
 
-@media (min-width: 801px) {
-  #combo-preview-img {
-    max-height: 450px;
-  }
-}
-
 .combo-placeholder {
+  min-height: 100%;
   padding: 2rem 1.5rem 1.5rem;
   background: #eceae6;
   text-align: center;
@@ -666,7 +676,7 @@ body {
   width: 1.8rem;
   height: 1.8rem;
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 50%;
   border: 2px solid transparent;
   background: var(--swatch);
   cursor: pointer;
@@ -766,5 +776,5 @@ body {
   .carousel-next { right: 0.5rem; }
   .favorites-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .favorite-card-image { height: 180px; }
-  .swatch { width: 1.62rem; height: 1.62rem; border-radius: 7px; }
+  .swatch { width: 1.62rem; height: 1.62rem; }
 }
