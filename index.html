@@ -9,6 +9,7 @@
 <body>
   <div class="app">
     <header class="header">
+      <a class="brand" href="#combinar" aria-label="Wardrobe — abrir combinador">Wardrobe<span class="brand-dot" aria-hidden="true">.</span></a>
       <nav class="view-tabs" role="tablist" aria-label="Modo de visualização">
         <button type="button" class="view-tab active" id="view-combinator" role="tab" aria-selected="true" aria-controls="panel-combinator">
           <svg class="view-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
@@ -34,7 +35,13 @@
     </header>
 
     <section id="panel-favorites" class="hidden" role="tabpanel" aria-labelledby="view-favorites">
-      <p class="favorites-storage-note">As imagens dos favoritos ficam salvas no localStorage deste navegador e dispositivo. Não são sincronizadas com outros dispositivos; o armazenamento do navegador tem espaço limitado.</p>
+      <div class="favorites-toolbar">
+        <p class="favorites-storage-note">Seus favoritos ficam apenas neste navegador e dispositivo. Exporte uma galeria com as fotos para guardar e abrir mesmo sem internet.</p>
+        <button type="button" id="btn-export-favorites" class="favorites-export" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>
+          Exportar favoritos
+        </button>
+      </div>
       <p class="favorites-status" id="favorites-status" role="status" aria-live="polite"></p>
       <div id="favorites-list" class="favorites-grid"></div>
     </section>
@@ -60,17 +67,18 @@
             </button>
             <span class="favorite-action-status" id="reference-favorite-status" role="status" aria-live="polite"></span>
           </div>
-          <button type="button" class="preview-expand" id="btn-expand-reference" aria-label="Ampliar look A" aria-haspopup="dialog">
+          <button type="button" class="preview-expand" id="btn-expand-reference" aria-label="Ampliar look A" data-tooltip="Ampliar look A" aria-haspopup="dialog">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg>
           </button>
         </div>
         <div class="combo-preview-frame" id="combo-current-frame">
           <img id="combo-preview-img" alt="Look gerado no GPT" hidden>
+          <div id="combo-loading-status" class="combo-loading-status" aria-hidden="true" hidden></div>
           <span class="compare-look-badge" id="compare-current-badge" hidden>B · Em teste</span>
-          <button type="button" class="preview-compare" id="btn-compare-look" aria-label="Comparar este look" title="Comparar este look" disabled>
+          <button type="button" class="preview-compare" id="btn-compare-look" aria-label="Comparar este look" data-tooltip="Comparar looks" disabled>
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/></svg>
           </button>
-          <button type="button" class="preview-expand" id="btn-expand-preview" aria-label="Ampliar foto" aria-haspopup="dialog" disabled>
+          <button type="button" class="preview-expand" id="btn-expand-preview" aria-label="Ampliar foto" data-tooltip="Ampliar foto" aria-haspopup="dialog" disabled>
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/>
             </svg>
@@ -94,6 +102,7 @@
           </div>
         </div>
 
+        <p id="combo-loading-announcement" class="sr-only" role="status" aria-live="polite"></p>
         <p class="compare-difference" id="compare-difference" aria-live="polite" hidden></p>
 
         <div class="combo-meta">
@@ -162,59 +171,167 @@
     </section>
 
     <section id="panel-guide" class="hidden" role="tabpanel" aria-labelledby="view-guide">
+      <div class="guide-intro">
+        <p class="section-eyebrow">Seu ponto de partida</p>
+        <h1 class="section-title">Um olhar para o conjunto.</h1>
+        <p>Explore cores, texturas e calçados. Use as ideias como referência e adapte ao seu estilo e à ocasião.</p>
+      </div>
       <div class="guide-sections">
-        <details class="guide-section">
-          <summary>Guia de tecidos</summary>
+        <details class="guide-section" open>
+          <summary>Guia de cores</summary>
           <div class="guide-content">
-            <p>Observe a textura, o caimento e o contexto de uso. A composição da fibra ajuda, mas o peso, a trama e a construção da peça também influenciam a respirabilidade e o conforto em cada estação.</p>
-            <ul>
-              <li><strong>Algodão:</strong> versátil e respirável; popeline tende a ser mais lisa e leve, enquanto Oxford tem textura mais aparente e um ar casual.</li>
-              <li><strong>Linho:</strong> fresco e naturalmente texturizado. Amassa com facilidade; a mistura com algodão reduz esse efeito.</li>
-              <li><strong>Lã fria:</strong> boa opção para alfaiataria; costuma respirar bem e manter o caimento em ambientes formais.</li>
-              <li><strong>Sarja e chino:</strong> tecidos resistentes e de aparência casual arrumada, comuns em calças para o dia a dia.</li>
-              <li><strong>Malha:</strong> confortável e flexível; polos e camisetas de malha combinam melhor com propostas informais.</li>
-              <li><strong>Fibras sintéticas:</strong> poliéster e poliamida costumam ser resistentes e secar rápido, mas podem reter mais calor e umidade que fibras naturais, dependendo da trama e do acabamento. Em tecidos esportivos, a construção pode ajudar a afastar o suor.</li>
-              <li><strong>Misturas:</strong> algodão com poliéster, por exemplo, pode amassar menos e ser mais resistente, mas o conforto térmico varia conforme a proporção e o tecido.</li>
-              <li><strong>Por estação:</strong> para calor, prefira tecidos leves, trama mais aberta e peças folgadas; no frio, tecidos mais encorpados e camadas ajudam a conservar o calor. A respirabilidade depende da fibra, do peso e da trama — não apenas do nome do tecido.</li>
-            </ul>
+            <div class="guide-card-grid">
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Base neutra: azul-marinho, branco e bege">
+                  <span class="guide-example-color" style="--example-color: #243448"></span><span class="guide-example-color" style="--example-color: #faf8f2"></span><span class="guide-example-color" style="--example-color: #c9b795"></span>
+                </div>
+                <h3>Comece pelos neutros</h3>
+                <p>Marinho, cinza, bege, branco e marrom facilitam combinações e abrem espaço para um ponto de cor.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Contraste entre claro e escuro: branco e azul-marinho">
+                  <span class="guide-example-color" style="--example-color: #faf8f2"></span><span class="guide-example-color" style="--example-color: #243448"></span>
+                </div>
+                <h3>Escolha o contraste</h3>
+                <p>Claro com escuro cria definição. Tons próximos deixam o visual mais discreto; ajuste a intensidade à ocasião.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Tons próximos: creme, bege e caramelo">
+                  <span class="guide-example-color" style="--example-color: #eee5d3"></span><span class="guide-example-color" style="--example-color: #c9b795"></span><span class="guide-example-color" style="--example-color: #aa7545"></span>
+                </div>
+                <h3>Aproxime os tons</h3>
+                <p>Repita uma cor ou um tom próximo em outra peça ou acessório. Não é preciso combinar tudo exatamente.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Cores para coordenar uma estampa: verde-oliva, creme e marrom">
+                  <span class="guide-example-color" style="--example-color: #73744e"></span><span class="guide-example-color" style="--example-color: #eee5d3"></span><span class="guide-example-color" style="--example-color: #6c4937"></span>
+                </div>
+                <h3>Deixe a estampa guiar</h3>
+                <p>Com uma estampa marcante, use peças lisas no restante. Uma cor presente no desenho ajuda a ligar o conjunto.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Um ponto de cor: lilás entre cinza e branco">
+                  <span class="guide-example-color" style="--example-color: #8c9198"></span><span class="guide-example-color" style="--example-color: #b59aca"></span><span class="guide-example-color" style="--example-color: #faf8f2"></span>
+                </div>
+                <h3>Dê espaço ao destaque</h3>
+                <p>Comece com uma ou duas cores de destaque e mantenha as demais peças mais neutras.</p>
+              </article>
+              <article class="guide-card guide-card-note">
+                <div class="guide-example" role="img" aria-label="Uma paleta para outras peças: verde-oliva, bege e branco">
+                  <span class="guide-example-color" style="--example-color: #73744e"></span><span class="guide-example-color" style="--example-color: #c9b795"></span><span class="guide-example-color" style="--example-color: #faf8f2"></span>
+                </div>
+                <h3>Leve a ideia para outras peças</h3>
+                <p>Se a combinação ficou boa, o conceito vale para outras peças e calçados — polo, short, bota, tênis… Não precisa gerar cada variação.</p>
+              </article>
+            </div>
           </div>
         </details>
 
         <details class="guide-section">
-          <summary>Guia de cores</summary>
+          <summary>Guia de tecidos</summary>
           <div class="guide-content">
-            <p>Se a combinação ficou boa, o conceito vale para outras peças e calçados — polo, short, bota, tênis… Não precisa gerar cada variação.</p>
-            <p>Use as cores como ponto de partida, não como regra rígida. Considere contraste, intensidade e ocasião ao montar o conjunto.</p>
-            <ul>
-              <li><strong>Neutros como base:</strong> marinho, cinza, bege, branco e marrom facilitam combinações e aceitam pontos de cor.</li>
-              <li><strong>Contraste:</strong> uma peça clara com outra escura cria definição; tons próximos deixam o visual mais discreto.</li>
-              <li><strong>Coordenação:</strong> repita ou aproxime uma cor em outra peça ou acessório sem precisar combinar tudo exatamente.</li>
-              <li><strong>Estampas:</strong> combine uma estampa mais marcante com peças lisas e escolha uma cor presente nela para orientar o restante.</li>
-              <li><strong>Proporção:</strong> comece com uma ou duas cores de destaque e mantenha as demais peças mais neutras.</li>
-            </ul>
+            <p class="guide-section-intro">Observe textura e caimento. Fibra, peso, trama e construção influenciam o conforto; as paletas abaixo são apenas exemplos de cores.</p>
+            <div class="guide-card-grid">
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta ilustrativa para algodão: branco e azul-claro">
+                  <span class="guide-example-color" style="--example-color: #faf8f2"></span><span class="guide-example-color" style="--example-color: #a8c8df"></span>
+                </div>
+                <h3>Algodão</h3>
+                <p>Versátil e respirável. A popeline tende a ser lisa e leve; o Oxford tem textura aparente e um ar mais casual.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta ilustrativa para linho: creme e bege">
+                  <span class="guide-example-color" style="--example-color: #eee5d3"></span><span class="guide-example-color" style="--example-color: #c9b795"></span>
+                </div>
+                <h3>Linho</h3>
+                <p>Fresco e naturalmente texturizado. Amassa com facilidade; misturas com algodão podem reduzir esse efeito.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta ilustrativa para alfaiataria de lã fria: azul-marinho e cinza">
+                  <span class="guide-example-color" style="--example-color: #243448"></span><span class="guide-example-color" style="--example-color: #8c9198"></span>
+                </div>
+                <h3>Lã fria</h3>
+                <p>Uma opção para alfaiataria: costuma respirar bem e manter o caimento em ambientes formais.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta ilustrativa para peças casuais: caqui e verde-oliva">
+                  <span class="guide-example-color" style="--example-color: #b1a17b"></span><span class="guide-example-color" style="--example-color: #73744e"></span>
+                </div>
+                <h3>Sarja, chino e malha</h3>
+                <p>Sarja e chino trazem resistência ao casual arrumado. Malhas são flexíveis e confortáveis para polos e camisetas informais.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta ilustrativa para tecidos sintéticos e misturas: cinza e preto">
+                  <span class="guide-example-color" style="--example-color: #8c9198"></span><span class="guide-example-color" style="--example-color: #292827"></span>
+                </div>
+                <h3>Sintéticos e misturas</h3>
+                <p>Poliéster e poliamida costumam secar rápido, mas podem reter calor. Misturas podem amassar menos; trama, acabamento e proporção das fibras mudam o conforto.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta ilustrativa para diferentes estações: creme, caramelo e marrom">
+                  <span class="guide-example-color" style="--example-color: #eee5d3"></span><span class="guide-example-color" style="--example-color: #aa7545"></span><span class="guide-example-color" style="--example-color: #6c4937"></span>
+                </div>
+                <h3>Adapte à estação</h3>
+                <p>No calor, tecidos leves, trama aberta e peças folgadas. No frio, tecidos encorpados e camadas. O nome da fibra sozinho não define a respirabilidade.</p>
+              </article>
+            </div>
           </div>
         </details>
 
         <details class="guide-section">
           <summary>Guia de calçados</summary>
           <div class="guide-content">
-            <p>Escolha o calçado considerando a formalidade da roupa, o ambiente e o estado de conservação do par.</p>
-            <ul>
-              <li><strong>Mais formal:</strong> Oxford e Derby de couro liso funcionam com ternos e alfaiataria. Preto costuma ser mais formal; marrom acrescenta versatilidade.</li>
-              <li><strong>Intermediário:</strong> mocassins e botas de couro podem acompanhar chinos, calças de alfaiataria e combinações sem gravata.</li>
-              <li><strong>Casual:</strong> tênis simples e bem cuidados ficam melhores com peças casuais; modelos minimalistas tendem a integrar-se mais facilmente.</li>
-              <li><strong>Harmonia:</strong> observe se o tom e a textura do calçado conversam com o cinto e com o nível de formalidade do conjunto.</li>
-              <li><strong>Proporção:</strong> calçados mais robustos combinam com tecidos e silhuetas casuais; modelos finos acompanham melhor a alfaiataria.</li>
-            </ul>
+            <p class="guide-section-intro">A formalidade da roupa, o ambiente e a conservação do par orientam a escolha.</p>
+            <div class="guide-card-grid">
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Cores de couro para propostas formais: preto e marrom">
+                  <span class="guide-example-color" style="--example-color: #292827"></span><span class="guide-example-color" style="--example-color: #6c4937"></span>
+                </div>
+                <h3>Mais formal</h3>
+                <p>Oxford e Derby de couro liso acompanham ternos e alfaiataria. Preto costuma ser mais formal; marrom oferece versatilidade.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta para mocassins e botas de couro: caramelo e marrom">
+                  <span class="guide-example-color" style="--example-color: #aa7545"></span><span class="guide-example-color" style="--example-color: #6c4937"></span>
+                </div>
+                <h3>Entre formal e casual</h3>
+                <p>Mocassins e botas de couro podem acompanhar chinos, alfaiataria e combinações sem gravata.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Paleta para tênis simples: branco e bege">
+                  <span class="guide-example-color" style="--example-color: #faf8f2"></span><span class="guide-example-color" style="--example-color: #c9b795"></span>
+                </div>
+                <h3>Casual bem cuidado</h3>
+                <p>Tênis simples e conservados acompanham peças casuais. Modelos minimalistas tendem a se integrar mais facilmente.</p>
+              </article>
+              <article class="guide-card">
+                <div class="guide-example" role="img" aria-label="Tons próximos para calçado e acessórios: marrom e caramelo">
+                  <span class="guide-example-color" style="--example-color: #6c4937"></span><span class="guide-example-color" style="--example-color: #aa7545"></span>
+                </div>
+                <h3>Equilibre o conjunto</h3>
+                <p>Observe tom e textura junto ao cinto. Calçados robustos acompanham silhuetas casuais; modelos finos, a alfaiataria.</p>
+              </article>
+            </div>
           </div>
         </details>
       </div>
     </section>
   </div>
 
+  <aside id="favorite-notice" class="favorite-notice hidden" aria-label="Favorito salvo">
+    <button type="button" id="favorite-notice-close" class="favorite-notice-close" aria-label="Dispensar aviso">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>
+    </button>
+    <p id="favorite-notice-text" role="status" aria-live="polite"></p>
+    <div class="favorite-notice-actions">
+      <button type="button" id="favorite-notice-download">Baixar foto</button>
+      <button type="button" id="favorite-notice-export">Exportar favoritos</button>
+    </div>
+  </aside>
+
   <div class="carousel-overlay hidden" id="carousel-overlay" role="dialog" aria-modal="true" aria-label="Foto ampliada do look">
     <button type="button" class="carousel-close" id="carousel-close" aria-label="Fechar">×</button>
-    <div class="carousel-zoom-controls" role="group" aria-label="Zoom da foto">
+    <div class="carousel-zoom-controls" role="group" aria-label="Ferramentas da foto">
       <button type="button" id="carousel-zoom-out" aria-label="Diminuir zoom" disabled>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
       </button>
@@ -224,6 +341,9 @@
       </button>
       <button type="button" id="carousel-zoom-reset" aria-label="Restaurar zoom" disabled>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9a8 8 0 1 1 0 6M4 4v5h5"/></svg>
+      </button>
+      <button type="button" id="carousel-download" aria-label="Baixar foto" data-tooltip="Baixar foto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>
       </button>
     </div>
     <button type="button" class="carousel-nav carousel-prev" id="carousel-prev" aria-label="Anterior">‹</button>

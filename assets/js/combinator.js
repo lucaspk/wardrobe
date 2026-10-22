@@ -73,6 +73,43 @@
     'vinho', 'verde-militar', 'verde-escuro', 'cinza-pedra', 'azul-marinho', 'preto',
   ];
 
+  const COLOR_GROUPS = [
+    { id: 'neutros', label: 'Neutros', colors: ['branco', 'creme', 'cinza-claro', 'cinza-pedra', 'azul-marinho', 'preto'] },
+    { id: 'terrosos', label: 'Terrosos', colors: ['bege', 'caqui', 'caramelo', 'marrom', 'ferrugem', 'verde-oliva', 'verde-militar', 'verde-escuro'] },
+    { id: 'vivos', label: 'Vivos', colors: ['amarelo-claro', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro', 'vermelho', 'vinho'] },
+  ];
+
+  function groupSwatches(container) {
+    const buttons = [...container.querySelectorAll('.swatch')];
+    const groups = COLOR_GROUPS.map((definition) => {
+      const members = buttons.filter((button) => {
+        const group = COLOR_GROUPS.find(({ colors }) => colors.includes(button.dataset.id)) || COLOR_GROUPS[2];
+        return group.id === definition.id;
+      });
+      if (!members.length) return null;
+      const group = document.createElement('div');
+      group.className = 'swatch-group';
+      group.setAttribute('role', 'group');
+      group.setAttribute('aria-label', definition.label);
+      const label = document.createElement('span');
+      label.className = 'swatch-group-label';
+      label.textContent = definition.label;
+      label.setAttribute('aria-hidden', 'true');
+      const colors = document.createElement('div');
+      colors.className = 'swatch-group-colors';
+      colors.append(...members);
+      group.append(label, colors);
+      return group;
+    }).filter(Boolean);
+    container.replaceChildren(...groups);
+  }
+
+  function updateColorGroups() {
+    document.querySelectorAll('.swatch-group').forEach((group) => {
+      group.hidden = [...group.querySelectorAll('.swatch')].every((button) => button.hidden);
+    });
+  }
+
   function orderedColors(colors) {
     const rank = (color) => {
       const index = COLOR_ORDER.indexOf(color.id);
@@ -124,6 +161,92 @@
   const placeholder = document.getElementById('combo-placeholder');
   const placeholderText = placeholder?.querySelector('.combo-placeholder-text');
   const comboEl = document.getElementById('combo-label');
+  const previewFrame = document.getElementById('combo-current-frame');
+  const loadingStatus = document.getElementById('combo-loading-status');
+  let previewRequest = 0;
+  let displayedFile = null;
+
+  function publishCurrentLook(file, name, options = {}) {
+    window.dispatchEvent(new CustomEvent('wardrobe:current-look', {
+      detail: { file, name, ...options },
+    }));
+  }
+
+  function setPreviewLoading(loading) {
+    previewFrame?.classList.toggle('is-loading', loading);
+    previewFrame?.setAttribute('aria-busy', String(loading));
+    previewImg.classList.toggle('is-loading', loading);
+    if (loadingStatus) {
+      loadingStatus.hidden = !loading;
+      loadingStatus.textContent = loading ? 'Carregando foto do look…' : '';
+    }
+    const announcement = document.getElementById('combo-loading-announcement');
+    if (announcement) announcement.textContent = loading ? 'Carregando foto do look…' : '';
+  }
+
+  function showPreviewPlaceholder(message) {
+    displayedFile = null;
+    previewImg.hidden = true;
+    previewImg.removeAttribute('src');
+    previewImg.classList.remove('is-entering');
+    placeholder.hidden = false;
+    if (placeholderText) placeholderText.textContent = message;
+  }
+
+  async function showPreview(file, name) {
+    const request = ++previewRequest;
+    if (!file) {
+      setPreviewLoading(false);
+      showPreviewPlaceholder(state.outerwear ? 'Look ainda não gerado para esta combinação' : 'Ainda não gerado');
+      publishCurrentLook(null, name);
+      return;
+    }
+
+    // Returning to the displayed look also invalidates any newer photo in flight.
+    if (displayedFile === file) {
+      setPreviewLoading(false);
+      previewImg.alt = name;
+      publishCurrentLook(file, name);
+      return;
+    }
+
+    setPreviewLoading(true);
+    previewImg.classList.remove('is-entering');
+    if (previewImg.hidden) {
+      placeholder.hidden = false;
+      if (placeholderText) placeholderText.textContent = 'Preparando seu look';
+    }
+    // Keep actions unavailable while the visible photo still belongs to the previous selection.
+    publishCurrentLook(null, name, { loading: true });
+
+    try {
+      const image = new Image();
+      image.decoding = 'async';
+      await new Promise((resolve, reject) => {
+        image.onload = resolve;
+        image.onerror = () => reject(new Error('Foto indisponível'));
+        image.src = `gpt/compressed/${file.replace(/\.png$/i, '.webp')}`;
+      });
+      if (typeof image.decode === 'function') await image.decode();
+      if (request !== previewRequest) return;
+
+      previewImg.src = image.src;
+      previewImg.alt = name;
+      previewImg.hidden = false;
+      placeholder.hidden = true;
+      displayedFile = file;
+      setPreviewLoading(false);
+      // Restart the short entrance animation even when colors are changed repeatedly.
+      void previewImg.offsetWidth;
+      previewImg.classList.add('is-entering');
+      publishCurrentLook(file, name);
+    } catch (error) {
+      if (request !== previewRequest) return;
+      setPreviewLoading(false);
+      showPreviewPlaceholder('Não foi possível carregar esta foto. Tente selecionar o look novamente.');
+      publishCurrentLook(null, name, { error: true });
+    }
+  }
 
   function findColor(piece, id) {
     return PALETTE[piece].find((c) => c.id === id);
@@ -234,6 +357,7 @@
       if (countEl) countEl.textContent = `${count} opç${count === 1 ? 'ão' : 'ões'}`;
     });
     document.getElementById('calca-control-group')?.classList.toggle('hidden', state.outerwear === 'terno');
+    updateColorGroups();
     updateMobileControls();
   }
 
@@ -296,24 +420,7 @@
     updateMainSwatches();
     if (!ready) return;
 
-    const file = resolveFile();
-    window.dispatchEvent(new CustomEvent('wardrobe:current-look', {
-      detail: { file, name },
-    }));
-
-    if (file) {
-      previewImg.src = `gpt/compressed/${file.replace(/\.png$/i, '.webp')}`;
-      previewImg.hidden = false;
-      placeholder.hidden = true;
-    } else {
-      previewImg.hidden = true;
-      placeholder.hidden = false;
-      if (placeholderText) {
-        placeholderText.textContent = state.outerwear
-          ? 'Look ainda não gerado para esta combinação'
-          : 'Ainda não gerado';
-      }
-    }
+    showPreview(resolveFile(), name);
   }
 
   function buildSwatches(piece, container) {
@@ -322,7 +429,6 @@
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'swatch';
-      btn.title = color.label;
       if (color.altHex) {
         btn.style.background = `linear-gradient(135deg, ${color.hex} 50%, ${color.altHex} 50%)`;
       } else {
@@ -336,6 +442,7 @@
       btn.addEventListener('click', () => selectColor(piece, color.id));
       container.appendChild(btn);
     });
+    groupSwatches(container);
   }
 
   function selectColor(piece, id) {
@@ -377,7 +484,7 @@
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'swatch';
-      btn.title = color.label;
+      btn.dataset.id = color.id;
       btn.setAttribute('aria-label', color.label);
       btn.setAttribute('aria-pressed', String(color.id === state.outerwearColor));
       btn.style.setProperty('--swatch', color.hex);
@@ -393,6 +500,7 @@
       });
       swatches.appendChild(btn);
     });
+    groupSwatches(swatches);
     scrollMobileColors();
   }
 
@@ -422,6 +530,74 @@
 
   const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$|^terno-.+-camisa-.+-calca-.+-calcado-.+\.png$/i;
 
+  function initColorTooltips() {
+    const selector = '.swatch, [data-tooltip]';
+    document.querySelectorAll('[data-tooltip][title]').forEach((element) => element.removeAttribute('title'));
+    const tooltip = document.createElement('div');
+    tooltip.id = 'color-name-tooltip';
+    tooltip.className = 'color-tooltip';
+    tooltip.setAttribute('role', 'tooltip');
+    tooltip.hidden = true;
+    document.body.appendChild(tooltip);
+    let anchor = null;
+
+    const hide = () => {
+      if (anchor) {
+        const descriptions = (anchor.getAttribute('aria-describedby') || '').split(/\s+/).filter((id) => id && id !== tooltip.id);
+        if (descriptions.length) anchor.setAttribute('aria-describedby', descriptions.join(' '));
+        else anchor.removeAttribute('aria-describedby');
+      }
+      anchor = null;
+      tooltip.hidden = true;
+    };
+    const show = (element) => {
+      if (element.matches('[data-tooltip]')) element.removeAttribute('title');
+      const label = element.dataset.tooltip || element.getAttribute('aria-label');
+      if (!label || element.hidden || !element.getClientRects().length) return;
+      hide();
+      anchor = element;
+      tooltip.textContent = label;
+      tooltip.hidden = false;
+      const descriptions = (element.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean);
+      element.setAttribute('aria-describedby', [...new Set([...descriptions, tooltip.id])].join(' '));
+      const rect = element.getBoundingClientRect();
+      const tip = tooltip.getBoundingClientRect();
+      const left = Math.max(8, Math.min(window.innerWidth - tip.width - 8, rect.left + rect.width / 2 - tip.width / 2));
+      const top = rect.top - tip.height - 8;
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${top < 8 ? rect.bottom + 8 : top}px`;
+    };
+    document.addEventListener('pointerover', (event) => {
+      if (event.pointerType === 'touch') return;
+      const element = event.target.closest?.(selector);
+      if (element && element !== anchor) show(element);
+    });
+    document.addEventListener('pointerout', (event) => {
+      if (anchor && event.target.closest?.(selector) === anchor && !anchor.contains(event.relatedTarget) && !anchor.matches(':focus-visible')) hide();
+    });
+    document.addEventListener('focusin', (event) => {
+      const element = event.target.closest?.(selector);
+      if (element?.matches(':focus-visible')) show(element);
+    });
+    document.addEventListener('focusout', (event) => {
+      if (event.target === anchor) hide();
+    });
+    document.addEventListener('pointerdown', (event) => {
+      if (event.pointerType === 'touch' || !event.target.closest?.(selector)) hide();
+    });
+    document.addEventListener('click', () => {
+      if (anchor && !anchor.isConnected) hide();
+    });
+    document.addEventListener('scroll', hide, true);
+    window.addEventListener('resize', hide);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !tooltip.hidden) {
+        hide();
+        event.preventDefault();
+      }
+    }, true);
+  }
+
   async function loadIndex() {
     const res = await fetch('data/gpt-index.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('data/gpt-index.json ausente');
@@ -433,12 +609,17 @@
   function init() {
     if (!previewImg) return;
 
+    previewImg.addEventListener('animationend', (event) => {
+      if (event.target === previewImg) previewImg.classList.remove('is-entering');
+    });
+
     buildSwatches('camisa', document.getElementById('swatches-camisa'));
     buildSwatches('calca', document.getElementById('swatches-calca'));
     buildSwatches('calcado', document.getElementById('swatches-calcado'));
     updateOuterwearControls();
     updateMainSwatches();
     initMobileControls();
+    initColorTooltips();
 
     loadIndex().catch((error) => {
       console.error('Não foi possível carregar as combinações do combinador.', error);

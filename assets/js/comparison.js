@@ -42,6 +42,8 @@
       const changes = rows.filter(([, before, after]) => before !== after)
         .map(([piece, before, after]) => `${piece}: ${before || '—'} → ${after || '—'}`);
       const message = changes.join(' · ') || 'Mesma combinação. Altere as cores para testar o look B.';
+      if (current?.loading) return `Carregando look B… ${message}`;
+      if (current?.error) return `Não foi possível carregar o look B. ${message}`;
       return current?.file ? message : `Look B ainda não gerado. ${message}`;
     }
 
@@ -96,8 +98,9 @@
       if (reference) window.dispatchEvent(new CustomEvent('wardrobe:open-look', { detail: { ...reference } }));
     });
     window.addEventListener('wardrobe:current-look', (event) => {
-      current = event.detail ? { file: event.detail.file, name: event.detail.name || '' } : null;
-      if (reference) showLook('b');
+      const previousName = current?.name;
+      current = event.detail ? { file: event.detail.file, name: event.detail.name || '', loading: !!event.detail.loading, error: !!event.detail.error } : null;
+      if (reference && current?.name !== previousName) showLook('b');
       renderComparison();
     });
     window.addEventListener('wardrobe:favorites-changed', (event) => {
@@ -107,7 +110,7 @@
       updateReferenceFavorite();
     });
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && reference && document.body.classList.contains('view-combinator') && document.getElementById('carousel-overlay').classList.contains('hidden')) {
+      if (event.key === 'Escape' && !event.defaultPrevented && reference && document.body.classList.contains('view-combinator') && document.getElementById('carousel-overlay').classList.contains('hidden')) {
         event.preventDefault();
         endComparison();
       }

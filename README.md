@@ -42,6 +42,10 @@ O recorte usa `gpt/to_crop/` e salva os PNGs finais em `gpt/`; a conversão cria
 
 O ícone de duas fotos no combinador inicia a comparação em `assets/js/comparison.js`: o look A fica fixo enquanto as cores alteram o look B. No desktop, as fotos aparecem lado a lado; no celular, use A/B para alternar. Cada look pode ser favoritado ou ampliado. O × encerra a comparação e mantém o look B; a referência fica apenas na memória até recarregar a página.
 
+Os favoritos ficam apenas no navegador e dispositivo em que foram salvos. Ao favoritar, um aviso oferece baixar a foto ou exportar todos os favoritos. A exportação gera `favoritos-guarda-roupa.html`, uma galeria com as fotos incorporadas que abre sem internet. Também é possível baixar cada foto pela aba Favoritos ou pela visualização ampliada. Os ícones de comparar, ampliar e baixar mostram dicas ao passar o mouse ou receber foco pelo teclado.
+
+A interface usa títulos serifados, destaque terracota e navegação compacta com a marca Wardrobe. No celular e em telas de toque, as amostras têm 44 px; cores claras recebem contorno mais visível. O Guia organiza as dicas em cartões com exemplos de paletas. A troca de looks mantém a foto anterior durante o carregamento e só exibe a nova imagem após decodificá-la, com uma transição curta que respeita a preferência por movimento reduzido.
+
 Não precisa gerar todos os tipos de calçados e nem todos os tipos de roupas.
 
 Colocar isso no header do site para eu lembrar
