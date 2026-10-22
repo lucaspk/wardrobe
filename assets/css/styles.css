@@ -178,7 +178,7 @@ body {
 .favorite-remove {
   align-self: flex-start;
   margin-top: 0.4rem;
-  padding: 0.35rem 0.55rem;
+  padding: 0.315rem 0.495rem;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--surface);
@@ -195,8 +195,8 @@ body {
 
 .favorite-remove svg {
   display: block;
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 0.99rem;
+  height: 0.99rem;
   fill: var(--danger);
 }
 
@@ -449,7 +449,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.55rem 0.7rem;
+  padding: 0.495rem 0.63rem;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.94);
@@ -463,8 +463,8 @@ body {
 
 .favorite-toggle svg,
 .preview-expand svg {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 0.99rem;
+  height: 0.99rem;
   fill: transparent;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -673,8 +673,8 @@ body {
 .swatch {
   display: grid;
   place-items: center;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.62rem;
+  height: 1.62rem;
   flex-shrink: 0;
   border-radius: 50%;
   border: 2px solid transparent;
@@ -776,5 +776,5 @@ body {
   .carousel-next { right: 0.5rem; }
   .favorites-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .favorite-card-image { height: 180px; }
-  .swatch { width: 1.62rem; height: 1.62rem; }
+  .swatch { width: 1.458rem; height: 1.458rem; }
 }
