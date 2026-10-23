@@ -54,6 +54,7 @@
         { id: 'azul-marinho', label: 'Azul marinho', hex: '#1E3A5F' },
         { id: 'azul-claro', label: 'Azul claro', hex: '#A8C8E0' },
         { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
+        { id: 'grafite', label: 'Chumbo / grafite', hex: '#45484C' },
         { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
         { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
         { id: 'bege', label: 'Bege', hex: '#D4C4A8' },
@@ -144,7 +145,9 @@
       branco: ['branco', 'tenis-branco'],
       'cinza-claro': ['cinza-claro', 'cinza'],
     },
-    terno: {},
+    terno: {
+      grafite: ['grafite', 'chumbo'],
+    },
   };
 
   const DEFAULTS = { camisa: 'ferrugem', calca: 'verde-oliva', calcado: 'preto' };
@@ -606,7 +609,8 @@
   async function loadIndex() {
     const res = await fetch('data/gpt-index.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('data/gpt-index.json ausente');
-    gptIndex = new Set((await res.json()).filter((name) => COMBO_FILENAME.test(name)));
+    const registeredLooks = window.WARDROBE_GENERATED_LOOKS || [];
+    gptIndex = new Set([...(await res.json()), ...registeredLooks].filter((name) => COMBO_FILENAME.test(name)));
     ready = true;
     render();
   }

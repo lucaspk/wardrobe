@@ -1,0 +1,94 @@
+{
+  "series": "terno-grafite-d",
+  "mode": "builtin-imagegen",
+  "suitColor": "#45484C",
+  "shirtColor": "#6B7A4A",
+  "requests": [
+    {
+      "shoe": "preto",
+      "file": "terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph. Image 1 supplies the approved GRAPHITE CHARCOAL GRAY #45484C trouser color and recurring male model identity: adult man, short dark wavy hair, light stubble, lean build, natural calm expression. Image 2 supplies the tailored single-breasted two-piece suit style and standing pose, not its navy color. OUTFIT: jacket AND matching tailored trousers in identical fabric and identical GRAPHITE/CHARCOAL GRAY #45484C, neutral dark gray distinctly lighter than black and darker than stone gray. Long-sleeve button-down OLIVE GREEN #6B7A4A shirt, open collar, tucked in. Footwear: BLACK #1A1A1A leather lace-up dress shoes. Plain light-gray seamless studio background, soft neutral color-balanced studio lighting, realistic fabric folds and texture, soft contact shadow. Keep the same recognizable model, natural anatomically correct hands and legs. No tie, accessories, pattern, text, logos, watermark, collage, additional people or props. COMPOSITION: 1536x1024 landscape canvas. Entire person centered inside x380..1156; head near y20 and both shoes near y980 with small margins, complete body fully visible for a subsequent central 776x1024 crop. Extend plain studio background on both sides. Asset target: gpt/to_crop/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.png.",
+      "status": "discarded-duplicate",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a51-b754-78c0-a00a-8e990a690cb1/exec-d3aa1ccd-3622-41c1-90e7-20e8296db9a1.png",
+      "duplicateSource": "/Users/lucas-tail/.codex/generated_images/01a16a51-b754-78c0-a00a-8e990a690cb1/exec-d3aa1ccd-3622-41c1-90e7-20e8296db9a1.png",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shoe": "marrom",
+      "file": "terno-grafite-camisa-verde-oliva-calca-grafite-calcado-marrom.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph. Image 1 supplies the approved GRAPHITE CHARCOAL GRAY #45484C trouser color and recurring male model identity: adult man, short dark wavy hair, light stubble, lean build, natural calm expression. Image 2 supplies the tailored single-breasted two-piece suit style and standing pose, not its navy color. OUTFIT: jacket AND matching tailored trousers in identical fabric and identical GRAPHITE/CHARCOAL GRAY #45484C, neutral dark gray distinctly lighter than black and darker than stone gray. Long-sleeve button-down OLIVE GREEN #6B7A4A shirt, open collar, tucked in. Footwear: DARK BROWN #5C4030 leather lace-up dress shoes. Plain light-gray seamless studio background, soft neutral color-balanced studio lighting, realistic fabric folds and texture, soft contact shadow. Keep the same recognizable model, natural anatomically correct hands and legs. No tie, accessories, pattern, text, logos, watermark, collage, additional people or props. COMPOSITION: 1536x1024 landscape canvas. Entire person centered inside x380..1156; head near y20 and both shoes near y980 with small margins, complete body fully visible for a subsequent central 776x1024 crop. Extend plain studio background on both sides. Asset target: gpt/to_crop/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-marrom.png.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a51-b754-78c0-a00a-8e990a690cb1/exec-3b2d7428-7d5e-434f-8848-1d2b46f947d4.png",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shoe": "branco",
+      "file": "terno-grafite-camisa-verde-oliva-calca-grafite-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph. Image 1 supplies the approved GRAPHITE CHARCOAL GRAY #45484C trouser color and recurring male model identity: adult man, short dark wavy hair, light stubble, lean build, natural calm expression. Image 2 supplies the tailored single-breasted two-piece suit style and standing pose, not its navy color. OUTFIT: jacket AND matching tailored trousers in identical fabric and identical GRAPHITE/CHARCOAL GRAY #45484C, neutral dark gray distinctly lighter than black and darker than stone gray. Long-sleeve button-down OLIVE GREEN #6B7A4A shirt, open collar, tucked in. Footwear: WHITE #F0EEEA clean low-top leather sneakers. Plain light-gray seamless studio background, soft neutral color-balanced studio lighting, realistic fabric folds and texture, soft contact shadow. Keep the same recognizable model, natural anatomically correct hands and legs. No tie, accessories, pattern, text, logos, watermark, collage, additional people or props. COMPOSITION: 1536x1024 landscape canvas. Entire person centered inside x380..1156; head near y20 and both shoes near y980 with small margins, complete body fully visible for a subsequent central 776x1024 crop. Extend plain studio background on both sides. Asset target: gpt/to_crop/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-branco.png.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a51-b754-78c0-a00a-8e990a690cb1/exec-aa7dcd98-eaa2-481a-9018-3ecaa41345ec.png",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shoe": "cinza-claro",
+      "file": "terno-grafite-camisa-verde-oliva-calca-grafite-calcado-cinza-claro.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph. Image 1 supplies the approved GRAPHITE CHARCOAL GRAY #45484C trouser color and recurring male model identity: adult man, short dark wavy hair, light stubble, lean build, natural calm expression. Image 2 supplies the tailored single-breasted two-piece suit style and standing pose, not its navy color. OUTFIT: jacket AND matching tailored trousers in identical fabric and identical GRAPHITE/CHARCOAL GRAY #45484C, neutral dark gray distinctly lighter than black and darker than stone gray. Long-sleeve button-down OLIVE GREEN #6B7A4A shirt, open collar, tucked in. Footwear: LIGHT GRAY #A8A8A6 leather lace-up dress shoes. Plain light-gray seamless studio background, soft neutral color-balanced studio lighting, realistic fabric folds and texture, soft contact shadow. Keep the same recognizable model, natural anatomically correct hands and legs. No tie, accessories, pattern, text, logos, watermark, collage, additional people or props. COMPOSITION: 1536x1024 landscape canvas. Entire person centered inside x380..1156; head near y20 and both shoes near y980 with small margins, complete body fully visible for a subsequent central 776x1024 crop. Extend plain studio background on both sides. Asset target: gpt/to_crop/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-cinza-claro.png.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a51-b754-78c0-a00a-8e990a690cb1/exec-d5d712eb-74d2-43fd-9a05-26bf19c2dc28.png",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shoe": "bege",
+      "file": "terno-grafite-camisa-verde-oliva-calca-grafite-calcado-bege.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph. Image 1 supplies the approved GRAPHITE CHARCOAL GRAY #45484C trouser color and recurring male model identity: adult man, short dark wavy hair, light stubble, lean build, natural calm expression. Image 2 supplies the tailored single-breasted two-piece suit style and standing pose, not its navy color. OUTFIT: jacket AND matching tailored trousers in identical fabric and identical GRAPHITE/CHARCOAL GRAY #45484C, neutral dark gray distinctly lighter than black and darker than stone gray. Long-sleeve button-down OLIVE GREEN #6B7A4A shirt, open collar, tucked in. Footwear: BEIGE #C8B090 leather lace-up dress shoes. Plain light-gray seamless studio background, soft neutral color-balanced studio lighting, realistic fabric folds and texture, soft contact shadow. Keep the same recognizable model, natural anatomically correct hands and legs. No tie, accessories, pattern, text, logos, watermark, collage, additional people or props. COMPOSITION: 1536x1024 landscape canvas. Entire person centered inside x380..1156; head near y20 and both shoes near y980 with small margins, complete body fully visible for a subsequent central 776x1024 crop. Extend plain studio background on both sides. Asset target: gpt/to_crop/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-bege.png.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a51-b754-78c0-a00a-8e990a690cb1/exec-798690ab-93c9-4ab8-9096-64949abffc4d.png",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shoe": "caramelo",
+      "file": "terno-grafite-camisa-verde-oliva-calca-grafite-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph. Image 1 supplies the approved GRAPHITE CHARCOAL GRAY #45484C trouser color and recurring male model identity: adult man, short dark wavy hair, light stubble, lean build, natural calm expression. Image 2 supplies the tailored single-breasted two-piece suit style and standing pose, not its navy color. OUTFIT: jacket AND matching tailored trousers in identical fabric and identical GRAPHITE/CHARCOAL GRAY #45484C, neutral dark gray distinctly lighter than black and darker than stone gray. Long-sleeve button-down OLIVE GREEN #6B7A4A shirt, open collar, tucked in. Footwear: CARAMEL #A87848 leather lace-up dress shoes. Plain light-gray seamless studio background, soft neutral color-balanced studio lighting, realistic fabric folds and texture, soft contact shadow. Keep the same recognizable model, natural anatomically correct hands and legs. No tie, accessories, pattern, text, logos, watermark, collage, additional people or props. COMPOSITION: 1536x1024 landscape canvas. Entire person centered inside x380..1156; head near y20 and both shoes near y980 with small margins, complete body fully visible for a subsequent central 776x1024 crop. Extend plain studio background on both sides. Asset target: gpt/to_crop/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-caramelo.png.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a51-b754-78c0-a00a-8e990a690cb1/exec-04857725-00eb-433b-b00d-84081c8eab24.png",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    }
+  ],
+  "status": "complete"
+}

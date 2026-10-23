@@ -154,8 +154,8 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 
 ### Terno (permanece ativo)
 
-- Cores que têm imagens de terno no repositório: azul claro, azul marinho, bege, branco, cáqui, caramelo, cinza claro, cinza pedra, ferrugem, lilás, marrom, preto, verde oliva e vinho.
-- Camisas permitidas: azul claro, rosa claro, branco, lilás claro (`lilas` no nome do arquivo), preta (`preta`), verde oliva (`verde-oliva`), amarelo claro (`amarela`) e vinho (`vinho`). As séries amarelo claro e vinho estão completas, com 84 combinações cada (14 ternos × 6 calçados).
+- Cores que têm imagens de terno no repositório: azul claro, azul marinho, bege, branco, cáqui, caramelo, cinza claro, cinza pedra, chumbo / grafite, ferrugem, lilás, marrom, preto, verde oliva e vinho.
+- Camisas permitidas: azul claro, rosa claro, branco, lilás claro (`lilas` ou `lilas-claro` no nome do arquivo), preta (`preta` ou `preto`), verde oliva (`verde-oliva`), amarelo claro (`amarela` ou `amarelo-claro`) e vinho (`vinho`). Cada camisa cobre 15 ternos × 6 calçados. O terno chumbo / grafite usa o mesmo tom `#45484C` da calça, com paletó e calça coordenados: 48 looks (8 camisas × 6 calçados).
 - Calçados permitidos: bege, caramelo, cinza claro, marrom, preto e tênis branco.
 - Não mostrar seletor de calça em modo terno.
 

@@ -1,0 +1,276 @@
+{
+  "mode": "built-in image_gen",
+  "status": "complete",
+  "requests": [
+    {
+      "shirt": "azul-claro",
+      "shoe": "preto",
+      "file": "terno-grafite-camisa-azul-claro-calca-grafite-calcado-preto.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light blue (azul-claro), open collar, no tie. Shoes black (preto) leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-b98ef2bb-a998-46f6-a17a-2ba8351e6203.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-azul-claro-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-azul-claro-calca-grafite-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "azul-claro",
+      "shoe": "marrom",
+      "file": "terno-grafite-camisa-azul-claro-calca-grafite-calcado-marrom.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light blue (azul-claro), open collar, no tie. Shoes dark brown leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-53ac060c-c373-4e45-a40d-e131a8589118.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-azul-claro-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-azul-claro-calca-grafite-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "azul-claro",
+      "shoe": "branco",
+      "file": "terno-grafite-camisa-azul-claro-calca-grafite-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light blue (azul-claro), open collar, no tie. Shoes clean white minimalist leather sneakers. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-ee5307dd-c5cf-47b0-9a82-383402c5f8c6.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-azul-claro-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-azul-claro-calca-grafite-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "azul-claro",
+      "shoe": "cinza-claro",
+      "file": "terno-grafite-camisa-azul-claro-calca-grafite-calcado-cinza-claro.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light blue (azul-claro), open collar, no tie. Shoes light gray minimalist sneakers. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-3a186d28-76b1-4c0f-8a7f-00632c41f542.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-azul-claro-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-azul-claro-calca-grafite-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "rosa-claro",
+      "shoe": "preto",
+      "file": "terno-grafite-camisa-rosa-claro-calca-grafite-calcado-preto.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light pink (rosa-claro), open collar, no tie. Shoes black leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-4d1b40e7-0c69-478e-966f-5262c80da5cb.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "azul-claro",
+      "shoe": "bege",
+      "file": "terno-grafite-camisa-azul-claro-calca-grafite-calcado-bege.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light blue (azul-claro), open collar, no tie. Shoes beige minimalist suede shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-4c3ebaa3-e098-4c4f-81cb-6eef8d748500.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-azul-claro-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-azul-claro-calca-grafite-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "azul-claro",
+      "shoe": "caramelo",
+      "file": "terno-grafite-camisa-azul-claro-calca-grafite-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light blue (azul-claro), open collar, no tie. Shoes caramel tan leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-bff9c0c8-6939-4735-9b1e-d18d5c1663d5.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-azul-claro-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-azul-claro-calca-grafite-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "rosa-claro",
+      "shoe": "cinza-claro",
+      "file": "terno-grafite-camisa-rosa-claro-calca-grafite-calcado-cinza-claro.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light pink (rosa-claro), open collar, no tie. Shoes light gray minimalist sneakers. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-69d56bb6-d108-4c0e-9cd4-a51b4fa4d1b5.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "rosa-claro",
+      "shoe": "marrom",
+      "file": "terno-grafite-camisa-rosa-claro-calca-grafite-calcado-marrom.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light pink (rosa-claro), open collar, no tie. Shoes dark brown leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-ec7aabbf-2c7a-4992-b61f-918797c9d2c5.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "rosa-claro",
+      "shoe": "branco",
+      "file": "terno-grafite-camisa-rosa-claro-calca-grafite-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light pink (rosa-claro), open collar, no tie. Shoes clean white minimalist leather sneakers. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-5ff10e46-6551-465e-999d-45b573c337bb.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "rosa-claro",
+      "shoe": "caramelo",
+      "file": "terno-grafite-camisa-rosa-claro-calca-grafite-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light pink (rosa-claro), open collar, no tie. Shoes caramel tan leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-b128e2a6-8e58-4f5a-a505-872b360c24f2.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "rosa-claro",
+      "shoe": "bege",
+      "file": "terno-grafite-camisa-rosa-claro-calca-grafite-calcado-bege.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pale light pink (rosa-claro), open collar, no tie. Shoes beige minimalist suede shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-4ba6905f-04c1-4758-a38f-4be9267f6940.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-rosa-claro-calca-grafite-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "branco",
+      "shoe": "preto",
+      "file": "terno-grafite-camisa-branco-calca-grafite-calcado-preto.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pure white (branco), open collar, no tie. Shoes black leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-298423aa-de62-4bb4-b96e-e4517b2c8d93.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-branco-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-branco-calca-grafite-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "branco",
+      "shoe": "branco",
+      "file": "terno-grafite-camisa-branco-calca-grafite-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pure white (branco), open collar, no tie. Shoes clean white minimalist leather sneakers. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-2d6e55cc-4f89-4160-9cc5-123f634ab7b3.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-branco-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-branco-calca-grafite-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "branco",
+      "shoe": "cinza-claro",
+      "file": "terno-grafite-camisa-branco-calca-grafite-calcado-cinza-claro.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pure white (branco), open collar, no tie. Shoes light gray minimalist sneakers. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-feb95608-6c14-4a64-a06a-77a2194a7aea.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-branco-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-branco-calca-grafite-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "branco",
+      "shoe": "marrom",
+      "file": "terno-grafite-camisa-branco-calca-grafite-calcado-marrom.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pure white (branco), open collar, no tie. Shoes dark brown leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-44da8f69-f3a9-4a73-a853-a0d0cbb17753.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-branco-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-branco-calca-grafite-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "branco",
+      "shoe": "caramelo",
+      "file": "terno-grafite-camisa-branco-calca-grafite-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pure white (branco), open collar, no tie. Shoes caramel tan leather derby dress shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-4a41710f-5b78-4b2a-9e3b-01aa77fa5266.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-branco-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-branco-calca-grafite-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "shirt": "branco",
+      "shoe": "bege",
+      "file": "terno-grafite-camisa-branco-calca-grafite-calcado-bege.png",
+      "prompt": "Use case: product-mockup. Create exactly ONE photorealistic men's wardrobe catalogue image, landscape 1536x1024 pixels. Reference image 1 provides exact graphite/lead gray trouser shade #45484C; reference image 2 provides model, pose, studio, tailoring and outfit style. Full-body adult male with short wavy dark hair, light stubble, olive skin, neutral face, standing frontal, one hand in pocket. Wear matching two-piece suit, blazer AND trousers graphite/lead gray #45484C, visibly medium-dark neutral gray not navy or black; fitted notch-lapel two-button blazer. Shirt pure white (branco), open collar, no tie. Shoes beige minimalist suede shoes. Neutral light gray seamless studio background, soft even light, realistic wool and cotton. Whole man from hair to soles fully visible; center at x768, head y30, soles y980, subject lies inside x450..1086, ample empty side margins for later central 776x1024 crop. No writing, no logos, no collage, no extra objects.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-141c-7cb0-a8c7-fbc9433106ee/exec-ac750235-f124-4d0b-a81e-28c8ba3d6f28.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-branco-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-branco-calca-grafite-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    }
+  ]
+}

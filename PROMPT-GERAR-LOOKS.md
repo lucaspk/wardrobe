@@ -86,6 +86,12 @@ A imagem inicial abaixo foi aprovada e deve ser usada como referência visual pa
 
 Série concluída: 84 combinações disponíveis, incluindo a amostra aprovada e 83 imagens novas geradas em lotes paralelos, sem duplicatas. Todos os PNGs foram recortados em 776 × 1024 e salvos na raiz de `gpt/`, com WebP correspondente em `gpt/compressed/`, entradas em `assets/js/script.js` e índice do combinador atualizado. A camisa lilás da amostra e as imagens existentes de cada terno orientaram os tons do conjunto e dos calçados.
 
+## Série de terno chumbo / grafite
+
+48 looks com paletó e calça no mesmo tom grafite `#45484C` da calça já aprovada: 8 camisas (azul claro, rosa claro, branco, lilás claro, preto, verde oliva, amarelo claro e vinho) × 6 calçados (preto, marrom, branco, cinza claro, bege e caramelo). Geração com a ferramenta integrada de imagens em lotes paralelos; prompts completos e fontes registrados em `docs/prompts/terno-grafite-{a,b,c,d}.json`.
+
+Prompt comum: fotografia de catálogo de corpo inteiro, mesmo modelo e fundo cinza das referências, terno coordenado grafite `#45484C`, camisa e calçado da combinação, sem gravata ou acessórios. Canvas 1536 × 1024 com pessoa centralizada para recorte 776 × 1024. PNG final em `gpt/raws/`, WebP em `gpt/compressed/`, cadastro em `assets/js/script.js` e combinador.
+
 ## Séries de camisas preta e verde oliva com terno
 
 Séries concluídas no mesmo padrão da série lilás: 84 combinações com camisa preta e 84 com camisa verde oliva, cobrindo as 14 cores de terno e as 6 cores de calçado do combinador. Os 168 looks têm PNG final e WebP em 776 × 1024, cadastro na galeria e resolução validada no combinador.

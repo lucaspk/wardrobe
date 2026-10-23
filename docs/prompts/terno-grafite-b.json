@@ -1,0 +1,177 @@
+{
+  "series": "terno-grafite-b",
+  "mode": "builtin-imagegen",
+  "suitColor": "#45484C",
+  "status": "complete",
+  "requests": [
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid pale lilac long-sleeve dress shirt, open collar, NO tie, black leather Oxford dress shoes. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-73d1dc56-5b3d-485d-b7c4-b222e5833135.png",
+      "file": "terno-grafite-camisa-lilas-claro-calca-grafite-calcado-preto.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid pale lilac long-sleeve dress shirt, open collar, NO tie, dark brown leather Oxford dress shoes. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-e141947c-b642-49b2-a1a4-5b50f9b0234f.png",
+      "file": "terno-grafite-camisa-lilas-claro-calca-grafite-calcado-marrom.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid pale lilac long-sleeve dress shirt, open collar, NO tie, plain light gray minimalist leather low-top sneakers. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-bfaa9d45-da83-42d6-927e-a1caa3394505.png",
+      "file": "terno-grafite-camisa-lilas-claro-calca-grafite-calcado-cinza-claro.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid pale lilac long-sleeve dress shirt, open collar, NO tie, plain white minimalist leather low-top sneakers. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-2f7abf77-72e7-4265-941e-8d5f5988c47c.png",
+      "file": "terno-grafite-camisa-lilas-claro-calca-grafite-calcado-branco.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid pale lilac long-sleeve dress shirt, open collar, NO tie, plain beige minimalist leather low-top sneakers. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-567897fc-7515-4a6f-845a-3c912c8c7b6c.png",
+      "file": "terno-grafite-camisa-lilas-claro-calca-grafite-calcado-bege.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid pale lilac long-sleeve dress shirt, open collar, NO tie, caramel tan leather Oxford dress shoes. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-94158b90-fd8a-4c7d-a106-df1b7e594f3b.png",
+      "file": "terno-grafite-camisa-lilas-claro-calca-grafite-calcado-caramelo.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid black long-sleeve dress shirt, open collar, NO tie, black leather Oxford dress shoes. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-32d768cd-bcb8-47c6-af28-2054e0955ed2.png",
+      "file": "terno-grafite-camisa-preto-calca-grafite-calcado-preto.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid black long-sleeve dress shirt, open collar, NO tie, plain white minimalist leather low-top sneakers. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-29b7a90b-d452-4add-a3b0-66203e59a4d9.png",
+      "file": "terno-grafite-camisa-preto-calca-grafite-calcado-branco.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid black long-sleeve dress shirt, open collar, NO tie, dark brown leather Oxford dress shoes. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-c37ea96f-43eb-403d-a4d7-e3fe5bc67226.png",
+      "file": "terno-grafite-camisa-preto-calca-grafite-calcado-marrom.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid black long-sleeve dress shirt, open collar, NO tie, plain light gray minimalist leather low-top sneakers. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-541f7f3b-e9db-43a0-95de-e89a88003911.png",
+      "file": "terno-grafite-camisa-preto-calca-grafite-calcado-cinza-claro.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid black long-sleeve dress shirt, open collar, NO tie, caramel tan leather Oxford dress shoes. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-28763beb-43c1-44be-bd0a-85c1d1f2f353.png",
+      "file": "terno-grafite-camisa-preto-calca-grafite-calcado-caramelo.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid black long-sleeve dress shirt, open collar, NO tie, plain beige minimalist leather low-top sneakers. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-942b841d-db23-4d05-94ee-daf897da75bb.png",
+      "file": "terno-grafite-camisa-preto-calca-grafite-calcado-bege.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Men's fashion catalog wardrobe image. Match the inspected references: handsome adult man, curly dark hair, short stubble, warm olive skin, relaxed upright full-body front pose, one hand in trouser pocket. Seamless light neutral gray studio background, soft even realistic lighting, head and entire shoes visible. Wearing a perfectly matching two-piece GRAPHITE / CHUMBO charcoal gray suit (#45484C), tailored single-breasted notch-lapel blazer and trousers, with a solid olive green long-sleeve dress shirt, open collar, NO tie, black leather Oxford dress shoes. Same graphite as reference trousers, not navy. No logos or text. Landscape 1536x1024 canvas, man centered, entire subject within x380..1156 and y20..990, large blank margins left and right for a centered 776x1024 crop. Photorealistic fabric and anatomy.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a16a52-259d-70e3-9841-3b9b72972c51/exec-1bf39129-1279-41ca-9874-18204f730b53.png",
+      "file": "terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    }
+  ]
+}
