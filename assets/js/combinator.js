@@ -28,6 +28,7 @@
       { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
       { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
       { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
+      { id: 'grafite', label: 'Chumbo / grafite', hex: '#45484C' },
       { id: 'bege', label: 'Bege', hex: '#C8B898' },
       { id: 'creme', label: 'Creme', hex: '#E8DCC8' },
       { id: 'marrom', label: 'Marrom', hex: '#5C4030' },
@@ -73,11 +74,11 @@
     'bege', 'caqui', 'caramelo', 'camel', 'marrom', 'ferrugem',
     'amarelo-claro', 'mostarda', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro', 'azul-petroleo',
     'verde-oliva', 'vermelho',
-    'vinho', 'verde-militar', 'verde-escuro', 'cinza-pedra', 'azul-marinho', 'preto',
+    'vinho', 'verde-militar', 'verde-escuro', 'cinza-pedra', 'grafite', 'azul-marinho', 'preto',
   ];
 
   const COLOR_GROUPS = [
-    { id: 'neutros', label: 'Neutros', colors: ['branco', 'creme', 'cinza-claro', 'cinza-pedra', 'azul-marinho', 'preto'] },
+    { id: 'neutros', label: 'Neutros', colors: ['branco', 'creme', 'cinza-claro', 'cinza-pedra', 'grafite', 'azul-marinho', 'preto'] },
     { id: 'terrosos', label: 'Terrosos', colors: ['bege', 'caqui', 'caramelo', 'camel', 'marrom', 'ferrugem', 'verde-oliva', 'verde-militar', 'verde-escuro'] },
     { id: 'vivos', label: 'Vivos', colors: ['amarelo-claro', 'mostarda', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro', 'azul-petroleo', 'vermelho', 'vinho'] },
   ];
@@ -137,6 +138,7 @@
     calca: {
       preto: ['preto', 'preta'],
       'cinza-pedra': ['cinza-pedra', 'cinza'],
+      grafite: ['grafite', 'chumbo'],
     },
     calcado: {
       branco: ['branco', 'tenis-branco'],

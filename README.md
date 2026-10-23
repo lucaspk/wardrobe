@@ -85,7 +85,7 @@ Cinza pedra ✅
 
 
 Cáqui X -> reduzir a creme
-Chumbo X -> reduzir a cinza pedra
+Chumbo / grafite ✅ — calça própria no modo sem camada: 20 camisas × 6 calçados, totalizando 120 looks. Tom neutro escuro `#45484C`, distinto de cinza pedra e preto.
 
 Vermelho Ferrugem / Terracota ✅
 Mostarda ✅

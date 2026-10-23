@@ -13,6 +13,8 @@
 
 - Ao final da geração, apague todos arquivos desnecessários.
 
+- A limpeza também inclui as cópias-fonte desta geração em ~/.codex/generated_images/ e auxiliares em diretórios temporários. Antes de apagar uma fonte, confirme que o PNG final está preservado em /gpt/raws e o WebP está válido em /gpt/compressed. Não apagar arquivos de outras tarefas.
+
 - Sempre incluir no script.js os looks gerados.
 
 - Se for algo apropriado para combinador, também acrescente lá.

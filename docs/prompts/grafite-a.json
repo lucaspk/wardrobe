@@ -1,0 +1,489 @@
+{
+  "series": "grafite-a",
+  "mode": "builtin-imagegen",
+  "pantColor": "#45484C",
+  "status": "complete",
+  "sampleReference": "gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+  "requests": [
+    {
+      "file": "camisa-amarelo-claro-calca-grafite-calcado-preto.png",
+      "shirt": "amarelo-claro",
+      "pant": "grafite",
+      "shoe": "preto",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-948b0f95-9aef-4344-93d5-fbdf5bb11061.png",
+      "raw": "gpt/raws/camisa-amarelo-claro-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-calca-grafite-calcado-preto.webp",
+      "shirtReference": "gpt/compressed/camisa-amarela-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PASTEL YELLOW #F5E6A8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BLACK #1A1A1A leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-amarelo-claro-calca-grafite-calcado-preto.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-amarelo-claro-calca-grafite-calcado-marrom.png",
+      "shirt": "amarelo-claro",
+      "pant": "grafite",
+      "shoe": "marrom",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-e13ac7dd-4ee5-4c30-88f9-8bb5188fed7e.png",
+      "raw": "gpt/raws/camisa-amarelo-claro-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-calca-grafite-calcado-marrom.webp",
+      "shirtReference": "gpt/compressed/camisa-amarela-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PASTEL YELLOW #F5E6A8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; DARK BROWN #5C4030 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-amarelo-claro-calca-grafite-calcado-marrom.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-amarelo-claro-calca-grafite-calcado-branco.png",
+      "shirt": "amarelo-claro",
+      "pant": "grafite",
+      "shoe": "branco",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-20997e1f-45a0-4e9b-8c99-01b3598f2449.png",
+      "raw": "gpt/raws/camisa-amarelo-claro-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-calca-grafite-calcado-branco.webp",
+      "shirtReference": "gpt/compressed/camisa-amarela-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PASTEL YELLOW #F5E6A8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; WHITE #F0EEEA clean low-top leather sneakers. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-amarelo-claro-calca-grafite-calcado-branco.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-amarelo-claro-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "amarelo-claro",
+      "pant": "grafite",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-441b2002-dc6a-487a-bc97-0bf2995d0183.png",
+      "raw": "gpt/raws/camisa-amarelo-claro-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-calca-grafite-calcado-cinza-claro.webp",
+      "shirtReference": "gpt/compressed/camisa-amarela-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PASTEL YELLOW #F5E6A8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; LIGHT GRAY #A8A8A6 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-amarelo-claro-calca-grafite-calcado-cinza-claro.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-amarelo-claro-calca-grafite-calcado-bege.png",
+      "shirt": "amarelo-claro",
+      "pant": "grafite",
+      "shoe": "bege",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-0fb9d701-f923-4c47-b4e5-e02cecfac6a8.png",
+      "raw": "gpt/raws/camisa-amarelo-claro-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-calca-grafite-calcado-bege.webp",
+      "shirtReference": "gpt/compressed/camisa-amarela-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PASTEL YELLOW #F5E6A8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BEIGE #C8B090 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-amarelo-claro-calca-grafite-calcado-bege.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-amarelo-claro-calca-grafite-calcado-caramelo.png",
+      "shirt": "amarelo-claro",
+      "pant": "grafite",
+      "shoe": "caramelo",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-fa537f5f-b440-4220-bd3e-4f5171ad8c2f.png",
+      "raw": "gpt/raws/camisa-amarelo-claro-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-calca-grafite-calcado-caramelo.webp",
+      "shirtReference": "gpt/compressed/camisa-amarela-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PASTEL YELLOW #F5E6A8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; CARAMEL #A87848 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-amarelo-claro-calca-grafite-calcado-caramelo.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-azul-claro-calca-grafite-calcado-preto.png",
+      "shirt": "azul-claro",
+      "pant": "grafite",
+      "shoe": "preto",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-08d54e4c-a7a6-4478-a1b5-2171292487c6.png",
+      "raw": "gpt/raws/camisa-azul-claro-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-claro-calca-grafite-calcado-preto.webp",
+      "shirtReference": "gpt/compressed/camisa-azul-claro-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down LIGHT BLUE #A8C8E0 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BLACK #1A1A1A leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-azul-claro-calca-grafite-calcado-preto.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-azul-claro-calca-grafite-calcado-marrom.png",
+      "shirt": "azul-claro",
+      "pant": "grafite",
+      "shoe": "marrom",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-04aec399-8622-453a-a197-46d5df6ee677.png",
+      "raw": "gpt/raws/camisa-azul-claro-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-claro-calca-grafite-calcado-marrom.webp",
+      "shirtReference": "gpt/compressed/camisa-azul-claro-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down LIGHT BLUE #A8C8E0 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; DARK BROWN #5C4030 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-azul-claro-calca-grafite-calcado-marrom.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-azul-claro-calca-grafite-calcado-branco.png",
+      "shirt": "azul-claro",
+      "pant": "grafite",
+      "shoe": "branco",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-6e0221fd-ad54-4720-af5a-33d2fa47d999.png",
+      "raw": "gpt/raws/camisa-azul-claro-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-claro-calca-grafite-calcado-branco.webp",
+      "shirtReference": "gpt/compressed/camisa-azul-claro-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down LIGHT BLUE #A8C8E0 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; WHITE #F0EEEA clean low-top leather sneakers. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-azul-claro-calca-grafite-calcado-branco.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-azul-claro-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "azul-claro",
+      "pant": "grafite",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-e7e94019-afc6-4cc5-84b6-a3e37282ef77.png",
+      "raw": "gpt/raws/camisa-azul-claro-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-claro-calca-grafite-calcado-cinza-claro.webp",
+      "shirtReference": "gpt/compressed/camisa-azul-claro-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down LIGHT BLUE #A8C8E0 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; LIGHT GRAY #A8A8A6 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-azul-claro-calca-grafite-calcado-cinza-claro.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-azul-claro-calca-grafite-calcado-bege.png",
+      "shirt": "azul-claro",
+      "pant": "grafite",
+      "shoe": "bege",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-2a383554-31b2-4513-ae51-b0eea8276ad3.png",
+      "raw": "gpt/raws/camisa-azul-claro-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-claro-calca-grafite-calcado-bege.webp",
+      "shirtReference": "gpt/compressed/camisa-azul-claro-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down LIGHT BLUE #A8C8E0 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BEIGE #C8B090 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-azul-claro-calca-grafite-calcado-bege.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-azul-claro-calca-grafite-calcado-caramelo.png",
+      "shirt": "azul-claro",
+      "pant": "grafite",
+      "shoe": "caramelo",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-4682f972-a54b-41a5-aef8-df76df7b05a1.png",
+      "raw": "gpt/raws/camisa-azul-claro-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-claro-calca-grafite-calcado-caramelo.webp",
+      "shirtReference": "gpt/compressed/camisa-azul-claro-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down LIGHT BLUE #A8C8E0 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; CARAMEL #A87848 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-azul-claro-calca-grafite-calcado-caramelo.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-rosa-claro-calca-grafite-calcado-preto.png",
+      "shirt": "rosa-claro",
+      "pant": "grafite",
+      "shoe": "preto",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-fa0a5d56-ba06-44cf-a5ed-0d7d0c292873.png",
+      "raw": "gpt/raws/camisa-rosa-claro-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-rosa-claro-calca-grafite-calcado-preto.webp",
+      "shirtReference": "gpt/compressed/camisa-rosa-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PINK #F0C4C8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BLACK #1A1A1A leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-rosa-claro-calca-grafite-calcado-preto.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-rosa-claro-calca-grafite-calcado-marrom.png",
+      "shirt": "rosa-claro",
+      "pant": "grafite",
+      "shoe": "marrom",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-47771d9e-3fb5-4f5f-b571-5009b9b2b004.png",
+      "raw": "gpt/raws/camisa-rosa-claro-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-rosa-claro-calca-grafite-calcado-marrom.webp",
+      "shirtReference": "gpt/compressed/camisa-rosa-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PINK #F0C4C8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; DARK BROWN #5C4030 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-rosa-claro-calca-grafite-calcado-marrom.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-rosa-claro-calca-grafite-calcado-branco.png",
+      "shirt": "rosa-claro",
+      "pant": "grafite",
+      "shoe": "branco",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-a234cf8f-5a3b-4fff-8374-1f58c39e9bc9.png",
+      "raw": "gpt/raws/camisa-rosa-claro-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-rosa-claro-calca-grafite-calcado-branco.webp",
+      "shirtReference": "gpt/compressed/camisa-rosa-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PINK #F0C4C8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; WHITE #F0EEEA clean low-top leather sneakers. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-rosa-claro-calca-grafite-calcado-branco.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-rosa-claro-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "rosa-claro",
+      "pant": "grafite",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-3375789d-592a-4698-9935-086af1dd6618.png",
+      "raw": "gpt/raws/camisa-rosa-claro-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-rosa-claro-calca-grafite-calcado-cinza-claro.webp",
+      "shirtReference": "gpt/compressed/camisa-rosa-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PINK #F0C4C8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; LIGHT GRAY #A8A8A6 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-rosa-claro-calca-grafite-calcado-cinza-claro.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-rosa-claro-calca-grafite-calcado-bege.png",
+      "shirt": "rosa-claro",
+      "pant": "grafite",
+      "shoe": "bege",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-3d45bd36-6dfc-4b84-ac9b-917c5de9a687.png",
+      "raw": "gpt/raws/camisa-rosa-claro-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-rosa-claro-calca-grafite-calcado-bege.webp",
+      "shirtReference": "gpt/compressed/camisa-rosa-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PINK #F0C4C8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BEIGE #C8B090 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-rosa-claro-calca-grafite-calcado-bege.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-rosa-claro-calca-grafite-calcado-caramelo.png",
+      "shirt": "rosa-claro",
+      "pant": "grafite",
+      "shoe": "caramelo",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-fc94a176-e9d9-4a25-b999-8552e2f75529.png",
+      "raw": "gpt/raws/camisa-rosa-claro-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-rosa-claro-calca-grafite-calcado-caramelo.webp",
+      "shirtReference": "gpt/compressed/camisa-rosa-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE PINK #F0C4C8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; CARAMEL #A87848 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-rosa-claro-calca-grafite-calcado-caramelo.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-verde-oliva-calca-grafite-calcado-preto.png",
+      "shirt": "verde-oliva",
+      "pant": "grafite",
+      "shoe": "preto",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-01ae9c67-260b-4c62-b61f-7c3208cffeeb.png",
+      "raw": "gpt/raws/camisa-verde-oliva-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-verde-oliva-calca-grafite-calcado-preto.webp",
+      "shirtReference": "gpt/compressed/camisa-verde-oliva-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down OLIVE GREEN #6B7A4A shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BLACK #1A1A1A leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-verde-oliva-calca-grafite-calcado-preto.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-verde-oliva-calca-grafite-calcado-marrom.png",
+      "shirt": "verde-oliva",
+      "pant": "grafite",
+      "shoe": "marrom",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-67ea26b6-9986-4068-9842-0f5870ce0594.png",
+      "raw": "gpt/raws/camisa-verde-oliva-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-verde-oliva-calca-grafite-calcado-marrom.webp",
+      "shirtReference": "gpt/compressed/camisa-verde-oliva-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down OLIVE GREEN #6B7A4A shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; DARK BROWN #5C4030 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-verde-oliva-calca-grafite-calcado-marrom.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-verde-oliva-calca-grafite-calcado-branco.png",
+      "shirt": "verde-oliva",
+      "pant": "grafite",
+      "shoe": "branco",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-e12fd2bd-557a-4b45-aa35-19db5635d84f.png",
+      "raw": "gpt/raws/camisa-verde-oliva-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-verde-oliva-calca-grafite-calcado-branco.webp",
+      "shirtReference": "gpt/compressed/camisa-verde-oliva-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down OLIVE GREEN #6B7A4A shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; WHITE #F0EEEA clean low-top leather sneakers. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-verde-oliva-calca-grafite-calcado-branco.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-verde-oliva-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "verde-oliva",
+      "pant": "grafite",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-d7e880cc-cc02-4ac9-9b87-166287d87f01.png",
+      "raw": "gpt/raws/camisa-verde-oliva-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-verde-oliva-calca-grafite-calcado-cinza-claro.webp",
+      "shirtReference": "gpt/compressed/camisa-verde-oliva-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down OLIVE GREEN #6B7A4A shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; LIGHT GRAY #A8A8A6 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-verde-oliva-calca-grafite-calcado-cinza-claro.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-verde-oliva-calca-grafite-calcado-bege.png",
+      "shirt": "verde-oliva",
+      "pant": "grafite",
+      "shoe": "bege",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-f1c3a76a-7331-4cca-8e54-3350ab629a28.png",
+      "raw": "gpt/raws/camisa-verde-oliva-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-verde-oliva-calca-grafite-calcado-bege.webp",
+      "shirtReference": "gpt/compressed/camisa-verde-oliva-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down OLIVE GREEN #6B7A4A shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BEIGE #C8B090 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-verde-oliva-calca-grafite-calcado-bege.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-verde-oliva-calca-grafite-calcado-caramelo.png",
+      "shirt": "verde-oliva",
+      "pant": "grafite",
+      "shoe": "caramelo",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-cb57d71c-9856-492c-b487-4dbe5a2bacaa.png",
+      "raw": "gpt/raws/camisa-verde-oliva-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-verde-oliva-calca-grafite-calcado-caramelo.webp",
+      "shirtReference": "gpt/compressed/camisa-verde-oliva-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down OLIVE GREEN #6B7A4A shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; CARAMEL #A87848 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-verde-oliva-calca-grafite-calcado-caramelo.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-lilas-claro-calca-grafite-calcado-preto.png",
+      "shirt": "lilas-claro",
+      "pant": "grafite",
+      "shoe": "preto",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-33ac49e4-4029-48fc-b9de-9848001bf38a.png",
+      "raw": "gpt/raws/camisa-lilas-claro-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-lilas-claro-calca-grafite-calcado-preto.webp",
+      "shirtReference": "gpt/compressed/camisa-lilas-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE LILAC #D4C4E8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BLACK #1A1A1A leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-lilas-claro-calca-grafite-calcado-preto.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-lilas-claro-calca-grafite-calcado-marrom.png",
+      "shirt": "lilas-claro",
+      "pant": "grafite",
+      "shoe": "marrom",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-88e313bd-e0ab-4664-8099-84f8bb2c87b9.png",
+      "raw": "gpt/raws/camisa-lilas-claro-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-lilas-claro-calca-grafite-calcado-marrom.webp",
+      "shirtReference": "gpt/compressed/camisa-lilas-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE LILAC #D4C4E8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; DARK BROWN #5C4030 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-lilas-claro-calca-grafite-calcado-marrom.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-lilas-claro-calca-grafite-calcado-branco.png",
+      "shirt": "lilas-claro",
+      "pant": "grafite",
+      "shoe": "branco",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-fc2633d4-37cb-4644-a372-6f17ca50e613.png",
+      "raw": "gpt/raws/camisa-lilas-claro-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-lilas-claro-calca-grafite-calcado-branco.webp",
+      "shirtReference": "gpt/compressed/camisa-lilas-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE LILAC #D4C4E8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; WHITE #F0EEEA clean low-top leather sneakers. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-lilas-claro-calca-grafite-calcado-branco.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-lilas-claro-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "lilas-claro",
+      "pant": "grafite",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-e716bf14-bce4-4e71-9c47-849c5b9a78fa.png",
+      "raw": "gpt/raws/camisa-lilas-claro-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-lilas-claro-calca-grafite-calcado-cinza-claro.webp",
+      "shirtReference": "gpt/compressed/camisa-lilas-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE LILAC #D4C4E8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; LIGHT GRAY #A8A8A6 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-lilas-claro-calca-grafite-calcado-cinza-claro.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-lilas-claro-calca-grafite-calcado-bege.png",
+      "shirt": "lilas-claro",
+      "pant": "grafite",
+      "shoe": "bege",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-9299bdc5-e62c-41be-b6ee-fbbc5542fe0a.png",
+      "raw": "gpt/raws/camisa-lilas-claro-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-lilas-claro-calca-grafite-calcado-bege.webp",
+      "shirtReference": "gpt/compressed/camisa-lilas-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE LILAC #D4C4E8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; BEIGE #C8B090 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-lilas-claro-calca-grafite-calcado-bege.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-lilas-claro-calca-grafite-calcado-caramelo.png",
+      "shirt": "lilas-claro",
+      "pant": "grafite",
+      "shoe": "caramelo",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f2-346a-7f00-930e-71de5d0598ed/exec-6bf7a141-0a7f-41e5-af7a-52c8d5f8568c.png",
+      "raw": "gpt/raws/camisa-lilas-claro-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-lilas-claro-calca-grafite-calcado-caramelo.webp",
+      "shirtReference": "gpt/compressed/camisa-lilas-calca-cinza-pedra-calcado-preto.webp",
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic full-body menswear catalog photograph. Image 1 is the approved graphite-trouser sample: preserve its recurring adult male model identity, short dark wavy hair, subtle stubble, lean build, calm expression, natural pose, exact GRAPHITE CHARCOAL GRAY #45484C trousers tone, framing and plain light-gray seamless studio background. Image 2 is the requested shirt color reference: use ONLY its shirt color and style. OUTFIT: long-sleeve collared button-down PALE LILAC #D4C4E8 shirt tucked into GRAPHITE/CHARCOAL GRAY #45484C tailored trousers, neutral charcoal distinctly darker than stone gray and lighter than black; CARAMEL #A87848 leather lace-up dress shoes. No outer layer. Preserve gray trousers from Image 1; do not copy trousers from Image 2. Both arms, legs and shoes clearly visible and anatomically correct. Neutral color-balanced soft even studio lighting, realistic fabric texture and folds, soft contact shadow. No jacket, tie, accessory, pattern, logos, text, watermark, props, collage or additional people. COMPOSITION: 1536x1024 landscape work canvas; center complete person entirely inside x380..1156, head near y20 and both shoes near y980, small upper/lower margins, matching approved catalog scale. Extend plain studio backdrop to both sides. Final center crop is 776x1024. Save source for camisa-lilas-claro-calca-grafite-calcado-caramelo.png into gpt/to_crop before cropping.",
+      "size": [
+        776,
+        1024
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@ const COLOR_HEX = {
   Preto: '#1A1A1A',
   'Cinza claro': '#B0B0AE',
   'Cinza pedra': '#8A8880',
+  Grafite: '#45484C',
   Azul: '#A8C8E0',
   'Azul marinho': '#1E3A5F',
   Vinho: '#6B2D3C',
@@ -62,6 +63,7 @@ function getLookPartColor(part) {
     .replace(/\s+/g, ' ')
     .trim();
   const colors = [
+    { names: ['chumbo grafite', 'chumbo', 'grafite'], hex: COLOR_HEX.Grafite },
     { names: ['azul petroleo (teal)', 'azul petroleo', 'teal'], hex: COLOR_HEX['Azul petróleo'] },
     { names: ['mostarda'], hex: COLOR_HEX.Mostarda },
     { names: ['camel'], hex: COLOR_HEX.Camel },

@@ -65,6 +65,7 @@ Use o mesmo prompt-base para qualquer roupa. Acrescente somente a instrução es
 4. Confira a imagem antes de incorporá-la: combinação e tons corretos, peças visíveis, terno coordenado quando aplicável, modelo inteiro, mãos e calçados naturais, sem elementos extras.
 5. A partir da raiz do projeto, converta os PNGs da raiz de `gpt/` para WebP com `python3 scripts/convert_looks_to_webp.py`. O script valida cada WebP em `gpt/compressed/` antes de mover automaticamente seu PNG para `gpt/raws/`. Os PNGs ficam arquivados; a raiz de `gpt/` deve terminar sem os PNGs da geração. O conversor não percorre subpastas como `raws/` nem `references/`. Se já houver WebP, ele é preservado e validado antes do arquivamento; originais com o mesmo nome e conteúdo diferente recebem um sufixo para preservar ambos. Para substituir uma imagem existente, faça a troca aprovada explicitamente e confira o novo WebP.
 6. A partir da raiz do projeto, execute `python3 scripts/build_index.py` para incluir os looks no combinador. O arquivo `data/gpt-index.json` reúne PNGs novos na raiz e WebPs já comprimidas; ignora `raws/` e `references/`. O `assets/js/script.js` recebe o look selecionado pelo combinador e permite salvá-lo nos favoritos, sem catálogo estático. Confirme os caminhos, filtros e cores das peças nos dois fluxos.
+7. Depois de confirmar os PNGs arquivados e os WebPs válidos, apague também as cópias-fonte utilizadas nesta geração em `~/.codex/generated_images/`, os intermediários em `gpt/to_crop/` e os auxiliares em diretórios temporários. Limite a limpeza aos arquivos desta tarefa; preserve os arquivos finais do projeto e os registros de prompts.
 
 Para uma nova série, gere e valide primeiro uma única imagem de amostra. Só após a aprovação, gere o restante das combinações em lotes paralelos, sem duplicatas, e converta as imagens novas.
 
@@ -114,3 +115,11 @@ Todos os PNGs foram recortados em 776 × 1024, convertidos para WebP com qualida
 Prompts e registros das chamadas ao gerador integrado: [azul petróleo](docs/prompts/azul-petroleo.json), [mostarda](docs/prompts/mostarda.json), [camel](docs/prompts/camel.json), [complemento com calça vinho](docs/prompts/complemento-calca-vinho.json) e [complemento com calça verde oliva](docs/prompts/complemento-calca-verde-oliva.json). Os complementos fazem parte dos 180 looks e não são combinações adicionais.
 
 Fluxo definitivo para novas séries: `gpt/to_crop/` → recorte temporário em `gpt/` → WebP validado em `gpt/compressed/` → PNG automaticamente arquivado em `gpt/raws/` → atualização do índice → limpeza dos intermediários.
+
+## Calça chumbo / grafite — sem camada
+
+Série concluída: **120 looks novos**, com as 20 cores de camisa e as 6 cores de calçado do combinador. A calça usa o slug `grafite`, rótulo “Chumbo / grafite” e referência `#45484C`: cinza neutro escuro, distinto de cinza pedra e preto. A amostra `camisa-ferrugem-calca-grafite-calcado-preto` orienta o tom e o enquadramento de toda a série.
+
+Imagens geradas em lotes paralelos com o gerador integrado, recortadas em 776 × 1024 e convertidas para WebP (qualidade 82, método 6). PNGs arquivados em `gpt/raws/`, WebPs em `gpt/compressed/`; índice, seletor e cores dos favoritos atualizados.
+
+Prompts e registros: [lote A](docs/prompts/grafite-a.json), [lote B](docs/prompts/grafite-b.json), [lote C](docs/prompts/grafite-c.json) e [lote D](docs/prompts/grafite-d.json). Após validar a matriz completa, remover intermediários e apenas as cópias-fonte desta geração no diretório padrão do gerador; preservar os PNGs finais arquivados.

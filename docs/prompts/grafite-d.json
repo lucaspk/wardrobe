@@ -1,0 +1,420 @@
+{
+  "generated_with": "built-in image_gen",
+  "expected": 30,
+  "jobs": [
+    {
+      "file": "camisa-cinza-pedra-calca-grafite-calcado-preto.png",
+      "shirt": "cinza-pedra",
+      "shoe": "preto",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-cinza-escuro-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in stone gray #8A8880, matching the shirt color reference exactly. Set footwear to black leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-0adcd1b4-6fe2-423a-ae56-1d6ef0ff490f.png",
+      "raw": "gpt/raws/camisa-cinza-pedra-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-cinza-pedra-calca-grafite-calcado-preto.webp"
+    },
+    {
+      "file": "camisa-cinza-pedra-calca-grafite-calcado-marrom.png",
+      "shirt": "cinza-pedra",
+      "shoe": "marrom",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-cinza-escuro-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in stone gray #8A8880, matching the shirt color reference exactly. Set footwear to brown leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-d2531a22-1bb6-4b9f-9d70-10478ee239bc.png",
+      "raw": "gpt/raws/camisa-cinza-pedra-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-cinza-pedra-calca-grafite-calcado-marrom.webp"
+    },
+    {
+      "file": "camisa-cinza-pedra-calca-grafite-calcado-branco.png",
+      "shirt": "cinza-pedra",
+      "shoe": "branco",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-cinza-escuro-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in stone gray #8A8880, matching the shirt color reference exactly. Set footwear to clean minimal white sneakers, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-ae070478-cfe3-4bbc-914d-bd4fd5610e58.png",
+      "raw": "gpt/raws/camisa-cinza-pedra-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-cinza-pedra-calca-grafite-calcado-branco.webp"
+    },
+    {
+      "file": "camisa-cinza-pedra-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "cinza-pedra",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-cinza-escuro-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in stone gray #8A8880, matching the shirt color reference exactly. Set footwear to light gray shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-acfd1cc6-f420-4be9-9b69-00ee5a0cc39a.png",
+      "raw": "gpt/raws/camisa-cinza-pedra-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-cinza-pedra-calca-grafite-calcado-cinza-claro.webp"
+    },
+    {
+      "file": "camisa-cinza-pedra-calca-grafite-calcado-bege.png",
+      "shirt": "cinza-pedra",
+      "shoe": "bege",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-cinza-escuro-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in stone gray #8A8880, matching the shirt color reference exactly. Set footwear to beige shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-bd3742fe-ac01-4c36-87e6-13a950204be7.png",
+      "raw": "gpt/raws/camisa-cinza-pedra-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-cinza-pedra-calca-grafite-calcado-bege.webp"
+    },
+    {
+      "file": "camisa-cinza-pedra-calca-grafite-calcado-caramelo.png",
+      "shirt": "cinza-pedra",
+      "shoe": "caramelo",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-cinza-escuro-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in stone gray #8A8880, matching the shirt color reference exactly. Set footwear to caramel brown leather shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-4a9399fc-6735-4e72-968e-0ddd3bbcd080.png",
+      "raw": "gpt/raws/camisa-cinza-pedra-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-cinza-pedra-calca-grafite-calcado-caramelo.webp"
+    },
+    {
+      "file": "camisa-ferrugem-calca-grafite-calcado-preto.png",
+      "shirt": "ferrugem",
+      "shoe": "preto",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit the attached wardrobe catalog photograph to create the approved baseline for a new CHARCOAL/GRAPHITE trouser color series. Keep exactly the same adult male model, face, dark wavy hair, subtle stubble, lean build, pose, rust/ferrugem button-up long-sleeved shirt, black leather dress shoes, camera angle, soft neutral studio lighting and seamless light-gray background. Change ONLY the trousers from light olive to neutral dark CHARCOAL GRAPHITE GRAY / CHUMBO, reference midtone #45484C. They must read clearly as dark gray, appreciably darker than medium stone gray (#8A8880) and visibly lighter than black shoes (#1A1A1A), with readable realistic fabric texture, seams, pleats and natural folds. No blue/navy, green, brown, silver, metallic shine or camouflage. Keep the shirt tucked in and realistic tailored trousers. No jacket or other layer, no added accessories, belt, tie, patterns, logos, text, watermark or extra people. Complete body from head through both shoes, intact anatomy. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156, matching the height of the attached portrait with small margins above head/below shoes. Extend the same gray studio background at left and right so the final central776x1024 crop is a full-body catalog portrait. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-5637effe-cbd8-473e-beff-6acbedbdcbf7.png",
+      "raw": "gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-ferrugem-calca-grafite-calcado-preto.webp"
+    },
+    {
+      "file": "camisa-ferrugem-calca-grafite-calcado-marrom.png",
+      "shirt": "ferrugem",
+      "shoe": "marrom",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green.  Set shirt to long-sleeved tucked-in button-up in rust burnt orange #B85A38, matching the shirt color reference exactly. Set footwear to brown leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-ee0953f3-e42b-4c87-beb0-ff66c670cd11.png",
+      "raw": "gpt/raws/camisa-ferrugem-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-ferrugem-calca-grafite-calcado-marrom.webp"
+    },
+    {
+      "file": "camisa-ferrugem-calca-grafite-calcado-branco.png",
+      "shirt": "ferrugem",
+      "shoe": "branco",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green.  Set shirt to long-sleeved tucked-in button-up in rust burnt orange #B85A38, matching the shirt color reference exactly. Set footwear to clean minimal white sneakers, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-496907a1-f5be-4f28-8b7c-83806c7c80b0.png",
+      "raw": "gpt/raws/camisa-ferrugem-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-ferrugem-calca-grafite-calcado-branco.webp"
+    },
+    {
+      "file": "camisa-ferrugem-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "ferrugem",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green.  Set shirt to long-sleeved tucked-in button-up in rust burnt orange #B85A38, matching the shirt color reference exactly. Set footwear to light gray shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-bff11d88-48d7-4588-afb3-72d71343bd4f.png",
+      "raw": "gpt/raws/camisa-ferrugem-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-ferrugem-calca-grafite-calcado-cinza-claro.webp"
+    },
+    {
+      "file": "camisa-ferrugem-calca-grafite-calcado-bege.png",
+      "shirt": "ferrugem",
+      "shoe": "bege",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green.  Set shirt to long-sleeved tucked-in button-up in rust burnt orange #B85A38, matching the shirt color reference exactly. Set footwear to beige shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-a9b75176-37cc-4033-bbf1-5107a203d303.png",
+      "raw": "gpt/raws/camisa-ferrugem-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-ferrugem-calca-grafite-calcado-bege.webp"
+    },
+    {
+      "file": "camisa-ferrugem-calca-grafite-calcado-caramelo.png",
+      "shirt": "ferrugem",
+      "shoe": "caramelo",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green.  Set shirt to long-sleeved tucked-in button-up in rust burnt orange #B85A38, matching the shirt color reference exactly. Set footwear to caramel brown leather shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-486ea9bf-e409-49e1-9604-9054890cc470.png",
+      "raw": "gpt/raws/camisa-ferrugem-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-ferrugem-calca-grafite-calcado-caramelo.webp"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-grafite-calcado-preto.png",
+      "shirt": "azul-petroleo",
+      "shoe": "preto",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in deep petroleum blue/teal #1F6268, matching the shirt color reference exactly. Set footwear to black leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-171eddc4-43cf-4c49-a2a0-f2e58d4ee6a9.png",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-grafite-calcado-preto.webp"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-grafite-calcado-marrom.png",
+      "shirt": "azul-petroleo",
+      "shoe": "marrom",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in deep petroleum blue/teal #1F6268, matching the shirt color reference exactly. Set footwear to brown leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-fc24aeae-4fc0-438f-99de-85fc31be02f9.png",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-grafite-calcado-marrom.webp"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-grafite-calcado-branco.png",
+      "shirt": "azul-petroleo",
+      "shoe": "branco",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in deep petroleum blue/teal #1F6268, matching the shirt color reference exactly. Set footwear to clean minimal white sneakers, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-0d92e3c7-063b-423e-ad60-2851b68f0f27.png",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-grafite-calcado-branco.webp"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "azul-petroleo",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in deep petroleum blue/teal #1F6268, matching the shirt color reference exactly. Set footwear to light gray shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-5bd5003d-b037-42e2-b852-fb0f3332ba2d.png",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-grafite-calcado-cinza-claro.webp"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-grafite-calcado-bege.png",
+      "shirt": "azul-petroleo",
+      "shoe": "bege",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in deep petroleum blue/teal #1F6268, matching the shirt color reference exactly. Set footwear to beige shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-796e1347-8cdc-44b9-b260-b3c3d7f38936.png",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-grafite-calcado-bege.webp"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-grafite-calcado-caramelo.png",
+      "shirt": "azul-petroleo",
+      "shoe": "caramelo",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in deep petroleum blue/teal #1F6268, matching the shirt color reference exactly. Set footwear to caramel brown leather shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-a86fbd00-cc8d-44b6-952b-8541b61c56b5.png",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-grafite-calcado-caramelo.webp"
+    },
+    {
+      "file": "camisa-mostarda-calca-grafite-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "preto",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-mostarda-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in muted mustard ochre yellow #BA8D27, matching the shirt color reference exactly. Set footwear to black leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-72509331-247a-48ec-a544-c4d218f9cce5.png",
+      "raw": "gpt/raws/camisa-mostarda-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-grafite-calcado-preto.webp"
+    },
+    {
+      "file": "camisa-mostarda-calca-grafite-calcado-marrom.png",
+      "shirt": "mostarda",
+      "shoe": "marrom",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-mostarda-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in muted mustard ochre yellow #BA8D27, matching the shirt color reference exactly. Set footwear to brown leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-66fd5a11-649e-4643-85e9-e6d00b196124.png",
+      "raw": "gpt/raws/camisa-mostarda-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-grafite-calcado-marrom.webp"
+    },
+    {
+      "file": "camisa-mostarda-calca-grafite-calcado-branco.png",
+      "shirt": "mostarda",
+      "shoe": "branco",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-mostarda-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in muted mustard ochre yellow #BA8D27, matching the shirt color reference exactly. Set footwear to clean minimal white sneakers, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-39a64947-7eb8-4be2-847d-4ba27bdb4579.png",
+      "raw": "gpt/raws/camisa-mostarda-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-grafite-calcado-branco.webp"
+    },
+    {
+      "file": "camisa-mostarda-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "mostarda",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-mostarda-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in muted mustard ochre yellow #BA8D27, matching the shirt color reference exactly. Set footwear to light gray shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-07e663d8-2a51-4d28-8320-7eadf870c839.png",
+      "raw": "gpt/raws/camisa-mostarda-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-grafite-calcado-cinza-claro.webp"
+    },
+    {
+      "file": "camisa-mostarda-calca-grafite-calcado-bege.png",
+      "shirt": "mostarda",
+      "shoe": "bege",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-mostarda-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in muted mustard ochre yellow #BA8D27, matching the shirt color reference exactly. Set footwear to beige shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-8bfdf173-83af-41d1-a1fd-77b14cab6e61.png",
+      "raw": "gpt/raws/camisa-mostarda-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-grafite-calcado-bege.webp"
+    },
+    {
+      "file": "camisa-mostarda-calca-grafite-calcado-caramelo.png",
+      "shirt": "mostarda",
+      "shoe": "caramelo",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-mostarda-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in muted mustard ochre yellow #BA8D27, matching the shirt color reference exactly. Set footwear to caramel brown leather shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-edb2f02d-2009-4eb4-aa68-f618cfe9519e.png",
+      "raw": "gpt/raws/camisa-mostarda-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-grafite-calcado-caramelo.webp"
+    },
+    {
+      "file": "camisa-camel-calca-grafite-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "preto",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-camel-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in warm camel tan/light caramel #BC9263, matching the shirt color reference exactly. Set footwear to black leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f3-05fd-7ab1-91e8-1feb1f8ee183/exec-5f2c0725-2bf4-4368-8298-07b19b70d70a.png",
+      "raw": "gpt/raws/camisa-camel-calca-grafite-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-camel-calca-grafite-calcado-preto.webp"
+    },
+    {
+      "file": "camisa-camel-calca-grafite-calcado-marrom.png",
+      "shirt": "camel",
+      "shoe": "marrom",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-camel-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in warm camel tan/light caramel #BC9263, matching the shirt color reference exactly. Set footwear to brown leather dress shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f3-05fd-7ab1-91e8-1feb1f8ee183/exec-7cb42cb0-5d2b-43d1-8349-5848ab08090f.png",
+      "raw": "gpt/raws/camisa-camel-calca-grafite-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-camel-calca-grafite-calcado-marrom.webp"
+    },
+    {
+      "file": "camisa-camel-calca-grafite-calcado-branco.png",
+      "shirt": "camel",
+      "shoe": "branco",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-camel-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in warm camel tan/light caramel #BC9263, matching the shirt color reference exactly. Set footwear to clean minimal white sneakers, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f3-05fd-7ab1-91e8-1feb1f8ee183/exec-f77eae85-1f81-4395-adc1-5eeeb5594312.png",
+      "raw": "gpt/raws/camisa-camel-calca-grafite-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-camel-calca-grafite-calcado-branco.webp"
+    },
+    {
+      "file": "camisa-camel-calca-grafite-calcado-cinza-claro.png",
+      "shirt": "camel",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-camel-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in warm camel tan/light caramel #BC9263, matching the shirt color reference exactly. Set footwear to light gray shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f3-05fd-7ab1-91e8-1feb1f8ee183/exec-45e088b8-61cd-48da-983e-0878d92a23b0.png",
+      "raw": "gpt/raws/camisa-camel-calca-grafite-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-camel-calca-grafite-calcado-cinza-claro.webp"
+    },
+    {
+      "file": "camisa-camel-calca-grafite-calcado-bege.png",
+      "shirt": "camel",
+      "shoe": "bege",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-camel-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in warm camel tan/light caramel #BC9263, matching the shirt color reference exactly. Set footwear to beige shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f3-05fd-7ab1-91e8-1feb1f8ee183/exec-b87fd4e6-862c-432c-9f4a-08e7bb5e3008.png",
+      "raw": "gpt/raws/camisa-camel-calca-grafite-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-camel-calca-grafite-calcado-bege.webp"
+    },
+    {
+      "file": "camisa-camel-calca-grafite-calcado-caramelo.png",
+      "shirt": "camel",
+      "shoe": "caramelo",
+      "status": "complete",
+      "references": [
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-ferrugem-calca-grafite-calcado-preto.png",
+        "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/compressed/camisa-camel-calca-bege-calcado-preto.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Edit image1, the approved wardrobe CHARCOAL GRAPHITE GRAY trouser baseline. Preserve exactly its adult male identity, hair, physique, pose, natural full-body proportions, studio background and soft neutral lighting. CRITICAL: keep its dark neutral charcoal graphite trousers unchanged, reference midtone #45484C, visibly lighter than black and darker than medium stone gray. Preserve trouser fabric, tailoring, natural folds, seams and texture; do not recolor trousers or turn them navy, black, brown or green. Image2 is a SHIRT COLOR ONLY reference; do not copy its person, trousers, shoes or pose. Set shirt to long-sleeved tucked-in button-up in warm camel tan/light caramel #BC9263, matching the shirt color reference exactly. Set footwear to caramel brown leather shoes, both complete shoes visible. Keep realistic fabric details and catalog styling, without jacket or any outer layer, accessories, tie, belt additions, patterns, logos, text, watermark or extra people. OUTPUT: landscape1536x1024 work canvas, complete person centered inside x380..1156 with small margins above head and below both shoes, gray studio background extended to both sides. Final central776x1024 crop must show the whole person. One photo, not collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a169f3-05fd-7ab1-91e8-1feb1f8ee183/exec-2cec6eab-6536-435e-a400-f25b5b522e14.png",
+      "raw": "gpt/raws/camisa-camel-calca-grafite-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-camel-calca-grafite-calcado-caramelo.webp"
+    }
+  ]
+}
