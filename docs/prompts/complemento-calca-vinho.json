@@ -1,0 +1,168 @@
+{
+  "generated_with": "built-in image_gen",
+  "expected": 18,
+  "jobs": [
+    {
+      "file": "camisa-azul-petroleo-calca-vinho-calcado-preto.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-azul-petroleo-calca-bege-calcado-preto.png",
+      "shirt": "azul-petroleo",
+      "shoe": "preto",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its deep muted teal/petroleum blue color (#1F6268) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to black leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-0d908a09-ce2a-4604-895c-0e64aaa71906.png"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-vinho-calcado-marrom.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-azul-petroleo-calca-bege-calcado-preto.png",
+      "shirt": "azul-petroleo",
+      "shoe": "marrom",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its deep muted teal/petroleum blue color (#1F6268) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to brown leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-8ea9fe60-e481-4815-865c-8b232346e817.png"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-vinho-calcado-branco.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-azul-petroleo-calca-bege-calcado-preto.png",
+      "shirt": "azul-petroleo",
+      "shoe": "branco",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its deep muted teal/petroleum blue color (#1F6268) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to clean minimal white sneakers; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-79c09155-6bd9-48c8-835c-8376f8df5f66.png"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-vinho-calcado-cinza-claro.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-azul-petroleo-calca-bege-calcado-preto.png",
+      "shirt": "azul-petroleo",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its deep muted teal/petroleum blue color (#1F6268) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to light gray shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-f855402d-4eb6-4043-8ad3-17d170c62e55.png"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-vinho-calcado-bege.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-azul-petroleo-calca-bege-calcado-preto.png",
+      "shirt": "azul-petroleo",
+      "shoe": "bege",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its deep muted teal/petroleum blue color (#1F6268) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to beige shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-2cf98aba-6b72-48aa-adb4-d0fbc73ca9ae.png"
+    },
+    {
+      "file": "camisa-azul-petroleo-calca-vinho-calcado-caramelo.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-azul-petroleo-calca-bege-calcado-preto.png",
+      "shirt": "azul-petroleo",
+      "shoe": "caramelo",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its deep muted teal/petroleum blue color (#1F6268) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to caramel brown leather shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-7b9ea51a-c4a0-40b2-a744-08a23f4eff39.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-preto.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "preto",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to black leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-494d81ed-8a82-4740-9e7a-09480c09bc91.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-marrom.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "marrom",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to brown leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-32dc52a5-1c42-4fb6-98e2-5dae49525618.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-branco.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "branco",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to clean minimal white sneakers; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-a475f745-d845-43eb-8c1e-f7121367b56b.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-cinza-claro.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to light gray shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-aa2b1e62-b8f5-4d8d-831b-c0e64a734c41.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-bege.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "bege",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to beige shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-cf40d58f-7744-4093-bc8e-6bd4655674f8.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-caramelo.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "caramelo",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to caramel brown leather shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-6dba35b0-ad91-4ac6-880b-7f0ed90eedd8.png"
+    },
+    {
+      "file": "camisa-camel-calca-vinho-calcado-preto.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "preto",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to black leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-153c5742-0a61-4df7-ae83-23ed84d8e1f8.png"
+    },
+    {
+      "file": "camisa-camel-calca-vinho-calcado-marrom.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "marrom",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to brown leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-c9b7638d-80f8-493c-8a48-1e85b6546058.png"
+    },
+    {
+      "file": "camisa-camel-calca-vinho-calcado-branco.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "branco",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to clean minimal white sneakers; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-6ef0e6e8-1dfc-4150-9b93-1c13b27213ae.png"
+    },
+    {
+      "file": "camisa-camel-calca-vinho-calcado-cinza-claro.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to light gray shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-3943820b-bca6-48d9-ad8d-045cc9763194.png"
+    },
+    {
+      "file": "camisa-camel-calca-vinho-calcado-bege.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "bege",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to beige shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-5e691cba-75fc-4d25-a84d-304c04f84e4c.png"
+    },
+    {
+      "file": "camisa-camel-calca-vinho-calcado-caramelo.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "caramelo",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to deep dark BURGUNDY WINE #5C2830, clearly muted reddish-purple wine, not bright red, purple, brown or black. Change footwear to caramel brown leather shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-f9642263-efbf-41e5-a4ff-5348a387dae8.png"
+    }
+  ]
+}

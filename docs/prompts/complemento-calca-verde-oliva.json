@@ -1,0 +1,114 @@
+{
+  "generated_with": "built-in image_gen",
+  "expected": 12,
+  "jobs": [
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-preto.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "preto",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to black leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-75c7a078-a99d-4209-8bc5-3674155433e1.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-marrom.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "marrom",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to brown leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-bf6a74d9-832c-443c-ac09-9a0d8a2c9c8a.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-branco.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "branco",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to clean minimal white sneakers; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-75a59291-4ee0-453b-b0e1-93302609ae27.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-cinza-claro.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to light gray shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-6c6c128e-8ced-4f6e-8b8c-c0969d88deaf.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-bege.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "bege",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to beige shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-a89b5bd6-6491-4f5c-a763-3410eadad20f.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-caramelo.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "shirt": "mostarda",
+      "shoe": "caramelo",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its mustard ochre yellow color (#BA8D27) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to caramel brown leather shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-3b1f9d56-6bda-4a0b-bc60-8e0f4e785815.png"
+    },
+    {
+      "file": "camisa-camel-calca-verde-oliva-calcado-preto.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "preto",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to black leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-f062cd57-ce36-4efa-bf5f-fc0b6a8e4222.png"
+    },
+    {
+      "file": "camisa-camel-calca-verde-oliva-calcado-marrom.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "marrom",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to brown leather dress shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-e18b30b6-7e20-40ac-ac98-2c223dd80cb8.png"
+    },
+    {
+      "file": "camisa-camel-calca-verde-oliva-calcado-branco.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "branco",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to clean minimal white sneakers; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-89b01595-3f21-4ee4-a3c8-9a7db7517f30.png"
+    },
+    {
+      "file": "camisa-camel-calca-verde-oliva-calcado-cinza-claro.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "cinza-claro",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to light gray shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-6b4b22d5-14a7-4df2-bb82-59661df2a05f.png"
+    },
+    {
+      "file": "camisa-camel-calca-verde-oliva-calcado-bege.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "bege",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to beige shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-81a98fdc-f064-48f8-bfdf-cb7c1717331e.png"
+    },
+    {
+      "file": "camisa-camel-calca-verde-oliva-calcado-caramelo.png",
+      "reference": "/Users/lucas-tail/Downloads/repos/wardrobe/gpt/raws/camisa-camel-calca-bege-calcado-preto.png",
+      "shirt": "camel",
+      "shoe": "caramelo",
+      "status": "complete",
+      "prompt": "Use case: identity-preserve. Create one photorealistic full-body menswear wardrobe catalog photo by editing the attached approved shirt-color sample. Keep exactly this same adult male identity, hair, face, natural proportions, shirt fabric and its warm camel/light caramel tan color (#BC9263) unchanged. Change trousers ONLY to medium warm OLIVE GREEN #5A6840, a muted yellow-green cloth clearly lighter and warmer than dark military green, not black, gray, tan, brown or emerald green. Change footwear to caramel brown leather shoes; show both complete shoes accurately. Shirt remains a tucked-in long-sleeve button-up with same relaxed tailoring. No outer layer, jacket, belt additions, accessories, tie, prints, text, watermark or logos. Maintain soft even neutral studio lighting, seamless light gray background and real fabric details. Stand naturally with one hand in pocket, other relaxed, complete head and feet visible, consistent catalog scale. OUTPUT: landscape1536x1024 work canvas, person centered entirely within x380..1156 with small margins above head and below shoes, preserving height and portrait framing of the reference. Extend plain gray background on each side, so central776x1024 crop is the final full-body portrait. One person, one photo, no collage.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a14acf-eea3-7480-8a7b-6d6bc5d63dbf/exec-90a5eb12-c65e-4eea-9a9a-4982eec03de7.png"
+    }
+  ]
+}

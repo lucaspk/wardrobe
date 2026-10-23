@@ -1,0 +1,608 @@
+{
+  "shirt": "azul-petroleo",
+  "hex": "#1F6268",
+  "generated_with": "built-in image_gen",
+  "status": "complete",
+  "jobs": [
+    {
+      "pants": "preto",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-preto-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BLACK #242424 TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-preto-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-preto-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-fc2788d8-7c6f-4f2e-8b04-24e7093840f8.png"
+    },
+    {
+      "pants": "preto",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-preto-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BLACK #242424 TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-preto-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-preto-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-48f34028-5687-43ae-b2f1-9ad1bac32850.png"
+    },
+    {
+      "pants": "preto",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-preto-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BLACK #242424 TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-preto-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-9e19dc07-1f7b-439c-820c-4bde1d9c3a97.png"
+    },
+    {
+      "pants": "preto",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-preto-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BLACK #242424 TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-preto-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-preto-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-93a507e7-a840-4295-b129-5893390bf348.png"
+    },
+    {
+      "pants": "preto",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-preto-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BLACK #242424 TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-preto-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-preto-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-54fcbae2-760c-46e1-9a7d-94dba9efb2b4.png"
+    },
+    {
+      "pants": "preto",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-preto-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BLACK #242424 TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-preto-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-preto-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-25dc17d7-2709-455a-91ff-f546b276dff9.png"
+    },
+    {
+      "pants": "cinza-claro",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-cinza-claro-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored LIGHT GRAY #C0C0C0 TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-claro-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-claro-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-3fc632a6-1110-40c3-af2e-e3d8f348c17e.png"
+    },
+    {
+      "pants": "cinza-claro",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-cinza-claro-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored LIGHT GRAY #C0C0C0 TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-claro-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-claro-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-3a0831ed-8530-4b22-a7e2-9a186faf48f7.png"
+    },
+    {
+      "pants": "cinza-claro",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-cinza-claro-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored LIGHT GRAY #C0C0C0 TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-claro-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-claro-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-71254e02-af19-48b6-be18-8d1604035a18.png"
+    },
+    {
+      "pants": "cinza-claro",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-cinza-claro-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored LIGHT GRAY #C0C0C0 TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-claro-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-claro-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-64e2fa5d-b719-4822-aa8f-4cca051356cf.png"
+    },
+    {
+      "pants": "cinza-claro",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-cinza-claro-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored LIGHT GRAY #C0C0C0 TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-claro-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-claro-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-22177355-7946-4c4b-a29f-1603d6848a40.png"
+    },
+    {
+      "pants": "cinza-claro",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-cinza-claro-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored LIGHT GRAY #C0C0C0 TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-claro-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-claro-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-5fab518f-3610-454c-b851-a1fa2cb0e7cc.png"
+    },
+    {
+      "pants": "cinza-pedra",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-cinza-pedra-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored STONE GRAY #8A8880, a medium warm neutral gray TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-pedra-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-pedra-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-10764e53-a7b5-4279-9498-817915f4b3b5.png"
+    },
+    {
+      "pants": "cinza-pedra",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-cinza-pedra-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored STONE GRAY #8A8880, a medium warm neutral gray TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-pedra-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-pedra-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-103ad94b-fae2-48d1-af44-32156c287a20.png"
+    },
+    {
+      "pants": "cinza-pedra",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-cinza-pedra-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored STONE GRAY #8A8880, a medium warm neutral gray TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-pedra-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-pedra-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-74311e3c-38f7-4e41-9e32-e4d90b4375bd.png"
+    },
+    {
+      "pants": "cinza-pedra",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-cinza-pedra-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored STONE GRAY #8A8880, a medium warm neutral gray TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-pedra-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-pedra-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-8417f4a6-2625-4fb4-b88c-bb056b0188f4.png"
+    },
+    {
+      "pants": "cinza-pedra",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-cinza-pedra-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored STONE GRAY #8A8880, a medium warm neutral gray TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-pedra-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-pedra-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-2fabdceb-0ce1-4549-a66c-ca7633a1fc6b.png"
+    },
+    {
+      "pants": "cinza-pedra",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-cinza-pedra-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored STONE GRAY #8A8880, a medium warm neutral gray TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-cinza-pedra-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-cinza-pedra-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-69e5d718-8994-4bf4-9071-90d5affd51c5.png"
+    },
+    {
+      "pants": "bege",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-bege-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored warm light BEIGE #D5C3A5 TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-bege-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-preto.webp"
+    },
+    {
+      "pants": "bege",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-bege-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored warm light BEIGE #D5C3A5 TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-bege-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-3b43049f-a5c3-4cd2-93a2-2675a3a3281b.png"
+    },
+    {
+      "pants": "bege",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-bege-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored warm light BEIGE #D5C3A5 TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-d316f11f-0866-4778-8594-4c1e284d0557.png"
+    },
+    {
+      "pants": "bege",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-bege-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored warm light BEIGE #D5C3A5 TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-bege-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-27c46c68-be21-4553-a93c-981eb8c9a7fa.png"
+    },
+    {
+      "pants": "bege",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-bege-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored warm light BEIGE #D5C3A5 TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-bege-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-6265fe1c-5ae2-45a6-9c3c-83375ad8290c.png"
+    },
+    {
+      "pants": "bege",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-bege-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored warm light BEIGE #D5C3A5 TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-bege-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-bege-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-4415576d-390a-47d5-a394-24b933ae4662.png"
+    },
+    {
+      "pants": "creme",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-creme-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored pale ivory CREAM #F0E5CC TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-creme-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-creme-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-e28a9692-6149-4eac-8649-b5a11b5f6f31.png"
+    },
+    {
+      "pants": "creme",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-creme-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored pale ivory CREAM #F0E5CC TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-creme-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-creme-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-dc4cbf08-dd21-4630-9f55-f89f486da3d5.png"
+    },
+    {
+      "pants": "creme",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-creme-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored pale ivory CREAM #F0E5CC TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-creme-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-creme-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-2061027f-993c-4156-be2b-90ca58912593.png"
+    },
+    {
+      "pants": "creme",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-creme-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored pale ivory CREAM #F0E5CC TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-creme-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-creme-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-ead59c51-8ca5-41fe-b97f-3c0b83c4795f.png"
+    },
+    {
+      "pants": "creme",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-creme-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored pale ivory CREAM #F0E5CC TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-creme-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-creme-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-6bf51910-ad3e-4373-93cf-fedcd5f6862e.png"
+    },
+    {
+      "pants": "creme",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-creme-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored pale ivory CREAM #F0E5CC TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-creme-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-creme-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-c83a9803-e80c-4e05-95ab-c2357988fcb4.png"
+    },
+    {
+      "pants": "marrom",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-marrom-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BROWN #5C4033 TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-marrom-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-marrom-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-22876f7f-f341-44c2-a783-f0f1dcd86547.png"
+    },
+    {
+      "pants": "marrom",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-marrom-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BROWN #5C4033 TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-marrom-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-marrom-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-cc7a0d58-d374-4dd9-98d7-e37f362515e9.png"
+    },
+    {
+      "pants": "marrom",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-marrom-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BROWN #5C4033 TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-marrom-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-marrom-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-37c179d4-398a-48cd-8419-788acea2b595.png"
+    },
+    {
+      "pants": "marrom",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-marrom-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BROWN #5C4033 TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-marrom-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-marrom-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-4d95dd79-c142-488f-a7f7-9b986dfad584.png"
+    },
+    {
+      "pants": "marrom",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-marrom-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BROWN #5C4033 TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-marrom-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-marrom-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-07a20640-c2d3-480d-b92b-0d5fed3d7d64.png"
+    },
+    {
+      "pants": "marrom",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-marrom-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BROWN #5C4033 TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-marrom-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-marrom-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-97280b0a-34c9-4a30-b577-f28841c6fa39.png"
+    },
+    {
+      "pants": "azul-marinho",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-azul-marinho-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored deep NAVY BLUE #172B49 TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-azul-marinho-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-azul-marinho-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-1d6376de-1b10-4480-9e10-77bcdaff8618.png"
+    },
+    {
+      "pants": "azul-marinho",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-azul-marinho-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored deep NAVY BLUE #172B49 TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-azul-marinho-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-azul-marinho-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-1011c008-0dca-4a68-8248-2a92cc582f85.png"
+    },
+    {
+      "pants": "azul-marinho",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-azul-marinho-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored deep NAVY BLUE #172B49 TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-azul-marinho-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-azul-marinho-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-99dc875b-a4d1-473e-afa5-153658d512ac.png"
+    },
+    {
+      "pants": "azul-marinho",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-azul-marinho-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored deep NAVY BLUE #172B49 TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-azul-marinho-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-azul-marinho-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-d167f4fd-687b-4a17-b4fc-57ea5e108b62.png"
+    },
+    {
+      "pants": "azul-marinho",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-azul-marinho-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored deep NAVY BLUE #172B49 TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-azul-marinho-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-azul-marinho-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-69cfd0d6-e77b-4e64-8de2-b5fab660461b.png"
+    },
+    {
+      "pants": "azul-marinho",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-azul-marinho-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored deep NAVY BLUE #172B49 TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-azul-marinho-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-azul-marinho-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-0cdcbaf1-0494-498d-ad9a-f55f132b3b22.png"
+    },
+    {
+      "pants": "verde-militar",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-verde-militar-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored dark MILITARY GREEN #4A5A38, distinctly dark muted army green TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-militar-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-militar-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-31952247-d00d-4031-8840-1462bc5eec82.png"
+    },
+    {
+      "pants": "verde-militar",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-verde-militar-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored dark MILITARY GREEN #4A5A38, distinctly dark muted army green TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-militar-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-militar-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-ee671072-aaa5-4be4-a38c-fe724a32a2fe.png"
+    },
+    {
+      "pants": "verde-militar",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-verde-militar-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored dark MILITARY GREEN #4A5A38, distinctly dark muted army green TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-militar-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-militar-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-d93f377a-9e42-43f9-aecc-fbae6b4ce13e.png"
+    },
+    {
+      "pants": "verde-militar",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-verde-militar-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored dark MILITARY GREEN #4A5A38, distinctly dark muted army green TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-militar-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-militar-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-5027588b-3b4e-41b3-a11d-853288f40cac.png"
+    },
+    {
+      "pants": "verde-militar",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-verde-militar-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored dark MILITARY GREEN #4A5A38, distinctly dark muted army green TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-militar-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-militar-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-2eec828b-b9cb-486f-a1b5-ddfd738df610.png"
+    },
+    {
+      "pants": "verde-militar",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-verde-militar-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored dark MILITARY GREEN #4A5A38, distinctly dark muted army green TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-militar-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-militar-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-4a4f8421-c0ee-4dbf-9e2c-c85c3e91ff96.png"
+    },
+    {
+      "pants": "verde-oliva",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-verde-oliva-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored OLIVE GREEN #5A6840, lighter than military green TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-oliva-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-oliva-calcado-preto.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-3f4c9094-c6b9-4fdb-a99e-61ea9f9a012f.png"
+    },
+    {
+      "pants": "verde-oliva",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-verde-oliva-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored OLIVE GREEN #5A6840, lighter than military green TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-oliva-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-oliva-calcado-marrom.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-491f3b2e-f3f6-4122-95b7-9b9cf0798bcc.png"
+    },
+    {
+      "pants": "verde-oliva",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-verde-oliva-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored OLIVE GREEN #5A6840, lighter than military green TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-oliva-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-oliva-calcado-branco.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-f81da507-20a3-479b-88ff-0617587a754e.png"
+    },
+    {
+      "pants": "verde-oliva",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-verde-oliva-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored OLIVE GREEN #5A6840, lighter than military green TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-oliva-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-oliva-calcado-cinza-claro.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-f393e6ce-db5b-4992-bffa-e266808dfa68.png"
+    },
+    {
+      "pants": "verde-oliva",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-verde-oliva-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored OLIVE GREEN #5A6840, lighter than military green TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-oliva-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-oliva-calcado-bege.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-80d54611-d586-4f3e-9435-f5f896419dbb.png"
+    },
+    {
+      "pants": "verde-oliva",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-verde-oliva-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored OLIVE GREEN #5A6840, lighter than military green TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-verde-oliva-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-verde-oliva-calcado-caramelo.webp",
+      "generated": "/Users/lucas-tail/.codex/generated_images/01a1669c-876a-7093-b3a6-1718749cbc71/exec-745de60d-e81a-426e-b180-24374740277f.png"
+    },
+    {
+      "pants": "vinho",
+      "shoes": "preto",
+      "name": "camisa-azul-petroleo-calca-vinho-calcado-preto",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BURGUNDY WINE #6E263D TROUSERS; BLACK leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-vinho-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-vinho-calcado-preto.webp",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json"
+    },
+    {
+      "pants": "vinho",
+      "shoes": "marrom",
+      "name": "camisa-azul-petroleo-calca-vinho-calcado-marrom",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BURGUNDY WINE #6E263D TROUSERS; dark BROWN leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-vinho-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-vinho-calcado-marrom.webp",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json"
+    },
+    {
+      "pants": "vinho",
+      "shoes": "branco",
+      "name": "camisa-azul-petroleo-calca-vinho-calcado-branco",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BURGUNDY WINE #6E263D TROUSERS; plain WHITE low-top leather sneakers, clean minimal no logos, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-vinho-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-vinho-calcado-branco.webp",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json"
+    },
+    {
+      "pants": "vinho",
+      "shoes": "cinza-claro",
+      "name": "camisa-azul-petroleo-calca-vinho-calcado-cinza-claro",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BURGUNDY WINE #6E263D TROUSERS; LIGHT GRAY low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-vinho-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-vinho-calcado-cinza-claro.webp",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json"
+    },
+    {
+      "pants": "vinho",
+      "shoes": "bege",
+      "name": "camisa-azul-petroleo-calca-vinho-calcado-bege",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BURGUNDY WINE #6E263D TROUSERS; BEIGE low-top shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-vinho-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-vinho-calcado-bege.webp",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json"
+    },
+    {
+      "pants": "vinho",
+      "shoes": "caramelo",
+      "name": "camisa-azul-petroleo-calca-vinho-calcado-caramelo",
+      "prompt": "Use case: photorealistic-natural. One photorealistic full-body menswear catalog photograph matching the attached sample reference exactly for recurring male model, face, hair, body, pose, camera, studio background and especially SHIRT COLOR. Same deep muted TEAL / AZUL PETROLEO shirt as reference, base #1F6268 blue-green; not navy or forest green. Long sleeves tailored button-up shirt, open collar, tucked into tailored BURGUNDY WINE #6E263D TROUSERS; CARAMEL tan leather lace-up derby shoes, both feet visible. No outer layer, no jacket/blazer/vest, tie, belt accessories, patterns, logos, text, extra people or objects. Keep reference lighting, soft gray studio background and neutral color balance. Complete model from hair to both shoes, natural anatomy and realistic fabric. OUTPUT1536x1024 landscape with man precisely centered at x768, hair near y20 shoes near y980, all body within x380:1156 for776x1024 central crop. Side space is empty studio backdrop. Requested trouser and footwear colors must be obvious and faithfully rendered. Reference trouser and shoes should be replaced with the requested colors, but preserve teal shirt exactly.",
+      "status": "complete",
+      "raw": "gpt/raws/camisa-azul-petroleo-calca-vinho-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-petroleo-calca-vinho-calcado-caramelo.webp",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json"
+    }
+  ],
+  "completed": 60
+}

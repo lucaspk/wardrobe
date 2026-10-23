@@ -2,6 +2,8 @@
 
 Este documento define um prompt reutilizável e um fluxo para acrescentar looks ao guarda-roupa sem precisar gerar todas as combinações possíveis.
 
+**Destino final dos PNGs:** após recortar e converter para WebP, arquive sempre em `gpt/raws/`. O conversor faz essa etapa automaticamente. A raiz de `gpt/` é apenas uma etapa temporária, mesmo quando os registros históricos abaixo mencionam PNGs na raiz.
+
 ## Referências visuais
 
 Ao gerar um novo look, anexe uma ou mais imagens RAW existentes como referência visual:
@@ -20,7 +22,7 @@ Use a referência para manter a identidade visual do modelo, o estilo fotográfi
 - **Calçado e cor:** por exemplo, sapato marrom; tênis branco.
 - **Camada externa (opcional):** nenhuma, blazer ou modelo de jaqueta, com cor e detalhes desejados.
 - **Ajustes relevantes:** formalidade, caimento ou um detalhe específico. Deixe em branco se não houver.
-- **Nome de arquivo:** use nomes minúsculos, sem acentos, com hífens e na ordem das peças, por exemplo `camisa-azul-claro-calca-bege-calcado-marrom.png`. Para peças externas, anteponha a peça e sua cor; para terno, use `terno-{cor}-camisa-{cor}-calca-{cor}-calcado-{cor}.png`. Salve o PNG diretamente na raiz de `gpt/`, nunca em `gpt/raws/`, `gpt/references/` ou `gpt/compressed/`.
+- **Nome de arquivo:** use nomes minúsculos, sem acentos, com hífens e na ordem das peças, por exemplo `camisa-azul-claro-calca-bege-calcado-marrom.png`. Para peças externas, anteponha a peça e sua cor; para terno, use `terno-{cor}-camisa-{cor}-calca-{cor}-calcado-{cor}.png`. Copie a fonte gerada para `gpt/to_crop/`; o recorte passa temporariamente por `gpt/` e o PNG final é arquivado em `gpt/raws/` após validar o WebP em `gpt/compressed/`.
 
 Gere apenas o look pedido. O objetivo é avaliar uma combinação de cores; não é necessário gerar variações de modelo, tipo de calçado ou tipo de camisa quando a cor já representa a combinação.
 
@@ -42,7 +44,7 @@ The requested garment colors are the priority. Render each color clearly and fai
 
 Pose the model standing naturally, facing the camera with a subtle three-quarter turn; one hand may rest naturally in a pocket and the other hang relaxed. Keep both arms, both legs, and both shoes visible, anatomically correct, and unobstructed. Use a seamless plain light-gray studio background, soft even studio lighting, realistic soft contact shadows, neutral color balance, and a clean understated e-commerce/editorial catalog look.
 
-COMPOSITION AND OUTPUT: Generate the final portrait image at 776 x 1024 pixels, matching the reference framing. Show the complete person from head to both shoes with a small margin; do not crop the body. Do not add horizontal side margins, frame, collage, extra people, props, captions, or watermark. Save the generated PNG directly in the repository's gpt/ directory using this filename: [FILENAME.png].
+COMPOSITION AND OUTPUT: Generate a 1536 x 1024 landscape work canvas for the established center-crop pipeline. Center the complete person entirely inside the middle 776-pixel-wide area (x=380 to x=1156), keeping head and both shoes visible with small top and bottom margins, matching the reference portrait framing. Extend the same plain gray studio background across both sides. The final center crop will be 776 x 1024. No frame, collage, extra people, props, captions, or watermark. Copy the generated PNG into the repository's gpt/to_crop/ directory using this filename: [FILENAME.png]; crop it, convert it to WebP, and archive the cropped PNG in gpt/raws/.
 ```
 
 ## Variações por tipo de look
@@ -59,9 +61,9 @@ Use o mesmo prompt-base para qualquer roupa. Acrescente somente a instrução es
 
 1. Escolha uma combinação de cores específica e preencha os campos do prompt. Consulte os filtros e decisões atuais no [README](README.md); não invente combinações adicionais.
 2. Anexe uma referência RAW de composição semelhante. Se a peça solicitada for um terno ou uma camada externa, prefira anexar também uma referência desse tipo.
-3. Copie a imagem gerada para `gpt/to_crop/`, recorte o centro em 776 × 1024 e salve o PNG final na raiz de `gpt/`. O utilitário de recorte fica em `scripts/crop.py`; execute-o a partir da raiz com `python3 scripts/crop.py`. Remova a fonte temporária após validar o recorte. Não grave em `gpt/raws/`; essa pasta guarda os originais arquivados e não participa do pipeline.
+3. Copie a imagem gerada para `gpt/to_crop/`, recorte o centro em 776 × 1024 e salve o PNG temporariamente na raiz de `gpt/`. O utilitário de recorte fica em `scripts/crop.py`; execute-o a partir da raiz com `python3 scripts/crop.py`. Remova a fonte temporária após validar o recorte.
 4. Confira a imagem antes de incorporá-la: combinação e tons corretos, peças visíveis, terno coordenado quando aplicável, modelo inteiro, mãos e calçados naturais, sem elementos extras.
-5. A partir da raiz do projeto, converta os PNGs da raiz de `gpt/` para WebP com `python3 scripts/convert_looks_to_webp.py`. Os originais ficam na raiz de `gpt/` e os arquivos para o site são criados em `gpt/compressed/`. O conversor não percorre subpastas como `raws/` nem `references/`.
+5. A partir da raiz do projeto, converta os PNGs da raiz de `gpt/` para WebP com `python3 scripts/convert_looks_to_webp.py`. O script valida cada WebP em `gpt/compressed/` antes de mover automaticamente seu PNG para `gpt/raws/`. Os PNGs ficam arquivados; a raiz de `gpt/` deve terminar sem os PNGs da geração. O conversor não percorre subpastas como `raws/` nem `references/`. Se já houver WebP, ele é preservado e validado antes do arquivamento; originais com o mesmo nome e conteúdo diferente recebem um sufixo para preservar ambos. Para substituir uma imagem existente, faça a troca aprovada explicitamente e confira o novo WebP.
 6. A partir da raiz do projeto, execute `python3 scripts/build_index.py` para incluir os looks no combinador. O arquivo `data/gpt-index.json` reúne PNGs novos na raiz e WebPs já comprimidas; ignora `raws/` e `references/`. O `assets/js/script.js` recebe o look selecionado pelo combinador e permite salvá-lo nos favoritos, sem catálogo estático. Confirme os caminhos, filtros e cores das peças nos dois fluxos.
 
 Para uma nova série, gere e valide primeiro uma única imagem de amostra. Só após a aprovação, gere o restante das combinações em lotes paralelos, sem duplicatas, e converta as imagens novas.
@@ -98,3 +100,17 @@ Pedido autorizado no mesmo padrão da série lilás: 84 combinações com camisa
 Séries concluídas em 18/10/2026: 84 looks com camisa amarelo claro e 84 com camisa vinho. A retomada gerou as 90 combinações pendentes em lotes paralelos com o gerador integrado, preservando as 78 anteriores. Todos os 168 looks têm PNG na raiz de `gpt/` e WebP em `gpt/compressed/`, recortados em 776 × 1024. A matriz completa foi validada no combinador, incluindo os caminhos das imagens usadas pelos favoritos e as cores das camisas em `assets/js/script.js`.
 
 Usar `amarela` e `vinho` nos nomes dos arquivos; os seletores são `amarelo-claro` e `vinho`. Manter o fluxo `gpt/to_crop/` → recorte → PNG em `gpt/` → WebP em `gpt/compressed/`, atualizando o índice apenas com imagens concluídas. Remover fontes temporárias, folhas de revisão, scripts auxiliares da sessão e o arquivo de pendências após validar a série completa.
+
+## Camisas azul petróleo, mostarda e camel — sem camada
+
+Séries concluídas: **180 looks novos**, com 60 por camisa (10 cores de calça × 6 cores de calçado). As três cores estão disponíveis apenas no modo sem camada, com nomes e amostras também nos favoritos.
+
+- Azul petróleo (teal): slug `azul-petroleo`, referência `#1F6268`.
+- Mostarda: slug `mostarda`, referência `#BA8D27`.
+- Camel: slug `camel`, referência `#BC9263`.
+
+Todos os PNGs foram recortados em 776 × 1024, convertidos para WebP com qualidade 82 e método 6, e arquivados em `gpt/raws/`. Os 180 WebPs estão em `gpt/compressed/` e no índice do combinador. As imagens antigas de azul petróleo com calça branca foram preservadas.
+
+Prompts e registros das chamadas ao gerador integrado: [azul petróleo](docs/prompts/azul-petroleo.json), [mostarda](docs/prompts/mostarda.json), [camel](docs/prompts/camel.json), [complemento com calça vinho](docs/prompts/complemento-calca-vinho.json) e [complemento com calça verde oliva](docs/prompts/complemento-calca-verde-oliva.json). Os complementos fazem parte dos 180 looks e não são combinações adicionais.
+
+Fluxo definitivo para novas séries: `gpt/to_crop/` → recorte temporário em `gpt/` → WebP validado em `gpt/compressed/` → PNG automaticamente arquivado em `gpt/raws/` → atualização do índice → limpeza dos intermediários.

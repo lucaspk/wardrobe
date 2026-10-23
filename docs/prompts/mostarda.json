@@ -1,0 +1,851 @@
+{
+  "series": "mostarda",
+  "shirtColor": "#BA8D27",
+  "mode": "builtin-imagegen",
+  "status": "complete",
+  "sample": "camisa-mostarda-calca-bege-calcado-preto",
+  "reference": "gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+  "requests": [
+    {
+      "file": "camisa-mostarda-calca-preto-calcado-preto.png",
+      "pant": "preto",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BLACK #222222 TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-7993d452-90c1-4444-a9cb-2707e0d460e0.png",
+      "png": "gpt/raws/camisa-mostarda-calca-preto-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-preto-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-preto-calcado-marrom.png",
+      "pant": "preto",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BLACK #222222 TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-3c030bcf-20a7-433d-a02c-297224b0f7d1.png",
+      "png": "gpt/raws/camisa-mostarda-calca-preto-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-preto-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-preto-calcado-branco.png",
+      "pant": "preto",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BLACK #222222 TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-f6ce43f8-6b6a-4339-a8fd-0ce4dfe39d84.png",
+      "png": "gpt/raws/camisa-mostarda-calca-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-preto-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-preto-calcado-cinza-claro.png",
+      "pant": "preto",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BLACK #222222 TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-e10501a4-8e3d-4824-ace1-7cff31c99d41.png",
+      "png": "gpt/raws/camisa-mostarda-calca-preto-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-preto-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-preto-calcado-bege.png",
+      "pant": "preto",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BLACK #222222 TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-a96d3018-0af0-433f-9c14-8817c7e9117b.png",
+      "png": "gpt/raws/camisa-mostarda-calca-preto-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-preto-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-preto-calcado-caramelo.png",
+      "pant": "preto",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BLACK #222222 TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-5c600c78-310e-4378-91eb-14d61674a6e1.png",
+      "png": "gpt/raws/camisa-mostarda-calca-preto-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-preto-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-claro-calcado-preto.png",
+      "pant": "cinza-claro",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into LIGHT GRAY #C4C6C8 TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-5ff44a64-a06e-4508-898b-046214e1de18.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-claro-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-claro-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-claro-calcado-marrom.png",
+      "pant": "cinza-claro",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into LIGHT GRAY #C4C6C8 TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-97463d16-fef0-450d-ace7-cd63ebdf5111.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-claro-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-claro-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-claro-calcado-branco.png",
+      "pant": "cinza-claro",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into LIGHT GRAY #C4C6C8 TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-697988d0-0237-443e-904e-18678070be3a.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-claro-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-claro-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-claro-calcado-cinza-claro.png",
+      "pant": "cinza-claro",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into LIGHT GRAY #C4C6C8 TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-39d85e98-709a-41aa-b198-7a705cc6d3d0.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-claro-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-claro-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-claro-calcado-bege.png",
+      "pant": "cinza-claro",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into LIGHT GRAY #C4C6C8 TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-8e1cd3d6-b735-4a21-8743-7b0869c43c81.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-claro-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-claro-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-claro-calcado-caramelo.png",
+      "pant": "cinza-claro",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into LIGHT GRAY #C4C6C8 TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-10d93cff-2ab4-4484-9979-e8941027baed.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-claro-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-claro-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-pedra-calcado-preto.png",
+      "pant": "cinza-pedra",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into STONE GRAY #8A8880 TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-f088366d-4fd0-4837-be57-dd5790bf415e.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-pedra-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-pedra-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-pedra-calcado-marrom.png",
+      "pant": "cinza-pedra",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into STONE GRAY #8A8880 TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-4ed0f60a-d2ec-4014-93ea-f5b1c05697d8.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-pedra-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-pedra-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-pedra-calcado-branco.png",
+      "pant": "cinza-pedra",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into STONE GRAY #8A8880 TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-b995413d-a75d-4c3d-b1eb-809fa0668e0f.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-pedra-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-pedra-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-pedra-calcado-cinza-claro.png",
+      "pant": "cinza-pedra",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into STONE GRAY #8A8880 TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-1908d1a9-3f6e-447a-bba9-26323b0e5deb.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-pedra-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-pedra-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-pedra-calcado-bege.png",
+      "pant": "cinza-pedra",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into STONE GRAY #8A8880 TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-92390c08-146c-4921-bb95-c5220816ed00.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-pedra-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-pedra-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-cinza-pedra-calcado-caramelo.png",
+      "pant": "cinza-pedra",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into STONE GRAY #8A8880 TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-631bfec2-1454-4be2-9842-2aef81a9892b.png",
+      "png": "gpt/raws/camisa-mostarda-calca-cinza-pedra-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-cinza-pedra-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-bege-calcado-preto.png",
+      "pant": "bege",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BEIGE #CDBA98 TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "png": "gpt/raws/camisa-mostarda-calca-bege-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-bege-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ],
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-8011ebf7-dedf-4587-95c2-528393bd0e7a.png"
+    },
+    {
+      "file": "camisa-mostarda-calca-bege-calcado-marrom.png",
+      "pant": "bege",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BEIGE #CDBA98 TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-e12e4820-f9ec-46a8-a413-a5d40822fb43.png",
+      "png": "gpt/raws/camisa-mostarda-calca-bege-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-bege-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-bege-calcado-branco.png",
+      "pant": "bege",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BEIGE #CDBA98 TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-1d92425b-2325-412d-8f85-a2e8a7542123.png",
+      "png": "gpt/raws/camisa-mostarda-calca-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-bege-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-bege-calcado-cinza-claro.png",
+      "pant": "bege",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BEIGE #CDBA98 TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-fea22ec8-50bb-4417-bb4b-0ebd2ceb6143.png",
+      "png": "gpt/raws/camisa-mostarda-calca-bege-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-bege-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-bege-calcado-bege.png",
+      "pant": "bege",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BEIGE #CDBA98 TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-b3e135e7-a5ac-459c-948d-aeb089fdf121.png",
+      "png": "gpt/raws/camisa-mostarda-calca-bege-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-bege-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-bege-calcado-caramelo.png",
+      "pant": "bege",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BEIGE #CDBA98 TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-50b7deda-c505-4a87-b4bd-10e27df38e4c.png",
+      "png": "gpt/raws/camisa-mostarda-calca-bege-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-bege-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-creme-calcado-preto.png",
+      "pant": "creme",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into CREAM OFF WHITE #E7DFCD TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-005f9ae6-d004-4197-a30c-520187d549f7.png",
+      "png": "gpt/raws/camisa-mostarda-calca-creme-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-creme-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-creme-calcado-marrom.png",
+      "pant": "creme",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into CREAM OFF WHITE #E7DFCD TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-e3c30378-b6e9-4f7d-b6e3-0127675b9b21.png",
+      "png": "gpt/raws/camisa-mostarda-calca-creme-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-creme-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-creme-calcado-branco.png",
+      "pant": "creme",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into CREAM OFF WHITE #E7DFCD TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-50d2b21b-bdf7-44a7-98be-af6883eab138.png",
+      "png": "gpt/raws/camisa-mostarda-calca-creme-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-creme-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-creme-calcado-cinza-claro.png",
+      "pant": "creme",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into CREAM OFF WHITE #E7DFCD TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-fc237d98-5c41-468d-841c-bd8ed3af751f.png",
+      "png": "gpt/raws/camisa-mostarda-calca-creme-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-creme-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-creme-calcado-bege.png",
+      "pant": "creme",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into CREAM OFF WHITE #E7DFCD TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-f8f5fa11-9348-4a3c-8dee-306a57b0aeb1.png",
+      "png": "gpt/raws/camisa-mostarda-calca-creme-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-creme-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-creme-calcado-caramelo.png",
+      "pant": "creme",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into CREAM OFF WHITE #E7DFCD TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-0462762b-f33b-49b3-8c43-542121233a33.png",
+      "png": "gpt/raws/camisa-mostarda-calca-creme-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-creme-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-marrom-calcado-preto.png",
+      "pant": "marrom",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into MEDIUM DARK BROWN #705239 TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-d03d9ebc-b833-4723-b3c1-ab2b4bfde774.png",
+      "png": "gpt/raws/camisa-mostarda-calca-marrom-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-marrom-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-marrom-calcado-marrom.png",
+      "pant": "marrom",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into MEDIUM DARK BROWN #705239 TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-769b63c5-7a5b-4608-8612-e18c3a835da6.png",
+      "png": "gpt/raws/camisa-mostarda-calca-marrom-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-marrom-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-marrom-calcado-branco.png",
+      "pant": "marrom",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into MEDIUM DARK BROWN #705239 TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-034ef485-5454-45fb-b88c-fa1b771c924d.png",
+      "png": "gpt/raws/camisa-mostarda-calca-marrom-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-marrom-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-marrom-calcado-cinza-claro.png",
+      "pant": "marrom",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into MEDIUM DARK BROWN #705239 TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-205be0a4-e989-4841-bf33-e517900e3853.png",
+      "png": "gpt/raws/camisa-mostarda-calca-marrom-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-marrom-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-marrom-calcado-bege.png",
+      "pant": "marrom",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into MEDIUM DARK BROWN #705239 TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-21969ee9-42e6-4305-a76b-625a9d8691ef.png",
+      "png": "gpt/raws/camisa-mostarda-calca-marrom-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-marrom-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-marrom-calcado-caramelo.png",
+      "pant": "marrom",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into MEDIUM DARK BROWN #705239 TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-02749884-429f-4362-bab1-b7f710ced2d9.png",
+      "png": "gpt/raws/camisa-mostarda-calca-marrom-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-marrom-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-azul-marinho-calcado-preto.png",
+      "pant": "azul-marinho",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DEEP NAVY BLUE #233044 TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-64243097-0150-4eb0-ac38-b7b86bf03175.png",
+      "png": "gpt/raws/camisa-mostarda-calca-azul-marinho-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-azul-marinho-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-azul-marinho-calcado-marrom.png",
+      "pant": "azul-marinho",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DEEP NAVY BLUE #233044 TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-38e5c361-1e41-4c57-932a-e9245fe5cd76.png",
+      "png": "gpt/raws/camisa-mostarda-calca-azul-marinho-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-azul-marinho-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-azul-marinho-calcado-branco.png",
+      "pant": "azul-marinho",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DEEP NAVY BLUE #233044 TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-0bc0489e-4888-43f7-839a-4cef91031ef5.png",
+      "png": "gpt/raws/camisa-mostarda-calca-azul-marinho-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-azul-marinho-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-azul-marinho-calcado-cinza-claro.png",
+      "pant": "azul-marinho",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DEEP NAVY BLUE #233044 TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-d8c39227-572f-45f0-b870-fda756a87756.png",
+      "png": "gpt/raws/camisa-mostarda-calca-azul-marinho-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-azul-marinho-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-azul-marinho-calcado-bege.png",
+      "pant": "azul-marinho",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DEEP NAVY BLUE #233044 TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-0eea0922-d6af-4eca-8bc9-2a72266ee58c.png",
+      "png": "gpt/raws/camisa-mostarda-calca-azul-marinho-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-azul-marinho-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-azul-marinho-calcado-caramelo.png",
+      "pant": "azul-marinho",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DEEP NAVY BLUE #233044 TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-35238342-6b8d-4883-9fc7-def1609169ba.png",
+      "png": "gpt/raws/camisa-mostarda-calca-azul-marinho-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-azul-marinho-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-militar-calcado-preto.png",
+      "pant": "verde-militar",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DARK MILITARY GREEN #4A5A38, distinctly dark moss green TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-1ca3eaa7-f150-4d8a-bdd0-72c2b69a2ebb.png",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-militar-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-militar-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-militar-calcado-marrom.png",
+      "pant": "verde-militar",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DARK MILITARY GREEN #4A5A38, distinctly dark moss green TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-be0bdd8f-cff1-4f48-a2d8-abb7969035f9.png",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-militar-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-militar-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-militar-calcado-branco.png",
+      "pant": "verde-militar",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DARK MILITARY GREEN #4A5A38, distinctly dark moss green TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-06f88765-a09d-425f-8ebd-51c92b66a668.png",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-militar-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-militar-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-militar-calcado-cinza-claro.png",
+      "pant": "verde-militar",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DARK MILITARY GREEN #4A5A38, distinctly dark moss green TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-4e994a34-802c-409a-a518-eb4ba22d13d6.png",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-militar-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-militar-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-militar-calcado-bege.png",
+      "pant": "verde-militar",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DARK MILITARY GREEN #4A5A38, distinctly dark moss green TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-44d2ce93-33cd-4922-b198-c367261df7c0.png",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-militar-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-militar-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-militar-calcado-caramelo.png",
+      "pant": "verde-militar",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into DARK MILITARY GREEN #4A5A38, distinctly dark moss green TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1669c-cc9d-7d80-9700-46d2c8d0b4f0/exec-78a9eab7-78b4-48e9-b09f-5db28a4fba1e.png",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-militar-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-militar-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-preto.png",
+      "pant": "verde-oliva",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into OLIVE GREEN #5A6840, lighter more yellow than military green TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-verde-oliva.json",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-oliva-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-oliva-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-marrom.png",
+      "pant": "verde-oliva",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into OLIVE GREEN #5A6840, lighter more yellow than military green TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-verde-oliva.json",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-oliva-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-oliva-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-branco.png",
+      "pant": "verde-oliva",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into OLIVE GREEN #5A6840, lighter more yellow than military green TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-verde-oliva.json",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-oliva-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-oliva-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-cinza-claro.png",
+      "pant": "verde-oliva",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into OLIVE GREEN #5A6840, lighter more yellow than military green TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-verde-oliva.json",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-oliva-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-oliva-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-bege.png",
+      "pant": "verde-oliva",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into OLIVE GREEN #5A6840, lighter more yellow than military green TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-verde-oliva.json",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-oliva-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-oliva-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-verde-oliva-calcado-caramelo.png",
+      "pant": "verde-oliva",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into OLIVE GREEN #5A6840, lighter more yellow than military green TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-verde-oliva.json",
+      "png": "gpt/raws/camisa-mostarda-calca-verde-oliva-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-verde-oliva-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-preto.png",
+      "pant": "vinho",
+      "shoe": "preto",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BURGUNDY WINE #722F3C TAILORED TROUSERS; BLACK leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json",
+      "png": "gpt/raws/camisa-mostarda-calca-vinho-calcado-preto.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-vinho-calcado-preto.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-marrom.png",
+      "pant": "vinho",
+      "shoe": "marrom",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BURGUNDY WINE #722F3C TAILORED TROUSERS; DARK BROWN leather lace-up dress shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json",
+      "png": "gpt/raws/camisa-mostarda-calca-vinho-calcado-marrom.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-vinho-calcado-marrom.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-branco.png",
+      "pant": "vinho",
+      "shoe": "branco",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BURGUNDY WINE #722F3C TAILORED TROUSERS; clean WHITE low top leather SNEAKERS. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json",
+      "png": "gpt/raws/camisa-mostarda-calca-vinho-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-vinho-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-cinza-claro.png",
+      "pant": "vinho",
+      "shoe": "cinza-claro",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BURGUNDY WINE #722F3C TAILORED TROUSERS; LIGHT GRAY suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json",
+      "png": "gpt/raws/camisa-mostarda-calca-vinho-calcado-cinza-claro.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-vinho-calcado-cinza-claro.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-bege.png",
+      "pant": "vinho",
+      "shoe": "bege",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BURGUNDY WINE #722F3C TAILORED TROUSERS; BEIGE suede low top shoes. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json",
+      "png": "gpt/raws/camisa-mostarda-calca-vinho-calcado-bege.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-vinho-calcado-bege.webp",
+      "size": [
+        776,
+        1024
+      ]
+    },
+    {
+      "file": "camisa-mostarda-calca-vinho-calcado-caramelo.png",
+      "pant": "vinho",
+      "shoe": "caramelo",
+      "prompt": "Use case: identity-preserve. ONE photorealistic full-body menswear catalog photograph for a color combinator. Use attached mustard-shirt sample as identity, shirt color, pose, light-gray studio backdrop, framing and fabric reference. Preserve exactly recurring male model with short dark wavy hair, light olive skin, stubble, lean athletic build, calm face, one hand in pants pocket and other relaxed. OUTFIT: long sleeve collared button-down MUSTARD shirt, muted earthy golden ochre #BA8D27 (same mustard color as reference), tucked into BURGUNDY WINE #722F3C TAILORED TROUSERS; CARAMEL TAN brown leather dress shoes, warm honey brown. Change only requested trousers/shoes colors and shoe type; shirt must stay mustard. No outer layer, tie, jacket, pattern, accessory, logo, text, watermark. Neutral daylight-balanced studio lighting, realistic soft contact shadow and material folds. COMPOSITION: 1536x1024 landscape canvas, centered model complete head at y20 through both shoes near y980. Entire full person within central x380..1156 for crop776x1024. Same body size/pose as sample, both arms legs shoes visible and anatomically natural. Plain seamless light-gray backdrop to edges. No collages.",
+      "status": "complete",
+      "sourceManifest": "docs/prompts/complemento-calca-vinho.json",
+      "png": "gpt/raws/camisa-mostarda-calca-vinho-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-mostarda-calca-vinho-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ]
+    }
+  ],
+  "completed": 60
+}

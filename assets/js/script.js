@@ -17,6 +17,9 @@ const COLOR_HEX = {
   Lilás: '#D4C4E8',
   Rosa: '#F0C4C8',
   Amarelo: '#F5E6A8',
+  'Azul petróleo': '#1F6268',
+  Mostarda: '#BA8D27',
+  Camel: '#BC9263',
 };
 
 
@@ -59,6 +62,9 @@ function getLookPartColor(part) {
     .replace(/\s+/g, ' ')
     .trim();
   const colors = [
+    { names: ['azul petroleo (teal)', 'azul petroleo', 'teal'], hex: COLOR_HEX['Azul petróleo'] },
+    { names: ['mostarda'], hex: COLOR_HEX.Mostarda },
+    { names: ['camel'], hex: COLOR_HEX.Camel },
     { names: ['cinza claro'], hex: COLOR_HEX['Cinza claro'] },
     { names: ['cinza pedra', 'cinza escuro'], hex: COLOR_HEX['Cinza pedra'] },
     { names: ['azul marinho'], hex: COLOR_HEX['Azul marinho'] },

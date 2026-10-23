@@ -20,6 +20,9 @@
       { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
       { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
       { id: 'ferrugem', label: 'Ferrugem', hex: '#B85A38', altHex: '#C46830' },
+      { id: 'azul-petroleo', label: 'Azul petróleo (teal)', hex: '#1F6268' },
+      { id: 'mostarda', label: 'Mostarda', hex: '#BA8D27' },
+      { id: 'camel', label: 'Camel', hex: '#BC9263' },
     ],
     calca: [
       { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
@@ -67,16 +70,16 @@
 
   const COLOR_ORDER = [
     'branco', 'creme', 'cinza-claro',
-    'bege', 'caqui', 'caramelo', 'marrom', 'ferrugem',
-    'amarelo-claro', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro',
+    'bege', 'caqui', 'caramelo', 'camel', 'marrom', 'ferrugem',
+    'amarelo-claro', 'mostarda', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro', 'azul-petroleo',
     'verde-oliva', 'vermelho',
     'vinho', 'verde-militar', 'verde-escuro', 'cinza-pedra', 'azul-marinho', 'preto',
   ];
 
   const COLOR_GROUPS = [
     { id: 'neutros', label: 'Neutros', colors: ['branco', 'creme', 'cinza-claro', 'cinza-pedra', 'azul-marinho', 'preto'] },
-    { id: 'terrosos', label: 'Terrosos', colors: ['bege', 'caqui', 'caramelo', 'marrom', 'ferrugem', 'verde-oliva', 'verde-militar', 'verde-escuro'] },
-    { id: 'vivos', label: 'Vivos', colors: ['amarelo-claro', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro', 'vermelho', 'vinho'] },
+    { id: 'terrosos', label: 'Terrosos', colors: ['bege', 'caqui', 'caramelo', 'camel', 'marrom', 'ferrugem', 'verde-oliva', 'verde-militar', 'verde-escuro'] },
+    { id: 'vivos', label: 'Vivos', colors: ['amarelo-claro', 'mostarda', 'rosa-claro', 'lilas-claro', 'lilas', 'azul-claro', 'azul-petroleo', 'vermelho', 'vinho'] },
   ];
 
   function groupSwatches(container) {

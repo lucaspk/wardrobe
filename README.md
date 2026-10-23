@@ -38,7 +38,7 @@ python3 scripts/convert_looks_to_webp.py
 python3 scripts/build_index.py
 ```
 
-O recorte usa `gpt/to_crop/` e salva os PNGs finais em `gpt/`; a conversão cria os WebPs em `gpt/compressed/`. O índice gerado em `data/gpt-index.json` alimenta o combinador em `assets/js/combinator.js`; `assets/js/script.js` cuida dos favoritos e guias.
+O recorte usa `gpt/to_crop/` e salva os PNGs temporariamente em `gpt/`; a conversão cria e valida os WebPs em `gpt/compressed/` e move automaticamente os PNGs para `gpt/raws/`. O índice gerado em `data/gpt-index.json` alimenta o combinador em `assets/js/combinator.js`; `assets/js/script.js` cuida dos favoritos e guias.
 
 O ícone de duas fotos no combinador inicia a comparação em `assets/js/comparison.js`: o look A fica fixo enquanto as cores alteram o look B. No desktop, as fotos aparecem lado a lado; no celular, use A/B para alternar. Cada look pode ser favoritado ou ampliado. O × encerra a comparação e mantém o look B; a referência fica apenas na memória até recarregar a página.
 
@@ -88,9 +88,10 @@ Cáqui X -> reduzir a creme
 Chumbo X -> reduzir a cinza pedra
 
 Vermelho Ferrugem / Terracota ✅
-Mostarda
+Mostarda ✅
+Camel ✅
 Verde Eucalipto
-Azul Petróleo
+Azul petróleo (teal) ✅
 
 
 
@@ -165,9 +166,9 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 
 ## Conversão de looks PNG para WebP
 
-Gere novos PNGs diretamente na raiz de `gpt/`. Execute `python3 scripts/convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/`. O script não percorre subpastas: `gpt/raws/` guarda os originais e fica fora da conversão; `gpt/references/` também não é processado. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
+Copie as fontes geradas para `gpt/to_crop/` e execute o recorte, que prepara os PNGs na raiz de `gpt/`. Execute `python3 scripts/convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/`. Após validar o WebP, o script move automaticamente o PNG para `gpt/raws/`. O script não percorre subpastas: os originais arquivados e `gpt/references/` não são processados. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
 
-Os PNGs gerados na raiz são preservados. Se o WebP de destino já existir, o script o mantém e pula a conversão daquele arquivo. `scripts/build_index.py` combina os looks PNG da raiz com os WebP já existentes em `gpt/compressed/`; ignora `gpt/raws/` e `gpt/references/`. O combinador e os favoritos usam os nomes dos arquivos como identificadores e carregam as imagens de `gpt/compressed/`, sem depender dos RAWs.
+Os PNGs são preservados em `gpt/raws/`, sem precisar movê-los manualmente. Se o WebP de destino já existir, o script o mantém, valida sua leitura e suas dimensões e arquiva o PNG. Um PNG diferente com nome já arquivado recebe um sufixo de conteúdo, preservando ambos; um WebP inválido deixa o PNG na raiz para correção. `scripts/build_index.py` combina os looks PNG da raiz com os WebP já existentes em `gpt/compressed/`; ignora `gpt/raws/` e `gpt/references/`. O combinador e os favoritos usam os nomes dos arquivos como identificadores e carregam as imagens de `gpt/compressed/`, sem depender dos RAWs.
 
 Para o prompt agnóstico e o fluxo de revisão antes de gerar lotes, consulte [PROMPT-GERAR-LOOKS.md](PROMPT-GERAR-LOOKS.md).
 
