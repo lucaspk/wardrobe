@@ -173,6 +173,49 @@
   const loadingStatus = document.getElementById('combo-loading-status');
   let previewRequest = 0;
   let displayedFile = null;
+  let previewLoadingTimer = null;
+  const outgoingPreviews = new Set();
+
+  function removeOutgoingPreview(entry) {
+    clearTimeout(entry.timeout);
+    entry.animation?.cancel();
+    entry.image.remove();
+    outgoingPreviews.delete(entry);
+  }
+
+  function clearPreviewTransition() {
+    outgoingPreviews.forEach(removeOutgoingPreview);
+    previewImg.classList.remove('is-entering');
+  }
+
+  function crossfadePreview() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      clearPreviewTransition();
+      return;
+    }
+    if (previewImg.hidden || !displayedFile || typeof previewImg.animate !== 'function') return;
+
+    const image = previewImg.cloneNode(false);
+    image.removeAttribute('id');
+    image.className = 'combo-preview-outgoing';
+    image.alt = '';
+    image.setAttribute('aria-hidden', 'true');
+    // Insert below earlier outgoing photos, preserving ongoing blends on rapid changes.
+    previewImg.after(image);
+    const entry = { image, animation: null, timeout: null };
+    outgoingPreviews.add(entry);
+    entry.animation = image.animate([{ opacity: 1 }, { opacity: 0 }], {
+      duration: 280,
+      easing: 'ease-in-out',
+      fill: 'forwards',
+    });
+    entry.animation.finished.then(
+      () => removeOutgoingPreview(entry),
+      () => { image.remove(); outgoingPreviews.delete(entry); },
+    );
+    // Also clean up when the preview is hidden by the mobile comparison view.
+    entry.timeout = setTimeout(() => removeOutgoingPreview(entry), 350);
+  }
 
   function publishCurrentLook(file, name, options = {}) {
     window.dispatchEvent(new CustomEvent('wardrobe:current-look', {
@@ -181,18 +224,27 @@
   }
 
   function setPreviewLoading(loading) {
+    clearTimeout(previewLoadingTimer);
+    previewLoadingTimer = null;
     previewFrame?.classList.toggle('is-loading', loading);
     previewFrame?.setAttribute('aria-busy', String(loading));
     previewImg.classList.toggle('is-loading', loading);
-    if (loadingStatus) {
-      loadingStatus.hidden = !loading;
-      loadingStatus.textContent = loading ? 'Carregando foto do look…' : '';
-    }
+    if (loadingStatus) loadingStatus.hidden = true;
     const announcement = document.getElementById('combo-loading-announcement');
-    if (announcement) announcement.textContent = loading ? 'Carregando foto do look…' : '';
+    if (announcement) announcement.textContent = '';
+    if (loading) {
+      const request = previewRequest;
+      previewLoadingTimer = setTimeout(() => {
+        previewLoadingTimer = null;
+        if (request !== previewRequest) return;
+        if (loadingStatus) loadingStatus.hidden = false;
+        if (announcement) announcement.textContent = 'Carregando foto do look…';
+      }, 400);
+    }
   }
 
   function showPreviewPlaceholder(message) {
+    clearPreviewTransition();
     displayedFile = null;
     previewImg.hidden = true;
     previewImg.removeAttribute('src');
@@ -238,15 +290,18 @@
       if (typeof image.decode === 'function') await image.decode();
       if (request !== previewRequest) return;
 
+      const firstLook = previewImg.hidden;
+      crossfadePreview();
       previewImg.src = image.src;
       previewImg.alt = name;
       previewImg.hidden = false;
       placeholder.hidden = true;
       displayedFile = file;
       setPreviewLoading(false);
-      // Restart the short entrance animation even when colors are changed repeatedly.
-      void previewImg.offsetWidth;
-      previewImg.classList.add('is-entering');
+      if (firstLook) {
+        void previewImg.offsetWidth;
+        previewImg.classList.add('is-entering');
+      }
       publishCurrentLook(file, name);
     } catch (error) {
       if (request !== previewRequest) return;
@@ -487,28 +542,37 @@
     if (count) {
       count.textContent = `${outer.palette.length} opç${outer.palette.length === 1 ? 'ão' : 'ões'}`;
     }
-    swatches.replaceChildren();
-    orderedColors(outer.palette).forEach((color) => {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'swatch';
-      btn.dataset.id = color.id;
-      btn.setAttribute('aria-label', color.label);
-      btn.setAttribute('aria-pressed', String(color.id === state.outerwearColor));
-      btn.style.setProperty('--swatch', color.hex);
-      if (color.id === state.outerwearColor) btn.classList.add('active');
-      btn.addEventListener('click', () => {
-        state.outerwearColor = color.id;
-        ['camisa', 'calca', 'calcado'].forEach((piece) => {
-          const allowed = currentAllowedColors(piece);
-          if (allowed.length && !allowed.includes(state[piece])) state[piece] = allowed[0];
+    // Preserve the buttons between selections so scale and ring can transition.
+    if (swatches.dataset.layer !== state.outerwear) {
+      swatches.replaceChildren();
+      swatches.dataset.layer = state.outerwear;
+      orderedColors(outer.palette).forEach((color) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'swatch';
+        btn.dataset.id = color.id;
+        btn.setAttribute('aria-label', color.label);
+        btn.setAttribute('aria-pressed', String(color.id === state.outerwearColor));
+        btn.style.setProperty('--swatch', color.hex);
+        if (color.id === state.outerwearColor) btn.classList.add('active');
+        btn.addEventListener('click', () => {
+          state.outerwearColor = color.id;
+          ['camisa', 'calca', 'calcado'].forEach((piece) => {
+            const allowed = currentAllowedColors(piece);
+            if (allowed.length && !allowed.includes(state[piece])) state[piece] = allowed[0];
+          });
+          updateOuterwearControls();
+          render();
         });
-        updateOuterwearControls();
-        render();
+        swatches.appendChild(btn);
       });
-      swatches.appendChild(btn);
+      groupSwatches(swatches);
+    }
+    swatches.querySelectorAll('.swatch').forEach((button) => {
+      const active = button.dataset.id === state.outerwearColor;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
     });
-    groupSwatches(swatches);
     scrollMobileColors();
   }
 

@@ -79,6 +79,11 @@ window.WARDROBE_GENERATED_LOOKS = Object.freeze([
 let carouselIndex = -1;
 let carouselItems = [];
 let carouselTrigger = null;
+let carouselOrigin = null;
+let carouselOriginFile = null;
+let carouselMotion = null;
+let carouselBodyOverflow = '';
+let carouselBackgroundInert = false;
 const carouselZoom = { scale: 1, x: 0, y: 0, pointers: new Map(), gesture: null };
 let favorites = [];
 let currentLook = null;
@@ -86,10 +91,39 @@ let savingFavorite = false;
 let favoritesStorageError = '';
 let lastSavedFavorite = null;
 let exportingFavorites = false;
+const pendingFavoriteEntries = new Set();
+const favoriteAnimationTimers = new WeakMap();
 
 const FAVORITES_STORAGE_KEY = 'wardrobe-favorites';
 
 // --- Favorites ---
+
+function animateFavoriteElement(element, className, duration) {
+  clearTimeout(favoriteAnimationTimers.get(element));
+  element.classList.remove(className);
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  void element.offsetWidth;
+  element.classList.add(className);
+  favoriteAnimationTimers.set(element, setTimeout(() => {
+    element.classList.remove(className);
+    favoriteAnimationTimers.delete(element);
+  }, duration));
+}
+
+function animateFavoriteButton(button) {
+  animateFavoriteElement(button, 'is-popping', 300);
+}
+
+function animatePendingFavoriteEntries() {
+  const panel = document.getElementById('panel-favorites');
+  if (!panel || panel.classList.contains('hidden')) return;
+  document.querySelectorAll('#favorites-list .favorite-card').forEach((card) => {
+    const item = favorites[Number(card.dataset.index)];
+    if (item && pendingFavoriteEntries.delete(item.file)) {
+      animateFavoriteElement(card, 'is-entering', 500);
+    }
+  });
+}
 
 function escapeAttr(str) {
   return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;')
@@ -247,6 +281,9 @@ async function exportFavorites() {
 }
 
 function renderFavorites() {
+  for (const file of pendingFavoriteEntries) {
+    if (!favorites.some((item) => item.file === file)) pendingFavoriteEntries.delete(file);
+  }
   document.querySelectorAll('#btn-export-favorites, #favorite-notice-export').forEach((button) => {
     button.disabled = !favorites.length || exportingFavorites;
   });
@@ -285,7 +322,7 @@ function renderFavorites() {
   `).join('');
 
   favoritesList.querySelectorAll('[data-open]').forEach((el) => {
-    el.addEventListener('click', () => openCarousel(Number(el.dataset.open)));
+    el.addEventListener('click', () => openCarousel(Number(el.dataset.open), favorites, el));
   });
   favoritesList.querySelectorAll('[data-remove]').forEach((el) => {
     el.addEventListener('click', () => {
@@ -297,6 +334,7 @@ function renderFavorites() {
   favoritesList.querySelectorAll('[data-download]').forEach((el) => {
     el.addEventListener('click', () => downloadLook(favorites[Number(el.dataset.download)]));
   });
+  animatePendingFavoriteEntries();
 }
 
 function loadFavorites() {
@@ -321,20 +359,23 @@ function loadFavorites() {
   }
 }
 
-function publishFavoriteState() {
+function publishFavoriteState(addedFile = null) {
   window.dispatchEvent(new CustomEvent('wardrobe:favorites-changed', {
     detail: {
       files: favorites.map((item) => item.file),
       saving: savingFavorite,
       error: favoritesStorageError,
+      addedFile,
     },
   }));
 }
 
-function updateFavoriteButton() {
-  publishFavoriteState();
+function updateFavoriteButton(addedFile = null) {
   const button = document.getElementById('btn-toggle-favorite');
-  if (!button) return;
+  if (!button) {
+    publishFavoriteState(addedFile);
+    return;
+  }
   const isFavorite = currentLook !== null && favorites.some((item) => item.file === currentLook.file);
   button.disabled = !currentLook || savingFavorite;
   button.classList.toggle('is-favorite', isFavorite);
@@ -345,6 +386,8 @@ function updateFavoriteButton() {
       ? 'Desfavoritar'
       : 'Favoritar';
   button.setAttribute('aria-label', label);
+  if (addedFile && currentLook?.file === addedFile) animateFavoriteButton(button);
+  publishFavoriteState(addedFile);
 }
 
 async function createFavoriteImageData(item) {
@@ -399,32 +442,148 @@ async function toggleFavorite(item) {
   favoritesStorageError = '';
   if (actionStatus) actionStatus.textContent = '';
   favorites = updated;
+  if (!isFavorite) pendingFavoriteEntries.add(item.file);
   renderFavorites();
-  updateFavoriteButton();
+  updateFavoriteButton(isFavorite ? null : item.file);
   if (!isFavorite) showFavoriteNotice(favorites.find((favorite) => favorite.file === item.file));
 }
 
 // --- Carousel ---
 
-function openCarousel(index, items = favorites) {
+function photoBounds(image) {
+  if (!image?.isConnected || !image.getClientRects().length) return null;
+  const rect = image.getBoundingClientRect();
+  if (!rect.width || !rect.height) return null;
+  const ratio = image.naturalWidth / image.naturalHeight;
+  if (!Number.isFinite(ratio) || !ratio) return null;
+  const width = Math.min(rect.width, rect.height * ratio);
+  const height = width / ratio;
+  return { left: rect.left + (rect.width - width) / 2, top: rect.top + (rect.height - height) / 2, width, height };
+}
+
+function findCarouselOrigin() {
+  const item = carouselItems[carouselIndex];
+  if (!item) return null;
+  if (item.file === carouselOriginFile && photoBounds(carouselOrigin)) return carouselOrigin;
+  const source = item.imageDataUrl || imageSrc(item);
+  return [...document.querySelectorAll('#combo-preview-img, #compare-reference-img, .favorite-card-image img')]
+    .find((image) => (image.getAttribute('src') === source || image.src === source) && photoBounds(image)) || null;
+}
+
+function transitionCarousel(opening, origin, complete = () => {}) {
+  const overlay = document.getElementById('carousel-overlay');
+  const image = document.getElementById('carousel-image');
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || typeof image.animate !== 'function') {
+    complete();
+    return;
+  }
+  const animations = [];
+  let clone = null;
+  let timeout;
+  let finished = false;
+  const imageVisibility = image.style.visibility;
+  const originVisibility = origin?.style.visibility;
+  const motion = { opening, finish };
+  carouselMotion = motion;
+  overlay.classList.add('is-transitioning');
+  overlay.style.opacity = opening ? '0' : '1';
+  image.style.visibility = 'hidden';
+  // Decoding can stall too: the dialog must still become usable in that case.
+  timeout = setTimeout(finish, 350);
+
+  function finish() {
+    if (finished) return;
+    finished = true;
+    clearTimeout(timeout);
+    animations.forEach((animation) => animation.cancel());
+    clone?.remove();
+    image.style.visibility = imageVisibility;
+    if (origin) origin.style.visibility = originVisibility;
+    overlay.style.opacity = '';
+    overlay.classList.remove('is-transitioning');
+    if (carouselMotion === motion) carouselMotion = null;
+    complete();
+  }
+
+  // Decode before measuring the enlarged photo; closing or reopening invalidates this work.
+  Promise.resolve(opening && typeof image.decode === 'function' ? image.decode() : undefined)
+    .catch(() => {})
+    .then(() => {
+      if (finished) return;
+      const small = photoBounds(origin);
+      const large = photoBounds(image);
+      const options = { duration: 300, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'forwards' };
+      if (small && large) {
+        const from = opening ? small : large;
+        const to = opening ? large : small;
+        clone = image.cloneNode(false);
+        clone.removeAttribute('id');
+        clone.removeAttribute('style');
+        clone.className = 'carousel-transition-image';
+        clone.alt = '';
+        clone.setAttribute('aria-hidden', 'true');
+        Object.assign(clone.style, { left: `${from.left}px`, top: `${from.top}px`, width: `${from.width}px`, height: `${from.height}px` });
+        document.body.appendChild(clone);
+        origin.style.visibility = 'hidden';
+        const viewport = image.parentElement.getBoundingClientRect();
+        const croppedEdges = [
+          viewport.top - from.top,
+          from.left + from.width - viewport.right,
+          from.top + from.height - viewport.bottom,
+          viewport.left - from.left,
+        ].map((edge) => `${Math.max(0, edge)}px`).join(' ');
+        const clip = opening ? 'inset(0px)' : `inset(${croppedEdges})`;
+        animations.push(clone.animate([
+          { transform: 'translate(0, 0) scale(1, 1)', clipPath: clip },
+          { transform: `translate(${to.left - from.left}px, ${to.top - from.top}px) scale(${to.width / from.width}, ${to.height / from.height})`, clipPath: 'inset(0px)' },
+        ], options));
+      } else {
+        image.style.visibility = imageVisibility;
+      }
+      animations.push(overlay.animate([{ opacity: opening ? 0 : 1 }, { opacity: opening ? 1 : 0 }], options));
+      Promise.all(animations.map((animation) => animation.finished)).then(finish, finish);
+      clearTimeout(timeout);
+      timeout = setTimeout(finish, 350);
+    });
+}
+
+function openCarousel(index, items = favorites, trigger = document.activeElement) {
   if (!items.length || index < 0 || index >= items.length) return;
+  carouselMotion?.finish();
   hideFavoriteNotice();
   carouselItems = items.slice();
-  carouselTrigger = document.activeElement;
+  carouselTrigger = trigger;
+  carouselOrigin = trigger?.closest('.favorite-card, .combo-preview-frame, .compare-reference-frame')?.querySelector('img') || null;
+  carouselOriginFile = items[index].file;
+  const background = document.querySelector('.app');
+  if (carouselIndex < 0) {
+    carouselBodyOverflow = document.body.style.overflow;
+    carouselBackgroundInert = background?.inert ?? false;
+  }
+  if (background) background.inert = true;
   carouselIndex = index;
   document.getElementById('carousel-overlay').classList.remove('hidden');
   document.body.style.overflow = 'hidden';
   updateCarouselView();
-  document.getElementById('carousel-close').focus();
+  transitionCarousel(true, findCarouselOrigin());
+  document.getElementById('carousel-close').focus({ preventScroll: true });
 }
 
 function closeCarousel() {
-  document.getElementById('carousel-overlay').classList.add('hidden');
-  document.body.style.overflow = '';
-  carouselIndex = -1;
-  resetCarouselZoom();
-  carouselTrigger?.focus();
-  carouselTrigger = null;
+  if (carouselIndex < 0 || carouselMotion?.opening === false) return;
+  carouselMotion?.finish();
+  transitionCarousel(false, findCarouselOrigin(), () => {
+    document.getElementById('carousel-overlay').classList.add('hidden');
+    document.body.style.overflow = carouselBodyOverflow;
+    const background = document.querySelector('.app');
+    if (background) background.inert = carouselBackgroundInert;
+    carouselIndex = -1;
+    resetCarouselZoom();
+    carouselTrigger?.focus({ preventScroll: true });
+    carouselTrigger = null;
+    carouselOrigin = null;
+    carouselOriginFile = null;
+  });
 }
 
 function updateCarouselView() {
@@ -451,13 +610,13 @@ function updateCarouselView() {
 }
 
 function showNextImage() {
-  if (!carouselItems.length) return;
+  if (!carouselItems.length || carouselMotion) return;
   carouselIndex = (carouselIndex + 1) % carouselItems.length;
   updateCarouselView();
 }
 
 function showPreviousImage() {
-  if (!carouselItems.length) return;
+  if (!carouselItems.length || carouselMotion) return;
   carouselIndex = (carouselIndex - 1 + carouselItems.length) % carouselItems.length;
   updateCarouselView();
 }
@@ -485,6 +644,7 @@ function resetCarouselZoom() {
 }
 
 function setCarouselZoom(scale, clientX, clientY) {
+  if (carouselMotion) return;
   const rect = document.getElementById('carousel-image').parentElement.getBoundingClientRect();
   const x = clientX == null ? 0 : clientX - rect.left - rect.width / 2;
   const y = clientY == null ? 0 : clientY - rect.top - rect.height / 2;
@@ -517,7 +677,9 @@ function initCarouselZoom() {
   const viewport = image.parentElement;
   document.getElementById('carousel-zoom-in').addEventListener('click', () => setCarouselZoom(carouselZoom.scale + 0.5));
   document.getElementById('carousel-zoom-out').addEventListener('click', () => setCarouselZoom(carouselZoom.scale - 0.5));
-  document.getElementById('carousel-zoom-reset').addEventListener('click', resetCarouselZoom);
+  document.getElementById('carousel-zoom-reset').addEventListener('click', () => {
+    if (!carouselMotion) resetCarouselZoom();
+  });
   image.addEventListener('load', updateCarouselZoom);
   window.addEventListener('resize', () => {
     if (carouselIndex >= 0) {
@@ -536,13 +698,13 @@ function initCarouselZoom() {
     setCarouselZoom(carouselZoom.scale * Math.exp(-event.deltaY * unit * 0.002), event.clientX, event.clientY);
   }, { passive: false });
   viewport.addEventListener('pointerdown', (event) => {
-    if (carouselIndex < 0 || (event.pointerType === 'mouse' && event.button !== 0)) return;
+    if (carouselIndex < 0 || carouselMotion || (event.pointerType === 'mouse' && event.button !== 0)) return;
     viewport.setPointerCapture(event.pointerId);
     carouselZoom.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     startCarouselGesture();
   });
   viewport.addEventListener('pointermove', (event) => {
-    if (!carouselZoom.pointers.has(event.pointerId)) return;
+    if (carouselMotion || !carouselZoom.pointers.has(event.pointerId)) return;
     carouselZoom.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     const points = [...carouselZoom.pointers.values()];
     const gesture = carouselZoom.gesture;
@@ -589,6 +751,7 @@ function initViewTabs() {
       buttons[name].setAttribute('aria-selected', String(active));
     });
     document.body.classList.toggle('view-combinator', view === 'combinator');
+    if (view === 'favorites') animatePendingFavoriteEntries();
     if (carouselIndex >= 0 && view !== 'favorites') closeCarousel();
     const hash = view === 'combinator' ? '#combinar' : view === 'guide' ? '#guia' : '#favoritos';
     if (location.hash !== hash) history.replaceState(null, '', hash || location.pathname);
@@ -626,7 +789,7 @@ function init() {
 
   const expandButton = document.getElementById('btn-expand-preview');
   expandButton.addEventListener('click', () => {
-    if (currentLook) openCarousel(0, [currentLook]);
+    if (currentLook) openCarousel(0, [currentLook], expandButton);
   });
 
   window.addEventListener('wardrobe:current-look', (event) => {
@@ -651,13 +814,14 @@ function init() {
 
   window.addEventListener('wardrobe:open-look', (event) => {
     const item = eventLook(event);
-    if (item) openCarousel(0, [item]);
+    if (item) openCarousel(0, [item], document.getElementById('btn-expand-reference'));
   });
 
-  window.addEventListener('wardrobe:request-favorites', publishFavoriteState);
+  window.addEventListener('wardrobe:request-favorites', () => publishFavoriteState());
 
   window.addEventListener('storage', (event) => {
     if (event.key !== FAVORITES_STORAGE_KEY && event.key !== null) return;
+    pendingFavoriteEntries.clear();
     favorites = loadFavorites();
     renderFavorites();
     updateFavoriteButton();
@@ -678,6 +842,16 @@ function init() {
 
   document.addEventListener('keydown', (e) => {
     if (carouselIndex < 0 || e.defaultPrevented) return;
+    if (e.key === 'Tab') {
+      const controls = [...document.querySelectorAll('#carousel-overlay button:not(:disabled)')]
+        .filter((button) => button.getClientRects().length && getComputedStyle(button).visibility !== 'hidden');
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (first && ((e.shiftKey && document.activeElement === first) || (!e.shiftKey && document.activeElement === last))) {
+        e.preventDefault();
+        (e.shiftKey ? last : first).focus();
+      }
+    }
     if (e.key === 'Escape') closeCarousel();
     if (e.key === 'ArrowLeft') showPreviousImage();
     if (e.key === 'ArrowRight') showNextImage();
