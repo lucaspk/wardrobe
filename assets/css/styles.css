@@ -42,16 +42,19 @@ body {
 }
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas: "brand tabs" "donation donation";
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem 1rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border);
 }
 
 .brand {
+  grid-area: brand;
   flex-shrink: 0;
   color: var(--text);
   font-family: var(--font-display);
@@ -63,7 +66,22 @@ body {
 
 .brand-dot { color: var(--accent); }
 
+.brand-donation {
+  grid-area: donation;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.brand-donation a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+.brand-donation a:hover { color: var(--accent-hover); }
+
 .brand:focus-visible,
+.brand-donation a:focus-visible,
 .view-tab:focus-visible,
 .guide-section summary:focus-visible,
 .swatch:focus-visible {
@@ -73,6 +91,8 @@ body {
 
 /* View tabs */
 .view-tabs {
+  grid-area: tabs;
+  justify-self: end;
   display: flex;
   gap: 0.25rem;
   min-width: 0;
