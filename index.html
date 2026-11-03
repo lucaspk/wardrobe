@@ -36,7 +36,7 @@
 
     <section id="panel-favorites" class="hidden" role="tabpanel" aria-labelledby="view-favorites">
       <div class="favorites-toolbar">
-        <p class="favorites-storage-note">Seus favoritos ficam apenas neste navegador e dispositivo. Exporte uma galeria com as fotos para guardar e abrir mesmo sem internet.</p>
+        <p class="favorites-storage-note">Salvos apenas neste navegador.</p>
         <button type="button" id="btn-export-favorites" class="favorites-export" disabled>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>
           Exportar favoritos
@@ -317,17 +317,6 @@
       </div>
     </section>
   </div>
-
-  <aside id="favorite-notice" class="favorite-notice hidden" aria-label="Favorito salvo">
-    <button type="button" id="favorite-notice-close" class="favorite-notice-close" aria-label="Dispensar aviso">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>
-    </button>
-    <p id="favorite-notice-text" role="status" aria-live="polite"></p>
-    <div class="favorite-notice-actions">
-      <button type="button" id="favorite-notice-download">Baixar foto</button>
-      <button type="button" id="favorite-notice-export">Exportar favoritos</button>
-    </div>
-  </aside>
 
   <div class="carousel-overlay hidden" id="carousel-overlay" role="dialog" aria-modal="true" aria-label="Foto ampliada do look">
     <button type="button" class="carousel-close" id="carousel-close" aria-label="Fechar">×</button>

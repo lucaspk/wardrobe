@@ -89,7 +89,6 @@ let favorites = [];
 let currentLook = null;
 let savingFavorite = false;
 let favoritesStorageError = '';
-let lastSavedFavorite = null;
 let exportingFavorites = false;
 const pendingFavoriteEntries = new Set();
 const favoriteAnimationTimers = new WeakMap();
@@ -222,19 +221,6 @@ function downloadLook(item) {
   downloadFile(source, filename);
 }
 
-function hideFavoriteNotice() {
-  lastSavedFavorite = null;
-  document.getElementById('favorite-notice')?.classList.add('hidden');
-}
-
-function showFavoriteNotice(item) {
-  lastSavedFavorite = { ...item };
-  const notice = document.getElementById('favorite-notice');
-  const text = document.getElementById('favorite-notice-text');
-  if (text) text.textContent = 'Favorito salvo apenas neste navegador. Baixe a foto ou exporte uma cópia para guardar.';
-  notice?.classList.remove('hidden');
-}
-
 function buildFavoritesExport(items) {
   const cards = items.map((item) => {
     if (!/^data:image\/(?:png|jpeg|webp);base64,/i.test(item.imageDataUrl || '')) {
@@ -266,14 +252,10 @@ async function exportFavorites() {
   } catch (error) {
     const status = document.getElementById('favorites-status');
     if (status) status.textContent = 'Não foi possível exportar os favoritos. Tente novamente.';
-    const notice = document.getElementById('favorite-notice');
-    if (notice && !notice.classList.contains('hidden')) {
-      document.getElementById('favorite-notice-text').textContent = 'Não foi possível exportar. Seus favoritos continuam apenas neste navegador. Tente novamente ou baixe a foto.';
-    }
     console.error('Não foi possível exportar os favoritos.', error);
   } finally {
     exportingFavorites = false;
-    document.querySelectorAll('#btn-export-favorites, #favorite-notice-export').forEach((button) => {
+    document.querySelectorAll('#btn-export-favorites').forEach((button) => {
       button.disabled = !favorites.length;
     });
     if (objectUrl) setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
@@ -284,12 +266,9 @@ function renderFavorites() {
   for (const file of pendingFavoriteEntries) {
     if (!favorites.some((item) => item.file === file)) pendingFavoriteEntries.delete(file);
   }
-  document.querySelectorAll('#btn-export-favorites, #favorite-notice-export').forEach((button) => {
+  document.querySelectorAll('#btn-export-favorites').forEach((button) => {
     button.disabled = !favorites.length || exportingFavorites;
   });
-  if (lastSavedFavorite && !favorites.some((item) => item.file === lastSavedFavorite.file)) {
-    hideFavoriteNotice();
-  }
   const favoritesList = document.getElementById('favorites-list');
   if (!favoritesList) return;
   const status = document.getElementById('favorites-status');
@@ -445,7 +424,6 @@ async function toggleFavorite(item) {
   if (!isFavorite) pendingFavoriteEntries.add(item.file);
   renderFavorites();
   updateFavoriteButton(isFavorite ? null : item.file);
-  if (!isFavorite) showFavoriteNotice(favorites.find((favorite) => favorite.file === item.file));
 }
 
 // --- Carousel ---
@@ -550,7 +528,6 @@ function transitionCarousel(opening, origin, complete = () => {}) {
 function openCarousel(index, items = favorites, trigger = document.activeElement) {
   if (!items.length || index < 0 || index >= items.length) return;
   carouselMotion?.finish();
-  hideFavoriteNotice();
   carouselItems = items.slice();
   carouselTrigger = trigger;
   carouselOrigin = trigger?.closest('.favorite-card, .combo-preview-frame, .compare-reference-frame')?.querySelector('img') || null;
@@ -832,9 +809,6 @@ function init() {
   document.getElementById('carousel-next').addEventListener('click', showNextImage);
   document.getElementById('carousel-download')?.addEventListener('click', () => downloadLook(carouselItems[carouselIndex]));
   document.getElementById('btn-export-favorites')?.addEventListener('click', exportFavorites);
-  document.getElementById('favorite-notice-export')?.addEventListener('click', exportFavorites);
-  document.getElementById('favorite-notice-download')?.addEventListener('click', () => downloadLook(lastSavedFavorite));
-  document.getElementById('favorite-notice-close')?.addEventListener('click', hideFavoriteNotice);
 
   document.getElementById('carousel-overlay').addEventListener('click', (e) => {
     if (e.target.id === 'carousel-overlay') closeCarousel();
