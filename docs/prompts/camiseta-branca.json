@@ -1,0 +1,156 @@
+{
+  "tool": "built-in image_gen",
+  "items": [
+    {
+      "file": "camiseta-branca-calca-preto-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in black #1A1A1A; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-8931af5e-4abd-4443-a684-797ca983b54e.png",
+      "raw": "gpt/raws/camiseta-branca-calca-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camiseta-branca-calca-preto-calcado-branco.webp",
+      "active": false,
+      "sourceCleaned": true
+    },
+    {
+      "file": "camiseta-branca-calca-preto-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in black #1A1A1A; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-abd4d05d-b74b-443f-a99d-1a0517a7aab7.png",
+      "raw": "gpt/raws/camiseta-branca-calca-preto-calcado-caramelo.png",
+      "webp": "gpt/compressed/camiseta-branca-calca-preto-calcado-caramelo.webp",
+      "active": false,
+      "sourceCleaned": true
+    },
+    {
+      "file": "camiseta-branca-calca-cinza-claro-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in light gray #B0B0AE; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-62661a70-2bf8-4199-96b5-9250546c2577.png",
+      "raw": "gpt/raws/camiseta-branca-calca-cinza-claro-calcado-branco.png",
+      "webp": "gpt/compressed/camiseta-branca-calca-cinza-claro-calcado-branco.webp",
+      "active": false,
+      "sourceCleaned": true
+    },
+    {
+      "file": "camiseta-branca-calca-cinza-claro-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in light gray #B0B0AE; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78c-301f-7591-9432-c759e4010502/exec-27fb00c0-2eb2-46fb-be97-c9a66de52938.png",
+      "active": false,
+      "raw": "gpt/raws/camiseta-branca-calca-cinza-claro-calcado-caramelo.png",
+      "webp": "gpt/compressed/camiseta-branca-calca-cinza-claro-calcado-caramelo.webp",
+      "sourceCleaned": true
+    },
+    {
+      "file": "camiseta-branca-calca-cinza-pedra-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in stone gray #8A8880; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-cinza-pedra-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in stone gray #8A8880; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-grafite-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in graphite neutral charcoal gray #45484C; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-grafite-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in graphite neutral charcoal gray #45484C; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-bege-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in beige #C8B898; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-bege-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in beige #C8B898; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-creme-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in cream #E8DCC8; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-creme-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in cream #E8DCC8; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-marrom-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in brown #5C4030; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-marrom-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in brown #5C4030; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-azul-marinho-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in navy blue #1E3A5F; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-azul-marinho-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in navy blue #1E3A5F; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-verde-militar-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in military green #4A5A38; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-verde-militar-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in military green #4A5A38; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-verde-oliva-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in olive green #5A6840; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-verde-oliva-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in olive green #5A6840; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-vinho-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in burgundy wine #5C2830; clean minimalist white low-top leather sneakers, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-calca-vinho-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalogue photograph, landscape 1536x1024. Reference image 1 establishes recurring adult olive-skinned male model, short wavy dark hair, light stubble, gray studio background, soft light, neutral expression and relaxed standing pose. Reference image 2 establishes white T-shirt fit and styling. Outfit: plain white cotton crew-neck short-sleeve T-shirt untucked at upper hip; tailored chino trousers in burgundy wine #5C2830; caramel tan leather penny loafers, no laces, no visible socks. No outer layers or accessories. Realistic fabric and anatomy. Entire person from hair to soles centered inside x380..1156, head y30 soles y980 with empty gray sides for later central 776x1024 crop. No text, logos, collage, extra people or props.",
+      "status": "cancelled"
+    },
+    {
+      "file": "camiseta-branca-shorts-bege-calcado-branco.png",
+      "prompt": "Create ONE photorealistic full-body menswear catalog photograph, landscape 1536x1024. Same reference model, gray studio, lighting and pose. Plain white cotton crew-neck short sleeve T-shirt untucked at upper hip, tailored beige chino shorts ending just above knee, clean minimalist white low-top leather sneakers, no visible socks. No outer layer, logos, text, accessories or collage. Entire person centered inside x380..1156, head y30 soles y980.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-857a6079-8d08-4cef-8654-c5f3f7cf570e.png",
+      "active": true,
+      "raw": "gpt/raws/camiseta-branca-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camiseta-branca-shorts-bege-calcado-branco.webp",
+      "sourceCleaned": true
+    },
+    {
+      "file": "camiseta-branca-shorts-bege-calcado-caramelo.png",
+      "prompt": "Use case: precise-object-edit. Create ONE 1536x1024 landscape full-body menswear catalog photograph matching the reference exactly: same adult male identity, white crew-neck short sleeve T-shirt, beige chino shorts just above knees, pose, proportions, lighting and light-gray studio background. Change ONLY footwear to caramel tan leather penny loafers, no laces, no visible socks. Extend gray background on sides; center full man inside x380..1156 with head y30 and soles y980 for later 776x1024 center crop. No accessories, text or collage.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-be77a1b6-66b3-4db0-901f-2df26a8a07a0.png",
+      "active": true,
+      "raw": "gpt/raws/camiseta-branca-shorts-bege-calcado-caramelo.png",
+      "webp": "gpt/compressed/camiseta-branca-shorts-bege-calcado-caramelo.webp",
+      "sourceCleaned": true
+    }
+  ],
+  "scope_note": "Pares fixos: camisa + calça ou camiseta + bermuda. Cruzados já gerados preservados, fora do combinador; pendentes cancelados."
+}

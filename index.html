@@ -140,17 +140,21 @@
           <div class="control-group is-mobile-active" id="camisa-control-group" data-mobile-panel="camisa">
             <div class="control-group-header">
               <div class="control-group-title">
-                <h2>Camisa</h2>
+                <h2 id="camisa-heading">Camisa</h2>
                 <span class="selected-color-label" id="selected-camisa"></span>
               </div>
               <span class="control-group-count" id="count-camisa"></span>
+            </div>
+            <div class="garment-options" data-garment-options role="group" aria-label="Conjunto de peças">
+              <button type="button" class="garment-option active" data-outfit-type="camisa-calca" aria-pressed="true">Camisa + calça</button>
+              <button type="button" class="garment-option" data-outfit-type="camiseta-bermuda" aria-pressed="false">Camiseta + bermuda</button>
             </div>
             <div class="swatches" id="swatches-camisa"></div>
           </div>
           <div class="control-group" id="calca-control-group" data-mobile-panel="calca">
             <div class="control-group-header">
               <div class="control-group-title">
-                <h2>Calça</h2>
+                <h2 id="calca-heading">Calça</h2>
                 <span class="selected-color-label" id="selected-calca"></span>
               </div>
               <span class="control-group-count" id="count-calca"></span>

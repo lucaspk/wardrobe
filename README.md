@@ -195,3 +195,9 @@ Para o prompt agnóstico e o fluxo de revisão antes de gerar lotes, consulte [P
 - Cor selecionada aparece o nome dela em baixo ou no headline da seção. Testar uma por vez ver qual gosto mais.
     - ![alt text](image.png) <- vencedora
     - ![alt text](image-1.png)
+
+## Conjuntos fixos no combinador — piloto casual
+
+O seletor de conjunto oferece **Camisa + calça** e **Camiseta + bermuda**. Os tipos de parte de cima e de baixo são vinculados: não oferecer nem gerar camisa com bermuda ou camiseta com calça. O modo terno permanece disponível e mantém suas regras anteriores.
+
+O piloto casual contém somente camiseta branca com bermuda bege, em duas imagens: tênis branco e loafer caramelo. Os arquivos usam `camiseta-branca-shorts-bege-calcado-branco` e `camiseta-branca-shorts-bege-calcado-caramelo`; a interface usa o nome “Bermuda”. As combinações cruzadas produzidas antes desta decisão ficam preservadas no disco, fora do índice e do combinador. Esta decisão substitui o plano anterior de 64 imagens cruzadas.

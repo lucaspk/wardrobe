@@ -1,0 +1,46 @@
+{
+  "tool": "built-in image_gen",
+  "images": [
+    {
+      "file": "camisa-amarelo-claro-shorts-bege-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph, landscape 1536x1024. Reference image establishes identical adult olive-skinned male, short dark wavy hair, subtle stubble, lean athletic proportions, neutral expression, standing frontal with one hand in pocket, seamless light gray studio and soft light. Outfit: long-sleeve button-down shirt pale pastel yellow #F5E6A8, open collar no tie, neatly tucked into tailored beige chino shorts #D4C4A8 ending just above knees. Shoes: clean white minimalist low-top leather sneakers, no visible socks. No belt, outer layer, accessories, logos, text or collage. Entire man from hair to soles inside x380..1156, head y30, soles y980. Empty gray side margins for central 776x1024 crop. Accurate natural anatomy and realistic cotton texture. Intended file camisa-amarelo-claro-shorts-bege-calcado-branco.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78c-fb6d-7663-8bf7-7152419bc6c2/exec-0b68221c-0b08-4969-8f08-7b8b2cc24c34.png",
+      "status": "complete",
+      "active": false,
+      "raw": "gpt/raws/camisa-amarelo-claro-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-shorts-bege-calcado-branco.webp",
+      "sourceCleaned": true
+    },
+    {
+      "file": "camisa-amarelo-claro-shorts-bege-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph, landscape 1536x1024. Reference image establishes identical adult olive-skinned male, short dark wavy hair, subtle stubble, lean athletic proportions, neutral expression, standing frontal with one hand in pocket, seamless light gray studio and soft light. Outfit: long-sleeve button-down shirt pale pastel yellow #F5E6A8, open collar no tie, neatly tucked into tailored beige chino shorts #D4C4A8 ending just above knees. Shoes: caramel tan #A87848 leather penny loafers, slip-on, no laces, no visible socks. No belt, outer layer, accessories, logos, text or collage. Entire man from hair to soles inside x380..1156, head y30, soles y980. Empty gray side margins for central 776x1024 crop. Accurate natural anatomy and realistic cotton texture. Intended file camisa-amarelo-claro-shorts-bege-calcado-caramelo.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78c-fb6d-7663-8bf7-7152419bc6c2/exec-bb3f4344-0f87-4c51-b912-0e46408df551.png",
+      "status": "complete",
+      "active": false,
+      "raw": "gpt/raws/camisa-amarelo-claro-shorts-bege-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-amarelo-claro-shorts-bege-calcado-caramelo.webp",
+      "sourceCleaned": true
+    },
+    {
+      "file": "camisa-azul-claro-shorts-bege-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph, landscape 1536x1024. Reference image establishes identical adult olive-skinned male, short dark wavy hair, subtle stubble, lean athletic proportions, neutral expression, standing frontal with one hand in pocket, seamless light gray studio and soft light. Outfit: long-sleeve button-down shirt pale light blue #A8C8E0, open collar no tie, neatly tucked into tailored beige chino shorts #D4C4A8 ending just above knees. Shoes: clean white minimalist low-top leather sneakers, no visible socks. No belt, outer layer, accessories, logos, text or collage. Entire man from hair to soles inside x380..1156, head y30, soles y980. Empty gray side margins for central 776x1024 crop. Accurate natural anatomy and realistic cotton texture. Intended file camisa-azul-claro-shorts-bege-calcado-branco.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78c-fb6d-7663-8bf7-7152419bc6c2/exec-6fec7d23-fea3-4e5b-9235-8eae3096b157.png",
+      "status": "complete",
+      "active": false,
+      "raw": "gpt/raws/camisa-azul-claro-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-azul-claro-shorts-bege-calcado-branco.webp",
+      "sourceCleaned": true
+    },
+    {
+      "file": "camisa-azul-claro-shorts-bege-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body menswear catalog photograph, landscape 1536x1024. Reference image establishes identical adult olive-skinned male, short dark wavy hair, subtle stubble, lean athletic proportions, neutral expression, standing frontal with one hand in pocket, seamless light gray studio and soft light. Outfit: long-sleeve button-down shirt pale light blue #A8C8E0, open collar no tie, neatly tucked into tailored beige chino shorts #D4C4A8 ending just above knees. Shoes: caramel tan #A87848 leather penny loafers, slip-on, no laces, no visible socks. No belt, outer layer, accessories, logos, text or collage. Entire man from hair to soles inside x380..1156, head y30, soles y980. Empty gray side margins for central 776x1024 crop. Accurate natural anatomy and realistic cotton texture. Intended file camisa-azul-claro-shorts-bege-calcado-caramelo.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78c-fb6d-7663-8bf7-7152419bc6c2/exec-d84115d5-fbf9-4f5f-84fb-60b35f1fd03d.png",
+      "status": "complete",
+      "active": false,
+      "raw": "gpt/raws/camisa-azul-claro-shorts-bege-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-azul-claro-shorts-bege-calcado-caramelo.webp",
+      "sourceCleaned": true
+    }
+  ],
+  "scope_note": "Pares fixos: camisa + calça ou camiseta + bermuda. Cruzados já gerados preservados, fora do combinador; pendentes cancelados."
+}

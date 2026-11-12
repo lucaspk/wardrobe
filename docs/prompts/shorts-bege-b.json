@@ -1,0 +1,70 @@
+{
+  "mode": "built-in",
+  "looks": [
+    {
+      "shirt": "marrom",
+      "shoe": "branco",
+      "file": "camisa-marrom-shorts-bege-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body men's wardrobe catalogue image, landscape 1536x1024 pixels. Image 1 is reference for adult male identity, pose, lighting and shirt construction; image 2 is reference for beige chino shorts, leg proportions, framing and gray studio. Same olive skin, dark wavy short hair, light stubble. OUTFIT: long-sleeve button-front cotton shirt in rich medium brown #6B4A32, open collar, neatly tucked into tailored beige chino shorts #C8B898 ending just above knees. Footwear: clean white minimalist low-top leather sneakers, no visible socks. No belt or extra accessories, no outerwear. Standing relaxed frontal slight three-quarter, one hand in shorts pocket, other hanging. Realistic cloth folds and natural anatomy. Seamless light gray studio background, soft even lighting, whole man hair to soles. Center at x768, head y30, soles y980, keep entire person inside x380..1156 for final central 776x1024 crop, empty gray side margins. No text, no logos, no collage, no other objects. Filename camisa-marrom-shorts-bege-calcado-branco.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78d-15e1-75b0-88b0-2ef9ce4b3cc8/exec-8d1ed81b-08b1-4cd9-988d-e9120fc860a4.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/camisa-marrom-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-marrom-shorts-bege-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ],
+      "active": false
+    },
+    {
+      "shirt": "marrom",
+      "shoe": "caramelo",
+      "file": "camisa-marrom-shorts-bege-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body men's wardrobe catalogue image, landscape 1536x1024 pixels. Image 1 is reference for adult male identity, pose, lighting and shirt construction; image 2 is reference for beige chino shorts, leg proportions, framing and gray studio. Same olive skin, dark wavy short hair, light stubble. OUTFIT: long-sleeve button-front cotton shirt in rich medium brown #6B4A32, open collar, neatly tucked into tailored beige chino shorts #C8B898 ending just above knees. Footwear: caramel tan #A87848 leather penny loafers, slip-on without laces, no visible socks. No belt or extra accessories, no outerwear. Standing relaxed frontal slight three-quarter, one hand in shorts pocket, other hanging. Realistic cloth folds and natural anatomy. Seamless light gray studio background, soft even lighting, whole man hair to soles. Center at x768, head y30, soles y980, keep entire person inside x380..1156 for final central 776x1024 crop, empty gray side margins. No text, no logos, no collage, no other objects. Filename camisa-marrom-shorts-bege-calcado-caramelo.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78d-15e1-75b0-88b0-2ef9ce4b3cc8/exec-1751e1d1-42b6-4bbf-80d6-3d74725e3572.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/camisa-marrom-shorts-bege-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-marrom-shorts-bege-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ],
+      "active": false
+    },
+    {
+      "shirt": "bege",
+      "shoe": "branco",
+      "file": "camisa-bege-shorts-bege-calcado-branco.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body men's wardrobe catalogue image, landscape 1536x1024 pixels. Image 1 is reference for adult male identity, pose, lighting and shirt construction; image 2 is reference for beige chino shorts, leg proportions, framing and gray studio. Same olive skin, dark wavy short hair, light stubble. OUTFIT: long-sleeve button-front cotton shirt in light beige #D4C4A8, open collar, neatly tucked into tailored beige chino shorts #C8B898 ending just above knees. Footwear: clean white minimalist low-top leather sneakers, no visible socks. No belt or extra accessories, no outerwear. Standing relaxed frontal slight three-quarter, one hand in shorts pocket, other hanging. Realistic cloth folds and natural anatomy. Seamless light gray studio background, soft even lighting, whole man hair to soles. Center at x768, head y30, soles y980, keep entire person inside x380..1156 for final central 776x1024 crop, empty gray side margins. No text, no logos, no collage, no other objects. Filename camisa-bege-shorts-bege-calcado-branco.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78d-15e1-75b0-88b0-2ef9ce4b3cc8/exec-b6557d6f-30ba-477d-bce3-1c7cd9d1f18c.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/camisa-bege-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisa-bege-shorts-bege-calcado-branco.webp",
+      "size": [
+        776,
+        1024
+      ],
+      "active": false
+    },
+    {
+      "shirt": "bege",
+      "shoe": "caramelo",
+      "file": "camisa-bege-shorts-bege-calcado-caramelo.png",
+      "prompt": "Use case: product-mockup. Create ONE photorealistic full-body men's wardrobe catalogue image, landscape 1536x1024 pixels. Image 1 is reference for adult male identity, pose, lighting and shirt construction; image 2 is reference for beige chino shorts, leg proportions, framing and gray studio. Same olive skin, dark wavy short hair, light stubble. OUTFIT: long-sleeve button-front cotton shirt in light beige #D4C4A8, open collar, neatly tucked into tailored beige chino shorts #C8B898 ending just above knees. Footwear: caramel tan #A87848 leather penny loafers, slip-on without laces, no visible socks. No belt or extra accessories, no outerwear. Standing relaxed frontal slight three-quarter, one hand in shorts pocket, other hanging. Realistic cloth folds and natural anatomy. Seamless light gray studio background, soft even lighting, whole man hair to soles. Center at x768, head y30, soles y980, keep entire person inside x380..1156 for final central 776x1024 crop, empty gray side margins. No text, no logos, no collage, no other objects. Filename camisa-bege-shorts-bege-calcado-caramelo.png.",
+      "source": "/Users/lucas-tail/.codex/generated_images/01a1c78d-15e1-75b0-88b0-2ef9ce4b3cc8/exec-b8be2aa6-8400-4ed3-854c-639e8ff7a605.png",
+      "status": "complete",
+      "sourceCleaned": true,
+      "raw": "gpt/raws/camisa-bege-shorts-bege-calcado-caramelo.png",
+      "webp": "gpt/compressed/camisa-bege-shorts-bege-calcado-caramelo.webp",
+      "size": [
+        776,
+        1024
+      ],
+      "active": false
+    }
+  ],
+  "scope_note": "Pares fixos: camisa + calça ou camiseta + bermuda. Cruzados já gerados preservados, fora do combinador; pendentes cancelados."
+}

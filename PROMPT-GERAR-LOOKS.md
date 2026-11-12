@@ -129,3 +129,9 @@ Série concluída: **120 looks novos**, com as 20 cores de camisa e as 6 cores d
 Imagens geradas em lotes paralelos com o gerador integrado, recortadas em 776 × 1024 e convertidas para WebP (qualidade 82, método 6). PNGs arquivados em `gpt/raws/`, WebPs em `gpt/compressed/`; índice, seletor e cores dos favoritos atualizados.
 
 Prompts e registros: [lote A](docs/prompts/grafite-a.json), [lote B](docs/prompts/grafite-b.json), [lote C](docs/prompts/grafite-c.json) e [lote D](docs/prompts/grafite-d.json). Após validar a matriz completa, remover intermediários e apenas as cópias-fonte desta geração no diretório padrão do gerador; preservar os PNGs finais arquivados.
+
+## Conjuntos fixos no combinador — piloto casual
+
+O seletor de conjunto oferece **Camisa + calça** e **Camiseta + bermuda**. Os tipos de parte de cima e de baixo são vinculados: não oferecer nem gerar camisa com bermuda ou camiseta com calça. O modo terno permanece disponível e mantém suas regras anteriores.
+
+O piloto casual contém somente camiseta branca com bermuda bege, em duas imagens: tênis branco e loafer caramelo. Os arquivos usam `camiseta-branca-shorts-bege-calcado-branco` e `camiseta-branca-shorts-bege-calcado-caramelo`; a interface usa o nome “Bermuda”. As combinações cruzadas produzidas antes desta decisão ficam preservadas no disco, fora do índice e do combinador. Esta decisão substitui o plano anterior de 64 imagens cruzadas.

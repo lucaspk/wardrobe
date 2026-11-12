@@ -151,7 +151,7 @@
   };
 
   const DEFAULTS = { camisa: 'ferrugem', calca: 'verde-oliva', calcado: 'preto' };
-  const state = { ...DEFAULTS, outerwear: null, outerwearColor: null };
+  const state = { ...DEFAULTS, outfitType: 'camisa-calca', outerwear: null, outerwearColor: null };
   const OUTERWEAR_ALLOWED_COLORS = {
     terno: {
       default: {
@@ -319,8 +319,23 @@
     return SLUG_VARIANTS[piece]?.[id] ?? [id];
   }
 
+  function garmentType(piece) {
+    if (state.outerwear === 'terno') return piece;
+    if (!isCasualPilot()) return piece;
+    return piece === 'camisa' ? 'camiseta' : piece === 'calca' ? 'shorts' : piece;
+  }
+
+  function isCasualPilot() {
+    return !state.outerwear && state.outfitType === 'camiseta-bermuda';
+  }
+
   function currentAllowedColors(piece) {
-    if (!state.outerwear) return PALETTE[piece].map(({ id }) => id);
+    if (!state.outerwear) {
+      if (piece === 'camisa' && isCasualPilot()) return ['branco'];
+      if (piece === 'calca' && isCasualPilot()) return ['bege'];
+      if (piece === 'calcado' && isCasualPilot()) return ['branco', 'caramelo'];
+      return PALETTE[piece].map(({ id }) => id);
+    }
     if (state.outerwear === 'terno') return OUTERWEAR_ALLOWED_COLORS.terno.default[piece] ?? [];
     return OUTERWEAR_ALLOWED_COLORS[state.outerwear][state.outerwearColor][piece];
   }
@@ -335,10 +350,13 @@
     }
 
     const out = [];
-    for (const c of variants('camisa', state.camisa)) {
+    const top = garmentType('camisa');
+    const bottom = garmentType('calca');
+    const shirtColors = top === 'camiseta' ? ['branca'] : variants('camisa', state.camisa);
+    for (const c of shirtColors) {
       for (const p of variants('calca', state.calca)) {
         for (const s of variants('calcado', state.calcado)) {
-          out.push(`camisa-${c}-calca-${p}-calcado-${s}.png`);
+          out.push(`${top}-${c}-${bottom}-${p}-calcado-${s}.png`);
         }
       }
     }
@@ -365,12 +383,15 @@
     }
     const pieces = state.outerwear === 'terno' ? ['camisa', 'calcado'] : ['camisa', 'calca', 'calcado'];
     parts.push(...pieces.map((p) => {
-      const names = { camisa: 'Camisa', calca: 'Calça', calcado: 'Calçado' };
+      const names = { camisa: garmentType('camisa') === 'camiseta' ? 'Camiseta' : 'Camisa', calca: garmentType('calca') === 'shorts' ? 'Bermuda' : 'Calça', calcado: 'Calçado' };
       if (state.outerwear && p !== 'calcado' && !currentAllowedColors(p).includes(state[p])) {
         return { label: `${names[p]} não selecionada` };
       }
       const color = findColor(p, state[p]);
-      return { label: `${names[p]} ${color.label.toLowerCase()}`, color: color.hex };
+      const label = p === 'calcado' && isCasualPilot()
+        ? (state.calcado === 'branco' ? 'Tênis branco' : 'Loafer caramelo')
+        : `${names[p]} ${p === 'camisa' && garmentType(p) === 'camiseta' ? 'branca' : color.label.toLowerCase()}`;
+      return { label, color: color.hex };
     }));
     comboEl.innerHTML = parts.map(({ label, color }) => `
       <span class="look-part">
@@ -407,7 +428,7 @@
       const allowed = new Set(currentAllowedColors(piece));
       const buttons = [...document.querySelectorAll(`.swatch[data-piece="${piece}"]`)];
       buttons.forEach((button) => {
-        const enabled = !state.outerwear || allowed.has(button.dataset.id);
+        const enabled = allowed.has(button.dataset.id);
         button.hidden = !enabled;
         const active = button.dataset.id === state[piece];
         button.classList.toggle('active', active);
@@ -420,6 +441,7 @@
       if (countEl) countEl.textContent = `${count} opç${count === 1 ? 'ão' : 'ões'}`;
     });
     document.getElementById('calca-control-group')?.classList.toggle('hidden', state.outerwear === 'terno');
+    updateGarmentControls();
     updateColorGroups();
     updateMobileControls();
   }
@@ -509,8 +531,41 @@
   }
 
   function selectColor(piece, id) {
-    if (state.outerwear && !currentAllowedColors(piece).includes(id)) return;
+    if (!currentAllowedColors(piece).includes(id)) return;
     state[piece] = id;
+    render();
+  }
+
+  function updateGarmentControls() {
+    document.querySelectorAll('[data-garment-options]').forEach((group) => {
+      group.hidden = state.outerwear === 'terno';
+    });
+    document.querySelectorAll('[data-outfit-type]').forEach((button) => {
+      const active = state.outfitType === button.dataset.outfitType;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    for (const piece of ['camisa', 'calca']) {
+      const type = garmentType(piece);
+      const name = { camisa: 'Camisa', camiseta: 'Camiseta', calca: 'Calça', shorts: 'Bermuda' }[type];
+      const heading = document.getElementById(`${piece}-heading`);
+      if (heading) heading.textContent = name;
+      const mobileButton = document.querySelector(`[data-mobile-piece="${piece}"]`);
+      if (mobileButton) mobileButton.textContent = name;
+    }
+  }
+
+  function normalizeSelectedColors() {
+    ['camisa', 'calca', 'calcado'].forEach((piece) => {
+      const allowed = currentAllowedColors(piece);
+      if (allowed.length && !allowed.includes(state[piece])) state[piece] = allowed[0];
+    });
+  }
+
+  function selectOutfit(type) {
+    if (state.outerwear || !['camisa-calca', 'camiseta-bermuda'].includes(type)) return;
+    state.outfitType = type;
+    normalizeSelectedColors();
     render();
   }
 
@@ -596,11 +651,12 @@
         if (allowed.length && !allowed.includes(state[piece])) state[piece] = allowed[0];
       });
     }
+    normalizeSelectedColors();
     updateOuterwearControls();
     render();
   }
 
-  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$|^terno-.+-camisa-.+-calca-.+-calcado-.+\.png$/i;
+  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$|^camiseta-branca-shorts-bege-calcado-(?:branco|caramelo)\.png$|^terno-.+-camisa-.+-calca-.+-calcado-.+\.png$/i;
 
   function initColorTooltips() {
     const selector = '.swatch, [data-tooltip]';
@@ -700,6 +756,9 @@
       placeholder.hidden = false;
     });
 
+    document.querySelectorAll('[data-outfit-type]').forEach((button) => {
+      button.addEventListener('click', () => selectOutfit(button.dataset.outfitType));
+    });
     document.querySelectorAll('.layer-option').forEach((button) => {
       button.addEventListener('click', () => selectLayer(button.dataset.layer || null));
     });

@@ -24,8 +24,11 @@ const COLOR_HEX = {
 };
 
 
-// Looks gerados: terno chumbo / grafite, nas oito camisas e seis cores de calçado.
+// Looks cadastrados: piloto casual e série de terno chumbo / grafite.
 window.WARDROBE_GENERATED_LOOKS = Object.freeze([
+  // Piloto casual: camiseta branca + bermuda bege, tênis branco ou loafer caramelo.
+  'camiseta-branca-shorts-bege-calcado-branco.png',
+  'camiseta-branca-shorts-bege-calcado-caramelo.png',
   'terno-grafite-camisa-azul-claro-calca-grafite-calcado-preto.png',
   'terno-grafite-camisa-azul-claro-calca-grafite-calcado-marrom.png',
   'terno-grafite-camisa-azul-claro-calca-grafite-calcado-branco.png',

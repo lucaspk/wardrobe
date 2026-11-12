@@ -7,6 +7,8 @@ GPT_DIR = ROOT / "gpt"
 COMPRESSED_DIR = GPT_DIR / "compressed"
 patterns = (
     "camisa-*-calca-*-calcado-*.png",
+    "camiseta-branca-shorts-bege-calcado-branco.png",
+    "camiseta-branca-shorts-bege-calcado-caramelo.png",
     "terno-*-camisa-*-calca-*-calcado-*.png",
 )
 files = {

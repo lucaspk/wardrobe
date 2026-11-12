@@ -936,13 +936,15 @@ body {
   display: none;
 }
 
-.layer-options {
+.layer-options,
+.garment-options {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.layer-option {
+.layer-option,
+.garment-option {
   padding: 0.45rem 0.75rem;
   border: 1px solid transparent;
   border-radius: 999px;
@@ -953,7 +955,8 @@ body {
   cursor: pointer;
 }
 
-.layer-option.active {
+.layer-option.active,
+.garment-option.active {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
@@ -1423,3 +1426,6 @@ body {
   .is-comparing .combo-controls { min-width: 0; }
   .is-comparing .mobile-piece-nav button { flex: 1 0 auto; }
 }
+
+.garment-options { margin-bottom: 1rem; }
+.garment-options[hidden] { display: none; }
