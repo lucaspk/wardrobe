@@ -24,11 +24,20 @@ const COLOR_HEX = {
 };
 
 
-// Looks cadastrados: piloto casual e série de terno chumbo / grafite.
+// Looks cadastrados: casual camiseta + bermuda e série de terno chumbo / grafite.
 window.WARDROBE_GENERATED_LOOKS = Object.freeze([
-  // Piloto casual: camiseta branca + bermuda bege, tênis branco ou loafer caramelo.
+  // Casual: camiseta + bermuda bege + tênis branco.
   'camiseta-branca-shorts-bege-calcado-branco.png',
-  'camiseta-branca-shorts-bege-calcado-caramelo.png',
+  'camiseta-preta-shorts-bege-calcado-branco.png',
+  'camiseta-azul-marinho-shorts-bege-calcado-branco.png',
+  'camiseta-verde-militar-shorts-bege-calcado-branco.png',
+  'camiseta-vinho-shorts-bege-calcado-branco.png',
+  'camiseta-vermelha-shorts-bege-calcado-branco.png',
+  'camiseta-marrom-shorts-bege-calcado-branco.png',
+  'camiseta-cinza-pedra-shorts-bege-calcado-branco.png',
+  'camiseta-azul-claro-shorts-bege-calcado-branco.png',
+  'camiseta-rosa-claro-shorts-bege-calcado-branco.png',
+  'camiseta-amarelo-claro-shorts-bege-calcado-branco.png',
   'terno-grafite-camisa-azul-claro-calca-grafite-calcado-preto.png',
   'terno-grafite-camisa-azul-claro-calca-grafite-calcado-marrom.png',
   'terno-grafite-camisa-azul-claro-calca-grafite-calcado-branco.png',

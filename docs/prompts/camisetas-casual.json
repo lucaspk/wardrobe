@@ -1,0 +1,97 @@
+{
+  "tool": "built-in image_gen",
+  "aspect_ratio": "4:3",
+  "items": [
+    {
+      "file": "camiseta-preta-shorts-bege-calcado-branco.png",
+      "prompt": "Create one photorealistic full-body menswear catalog photograph. Keep the same recurring adult male model, pose, beige chino shorts and white sneakers as camiseta-branca-shorts-bege-calcado-branco. Change ONLY the top to a plain black cotton crew-neck short-sleeve T-shirt #1A1A1A, untucked. No outer layer or accessories.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-preta-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-preta-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/preta/camiseta-preta-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-azul-marinho-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain navy cotton crew-neck short-sleeve T-shirt #1E3A5F. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-azul-marinho-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-azul-marinho-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/azul-marinho/camiseta-azul-marinho-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-verde-militar-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain military green cotton crew-neck short-sleeve T-shirt #4A5A38. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-verde-militar-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-verde-militar-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/verde-militar/camiseta-verde-militar-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-vinho-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain burgundy wine cotton crew-neck short-sleeve T-shirt #6B2D3C, not bright red. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-vinho-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-vinho-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/vinho/camiseta-vinho-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-vermelha-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain muted brick-red cotton crew-neck short-sleeve T-shirt #B83232, not bright fire-engine red and not burgundy wine. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-vermelha-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-vermelha-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/vermelha/camiseta-vermelha-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-marrom-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain medium-brown cotton crew-neck short-sleeve T-shirt #6B4A32. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-marrom-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-marrom-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/marrom/camiseta-marrom-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-cinza-pedra-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain stone-gray cotton crew-neck short-sleeve T-shirt #8A8880. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-cinza-pedra-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-cinza-pedra-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/cinza-pedra/camiseta-cinza-pedra-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-azul-claro-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain pale light-blue cotton crew-neck short-sleeve T-shirt #A8C8E0. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-azul-claro-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-azul-claro-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/azul-claro/camiseta-azul-claro-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-rosa-claro-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain pale light-pink cotton crew-neck short-sleeve T-shirt #F0C4C8, not hot pink. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-rosa-claro-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-rosa-claro-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/rosa-claro/camiseta-rosa-claro-shorts-bege-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-amarelo-claro-shorts-bege-calcado-branco.png",
+      "prompt": "Same catalog setup as the white T-shirt shorts look. Change ONLY the top to a plain pale pastel-yellow cotton crew-neck short-sleeve T-shirt #F5E6A8, not mustard. Beige chino shorts, white low-top sneakers.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-amarelo-claro-shorts-bege-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-amarelo-claro-shorts-bege-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/amarelo-claro/camiseta-amarelo-claro-shorts-bege-calcado-branco.webp",
+      "active": true
+    }
+  ],
+  "scope_note": "Camiseta + bermuda bege + somente tênis branco. Loafer caramelo da camiseta branca permanece no disco, fora do combinador."
+}

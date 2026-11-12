@@ -146,7 +146,7 @@
       "prompt": "Use case: precise-object-edit. Create ONE 1536x1024 landscape full-body menswear catalog photograph matching the reference exactly: same adult male identity, white crew-neck short sleeve T-shirt, beige chino shorts just above knees, pose, proportions, lighting and light-gray studio background. Change ONLY footwear to caramel tan leather penny loafers, no laces, no visible socks. Extend gray background on sides; center full man inside x380..1156 with head y30 and soles y980 for later 776x1024 center crop. No accessories, text or collage.",
       "status": "complete",
       "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-be77a1b6-66b3-4db0-901f-2df26a8a07a0.png",
-      "active": true,
+      "active": false,
       "raw": "gpt/raws/camiseta-branca-shorts-bege-calcado-caramelo.png",
       "webp": "gpt/compressed/camisetas/branca/camiseta-branca-shorts-bege-calcado-caramelo.webp",
       "sourceCleaned": true

@@ -7,6 +7,7 @@
       { id: 'azul-claro', label: 'Azul claro', hex: '#A8C8E0' },
       { id: 'rosa-claro', label: 'Rosa claro', hex: '#F0C4C8' },
       { id: 'verde-oliva', label: 'Verde oliva', hex: '#6B7A4A' },
+      { id: 'verde-militar', label: 'Verde militar', hex: '#4A5A38' },
       { id: 'lilas-claro', label: 'Lilás claro', hex: '#D4C4E8' },
       { id: 'vinho', label: 'Vinho', hex: '#6B2D3C' },
       { id: 'vermelho', label: 'Vermelho', hex: '#B83232' },
@@ -150,6 +151,7 @@
     },
   };
 
+  const CASUAL_ONLY_CAMISA = new Set(['verde-militar']);
   const DEFAULTS = { camisa: 'ferrugem', calca: 'verde-oliva', calcado: 'preto' };
   const state = { ...DEFAULTS, outfitType: 'camisa-calca', outerwear: null, outerwearColor: null };
   const OUTERWEAR_ALLOWED_COLORS = {
@@ -331,9 +333,14 @@
 
   function currentAllowedColors(piece) {
     if (!state.outerwear) {
-      if (piece === 'camisa' && isCasualPilot()) return ['branco'];
+      if (piece === 'camisa' && isCasualPilot()) {
+        return ['branco', 'preto', 'azul-marinho', 'verde-militar', 'vinho', 'vermelho', 'marrom', 'cinza-pedra', 'azul-claro', 'rosa-claro', 'amarelo-claro'];
+      }
       if (piece === 'calca' && isCasualPilot()) return ['bege'];
-      if (piece === 'calcado' && isCasualPilot()) return ['branco', 'caramelo'];
+      if (piece === 'calcado' && isCasualPilot()) return ['branco'];
+      if (piece === 'camisa') {
+        return PALETTE.camisa.map(({ id }) => id).filter((id) => !CASUAL_ONLY_CAMISA.has(id));
+      }
       return PALETTE[piece].map(({ id }) => id);
     }
     if (state.outerwear === 'terno') return OUTERWEAR_ALLOWED_COLORS.terno.default[piece] ?? [];
@@ -352,7 +359,7 @@
     const out = [];
     const top = garmentType('camisa');
     const bottom = garmentType('calca');
-    const shirtColors = top === 'camiseta' ? ['branca'] : variants('camisa', state.camisa);
+    const shirtColors = variants('camisa', state.camisa);
     for (const c of shirtColors) {
       for (const p of variants('calca', state.calca)) {
         for (const s of variants('calcado', state.calcado)) {
@@ -388,9 +395,13 @@
         return { label: `${names[p]} não selecionada` };
       }
       const color = findColor(p, state[p]);
+      const shirtWord = color.id === 'branco' ? 'branca'
+        : color.id === 'preto' ? 'preta'
+        : color.id === 'vermelho' ? 'vermelha'
+        : color.label.toLowerCase();
       const label = p === 'calcado' && isCasualPilot()
-        ? (state.calcado === 'branco' ? 'Tênis branco' : 'Loafer caramelo')
-        : `${names[p]} ${p === 'camisa' && garmentType(p) === 'camiseta' ? 'branca' : color.label.toLowerCase()}`;
+        ? 'Tênis branco'
+        : `${names[p]} ${p === 'camisa' && garmentType(p) === 'camiseta' ? shirtWord : color.label.toLowerCase()}`;
       return { label, color: color.hex };
     }));
     comboEl.innerHTML = parts.map(({ label, color }) => `
@@ -435,7 +446,17 @@
         button.setAttribute('aria-pressed', String(active));
       });
       const selectedLabel = document.getElementById(`selected-${piece}`);
-      if (selectedLabel) selectedLabel.textContent = findColor(piece, state[piece]).label;
+      if (selectedLabel) {
+        const color = findColor(piece, state[piece]);
+        let label = color.label;
+        if (piece === 'camisa' && garmentType('camisa') === 'camiseta') {
+          if (color.id === 'branco') label = 'Branca';
+          else if (color.id === 'preto') label = 'Preta';
+          else if (color.id === 'vermelho') label = 'Vermelha';
+        }
+        if (piece === 'calcado' && isCasualPilot()) label = 'Tênis branco';
+        selectedLabel.textContent = label;
+      }
       const countEl = document.getElementById(`count-${piece}`);
       const count = buttons.filter((button) => !button.hidden).length;
       if (countEl) countEl.textContent = `${count} opç${count === 1 ? 'ão' : 'ões'}`;
@@ -656,7 +677,7 @@
     render();
   }
 
-  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$|^camiseta-branca-shorts-bege-calcado-(?:branco|caramelo)\.png$|^terno-.+-camisa-.+-calca-.+-calcado-.+\.png$/i;
+  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$|^camiseta-.+-shorts-bege-calcado-branco\.png$|^terno-.+-camisa-.+-calca-.+-calcado-.+\.png$/i;
 
   function initColorTooltips() {
     const selector = '.swatch, [data-tooltip]';
