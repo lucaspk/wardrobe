@@ -8,7 +8,7 @@
       "status": "complete",
       "active": false,
       "raw": "gpt/raws/camisa-amarelo-claro-shorts-bege-calcado-branco.png",
-      "webp": "gpt/compressed/camisa-amarelo-claro-shorts-bege-calcado-branco.webp",
+      "webp": "gpt/compressed/camisas/amarelo-claro/camisa-amarelo-claro-shorts-bege-calcado-branco.webp",
       "sourceCleaned": true
     },
     {
@@ -18,7 +18,7 @@
       "status": "complete",
       "active": false,
       "raw": "gpt/raws/camisa-amarelo-claro-shorts-bege-calcado-caramelo.png",
-      "webp": "gpt/compressed/camisa-amarelo-claro-shorts-bege-calcado-caramelo.webp",
+      "webp": "gpt/compressed/camisas/amarelo-claro/camisa-amarelo-claro-shorts-bege-calcado-caramelo.webp",
       "sourceCleaned": true
     },
     {
@@ -28,7 +28,7 @@
       "status": "complete",
       "active": false,
       "raw": "gpt/raws/camisa-azul-claro-shorts-bege-calcado-branco.png",
-      "webp": "gpt/compressed/camisa-azul-claro-shorts-bege-calcado-branco.webp",
+      "webp": "gpt/compressed/camisas/azul-claro/camisa-azul-claro-shorts-bege-calcado-branco.webp",
       "sourceCleaned": true
     },
     {
@@ -38,7 +38,7 @@
       "status": "complete",
       "active": false,
       "raw": "gpt/raws/camisa-azul-claro-shorts-bege-calcado-caramelo.png",
-      "webp": "gpt/compressed/camisa-azul-claro-shorts-bege-calcado-caramelo.webp",
+      "webp": "gpt/compressed/camisas/azul-claro/camisa-azul-claro-shorts-bege-calcado-caramelo.webp",
       "sourceCleaned": true
     }
   ],

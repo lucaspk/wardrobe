@@ -11,7 +11,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-preto.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-preto.webp",
+      "webp": "gpt/compressed/ternos/lilas-claro/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-preto.webp",
       "size": [
         776,
         1024
@@ -24,7 +24,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-marrom.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-marrom.webp",
+      "webp": "gpt/compressed/ternos/lilas-claro/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-marrom.webp",
       "size": [
         776,
         1024
@@ -37,7 +37,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-cinza-claro.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-cinza-claro.webp",
+      "webp": "gpt/compressed/ternos/lilas-claro/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-cinza-claro.webp",
       "size": [
         776,
         1024
@@ -50,7 +50,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-branco.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-branco.webp",
+      "webp": "gpt/compressed/ternos/lilas-claro/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-branco.webp",
       "size": [
         776,
         1024
@@ -63,7 +63,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-bege.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-bege.webp",
+      "webp": "gpt/compressed/ternos/lilas-claro/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-bege.webp",
       "size": [
         776,
         1024
@@ -76,7 +76,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-caramelo.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-caramelo.webp",
+      "webp": "gpt/compressed/ternos/lilas-claro/terno-grafite-camisa-lilas-claro-calca-grafite-calcado-caramelo.webp",
       "size": [
         776,
         1024
@@ -89,7 +89,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-preto.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-preto.webp",
+      "webp": "gpt/compressed/ternos/preto/terno-grafite-camisa-preto-calca-grafite-calcado-preto.webp",
       "size": [
         776,
         1024
@@ -102,7 +102,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-branco.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-branco.webp",
+      "webp": "gpt/compressed/ternos/preto/terno-grafite-camisa-preto-calca-grafite-calcado-branco.webp",
       "size": [
         776,
         1024
@@ -115,7 +115,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-marrom.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-marrom.webp",
+      "webp": "gpt/compressed/ternos/preto/terno-grafite-camisa-preto-calca-grafite-calcado-marrom.webp",
       "size": [
         776,
         1024
@@ -128,7 +128,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-cinza-claro.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-cinza-claro.webp",
+      "webp": "gpt/compressed/ternos/preto/terno-grafite-camisa-preto-calca-grafite-calcado-cinza-claro.webp",
       "size": [
         776,
         1024
@@ -141,7 +141,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-caramelo.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-caramelo.webp",
+      "webp": "gpt/compressed/ternos/preto/terno-grafite-camisa-preto-calca-grafite-calcado-caramelo.webp",
       "size": [
         776,
         1024
@@ -154,7 +154,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-preto-calca-grafite-calcado-bege.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-preto-calca-grafite-calcado-bege.webp",
+      "webp": "gpt/compressed/ternos/preto/terno-grafite-camisa-preto-calca-grafite-calcado-bege.webp",
       "size": [
         776,
         1024
@@ -167,7 +167,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.png",
-      "webp": "gpt/compressed/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.webp",
+      "webp": "gpt/compressed/ternos/verde-oliva/terno-grafite-camisa-verde-oliva-calca-grafite-calcado-preto.webp",
       "size": [
         776,
         1024

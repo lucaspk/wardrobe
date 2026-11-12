@@ -196,10 +196,34 @@ function formatFavoriteColors(name) {
   }).join('');
 }
 
-function imageSrc(item) {
-  const filename = item.file.split('/').pop().replace(/\.png$/i, '.webp');
-  return `gpt/compressed/${filename}`;
+function lookFolders(filename) {
+  const stem = String(filename).split('/').pop().replace(/\.(png|webp)$/i, '');
+  const match = /^(?:(terno|jaqueta|blazer)-[a-z0-9-]+-)?(camisa|camiseta)-([a-z0-9-]+?)-(?:calca|shorts|bermuda)-/i.exec(stem);
+  if (!match) return null;
+  const outer = (match[1] || '').toLowerCase();
+  const top = match[2].toLowerCase();
+  const color = match[3].toLowerCase();
+  const kind = outer === 'terno' ? 'ternos'
+    : outer === 'jaqueta' ? 'jaqueta'
+    : outer === 'blazer' ? 'blazer'
+    : top === 'camiseta' ? 'camisetas'
+    : 'camisas';
+  return { kind, color };
 }
+
+function compressedLookSrc(file) {
+  const filename = String(file).split('/').pop().replace(/\.png$/i, '.webp');
+  const folders = lookFolders(filename);
+  return folders
+    ? `gpt/compressed/${folders.kind}/${folders.color}/${filename}`
+    : `gpt/compressed/${filename}`;
+}
+
+function imageSrc(item) {
+  return compressedLookSrc(item.file);
+}
+
+window.compressedLookSrc = compressedLookSrc;
 
 function favoriteDownload(item) {
   const source = item.imageDataUrl || imageSrc(item);

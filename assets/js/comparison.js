@@ -228,7 +228,7 @@
       const before = controls?.getBoundingClientRect();
       const photo = window.photoBounds?.(currentImage);
       reference = { ...current };
-      referenceImage.src = `gpt/compressed/${reference.file.replace(/\.png$/i, '.webp')}`;
+      referenceImage.src = window.compressedLookSrc(reference.file);
       referenceImage.alt = reference.name;
       showLook('b');
       renderComparison();

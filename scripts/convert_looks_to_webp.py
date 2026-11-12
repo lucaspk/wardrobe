@@ -13,6 +13,8 @@ except ImportError as error:
     ) from error
 
 
+from look_paths import compressed_webp_path, look_parts
+
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DIR = ROOT / "gpt"
 OUTPUT_DIR = ROOT / "gpt" / "compressed"
@@ -36,8 +38,22 @@ def archive_png(source: Path, archive_dir: Path) -> Path:
 
 
 def convert_and_archive(source: Path, output_dir: Path, archive_dir: Path, quality: int) -> tuple[Path, Path, bool]:
-    output_dir.mkdir(parents=True, exist_ok=True)
-    destination = output_dir / f"{source.stem}.webp"
+    destination = compressed_webp_path(output_dir, source.name)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    kind, color = look_parts(source.name)
+    for legacy in (
+        output_dir / f"{source.stem}.webp",
+        output_dir / color / f"{source.stem}.webp",
+        output_dir / kind / f"{source.stem}.webp",
+        output_dir / "jaqueta" / color / f"{source.stem}.webp",
+    ):
+        if (
+            not destination.exists()
+            and legacy.exists()
+            and legacy.resolve() != destination.resolve()
+        ):
+            legacy.replace(destination)
+            break
     converted = False
     with Image.open(source) as image:
         image.load()

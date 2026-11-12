@@ -24,7 +24,7 @@ wardrobe/
 │   ├── convert_looks_to_webp.py
 │   └── crop.py
 └── gpt/
-    ├── compressed/
+    ├── compressed/{camisas,camisetas,jaqueta,blazer,ternos}/<cor>/
     ├── raws/
     ├── references/
     └── to_crop/
@@ -166,9 +166,9 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 
 ## Conversão de looks PNG para WebP
 
-Copie as fontes geradas para `gpt/to_crop/` e execute o recorte, que prepara os PNGs na raiz de `gpt/`. Execute `python3 scripts/convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/`. Após validar o WebP, o script move automaticamente o PNG para `gpt/raws/`. O script não percorre subpastas: os originais arquivados e `gpt/references/` não são processados. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
+Copie as fontes geradas para `gpt/to_crop/` e execute o recorte, que prepara os PNGs na raiz de `gpt/`. Execute `python3 scripts/convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/<camisas|camisetas|jaqueta|blazer|ternos>/<cor>/`. Após validar o WebP, o script move automaticamente o PNG para `gpt/raws/`. O script não percorre subpastas da raiz de `gpt/`: os originais arquivados e `gpt/references/` não são processados. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
 
-Os PNGs são preservados em `gpt/raws/`, sem precisar movê-los manualmente. Se o WebP de destino já existir, o script o mantém, valida sua leitura e suas dimensões e arquiva o PNG. Um PNG diferente com nome já arquivado recebe um sufixo de conteúdo, preservando ambos; um WebP inválido deixa o PNG na raiz para correção. `scripts/build_index.py` combina os looks PNG da raiz com os WebP já existentes em `gpt/compressed/`; ignora `gpt/raws/` e `gpt/references/`. O combinador e os favoritos usam os nomes dos arquivos como identificadores e carregam as imagens de `gpt/compressed/`, sem depender dos RAWs.
+Os PNGs são preservados em `gpt/raws/`, sem precisar movê-los manualmente. Se o WebP de destino já existir, o script o mantém, valida sua leitura e suas dimensões e arquiva o PNG. Um PNG diferente com nome já arquivado recebe um sufixo de conteúdo, preservando ambos; um WebP inválido deixa o PNG na raiz para correção. `scripts/build_index.py` combina os looks PNG da raiz com os WebP em `gpt/compressed/<tipo>/<cor>/`; ignora `gpt/raws/` e `gpt/references/`. O combinador e os favoritos usam os nomes dos arquivos como identificadores e montam o caminho `gpt/compressed/camisas/ferrugem/<arquivo>.webp` (ternos, camisetas, jaqueta e blazer em pastas próprias).
 
 Para o prompt agnóstico e o fluxo de revisão antes de gerar lotes, consulte [PROMPT-GERAR-LOOKS.md](PROMPT-GERAR-LOOKS.md).
 

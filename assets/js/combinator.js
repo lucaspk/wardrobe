@@ -285,7 +285,7 @@
       await new Promise((resolve, reject) => {
         image.onload = resolve;
         image.onerror = () => reject(new Error('Foto indisponível'));
-        image.src = `gpt/compressed/${file.replace(/\.png$/i, '.webp')}`;
+        image.src = window.compressedLookSrc(file);
       });
       if (typeof image.decode === 'function') await image.decode();
       if (request !== previewRequest) return;

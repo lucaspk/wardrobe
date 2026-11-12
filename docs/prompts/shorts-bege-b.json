@@ -10,7 +10,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/camisa-marrom-shorts-bege-calcado-branco.png",
-      "webp": "gpt/compressed/camisa-marrom-shorts-bege-calcado-branco.webp",
+      "webp": "gpt/compressed/camisas/marrom/camisa-marrom-shorts-bege-calcado-branco.webp",
       "size": [
         776,
         1024
@@ -26,7 +26,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/camisa-marrom-shorts-bege-calcado-caramelo.png",
-      "webp": "gpt/compressed/camisa-marrom-shorts-bege-calcado-caramelo.webp",
+      "webp": "gpt/compressed/camisas/marrom/camisa-marrom-shorts-bege-calcado-caramelo.webp",
       "size": [
         776,
         1024
@@ -42,7 +42,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/camisa-bege-shorts-bege-calcado-branco.png",
-      "webp": "gpt/compressed/camisa-bege-shorts-bege-calcado-branco.webp",
+      "webp": "gpt/compressed/camisas/bege/camisa-bege-shorts-bege-calcado-branco.webp",
       "size": [
         776,
         1024
@@ -58,7 +58,7 @@
       "status": "complete",
       "sourceCleaned": true,
       "raw": "gpt/raws/camisa-bege-shorts-bege-calcado-caramelo.png",
-      "webp": "gpt/compressed/camisa-bege-shorts-bege-calcado-caramelo.webp",
+      "webp": "gpt/compressed/camisas/bege/camisa-bege-shorts-bege-calcado-caramelo.webp",
       "size": [
         776,
         1024

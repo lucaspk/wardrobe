@@ -7,7 +7,7 @@
       "status": "complete",
       "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-8931af5e-4abd-4443-a684-797ca983b54e.png",
       "raw": "gpt/raws/camiseta-branca-calca-preto-calcado-branco.png",
-      "webp": "gpt/compressed/camiseta-branca-calca-preto-calcado-branco.webp",
+      "webp": "gpt/compressed/camisetas/branca/camiseta-branca-calca-preto-calcado-branco.webp",
       "active": false,
       "sourceCleaned": true
     },
@@ -17,7 +17,7 @@
       "status": "complete",
       "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-abd4d05d-b74b-443f-a99d-1a0517a7aab7.png",
       "raw": "gpt/raws/camiseta-branca-calca-preto-calcado-caramelo.png",
-      "webp": "gpt/compressed/camiseta-branca-calca-preto-calcado-caramelo.webp",
+      "webp": "gpt/compressed/camisetas/branca/camiseta-branca-calca-preto-calcado-caramelo.webp",
       "active": false,
       "sourceCleaned": true
     },
@@ -27,7 +27,7 @@
       "status": "complete",
       "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-62661a70-2bf8-4199-96b5-9250546c2577.png",
       "raw": "gpt/raws/camiseta-branca-calca-cinza-claro-calcado-branco.png",
-      "webp": "gpt/compressed/camiseta-branca-calca-cinza-claro-calcado-branco.webp",
+      "webp": "gpt/compressed/camisetas/branca/camiseta-branca-calca-cinza-claro-calcado-branco.webp",
       "active": false,
       "sourceCleaned": true
     },
@@ -38,7 +38,7 @@
       "source": "/Users/lucas-tail/.codex/generated_images/01a1c78c-301f-7591-9432-c759e4010502/exec-27fb00c0-2eb2-46fb-be97-c9a66de52938.png",
       "active": false,
       "raw": "gpt/raws/camiseta-branca-calca-cinza-claro-calcado-caramelo.png",
-      "webp": "gpt/compressed/camiseta-branca-calca-cinza-claro-calcado-caramelo.webp",
+      "webp": "gpt/compressed/camisetas/branca/camiseta-branca-calca-cinza-claro-calcado-caramelo.webp",
       "sourceCleaned": true
     },
     {
@@ -138,7 +138,7 @@
       "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-857a6079-8d08-4cef-8654-c5f3f7cf570e.png",
       "active": true,
       "raw": "gpt/raws/camiseta-branca-shorts-bege-calcado-branco.png",
-      "webp": "gpt/compressed/camiseta-branca-shorts-bege-calcado-branco.webp",
+      "webp": "gpt/compressed/camisetas/branca/camiseta-branca-shorts-bege-calcado-branco.webp",
       "sourceCleaned": true
     },
     {
@@ -148,7 +148,7 @@
       "source": "/Users/lucas-tail/.codex/generated_images/01a1c787-e97c-78f1-837b-1f76b75ce38b/exec-be77a1b6-66b3-4db0-901f-2df26a8a07a0.png",
       "active": true,
       "raw": "gpt/raws/camiseta-branca-shorts-bege-calcado-caramelo.png",
-      "webp": "gpt/compressed/camiseta-branca-shorts-bege-calcado-caramelo.webp",
+      "webp": "gpt/compressed/camisetas/branca/camiseta-branca-shorts-bege-calcado-caramelo.webp",
       "sourceCleaned": true
     }
   ],
