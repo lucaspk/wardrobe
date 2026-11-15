@@ -20,6 +20,7 @@ wardrobe/
 ├── data/gpt-index.json
 ├── docs/images/
 ├── scripts/
+│   ├── finish_looks.py
 │   ├── build_index.py
 │   ├── convert_looks_to_webp.py
 │   └── crop.py
@@ -33,12 +34,10 @@ wardrobe/
 Execute os comandos abaixo a partir da raiz do projeto:
 
 ```sh
-python3 scripts/crop.py
-python3 scripts/convert_looks_to_webp.py
-python3 scripts/build_index.py
+python3 scripts/finish_looks.py
 ```
 
-O recorte usa `gpt/to_crop/` e salva os PNGs temporariamente em `gpt/`; a conversão cria e valida os WebPs em `gpt/compressed/` e move automaticamente os PNGs para `gpt/raws/`. O índice gerado em `data/gpt-index.json` alimenta o combinador em `assets/js/combinator.js`; `assets/js/script.js` cuida dos favoritos e guias.
+O comando recorta `gpt/to_crop/` (incluindo pad para 1536×1024 se a fonte vier em outro tamanho), converte para WebP em `gpt/compressed/<camisas|camisetas|jaqueta|blazer|ternos>/<cor>/`, arquiva o PNG em `gpt/raws/` e reconstrói `data/gpt-index.json`. O combinador lê só esse índice; `assets/js/script.js` cuida dos favoritos e guias.
 
 O ícone de duas fotos no combinador inicia a comparação em `assets/js/comparison.js`: o look A fica fixo enquanto as cores alteram o look B. Ao iniciar a comparação, uma transição de 380 ms leva o look atual para a esquerda e revela o look B à direita, com slide e ajuste do layout. As fotos ficam lado a lado no desktop e no celular. A preferência por movimento reduzido desativa essa animação. Cada look pode ser favoritado ou ampliado. O × encerra a comparação com uma transição de 380 ms: a referência desaparece para a esquerda enquanto o look B retorna ao espaço principal. A referência fica apenas na memória até recarregar a página.
 
@@ -166,7 +165,7 @@ Blazer e jaqueta foram removidos do seletor do combinador por enquanto. **Não a
 
 ## Conversão de looks PNG para WebP
 
-Copie as fontes geradas para `gpt/to_crop/` e execute o recorte, que prepara os PNGs na raiz de `gpt/`. Execute `python3 scripts/convert_looks_to_webp.py` para converter esses PNGs para WebP em `gpt/compressed/<camisas|camisetas|jaqueta|blazer|ternos>/<cor>/`. Após validar o WebP, o script move automaticamente o PNG para `gpt/raws/`. O script não percorre subpastas da raiz de `gpt/`: os originais arquivados e `gpt/references/` não são processados. O script usa Pillow (instale com `python3 -m pip install Pillow` se necessário), qualidade padrão 82 e método de codificação 6. A qualidade pode ser alterada com `--quality 1-100`.
+Copie as fontes geradas para `gpt/to_crop/` e execute `python3 scripts/finish_looks.py`. O recorte prepara os PNGs na raiz de `gpt/`; a conversão cria e valida os WebPs em `gpt/compressed/<camisas|camisetas|jaqueta|blazer|ternos>/<cor>/` e move automaticamente os PNGs para `gpt/raws/`. O conversor não percorre subpastas da raiz de `gpt/`: os originais arquivados e `gpt/references/` não são processados. Pillow é necessário (`python3 -m pip install Pillow`). Qualidade padrão 82; `python3 scripts/convert_looks_to_webp.py --quality 1-100` se for converter à parte.
 
 Os PNGs são preservados em `gpt/raws/`, sem precisar movê-los manualmente. Se o WebP de destino já existir, o script o mantém, valida sua leitura e suas dimensões e arquiva o PNG. Um PNG diferente com nome já arquivado recebe um sufixo de conteúdo, preservando ambos; um WebP inválido deixa o PNG na raiz para correção. `scripts/build_index.py` combina os looks PNG da raiz com os WebP em `gpt/compressed/<tipo>/<cor>/`; ignora `gpt/raws/` e `gpt/references/`. O combinador e os favoritos usam os nomes dos arquivos como identificadores e montam o caminho `gpt/compressed/camisas/ferrugem/<arquivo>.webp` (ternos, camisetas, jaqueta e blazer em pastas próprias).
 
@@ -200,4 +199,4 @@ Para o prompt agnóstico e o fluxo de revisão antes de gerar lotes, consulte [P
 
 O seletor de conjunto oferece **Camisa + calça** e **Camiseta + bermuda**. Os tipos de parte de cima e de baixo são vinculados: não oferecer nem gerar camisa com bermuda ou camiseta com calça. O modo terno permanece disponível e mantém suas regras anteriores.
 
-O modo **Camiseta + bermuda** usa bermuda bege e, por enquanto, somente tênis branco. Camisetas ativas: branca, preta, azul marinho, verde militar, vinho, vermelha, marrom, cinza pedra, azul claro, rosa claro e amarelo claro. Os arquivos seguem `camiseta-{cor}-shorts-bege-calcado-branco`. A interface usa o nome “Bermuda”. O loafer caramelo da camiseta branca e as combinações cruzadas anteriores ficam preservados no disco, fora do combinador.
+O modo **Camiseta + bermuda** usa bermuda bege ou preta e, por enquanto, somente tênis branco. Camisetas ativas: branca, preta, azul marinho, verde militar, vinho, vermelha, marrom, cinza pedra, azul claro, rosa claro e amarelo claro. Os arquivos seguem `camiseta-{cor}-shorts-{bege|preto}-calcado-branco`. A interface usa o nome “Bermuda”. O loafer caramelo da camiseta branca e as combinações cruzadas anteriores ficam preservados no disco, fora do combinador.

@@ -60,14 +60,12 @@ Use o mesmo prompt-base para qualquer roupa. Acrescente somente a instrução es
 ## Fluxo de geração e validação
 
 1. Escolha uma combinação de cores específica e preencha os campos do prompt. Consulte os filtros e decisões atuais no [README](README.md); não invente combinações adicionais.
-2. Anexe uma referência RAW de composição semelhante. Se a peça solicitada for um terno ou uma camada externa, prefira anexar também uma referência desse tipo.
-3. Copie a imagem gerada para `gpt/to_crop/`, recorte o centro em 776 × 1024 e salve o PNG temporariamente na raiz de `gpt/`. O utilitário de recorte fica em `scripts/crop.py`; execute-o a partir da raiz com `python3 scripts/crop.py`. Remova a fonte temporária após validar o recorte.
-4. Confira a imagem antes de incorporá-la: combinação e tons corretos, peças visíveis, terno coordenado quando aplicável, modelo inteiro, mãos e calçados naturais, sem elementos extras.
-5. A partir da raiz do projeto, converta os PNGs da raiz de `gpt/` para WebP com `python3 scripts/convert_looks_to_webp.py`. O script valida cada WebP em `gpt/compressed/<camisas|camisetas|jaqueta|blazer|ternos>/<cor>/` antes de mover automaticamente seu PNG para `gpt/raws/`. Os PNGs ficam arquivados; a raiz de `gpt/` deve terminar sem os PNGs da geração. O conversor não percorre subpastas como `raws/` nem `references/`. Se já houver WebP, ele é preservado e validado antes do arquivamento; originais com o mesmo nome e conteúdo diferente recebem um sufixo para preservar ambos. Para substituir uma imagem existente, faça a troca aprovada explicitamente e confira o novo WebP.
-6. A partir da raiz do projeto, execute `python3 scripts/build_index.py` para incluir os looks no combinador. O arquivo `data/gpt-index.json` reúne PNGs novos na raiz e WebPs já comprimidas; ignora `raws/` e `references/`. O `assets/js/script.js` recebe o look selecionado pelo combinador e permite salvá-lo nos favoritos, sem catálogo estático. Confirme os caminhos, filtros e cores das peças nos dois fluxos.
-7. Depois de confirmar os PNGs arquivados e os WebPs válidos, apague também as cópias-fonte utilizadas nesta geração em `~/.codex/generated_images/`, os intermediários em `gpt/to_crop/` e os auxiliares em diretórios temporários. Limite a limpeza aos arquivos desta tarefa; preserve os arquivos finais do projeto e os registros de prompts.
+2. Anexe **uma** referência WebP 776×1024 de composição semelhante. RAW extra só se o usuário pedir.
+3. Salve as imagens geradas em `gpt/to_crop/` com o nome final do look e rode `python3 scripts/finish_looks.py`. O script faz pad/recorte 776×1024, WebP, arquivo em `gpt/raws/` e `data/gpt-index.json`. Não cadastre looks em `assets/js/script.js`.
+4. Não faça QA visual das fotos geradas. Não edite `combinator.js` se as cores já existem na paleta; só edite se a cor for nova (id + hex) ou se o tipo de peça ainda não existir na UI.
+5. Depois do script, apague só as cópias-fonte desta geração em `~/.codex/generated_images/` e temporários. Preserve `gpt/raws/`, WebPs e registros de prompts.
 
-Para uma nova série, gere e valide primeiro uma única imagem de amostra. Só após a aprovação, gere o restante das combinações em lotes paralelos, sem duplicatas, e converta as imagens novas.
+Para uma nova série, gere primeiro uma amostra se o usuário quiser aprovar o recorte. O restante do lote segue o mesmo comando, sem duplicatas. Lote pequeno neste agente; matriz grande em batches paralelos.
 
 Só mantenha combinações aprovadas. Uma combinação de cores validada pode representar outras peças ou tipos de calçado da mesma cor; evite gerar variações redundantes.
 
@@ -134,4 +132,4 @@ Prompts e registros: [lote A](docs/prompts/grafite-a.json), [lote B](docs/prompt
 
 O seletor de conjunto oferece **Camisa + calça** e **Camiseta + bermuda**. Os tipos de parte de cima e de baixo são vinculados: não oferecer nem gerar camisa com bermuda ou camiseta com calça. O modo terno permanece disponível e mantém suas regras anteriores.
 
-O modo **Camiseta + bermuda** usa bermuda bege e, por enquanto, somente tênis branco. Camisetas ativas: branca, preta, azul marinho, verde militar, vinho, vermelha, marrom, cinza pedra, azul claro, rosa claro e amarelo claro. Os arquivos seguem `camiseta-{cor}-shorts-bege-calcado-branco`. A interface usa o nome “Bermuda”. O loafer caramelo da camiseta branca e as combinações cruzadas anteriores ficam preservados no disco, fora do combinador.
+O modo **Camiseta + bermuda** usa bermuda bege ou preta e, por enquanto, somente tênis branco. Camisetas ativas: branca, preta, azul marinho, verde militar, vinho, vermelha, marrom, cinza pedra, azul claro, rosa claro e amarelo claro. Os arquivos seguem `camiseta-{cor}-shorts-{bege|preto}-calcado-branco`. A interface usa o nome “Bermuda”. O loafer caramelo da camiseta branca e as combinações cruzadas anteriores ficam preservados no disco, fora do combinador.

@@ -154,15 +154,10 @@
   const CASUAL_ONLY_CAMISA = new Set(['verde-militar']);
   const DEFAULTS = { camisa: 'ferrugem', calca: 'verde-oliva', calcado: 'preto' };
   const state = { ...DEFAULTS, outfitType: 'camisa-calca', outerwear: null, outerwearColor: null };
-  const OUTERWEAR_ALLOWED_COLORS = {
-    terno: {
-      default: {
-        camisa: ['azul-claro', 'rosa-claro', 'branco', 'lilas-claro', 'preto', 'verde-oliva', 'amarelo-claro', 'vinho'],
-        calcado: ['bege', 'caramelo', 'cinza-claro', 'marrom', 'preto', 'branco'],
-      },
-    },
-  };
+  const LOOK_NAME = /^(?:(?<outer>terno|jaqueta|blazer)-(?<outerColor>.+?)-)?(?<top>camisa|camiseta)-(?<topColor>.+)-(?<bottom>calca|shorts|bermuda)-(?<bottomColor>.+)-calcado-(?<shoe>.+?)(?:-\d+)?\.png$/i;
   let gptIndex = new Set();
+  let parsedLooks = [];
+  let modeRules = {};
   let ready = false;
   let mobilePiece = 'camisa';
   let mobileMedia = null;
@@ -331,20 +326,82 @@
     return !state.outerwear && state.outfitType === 'camiseta-bermuda';
   }
 
-  function currentAllowedColors(piece) {
-    if (!state.outerwear) {
-      if (piece === 'camisa' && isCasualPilot()) {
-        return ['branco', 'preto', 'azul-marinho', 'verde-militar', 'vinho', 'vermelho', 'marrom', 'cinza-pedra', 'azul-claro', 'rosa-claro', 'amarelo-claro'];
-      }
-      if (piece === 'calca' && isCasualPilot()) return ['bege'];
-      if (piece === 'calcado' && isCasualPilot()) return ['branco'];
-      if (piece === 'camisa') {
-        return PALETTE.camisa.map(({ id }) => id).filter((id) => !CASUAL_ONLY_CAMISA.has(id));
-      }
-      return PALETTE[piece].map(({ id }) => id);
+  function paletteIdFromSlug(piece, slug) {
+    const colors = piece === 'terno' ? OUTERWEAR.terno.palette : PALETTE[piece];
+    if (colors?.some((color) => color.id === slug)) return slug;
+    for (const [id, list] of Object.entries(SLUG_VARIANTS[piece] || {})) {
+      if (list.includes(slug)) return id;
     }
-    if (state.outerwear === 'terno') return OUTERWEAR_ALLOWED_COLORS.terno.default[piece] ?? [];
-    return OUTERWEAR_ALLOWED_COLORS[state.outerwear][state.outerwearColor][piece];
+    return null;
+  }
+
+  function orderedIds(ids) {
+    const rank = (id) => {
+      const index = COLOR_ORDER.indexOf(id);
+      return index < 0 ? COLOR_ORDER.length : index;
+    };
+    return [...ids].sort((a, b) => rank(a) - rank(b));
+  }
+
+  function modeKey() {
+    return state.outerwear === 'terno' ? 'terno' : state.outfitType;
+  }
+
+  function applyModeRules(piece, ids) {
+    const rules = modeRules[modeKey()];
+    if (!rules) return ids;
+    const only = rules.somente?.[piece];
+    const hide = rules.ocultar?.[piece];
+    let next = ids;
+    if (only) next = next.filter((id) => only.includes(id));
+    if (hide) next = next.filter((id) => !hide.includes(id));
+    return next;
+  }
+
+  function currentAllowedColors(piece) {
+    const ids = new Set();
+    for (const look of parsedLooks) {
+      if (state.outerwear === 'terno') {
+        if (look.outer !== 'terno') continue;
+        if (piece === 'camisa') {
+          const id = paletteIdFromSlug('camisa', look.topColor);
+          if (id) ids.add(id);
+        } else if (piece === 'calcado') {
+          const id = paletteIdFromSlug('calcado', look.shoe);
+          if (id) ids.add(id);
+        }
+        continue;
+      }
+      if (state.outerwear) continue;
+      if (isCasualPilot()) {
+        if (look.outer || look.top !== 'camiseta' || look.bottom !== 'shorts') continue;
+        const slug = piece === 'camisa' ? look.topColor : piece === 'calca' ? look.bottomColor : look.shoe;
+        const id = paletteIdFromSlug(piece, slug);
+        if (id) ids.add(id);
+        continue;
+      }
+      if (look.outer || look.top !== 'camisa' || look.bottom !== 'calca') continue;
+      if (piece === 'camisa') {
+        const id = paletteIdFromSlug('camisa', look.topColor);
+        if (id && !CASUAL_ONLY_CAMISA.has(id)) ids.add(id);
+      } else if (piece === 'calca') {
+        const id = paletteIdFromSlug('calca', look.bottomColor);
+        if (id) ids.add(id);
+      } else if (piece === 'calcado') {
+        const id = paletteIdFromSlug('calcado', look.shoe);
+        if (id) ids.add(id);
+      }
+    }
+    const allowed = applyModeRules(piece, orderedIds(ids));
+    if (allowed.length) return allowed;
+    if (isCasualPilot()) {
+      if (piece === 'calca') return ['bege', 'preto'];
+      if (piece === 'calcado') return ['branco'];
+      return ['branco'];
+    }
+    if (state.outerwear === 'terno') return [];
+    if (piece === 'camisa') return PALETTE.camisa.map(({ id }) => id).filter((id) => !CASUAL_ONLY_CAMISA.has(id));
+    return PALETTE[piece].map(({ id }) => id);
   }
 
   function candidateFilenames() {
@@ -399,9 +456,14 @@
         : color.id === 'preto' ? 'preta'
         : color.id === 'vermelho' ? 'vermelha'
         : color.label.toLowerCase();
+      const colorWord = p === 'camisa' && garmentType(p) === 'camiseta'
+        ? shirtWord
+        : p === 'calca' && garmentType(p) === 'shorts' && color.id === 'preto'
+          ? 'preta'
+          : color.label.toLowerCase();
       const label = p === 'calcado' && isCasualPilot()
         ? 'Tênis branco'
-        : `${names[p]} ${p === 'camisa' && garmentType(p) === 'camiseta' ? shirtWord : color.label.toLowerCase()}`;
+        : `${names[p]} ${colorWord}`;
       return { label, color: color.hex };
     }));
     comboEl.innerHTML = parts.map(({ label, color }) => `
@@ -454,7 +516,8 @@
           else if (color.id === 'preto') label = 'Preta';
           else if (color.id === 'vermelho') label = 'Vermelha';
         }
-        if (piece === 'calcado' && isCasualPilot()) label = 'Tênis branco';
+        if (piece === 'calca' && garmentType('calca') === 'shorts' && color.id === 'preto') label = 'Preta';
+        if (piece === 'calcado' && isCasualPilot() && color.id === 'branco') label = 'Tênis branco';
         selectedLabel.textContent = label;
       }
       const countEl = document.getElementById(`count-${piece}`);
@@ -677,8 +740,6 @@
     render();
   }
 
-  const COMBO_FILENAME = /^camisa-.+-calca-.+-calcado-.+\.png$|^camiseta-.+-shorts-bege-calcado-branco\.png$|^terno-.+-camisa-.+-calca-.+-calcado-.+\.png$/i;
-
   function initColorTooltips() {
     const selector = '.swatch, [data-tooltip]';
     document.querySelectorAll('[data-tooltip][title]').forEach((element) => element.removeAttribute('title'));
@@ -748,10 +809,15 @@
   }
 
   async function loadIndex() {
-    const res = await fetch('data/gpt-index.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error('data/gpt-index.json ausente');
-    const registeredLooks = window.WARDROBE_GENERATED_LOOKS || [];
-    gptIndex = new Set([...(await res.json()), ...registeredLooks].filter((name) => COMBO_FILENAME.test(name)));
+    const [indexRes, rulesRes] = await Promise.all([
+      fetch('data/gpt-index.json', { cache: 'no-store' }),
+      fetch('data/combinator-rules.json', { cache: 'no-store' }),
+    ]);
+    if (!indexRes.ok) throw new Error('data/gpt-index.json ausente');
+    const names = await indexRes.json();
+    gptIndex = new Set(names);
+    parsedLooks = names.map((name) => name.match(LOOK_NAME)?.groups).filter(Boolean);
+    modeRules = rulesRes.ok ? await rulesRes.json() : {};
     ready = true;
     render();
   }

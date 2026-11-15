@@ -1,21 +1,19 @@
+- Gerar imagens em `gpt/to_crop/` com o nome final do look (`camiseta-…png`, `camisa-…png`, `terno-…png`).
 
-- Sempre gerar imagems no diretório /gpt/to_crop.
+- Depois das imagens em `gpt/to_crop/`, só rodar `python3 scripts/finish_looks.py`. Não recortar, converter ou indexar na mão.
 
-- Sempre gerar looks para todas as cores de calçados mapeados.
+- Não cadastrar looks em `assets/js/script.js`. A fonte é `data/gpt-index.json`.
 
-- Use múltiplos agentes paralelos em batches para organizar o trabalho, dividir e paralelizar para ganhar eficiência e agilidade.
+- Não editar `combinator.js` para looks com cores já na paleta. Só editar se a cor for nova (id + hex) ou se o tipo de peça ainda não existir na UI.
 
-- Ao final da geração, corte tal como as outras imagens para ficar consistente.
+- Respeitar `data/combinator-rules.json`: não gerar cores que o modo oculta ou que estão fora de `somente`. Para desabilitar uma cor na UI, edite esse JSON — não o `combinator.js`.
 
-- Depois de cortar, salve temporariamente o PNG em /gpt.
+- Lote pequeno (até ~24 looks, ou uma série de uma peça): fazer neste agente. Não abrir subagente.
 
-- Converta para WebP em /gpt/compressed/<camisas|camisetas|jaqueta|blazer|ternos>/<cor>/ com scripts/convert_looks_to_webp.py. Depois de validar a conversão, o script deve mover automaticamente o PNG para /gpt/raws. O destino final dos PNGs é sempre /gpt/raws, nunca a raiz de /gpt. Preserve originais arquivados; em caso de conteúdo diferente com o mesmo nome, use um sufixo para evitar perda.
+- Matriz grande (várias peças × várias cores × vários calçados): aí sim batches paralelos.
 
-- Ao final da geração, apague todos arquivos desnecessários.
+- Não fazer QA visual: não ler as imagens geradas, não abrir o browser para conferir looks, não tirar screenshot das fotos, não inspecionar cada PNG/WebP. Confiar no `finish_looks.py`.
 
-- A limpeza também inclui as cópias-fonte desta geração em ~/.codex/generated_images/ e auxiliares em diretórios temporários. Antes de apagar uma fonte, confirme que o PNG final está preservado em /gpt/raws e o WebP está válido em /gpt/compressed/<tipo>/<cor>/. Não apagar arquivos de outras tarefas.
+- Referência: um WebP 776×1024 de look semelhante, não vários RAW.
 
-- Sempre incluir no script.js os looks gerados.
-
-- Se for algo apropriado para combinador, também acrescente lá.
-
+- Após o script ok, apagar só fontes desta tarefa em `~/.codex/generated_images/` e temporários. PNG em `gpt/raws/`, WebP em `gpt/compressed/<tipo>/<cor>/`. Não apagar arquivos de outras tarefas.

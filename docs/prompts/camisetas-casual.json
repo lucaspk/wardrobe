@@ -91,7 +91,106 @@
       "raw": "gpt/raws/camiseta-amarelo-claro-shorts-bege-calcado-branco.png",
       "webp": "gpt/compressed/camisetas/amarelo-claro/camiseta-amarelo-claro-shorts-bege-calcado-branco.webp",
       "active": true
+    },
+    {
+      "file": "camiseta-branca-shorts-preto-calcado-branco.png",
+      "prompt": "Same catalog setup as the beige-shorts T-shirt looks. Keep the off-white crew-neck T-shirt #F2F0EC and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-branca-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-branca-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/branca/camiseta-branca-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-preta-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the black crew-neck T-shirt #1A1A1A and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A, distinct jersey vs chino weave.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-preta-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-preta-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/preta/camiseta-preta-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-azul-marinho-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the navy crew-neck T-shirt #1E3A5F and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-azul-marinho-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-azul-marinho-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/azul-marinho/camiseta-azul-marinho-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-verde-militar-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the military-green crew-neck T-shirt #4A5A38 and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-verde-militar-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-verde-militar-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/verde-militar/camiseta-verde-militar-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-vinho-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the burgundy wine crew-neck T-shirt #6B2D3C and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-vinho-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-vinho-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/vinho/camiseta-vinho-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-vermelha-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the muted brick-red crew-neck T-shirt #B83232 and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-vermelha-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-vermelha-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/vermelha/camiseta-vermelha-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-marrom-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the medium-brown crew-neck T-shirt #6B4A32 and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-marrom-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-marrom-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/marrom/camiseta-marrom-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-cinza-pedra-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the stone-gray crew-neck T-shirt #8A8880 and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-cinza-pedra-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-cinza-pedra-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/cinza-pedra/camiseta-cinza-pedra-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-azul-claro-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the pale light-blue crew-neck T-shirt #A8C8E0 and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-azul-claro-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-azul-claro-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/azul-claro/camiseta-azul-claro-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-rosa-claro-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the pale light-pink crew-neck T-shirt #F0C4C8 and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-rosa-claro-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-rosa-claro-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/rosa-claro/camiseta-rosa-claro-shorts-preto-calcado-branco.webp",
+      "active": true
+    },
+    {
+      "file": "camiseta-amarelo-claro-shorts-preto-calcado-branco.png",
+      "prompt": "Keep the pale pastel-yellow crew-neck T-shirt #F5E6A8 and white sneakers. Change ONLY the shorts to tailored black chino shorts #1A1A1A.",
+      "status": "complete",
+      "source": "/Users/lucas-tail/.cursor/projects/Users-lucas-tail-Downloads-repos-wardrobe/assets/camiseta-amarelo-claro-shorts-preto-calcado-branco.jpg",
+      "raw": "gpt/raws/camiseta-amarelo-claro-shorts-preto-calcado-branco.png",
+      "webp": "gpt/compressed/camisetas/amarelo-claro/camiseta-amarelo-claro-shorts-preto-calcado-branco.webp",
+      "active": true
     }
   ],
-  "scope_note": "Camiseta + bermuda bege + somente tênis branco. Loafer caramelo da camiseta branca permanece no disco, fora do combinador."
+  "scope_note": "Camiseta + bermuda bege ou preta + somente tênis branco. Loafer caramelo da camiseta branca permanece no disco, fora do combinador."
 }
