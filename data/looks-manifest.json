@@ -41,8 +41,8 @@
       "ocultar": { "calcado": ["caramelo"] }
     },
     "camiseta-calca": {
-      "tops": ["branco"],
-      "bottoms": ["bege"],
+      "tops": ["branco", "marrom", "azul-marinho", "preto", "vinho", "verde-militar"],
+      "bottoms": ["bege", "marrom", "azul-marinho", "vinho", "verde-militar"],
       "shoes": ["branco"],
       "ocultar": { "calcado": ["caramelo"] }
     },
