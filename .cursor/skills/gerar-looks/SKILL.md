@@ -5,13 +5,15 @@ description: Gera looks do guarda-roupa (camisa, camiseta, bermuda, terno, blaze
 
 # Gerar looks
 
-1. Gerar PNGs em `gpt/to_crop/` com o filename do look.
-2. Rodar `python3 scripts/finish_looks.py`.
-3. Não editar `combinator.js` se as cores já existem na paleta. Só editar se a cor for nova (id + hex) ou se o tipo de peça ainda não existir na UI.
-4. Não editar `script.js` para cadastrar looks.
-5. Não fazer QA visual (não ler imagens, não screenshot, não abrir o combinador para conferir foto).
-6. Lote pequeno: sem subagente. Matriz grande: batches paralelos.
-7. Uma referência WebP. Respeitar `data/combinator-rules.json` (não gerar o que o modo oculta). Para desabilitar cor na UI, editar esse JSON.
-8. Apagar só fontes desta geração depois do script ok.
+Leia só `data/looks-manifest.json`. Não leia `PROMPT-GERAR-LOOKS.md`, `README.md`, `combinator.js`, `script.js`, `docs/prompts/`, transcripts nem imagens.
 
-Prompt curto: mesmo modelo/pose/fundo; mudar só as peças pedidas; hex da cor; canvas para recorte central 776×1024.
+1. PNG em `gpt/to_crop/` com o filename do manifesto. No nome, use `topFile` quando existir; senão o id.
+2. Rode `python3 scripts/finish_looks.py`. Não recorte, converta nem indexe na mão.
+3. Não edite `combinator.js` se a cor já está no manifesto. Cor nova: id + hex no combinator e no manifesto.
+4. Não edite `script.js`.
+5. Sem QA visual: não leia PNG/WebP, não abra o combinador, não faça screenshot.
+6. Até ~24 looks neste agente. Matriz maior: batches paralelos.
+7. Uma referência WebP (a do manifesto, se o enquadramento servir). Não gere o que `ocultar` lista.
+8. Depois do script, apague só fontes desta geração.
+
+Prompt: mesmo modelo, pose e fundo da referência; mude só as peças pedidas; use o hex do manifesto; canvas para o recorte central 776×1024.

@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GPT_DIR = ROOT / "gpt"
 COMPRESSED_DIR = GPT_DIR / "compressed"
-patterns = (
+PATTERNS = (
     "camisa-*-calca-*-calcado-*.png",
     "camiseta-*-shorts-*-calcado-*.png",
     "camiseta-*-calca-*-calcado-*.png",
@@ -14,17 +14,24 @@ patterns = (
     "jaqueta-*-camisa-*-calca-*-calcado-*.png",
     "camisa-*-shorts-*-calcado-*.png",
 )
-files = {
-    path.name
-    for pattern in patterns
-    for path in GPT_DIR.glob(pattern)
-}
-webp_patterns = tuple(pattern.removesuffix(".png") + ".webp" for pattern in patterns)
-files.update(
-    path.name.removesuffix(".webp") + ".png"
-    for pattern in webp_patterns
-    for path in COMPRESSED_DIR.rglob(pattern)
-)
-files = sorted(files)
-(ROOT / "data" / "gpt-index.json").write_text(json.dumps(files, ensure_ascii=False), encoding="utf-8")
-print(f"{len(files)} looks")
+
+
+def main() -> None:
+    files = {
+        path.name
+        for pattern in PATTERNS
+        for path in GPT_DIR.glob(pattern)
+    }
+    webp_patterns = tuple(pattern.removesuffix(".png") + ".webp" for pattern in PATTERNS)
+    files.update(
+        path.name.removesuffix(".webp") + ".png"
+        for pattern in webp_patterns
+        for path in COMPRESSED_DIR.rglob(pattern)
+    )
+    files = sorted(files)
+    (ROOT / "data" / "gpt-index.json").write_text(json.dumps(files, ensure_ascii=False), encoding="utf-8")
+    print(f"{len(files)} looks")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,48 @@
+{
+  "ref": "gpt/compressed/camisetas/branca/camiseta-branca-shorts-bege-calcado-branco.webp",
+  "crop": "canvas 1536x1024, pessoa inteira no centro, recorte 776x1024",
+  "arquivo": {
+    "camiseta": "camiseta-{top}-shorts-{bottom}-calcado-{shoe}.png",
+    "camisa": "camisa-{top}-calca-{bottom}-calcado-{shoe}.png",
+    "terno": "terno-{terno}-camisa-{top}-calca-{terno}-calcado-{shoe}.png",
+    "blazer": "blazer-{outer}-camisa-{top}-calca-{bottom}-calcado-{shoe}.png",
+    "jaqueta": "jaqueta-{outer}-camisa-{top}-calca-{bottom}-calcado-{shoe}.png"
+  },
+  "topFile": { "branco": "branca", "preto": "preta", "vermelho": "vermelha", "lilas-claro": "lilas" },
+  "hex": {
+    "top": {
+      "amarelo-claro": "#F5E6A8", "azul-claro": "#A8C8E0", "rosa-claro": "#F0C4C8", "verde-oliva": "#6B7A4A",
+      "verde-militar": "#4A5A38", "lilas-claro": "#D4C4E8", "vinho": "#6B2D3C", "vermelho": "#B83232",
+      "azul-marinho": "#1E3A5F", "preto": "#1A1A1A", "verde-escuro": "#2D4A35", "marrom": "#6B4A32",
+      "bege": "#D4C4A8", "branco": "#F2F0EC", "creme": "#EDE6D6", "cinza-claro": "#B0B0AE",
+      "cinza-pedra": "#8A8880", "ferrugem": "#B85A38", "azul-petroleo": "#1F6268", "mostarda": "#BA8D27", "camel": "#BC9263"
+    },
+    "bottom": {
+      "preto": "#1A1A1A", "cinza-claro": "#B0B0AE", "cinza-pedra": "#8A8880", "grafite": "#45484C",
+      "bege": "#C8B898", "creme": "#E8DCC8", "marrom": "#5C4030", "azul-marinho": "#1E3A5F",
+      "verde-militar": "#4A5A38", "verde-oliva": "#5A6840", "vinho": "#5C2830"
+    },
+    "shoe": {
+      "preto": "#1A1A1A", "marrom": "#5C4030", "branco": "#F0EEEA", "cinza-claro": "#A8A8A6", "bege": "#C8B090", "caramelo": "#A87848"
+    },
+    "terno": {
+      "azul-marinho": "#1E3A5F", "azul-claro": "#A8C8E0", "cinza-pedra": "#8A8880", "grafite": "#45484C",
+      "cinza-claro": "#B0B0AE", "preto": "#1A1A1A", "bege": "#D4C4A8", "branco": "#F2F0EC", "marrom": "#6B4A32",
+      "caramelo": "#A87848", "caqui": "#B0A080", "ferrugem": "#B85A38", "lilas": "#D4C4E8", "verde-oliva": "#6B7A4A", "vinho": "#6B2D3C"
+    }
+  },
+  "modos": {
+    "camisa-calca": { "semTop": ["verde-militar"] },
+    "camiseta-bermuda": {
+      "tops": ["branco", "preto", "azul-marinho", "verde-militar", "vinho", "vermelho", "marrom", "cinza-pedra", "azul-claro", "rosa-claro", "amarelo-claro"],
+      "bottoms": ["bege", "preto", "marrom", "azul-marinho", "verde-militar", "vinho"],
+      "shoes": ["branco"],
+      "ocultar": { "calcado": ["caramelo"] }
+    },
+    "terno": {
+      "tops": ["azul-claro", "rosa-claro", "branco", "lilas-claro", "preto", "verde-oliva", "amarelo-claro", "vinho"],
+      "shoes": ["bege", "caramelo", "cinza-claro", "marrom", "preto", "branco"],
+      "calca": "mesma cor do terno"
+    }
+  }
+}

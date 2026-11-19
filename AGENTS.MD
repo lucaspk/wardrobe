@@ -1,3 +1,5 @@
+- Para gerar looks, siga `.cursor/skills/gerar-looks/SKILL.md` e leia só `data/looks-manifest.json`. Não abra `PROMPT-GERAR-LOOKS.md`, `README.md`, `combinator.js`, `script.js`, `docs/prompts/` nem transcripts.
+
 - Gerar imagens em `gpt/to_crop/` com o nome final do look (`camiseta-…png`, `camisa-…png`, `terno-…png`).
 
 - Depois das imagens em `gpt/to_crop/`, só rodar `python3 scripts/finish_looks.py`. Não recortar, converter ou indexar na mão.
