@@ -21,7 +21,7 @@
     "bottom": {
       "preto": "#1A1A1A", "cinza-claro": "#B0B0AE", "cinza-pedra": "#8A8880", "grafite": "#45484C",
       "bege": "#C8B898", "creme": "#E8DCC8", "marrom": "#5C4030", "azul-marinho": "#1E3A5F",
-      "verde-militar": "#4A5A38", "verde-oliva": "#5A6840", "vinho": "#5C2830"
+      "verde-militar": "#4A5A38", "verde-oliva": "#5A6840", "vinho": "#5C2830", "branco": "#F2F0EC"
     },
     "shoe": {
       "preto": "#1A1A1A", "marrom": "#5C4030", "branco": "#F0EEEA", "cinza-claro": "#A8A8A6", "bege": "#C8B090", "caramelo": "#A87848"
@@ -36,14 +36,15 @@
     "camisa-calca": { "semTop": ["verde-militar"] },
     "camiseta-bermuda": {
       "tops": ["branco", "preto", "azul-marinho", "verde-militar", "vinho", "vermelho", "marrom", "cinza-pedra", "azul-claro", "rosa-claro", "amarelo-claro"],
-      "bottoms": ["bege", "preto", "marrom", "azul-marinho", "verde-militar", "vinho"],
+      "bottoms": ["bege", "preto", "marrom", "azul-marinho", "verde-militar", "vinho", "branco", "cinza-claro"],
       "shoes": ["branco"],
       "ocultar": { "calcado": ["caramelo"] }
     },
     "camiseta-calca": {
       "tops": ["branco"],
       "bottoms": ["bege"],
-      "shoes": ["branco", "caramelo"]
+      "shoes": ["branco"],
+      "ocultar": { "calcado": ["caramelo"] }
     },
     "terno": {
       "tops": ["azul-claro", "rosa-claro", "branco", "lilas-claro", "preto", "verde-oliva", "amarelo-claro", "vinho"],

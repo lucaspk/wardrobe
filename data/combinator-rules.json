@@ -3,5 +3,10 @@
     "ocultar": {
       "calcado": ["caramelo"]
     }
+  },
+  "camiseta-calca": {
+    "ocultar": {
+      "calcado": ["caramelo"]
+    }
   }
 }

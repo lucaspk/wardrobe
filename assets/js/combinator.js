@@ -26,6 +26,7 @@
       { id: 'camel', label: 'Camel', hex: '#BC9263' },
     ],
     calca: [
+      { id: 'branco', label: 'Branco', hex: '#F2F0EC' },
       { id: 'preto', label: 'Preto', hex: '#1A1A1A' },
       { id: 'cinza-claro', label: 'Cinza claro', hex: '#B0B0AE' },
       { id: 'cinza-pedra', label: 'Cinza pedra', hex: '#8A8880' },
@@ -138,6 +139,7 @@
       ferrugem: ['ferrugem', 'laranja-queimado'],
     },
     calca: {
+      branco: ['branco', 'branca'],
       preto: ['preto', 'preta'],
       'cinza-pedra': ['cinza-pedra', 'cinza'],
       grafite: ['grafite', 'chumbo'],
@@ -483,7 +485,9 @@
         ? shirtWord
         : p === 'calca' && garmentType(p) === 'shorts' && color.id === 'preto'
           ? 'preta'
-          : color.label.toLowerCase();
+          : p === 'calca' && garmentType(p) === 'shorts' && color.id === 'branco'
+            ? 'branca'
+            : color.label.toLowerCase();
       const label = p === 'calcado' && isCamisetaMode() && state.calcado === 'branco'
         ? 'Tênis branco'
         : `${names[p]} ${colorWord}`;
@@ -540,6 +544,7 @@
           else if (color.id === 'vermelho') label = 'Vermelha';
         }
         if (piece === 'calca' && garmentType('calca') === 'shorts' && color.id === 'preto') label = 'Preta';
+        if (piece === 'calca' && garmentType('calca') === 'shorts' && color.id === 'branco') label = 'Branca';
         if (piece === 'calcado' && isCamisetaMode() && color.id === 'branco') label = 'Tênis branco';
         selectedLabel.textContent = label;
       }
