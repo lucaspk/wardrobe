@@ -318,12 +318,23 @@
 
   function garmentType(piece) {
     if (state.outerwear === 'terno') return piece;
-    if (!isCasualPilot()) return piece;
-    return piece === 'camisa' ? 'camiseta' : piece === 'calca' ? 'shorts' : piece;
+    if (state.outfitType === 'camiseta-bermuda') {
+      if (piece === 'camisa') return 'camiseta';
+      if (piece === 'calca') return 'shorts';
+      return piece;
+    }
+    if (state.outfitType === 'camiseta-calca') {
+      return piece === 'camisa' ? 'camiseta' : piece;
+    }
+    return piece;
   }
 
   function isCasualPilot() {
     return !state.outerwear && state.outfitType === 'camiseta-bermuda';
+  }
+
+  function isCamisetaMode() {
+    return !state.outerwear && (state.outfitType === 'camiseta-bermuda' || state.outfitType === 'camiseta-calca');
   }
 
   function paletteIdFromSlug(piece, slug) {
@@ -380,6 +391,13 @@
         if (id) ids.add(id);
         continue;
       }
+      if (state.outfitType === 'camiseta-calca') {
+        if (look.outer || look.top !== 'camiseta' || look.bottom !== 'calca') continue;
+        const slug = piece === 'camisa' ? look.topColor : piece === 'calca' ? look.bottomColor : look.shoe;
+        const id = paletteIdFromSlug(piece, slug);
+        if (id) ids.add(id);
+        continue;
+      }
       if (look.outer || look.top !== 'camisa' || look.bottom !== 'calca') continue;
       if (piece === 'camisa') {
         const id = paletteIdFromSlug('camisa', look.topColor);
@@ -396,6 +414,11 @@
     if (allowed.length) return allowed;
     if (isCasualPilot()) {
       if (piece === 'calca') return ['bege', 'preto'];
+      if (piece === 'calcado') return ['branco'];
+      return ['branco'];
+    }
+    if (state.outfitType === 'camiseta-calca') {
+      if (piece === 'calca') return ['bege'];
       if (piece === 'calcado') return ['branco'];
       return ['branco'];
     }
@@ -461,7 +484,7 @@
         : p === 'calca' && garmentType(p) === 'shorts' && color.id === 'preto'
           ? 'preta'
           : color.label.toLowerCase();
-      const label = p === 'calcado' && isCasualPilot()
+      const label = p === 'calcado' && isCamisetaMode() && state.calcado === 'branco'
         ? 'Tênis branco'
         : `${names[p]} ${colorWord}`;
       return { label, color: color.hex };
@@ -517,7 +540,7 @@
           else if (color.id === 'vermelho') label = 'Vermelha';
         }
         if (piece === 'calca' && garmentType('calca') === 'shorts' && color.id === 'preto') label = 'Preta';
-        if (piece === 'calcado' && isCasualPilot() && color.id === 'branco') label = 'Tênis branco';
+        if (piece === 'calcado' && isCamisetaMode() && color.id === 'branco') label = 'Tênis branco';
         selectedLabel.textContent = label;
       }
       const countEl = document.getElementById(`count-${piece}`);
@@ -647,7 +670,7 @@
   }
 
   function selectOutfit(type) {
-    if (state.outerwear || !['camisa-calca', 'camiseta-bermuda'].includes(type)) return;
+    if (state.outerwear || !['camisa-calca', 'camiseta-calca', 'camiseta-bermuda'].includes(type)) return;
     state.outfitType = type;
     normalizeSelectedColors();
     render();

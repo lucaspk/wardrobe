@@ -3,6 +3,7 @@
   "crop": "canvas 1536x1024, pessoa inteira no centro, recorte 776x1024",
   "arquivo": {
     "camiseta": "camiseta-{top}-shorts-{bottom}-calcado-{shoe}.png",
+    "camiseta-calca": "camiseta-{top}-calca-{bottom}-calcado-{shoe}.png",
     "camisa": "camisa-{top}-calca-{bottom}-calcado-{shoe}.png",
     "terno": "terno-{terno}-camisa-{top}-calca-{terno}-calcado-{shoe}.png",
     "blazer": "blazer-{outer}-camisa-{top}-calca-{bottom}-calcado-{shoe}.png",
@@ -38,6 +39,11 @@
       "bottoms": ["bege", "preto", "marrom", "azul-marinho", "verde-militar", "vinho"],
       "shoes": ["branco"],
       "ocultar": { "calcado": ["caramelo"] }
+    },
+    "camiseta-calca": {
+      "tops": ["branco"],
+      "bottoms": ["bege"],
+      "shoes": ["branco", "caramelo"]
     },
     "terno": {
       "tops": ["azul-claro", "rosa-claro", "branco", "lilas-claro", "preto", "verde-oliva", "amarelo-claro", "vinho"],
