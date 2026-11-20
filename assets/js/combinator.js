@@ -371,6 +371,13 @@
     return next;
   }
 
+  function outerwearPalette(layer) {
+    const outer = OUTERWEAR[layer];
+    if (!outer) return [];
+    const allowed = new Set(applyModeRules(layer, outer.palette.map((color) => color.id)));
+    return outer.palette.filter((color) => allowed.has(color.id));
+  }
+
   function currentAllowedColors(piece) {
     const ids = new Set();
     for (const look of parsedLooks) {
@@ -615,6 +622,7 @@
     const name = updateLabel();
     updatePlaceholder();
     updateMainSwatches();
+    updateOuterwearControls();
     if (!ready) return;
 
     showPreview(resolveFile(), name);
@@ -697,23 +705,29 @@
     if (!state.outerwear || !swatches || !heading) return;
 
     const outer = OUTERWEAR[state.outerwear];
-    settings.classList.toggle('hidden', outer.palette.length === 0);
-    if (outer.palette.length === 0) {
+    const palette = outerwearPalette(state.outerwear);
+    if (state.outerwearColor && !palette.some((color) => color.id === state.outerwearColor)) {
+      state.outerwearColor = palette[0]?.id ?? null;
+    }
+    settings.classList.toggle('hidden', palette.length === 0);
+    if (palette.length === 0) {
       swatches.replaceChildren();
       return;
     }
     heading.textContent = outer.label;
     const selectedLabel = document.getElementById('selected-outerwear');
-    const selectedColor = outer.palette.find((color) => color.id === state.outerwearColor);
+    const selectedColor = palette.find((color) => color.id === state.outerwearColor);
     if (selectedLabel) selectedLabel.textContent = selectedColor?.label ?? '';
     if (count) {
-      count.textContent = `${outer.palette.length} opç${outer.palette.length === 1 ? 'ão' : 'ões'}`;
+      count.textContent = `${palette.length} opç${palette.length === 1 ? 'ão' : 'ões'}`;
     }
     // Preserve the buttons between selections so scale and ring can transition.
-    if (swatches.dataset.layer !== state.outerwear) {
+    const paletteKey = palette.map((color) => color.id).join(',');
+    if (swatches.dataset.layer !== state.outerwear || swatches.dataset.palette !== paletteKey) {
       swatches.replaceChildren();
       swatches.dataset.layer = state.outerwear;
-      orderedColors(outer.palette).forEach((color) => {
+      swatches.dataset.palette = paletteKey;
+      orderedColors(palette).forEach((color) => {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'swatch';
@@ -749,7 +763,7 @@
       state.outerwearColor = null;
     } else {
       state.outerwear = layer;
-      const palette = OUTERWEAR[layer].palette;
+      const palette = outerwearPalette(layer);
       if (palette.length) {
         state.outerwearColor ??= palette[0].id;
         if (!palette.some((color) => color.id === state.outerwearColor)) {

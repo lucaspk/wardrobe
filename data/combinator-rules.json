@@ -8,5 +8,10 @@
     "ocultar": {
       "calcado": ["caramelo"]
     }
+  },
+  "terno": {
+    "ocultar": {
+      "terno": ["cinza-pedra"]
+    }
   }
 }

@@ -49,7 +49,8 @@
     "terno": {
       "tops": ["azul-claro", "rosa-claro", "branco", "lilas-claro", "preto", "verde-oliva", "amarelo-claro", "vinho"],
       "shoes": ["bege", "caramelo", "cinza-claro", "marrom", "preto", "branco"],
-      "calca": "mesma cor do terno"
+      "calca": "mesma cor do terno",
+      "ocultar": { "terno": ["cinza-pedra"] }
     }
   }
 }
