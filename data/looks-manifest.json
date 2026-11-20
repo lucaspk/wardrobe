@@ -35,13 +35,13 @@
   "modos": {
     "camisa-calca": { "semTop": ["verde-militar"] },
     "camiseta-bermuda": {
-      "tops": ["branco", "preto", "azul-marinho", "verde-militar", "vinho", "vermelho", "marrom", "cinza-pedra", "azul-claro", "rosa-claro", "amarelo-claro"],
+      "tops": ["branco", "preto", "azul-marinho", "verde-militar", "vinho", "vermelho", "marrom", "cinza-pedra", "azul-claro", "rosa-claro", "amarelo-claro", "bege"],
       "bottoms": ["bege", "preto", "marrom", "azul-marinho", "verde-militar", "vinho", "branco", "cinza-claro"],
       "shoes": ["branco"],
       "ocultar": { "calcado": ["caramelo"] }
     },
     "camiseta-calca": {
-      "tops": ["branco", "marrom", "azul-marinho", "preto", "vinho", "verde-militar"],
+      "tops": ["branco", "marrom", "azul-marinho", "preto", "vinho", "verde-militar", "bege", "cinza-claro"],
       "bottoms": ["bege", "preto", "marrom", "azul-marinho", "vinho", "verde-militar", "cinza-claro"],
       "shoes": ["branco"],
       "ocultar": { "calcado": ["caramelo"] }
