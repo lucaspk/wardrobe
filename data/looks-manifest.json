@@ -43,7 +43,7 @@
     "camiseta-calca": {
       "tops": ["branco", "marrom", "azul-marinho", "preto", "vinho", "verde-militar", "bege", "cinza-claro"],
       "bottoms": ["bege", "preto", "marrom", "azul-marinho", "vinho", "verde-militar", "cinza-claro"],
-      "shoes": ["branco"],
+      "shoes": ["branco", "preto"],
       "ocultar": { "calcado": ["caramelo"] }
     },
     "terno": {
