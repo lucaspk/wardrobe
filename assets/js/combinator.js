@@ -154,7 +154,7 @@
   };
 
   const CASUAL_ONLY_CAMISA = new Set(['verde-militar']);
-  const DEFAULTS = { camisa: 'ferrugem', calca: 'verde-oliva', calcado: 'preto' };
+  const DEFAULTS = { camisa: 'azul-claro', calca: 'bege', calcado: 'branco' };
   const state = { ...DEFAULTS, outfitType: 'camisa-calca', outerwear: null, outerwearColor: null };
   const LOOK_NAME = /^(?:(?<outer>terno|jaqueta|blazer)-(?<outerColor>.+?)-)?(?<top>camisa|camiseta)-(?<topColor>.+)-(?<bottom>calca|shorts|bermuda)-(?<bottomColor>.+)-calcado-(?<shoe>.+?)(?:-\d+)?\.png$/i;
   let gptIndex = new Set();
